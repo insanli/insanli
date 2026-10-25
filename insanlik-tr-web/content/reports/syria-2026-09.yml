@@ -1,0 +1,97 @@
+# Syria — Humanitarian Situation Overview
+# category: country | sectoral | needs | emergency  — decides which menu the report appears in.
+# Texts for each language are under tr / en / ar.
+
+category: country
+country: syria
+period: 2026-09
+updated: '2026-10-05'
+image: /img/countries/syria.jpg
+pdf: ''
+sources:
+- UN OCHA
+- WFP
+- WHO
+- UNICEF
+order: 5
+tr:
+  country_name: Suriye
+  title: Suriye — İnsani Durum Genel Görünümü
+  summary: Suriye, yıllarca süren çatışmalar, ekonomik bozulma, altyapı hasarı ve tekrarlayan şokların ardından son derece kırılgan kalmaya devam etmektedir. Geri dönüşler artmış olsa da milyonlarca kişi hâlâ ülke içinde yerinden edilmiş durumdadır ve birçok kişi…
+  figures:
+  - value: 15.6M
+    label: İnsani yardıma ihtiyaç duyan kişiler
+  - value: 7.2M
+    label: Akut gıda güvensizliği yaşayan kişiler
+  - value: 5.54M
+    label: Ülke içinde yerinden edilmiş kişiler
+  - value: 10M+
+    label: Güvenli suya erişimi olmayan kişiler
+  sections:
+  - kind: context
+    kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
+    text: Suriye, yıllarca süren çatışmalar, ekonomik bozulma, altyapı hasarı ve tekrarlayan şokların ardından son derece kırılgan kalmaya devam etmektedir. Geri dönüşler artmış olsa da milyonlarca kişi hâlâ ülke içinde yerinden edilmiş durumdadır ve birçok kişi konutların, geçim kaynaklarının ve temel hizmetlerin ağır hasar gördüğü topluluklara dönmektedir. Gıda güvensizliği, güvenli suya sınırlı erişim, yoksulluk ve sağlık ile koruma hizmetleri üzerindeki baskı ciddi insani ihtiyaçları sürdürmektedir.
+  - kind: needs
+    kicker: İNSANİ İHTİYAÇLAR
+    title: Öncelikli İnsani İhtiyaçlar
+    text: Öncelikli ihtiyaçlar arasında gıda yardımı, güvenli su ve sanitasyon, temel sağlık hizmetleri, barınakların rehabilitasyonu, koruma, eğitim ve geçim kaynakları desteği bulunmaktadır. Yerinden edilmiş ve geri dönen aileler, hem acil ihtiyaçlarını karşılayacak hem de dönüş bölgelerindeki temel hizmetleri yeniden tesis edecek desteğe ihtiyaç duymaktadır.
+  - kind: priorities
+    kicker: MÜDAHALE ODAĞI
+    title: Temel Müdahale Öncelikleri
+    text: Müdahale öncelikleri; hayat kurtarıcı yardımın sürdürülmesi, güvenli ve onurlu geri dönüşlerin desteklenmesi, temel hizmetlerin ve su sistemlerinin rehabilitasyonu, gıda güvenliği ve geçim kaynaklarının güçlendirilmesi ve geri dönenler ile yerinden edilmiş aileleri kabul eden topluluklarda koruma ve sağlık desteğinin genişletilmesidir.
+  note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
+en:
+  country_name: Syria
+  title: Syria — Humanitarian Situation Overview
+  summary: Syria remains extremely fragile after years of conflict, economic deterioration, infrastructure damage and repeated shocks. Although returns have increased, millions of people remain internally displaced and many return to communities where housing,…
+  figures:
+  - value: 15.6M
+    label: People requiring humanitarian assistance
+  - value: 7.2M
+    label: People facing acute food insecurity
+  - value: 5.54M
+    label: Internally displaced people
+  - value: 10M+
+    label: People lacking access to safe water
+  sections:
+  - kind: context
+    kicker: CURRENT CONTEXT
+    title: Situation Overview
+    text: Syria remains extremely fragile after years of conflict, economic deterioration, infrastructure damage and repeated shocks. Although returns have increased, millions of people remain internally displaced and many return to communities where housing, livelihoods and basic services have been severely damaged. Food insecurity, limited access to safe water, poverty and pressure on health and protection services continue to drive substantial humanitarian needs.
+  - kind: needs
+    kicker: HUMANITARIAN NEEDS
+    title: Priority Humanitarian Needs
+    text: Priority needs include food assistance, safe water and sanitation, essential healthcare, shelter rehabilitation, protection, education and livelihood support. Displaced and returning families require assistance that addresses both immediate needs and the restoration of basic services in areas of return.
+  - kind: priorities
+    kicker: RESPONSE FOCUS
+    title: Key Response Priorities
+    text: Response priorities include sustaining lifesaving assistance while supporting safe and dignified returns, rehabilitating essential services and water systems, strengthening food security and livelihoods, and expanding protection and health support in communities receiving returnees and displaced families.
+  note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
+ar:
+  country_name: سوريا
+  title: سوريا — نظرة عامة على الوضع الإنساني
+  summary: لا تزال سوريا تعاني من هشاشة شديدة بعد سنوات من النزاع والتدهور الاقتصادي والأضرار الواسعة في البنية التحتية والصدمات المتكررة. وعلى الرغم من ازدياد حركة العودة، لا يزال ملايين الأشخاص نازحين داخليًا، ويعود كثيرون إلى مجتمعات تضررت فيها المساكن وسبل العيش…
+  figures:
+  - value: 15.6M
+    label: أشخاص بحاجة إلى مساعدات إنسانية
+  - value: 7.2M
+    label: أشخاص يواجهون انعدام الأمن الغذائي الحاد
+  - value: 5.54M
+    label: نازحون داخليًا
+  - value: 10M+
+    label: أشخاص يفتقرون إلى الوصول إلى مياه آمنة
+  sections:
+  - kind: context
+    kicker: السياق الحالي
+    title: نظرة عامة على الوضع
+    text: لا تزال سوريا تعاني من هشاشة شديدة بعد سنوات من النزاع والتدهور الاقتصادي والأضرار الواسعة في البنية التحتية والصدمات المتكررة. وعلى الرغم من ازدياد حركة العودة، لا يزال ملايين الأشخاص نازحين داخليًا، ويعود كثيرون إلى مجتمعات تضررت فيها المساكن وسبل العيش والخدمات الأساسية بصورة كبيرة. ويواصل انعدام الأمن الغذائي ومحدودية الوصول إلى المياه الآمنة والفقر والضغط على خدمات الصحة والحماية دفع الاحتياجات الإنسانية إلى مستويات مرتفعة.
+  - kind: needs
+    kicker: الاحتياجات الإنسانية
+    title: الاحتياجات الإنسانية ذات الأولوية
+    text: تشمل الاحتياجات ذات الأولوية المساعدات الغذائية، والمياه الآمنة والصرف الصحي، والرعاية الصحية الأساسية، وإعادة تأهيل المساكن، والحماية، والتعليم، ودعم سبل العيش. وتحتاج الأسر النازحة والعائدة إلى مساعدة تجمع بين تلبية الاحتياجات الفورية واستعادة الخدمات الأساسية في مناطق العودة.
+  - kind: priorities
+    kicker: أولويات الاستجابة
+    title: أولويات الاستجابة الرئيسية
+    text: تشمل أولويات الاستجابة استمرار المساعدات المنقذة للحياة مع دعم العودة الآمنة والكريمة، وإعادة تأهيل الخدمات الأساسية وشبكات المياه، وتعزيز الأمن الغذائي وسبل العيش، وتوسيع خدمات الحماية والصحة في المجتمعات التي تستقبل العائدين والأسر النازحة.
+  note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.

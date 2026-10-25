@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% import '_m.html' as m %}
+{% block title %}{{ t.nav[cat] }}{% endblock %}
+{% block description %}{{ t.desc[cat] }}{% endblock %}
+{% block content %}
+{{ m.page_hero(t.nav[cat], t.desc[cat], t.nav.reports, None, '/' ~ lang ~ '/reports/', t.nav.reports) }}
+<section class="sec">
+  <div class="container">
+    {% if items %}
+    <div class="grid g3">{% for r in items %}{{ m.report_card(r, t, lang) }}{% endfor %}</div>
+    {% else %}
+    {{ m.empty(t, cat) }}
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

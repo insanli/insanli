@@ -1,0 +1,97 @@
+# Bangladesh — Humanitarian Situation Overview
+# category: country | sectoral | needs | emergency  — decides which menu the report appears in.
+# Texts for each language are under tr / en / ar.
+
+category: country
+country: bangladesh
+period: 2026-09
+updated: '2026-10-05'
+image: /img/countries/bangladesh.jpg
+pdf: ''
+sources:
+- UN OCHA
+- WFP
+- WHO
+- UNICEF
+order: 6
+tr:
+  country_name: Bangladeş
+  title: Bangladeş — İnsani Durum Genel Görünümü
+  summary: Bangladeş, başta Cox’s Bazar ve Bhasan Char olmak üzere yaklaşık 1,2 milyon Rohingya mülteciye ev sahipliği yapmaya devam etmekte ve bu durum dünyanın en büyük ve en uzun süreli mülteci krizlerinden birini oluşturmaktadır. Mülteciler insani yardıma büyük…
+  figures:
+  - value: 1.2M
+    label: Bangladeş’teki Rohingya mülteciler
+  - value: 249.8K
+    label: Rohingya mülteci haneleri
+  - value: 153.6K
+    label: Biyometrik olarak kayıt altına alınan yeni gelenler
+  - value: 100%
+    label: Gıda güvensizliği yaşadığı değerlendirilen Rohingya mülteciler
+  sections:
+  - kind: context
+    kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
+    text: Bangladeş, başta Cox’s Bazar ve Bhasan Char olmak üzere yaklaşık 1,2 milyon Rohingya mülteciye ev sahipliği yapmaya devam etmekte ve bu durum dünyanın en büyük ve en uzun süreli mülteci krizlerinden birini oluşturmaktadır. Mülteciler insani yardıma büyük ölçüde bağımlı olmaya devam ederken kalıcı gıda güvensizliği, koruma riskleri, aşırı kalabalık, sınırlı geçim imkânları ve sağlık, beslenme, su ve sanitasyon hizmetleri üzerindeki baskıyla karşı karşıyadır. Finansman açıkları, temel yardımın ve halk sağlığı işlevlerinin sürekliliğini giderek daha fazla tehdit etmektedir.
+  - kind: needs
+    kicker: İNSANİ İHTİYAÇLAR
+    title: Öncelikli İnsani İhtiyaçlar
+    text: Öncelikli ihtiyaçlar arasında yeterli gıda ve beslenme desteği, temel sağlık hizmetleri, güvenli su ve sanitasyon, barınakların bakımı, koruma hizmetleri, eğitim ve çocuklar ile diğer kırılgan gruplara destek bulunmaktadır. Yoğun nüfuslu kamplarda hastalık sürveyansının ve acil durum hazırlığının sürdürülmesi de kritik önemdedir.
+  - kind: priorities
+    kicker: MÜDAHALE ODAĞI
+    title: Temel Müdahale Öncelikleri
+    text: Müdahale öncelikleri; ihtiyaca dayalı gıda yardımının sürdürülmesi, temel sağlık ve beslenme hizmetlerinin korunması, güvenli su ve sanitasyon sistemlerinin devam ettirilmesi, koruma ve eğitimin güçlendirilmesi ve muson, siklon ve hastalık salgını risklerine karşı hazırlığın sağlanmasıdır. Yaşam koşullarının daha da kötüleşmesini önlemek için sürekli uluslararası finansman hayati önem taşımaktadır.
+  note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
+en:
+  country_name: Bangladesh
+  title: Bangladesh — Humanitarian Situation Overview
+  summary: Bangladesh continues to host nearly 1.2 million Rohingya refugees, primarily in Cox’s Bazar and Bhasan Char, in one of the world’s largest and most protracted refugee situations. Refugees remain highly dependent on humanitarian assistance and face persistent…
+  figures:
+  - value: 1.2M
+    label: Rohingya refugees in Bangladesh
+  - value: 249.8K
+    label: Rohingya refugee households
+  - value: 153.6K
+    label: Biometrically identified new arrivals
+  - value: 100%
+    label: Rohingya refugees assessed as food insecure
+  sections:
+  - kind: context
+    kicker: CURRENT CONTEXT
+    title: Situation Overview
+    text: Bangladesh continues to host nearly 1.2 million Rohingya refugees, primarily in Cox’s Bazar and Bhasan Char, in one of the world’s largest and most protracted refugee situations. Refugees remain highly dependent on humanitarian assistance and face persistent food insecurity, protection risks, overcrowding, limited livelihood opportunities and pressure on health, nutrition, water and sanitation services. Funding shortfalls are increasingly threatening the continuity of essential assistance and public-health functions.
+  - kind: needs
+    kicker: HUMANITARIAN NEEDS
+    title: Priority Humanitarian Needs
+    text: Priority needs include adequate food and nutrition assistance, essential healthcare, safe water and sanitation, shelter maintenance, protection services, education and support for children and other vulnerable groups. Maintaining disease surveillance and emergency preparedness is also critical in the densely populated camps.
+  - kind: priorities
+    kicker: RESPONSE FOCUS
+    title: Key Response Priorities
+    text: Response priorities include sustaining needs-based food assistance, protecting essential health and nutrition services, maintaining safe water and sanitation systems, strengthening protection and education, and ensuring preparedness for monsoon, cyclone and disease-outbreak risks. Continued international funding is essential to prevent further deterioration in living conditions.
+  note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
+ar:
+  country_name: بنغلاديش
+  title: بنغلادش — نظرة عامة على الوضع الإنساني
+  summary: تواصل بنغلادش استضافة ما يقارب 1.2 مليون لاجئ من الروهينغا، يتركزون بصورة رئيسية في كوكس بازار وبهاسان شار، في واحدة من أكبر وأطول حالات اللجوء في العالم. ولا يزال اللاجئون يعتمدون بدرجة كبيرة على المساعدات الإنسانية ويواجهون انعدامًا مستمرًا للأمن الغذائي…
+  figures:
+  - value: 1.2M
+    label: لاجئو الروهينغا في بنغلادش
+  - value: 249.8K
+    label: أسر لاجئة من الروهينغا
+  - value: 153.6K
+    label: وافدون جدد تم التعرف عليهم بيومتريًا
+  - value: 100%
+    label: لاجئو الروهينغا الذين تم تقييمهم على أنهم يعانون من انعدام الأمن الغذائي
+  sections:
+  - kind: context
+    kicker: السياق الحالي
+    title: نظرة عامة على الوضع
+    text: تواصل بنغلادش استضافة ما يقارب 1.2 مليون لاجئ من الروهينغا، يتركزون بصورة رئيسية في كوكس بازار وبهاسان شار، في واحدة من أكبر وأطول حالات اللجوء في العالم. ولا يزال اللاجئون يعتمدون بدرجة كبيرة على المساعدات الإنسانية ويواجهون انعدامًا مستمرًا للأمن الغذائي ومخاطر الحماية والاكتظاظ ومحدودية فرص كسب العيش والضغط على خدمات الصحة والتغذية والمياه والصرف الصحي. كما تهدد فجوات التمويل بصورة متزايدة استمرارية المساعدات الأساسية ووظائف الصحة العامة.
+  - kind: needs
+    kicker: الاحتياجات الإنسانية
+    title: الاحتياجات الإنسانية ذات الأولوية
+    text: تشمل الاحتياجات ذات الأولوية المساعدات الغذائية والتغذوية الكافية، والرعاية الصحية الأساسية، والمياه الآمنة والصرف الصحي، وصيانة المآوي، وخدمات الحماية، والتعليم، ودعم الأطفال والفئات الأكثر هشاشة. كما يعد الحفاظ على مراقبة الأمراض والاستعداد للطوارئ أمرًا بالغ الأهمية في المخيمات ذات الكثافة السكانية العالية.
+  - kind: priorities
+    kicker: أولويات الاستجابة
+    title: أولويات الاستجابة الرئيسية
+    text: تشمل أولويات الاستجابة استمرار المساعدات الغذائية القائمة على مستوى الاحتياج، وحماية خدمات الصحة والتغذية الأساسية، والحفاظ على أنظمة المياه الآمنة والصرف الصحي، وتعزيز الحماية والتعليم، وضمان الاستعداد لمخاطر الرياح الموسمية والأعاصير وتفشي الأمراض. ويظل استمرار التمويل الدولي ضروريًا لمنع مزيد من التدهور في الظروف المعيشية.
+  note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.

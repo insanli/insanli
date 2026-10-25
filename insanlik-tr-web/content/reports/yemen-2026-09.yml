@@ -1,0 +1,97 @@
+# Yemen — Humanitarian Situation Overview
+# category: country | sectoral | needs | emergency  — decides which menu the report appears in.
+# Texts for each language are under tr / en / ar.
+
+category: country
+country: yemen
+period: 2026-09
+updated: '2026-10-05'
+image: /img/countries/yemen.jpg
+pdf: ''
+sources:
+- UN OCHA
+- WFP
+- WHO
+- UNICEF
+order: 4
+tr:
+  country_name: Yemen
+  title: Yemen — İnsani Durum Genel Görünümü
+  summary: Yemen’deki insani kriz; yeniden yoğunlaşan çatışmalar, yeni yerinden edilmeler, derinleşen gıda güvensizliği, ekonomik gerileme ve temel hizmetler üzerindeki devam eden baskı nedeniyle ciddi biçimde kötüleşmiştir. Milyonlarca kişi hâlâ yerinden edilmiş…
+  figures:
+  - value: 22M
+    label: Birbiriyle bağlantılı insani baskılarla karşı karşıya olan kişiler
+  - value: 5.2M
+    label: Ülke içinde yerinden edilmiş kişiler
+  - value: 18.3M
+    label: Akut gıda güvensizliği yaşayan kişiler
+  - value: 2.2M
+    label: Akut yetersiz beslenme yaşayan beş yaş altı çocuklar
+  sections:
+  - kind: context
+    kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
+    text: Yemen’deki insani kriz; yeniden yoğunlaşan çatışmalar, yeni yerinden edilmeler, derinleşen gıda güvensizliği, ekonomik gerileme ve temel hizmetler üzerindeki devam eden baskı nedeniyle ciddi biçimde kötüleşmiştir. Milyonlarca kişi hâlâ yerinden edilmiş durumda ve insani yardıma büyük ölçüde bağımlıdır. Pazarlar, ticaret ve insani erişimdeki aksaklıklar kırılgan aileler üzerindeki riskleri artırmaktadır. Yetersiz beslenme ve hastalık salgınları da zaten kırılgan olan sağlık sistemi üzerindeki baskıyı artırmaya devam etmektedir.
+  - kind: needs
+    kicker: İNSANİ İHTİYAÇLAR
+    title: Öncelikli İnsani İhtiyaçlar
+    text: Öncelikli ihtiyaçlar arasında acil gıda ve beslenme desteği, güvenli içme suyu ve sanitasyon, temel sağlık hizmetleri, barınma ve yeni yerinden edilmiş ve kırılgan aileler için temel yardım malzemeleri bulunmaktadır. Çocuklar, yerinden edilmiş haneler ve yeniden başlayan çatışmalardan etkilenen topluluklar özel öncelik gerektirmektedir.
+  - kind: priorities
+    kicker: MÜDAHALE ODAĞI
+    title: Temel Müdahale Öncelikleri
+    text: Acil öncelikler; gıda ve beslenme yardımının ölçeklendirilmesi, yeni yerinden edilmiş ailelere barınma ve temel malzeme desteği sağlanması, güvenli su ve sağlık hizmetlerine erişimin sürdürülmesi ve insani erişim ile tedarik yollarının korunmasıdır. Yerinden edilme ve ihtiyaçlar değişmeye devam ederken yardım esnek kalmalıdır.
+  note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
+en:
+  country_name: Yemen
+  title: Yemen — Humanitarian Situation Overview
+  summary: Yemen’s humanitarian crisis has sharply deteriorated amid renewed fighting, new displacement, deepening food insecurity, economic decline and continued pressure on essential services. Millions of people remain displaced and highly dependent on humanitarian…
+  figures:
+  - value: 22M
+    label: People facing compounding humanitarian pressures
+  - value: 5.2M
+    label: Internally displaced people
+  - value: 18.3M
+    label: People facing acute food insecurity
+  - value: 2.2M
+    label: Children under five acutely malnourished
+  sections:
+  - kind: context
+    kicker: CURRENT CONTEXT
+    title: Situation Overview
+    text: Yemen’s humanitarian crisis has sharply deteriorated amid renewed fighting, new displacement, deepening food insecurity, economic decline and continued pressure on essential services. Millions of people remain displaced and highly dependent on humanitarian assistance, while disruptions to markets, trade and humanitarian access are increasing risks for vulnerable families. Malnutrition and disease outbreaks continue to place additional strain on an already fragile health system.
+  - kind: needs
+    kicker: HUMANITARIAN NEEDS
+    title: Priority Humanitarian Needs
+    text: Priority needs include emergency food and nutrition assistance, safe drinking water and sanitation, essential healthcare, shelter and basic relief items for newly displaced and vulnerable families. Children, displaced households and communities affected by renewed fighting require particular attention.
+  - kind: priorities
+    kicker: RESPONSE FOCUS
+    title: Key Response Priorities
+    text: Immediate priorities include scaling up food and nutrition assistance, supporting newly displaced families with shelter and essential items, maintaining access to safe water and healthcare, and protecting humanitarian access and supply routes. Assistance should remain flexible as displacement and needs continue to evolve.
+  note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
+ar:
+  country_name: اليمن
+  title: اليمن — نظرة عامة على الوضع الإنساني
+  summary: تدهورت الأزمة الإنسانية في اليمن بصورة حادة مع تجدد القتال ووقوع موجات نزوح جديدة وتفاقم انعدام الأمن الغذائي والتراجع الاقتصادي واستمرار الضغط على الخدمات الأساسية. ولا يزال ملايين الأشخاص نازحين ويعتمدون بدرجة كبيرة على المساعدات الإنسانية، فيما تؤدي…
+  figures:
+  - value: 22M
+    label: أشخاص يواجهون ضغوطًا إنسانية متداخلة
+  - value: 5.2M
+    label: نازحون داخليًا
+  - value: 18.3M
+    label: أشخاص يواجهون انعدام الأمن الغذائي الحاد
+  - value: 2.2M
+    label: أطفال دون الخامسة يعانون من سوء التغذية الحاد
+  sections:
+  - kind: context
+    kicker: السياق الحالي
+    title: نظرة عامة على الوضع
+    text: تدهورت الأزمة الإنسانية في اليمن بصورة حادة مع تجدد القتال ووقوع موجات نزوح جديدة وتفاقم انعدام الأمن الغذائي والتراجع الاقتصادي واستمرار الضغط على الخدمات الأساسية. ولا يزال ملايين الأشخاص نازحين ويعتمدون بدرجة كبيرة على المساعدات الإنسانية، فيما تؤدي الاضطرابات في الأسواق والتجارة والوصول الإنساني إلى زيادة المخاطر على الأسر الأكثر هشاشة. كما يواصل سوء التغذية وتفشي الأمراض فرض ضغوط إضافية على نظام صحي هش أصلًا.
+  - kind: needs
+    kicker: الاحتياجات الإنسانية
+    title: الاحتياجات الإنسانية ذات الأولوية
+    text: تشمل الاحتياجات ذات الأولوية المساعدات الغذائية والتغذوية الطارئة، ومياه الشرب الآمنة وخدمات الصرف الصحي، والرعاية الصحية الأساسية، والمأوى ومواد الإغاثة الأساسية للأسر النازحة حديثًا والأكثر هشاشة. ويحتاج الأطفال والأسر النازحة والمجتمعات المتأثرة بتجدد القتال إلى اهتمام خاص.
+  - kind: priorities
+    kicker: أولويات الاستجابة
+    title: أولويات الاستجابة الرئيسية
+    text: تشمل الأولويات الفورية توسيع نطاق المساعدات الغذائية والتغذوية، ودعم الأسر النازحة حديثًا بالمأوى والمواد الأساسية، والحفاظ على الوصول إلى المياه الآمنة والرعاية الصحية، وحماية الوصول الإنساني ومسارات الإمداد. وينبغي أن تبقى الاستجابة مرنة مع استمرار تغير أنماط النزوح والاحتياجات.
+  note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.

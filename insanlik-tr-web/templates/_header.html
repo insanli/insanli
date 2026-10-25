@@ -1,0 +1,26 @@
+{% import '_m.html' as m %}
+{% macro site_header(lang, langs, alt, T, S, items, label) %}
+<header class="hdr shdr" id="top">
+  <div class="shdr-in">
+    <a class="logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
+    <nav class="mainnav snav{% if items|selectattr('text')|list %} roomy{% endif %}" id="mainnav" aria-label="{{ label }}">
+      <ul>
+        {% for it in items %}
+        <li{% if it.text %} class="has-drop"{% endif %}>
+          <a class="snav-top" href="{{ it.url }}"{% if it.ext %} target="_blank" rel="noopener"{% endif %}{% if it.current %} aria-current="page"{% endif %}>{{ it.title }}{% if it.ext %} {{ m.icon('external', 'ext') }}{% endif %}{% if it.text %} {{ m.icon('chev', 'chev') }}{% endif %}</a>
+          {% if it.text %}<div class="snav-drop"><a href="{{ it.url }}"><span>{{ it.text }}</span>{{ m.icon('arrow', 'flip') }}</a></div>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="mob-langs">{% for l in langs %}<a href="{{ alt[l] }}" lang="{{ l }}" class="{{ 'on' if l == lang }}">{{ T[l].lang_name }}</a>{% endfor %}</div>
+    </nav>
+    <div class="shdr-actions">
+      <div class="lang-menu">
+        <button type="button" class="lang-btn" aria-haspopup="true" aria-label="Language">{{ m.icon('globe') }}<span>{{ lang|upper }}</span>{{ m.icon('chev', 'chev') }}</button>
+        <div class="lang-drop">{% for l in langs %}<a href="{{ alt[l] }}" hreflang="{{ l }}" lang="{{ l }}" class="{{ 'on' if l == lang }}"{% if l == lang %} aria-current="true"{% endif %}>{{ T[l].lang_name }}</a>{% endfor %}</div>
+      </div>
+      <button class="sq menu-btn" type="button" aria-controls="mainnav" aria-expanded="false" aria-label="Menu">{{ m.icon('menu', 'i-open') }}{{ m.icon('x', 'i-close') }}</button>
+    </div>
+  </div>
+</header>
+{% endmacro %}

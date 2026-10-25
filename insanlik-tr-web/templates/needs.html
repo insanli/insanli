@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% import '_m.html' as m %}
+{% block title %}{{ t.nav.needs }}{% endblock %}
+{% block description %}{{ t.desc.needs }}{% endblock %}
+{% block content %}
+{{ m.page_hero(t.nav.needs, t.desc.needs, t.nav.reports, None, '/' ~ lang ~ '/reports/', t.nav.reports) }}
+<section class="sec">
+  <div class="container">
+    {% if items %}
+    <div class="grid g3" style="margin-bottom:60px">{% for r in items %}{{ m.report_card(r, t, lang) }}{% endfor %}</div>
+    {% endif %}
+    {% if country_reports %}
+    <nav class="jump">{% for r in country_reports %}<a href="#{{ r.country }}">{{ r.country_name }}</a>{% endfor %}</nav>
+    {% for r in country_reports %}
+    {% set needs = r.sections|selectattr('kind', 'equalto', 'needs')|first %}
+    {% set prio = r.sections|selectattr('kind', 'equalto', 'priorities')|first %}
+    <article class="need-row" id="{{ r.country }}">
+      <div class="need-head{{ ' has-img' if r.image }}"{% if r.image %} style="--bg:url('{{ r.image }}')"{% endif %}>
+        <h2>{{ r.country_name }}</h2>
+        <span>{{ t.period }}: {{ r.period|period(lang) }}</span>
+      </div>
+      <div class="need-cols">
+        {% if needs %}<div><h3 class="bar-title">{{ needs.title }}</h3><p>{{ needs.text }}</p></div>{% endif %}
+        {% if prio %}<div><h3 class="bar-title">{{ prio.title }}</h3><p>{{ prio.text }}</p></div>{% endif %}
+      </div>
+      <p class="need-foot"><a class="btn btn-outline btn-sm" href="{{ r.url }}">{{ t.read }} {{ m.icon('arrow', 'flip') }}</a>
+        {% if r.country %}<a class="btn btn-primary btn-sm" href="/{{ lang }}/areas/{{ r.country }}/">{{ t.country_projects }}</a>{% endif %}</p>
+    </article>
+    {% endfor %}
+    {% elif not items %}
+    {{ m.empty(t, 'needs') }}
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

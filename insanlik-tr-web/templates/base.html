@@ -1,0 +1,72 @@
+{% import '_m.html' as m %}
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ dir }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if false %}{% block title %}{% endblock %}{% block description %}{% endblock %}{% endif %}
+{% set page_title = self.title()|trim %}
+{% set page_desc = self.description()|trim or t.landing.text %}
+<title>{% if page_title %}{{ page_title }} | {% endif %}{{ S.site_name }}</title>
+<meta name="description" content="{{ page_desc }}">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l }}" href="{{ S.url }}{{ alt[l] }}">
+{% endfor %}
+<meta property="og:title" content="{{ page_title or S.site_name }}">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:image" content="{{ S.url }}{{ S.landing_image }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{% if dir == 'rtl' %}
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+{% else %}
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+{% endif %}
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/main.js" defer></script>
+</head>
+<body class="{% block body_class %}{% endblock %}">
+<a class="skip" href="#main">{{ t.skip }}</a>
+{% block header %}
+{% import '_header.html' as h %}
+{% set items = [dict(title=t.nav.about, url=S.main_site ~ '/' ~ lang ~ '/about/', ext=True)] %}
+{% for c in cats %}{% set _ = items.append(dict(title=t.nav[c], url='/' ~ lang ~ '/reports/' ~ c ~ '/', current=(ref == 'reports/' ~ c or (r is defined and r.category == c)))) %}{% endfor %}
+{{ h.site_header(lang, langs, alt, T, S, items, t.nav.reports) }}
+{% endblock %}
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+{% block footer %}
+<footer class="ftr">
+  <div class="container ftr-grid">
+    <div class="ftr-about">
+      <h3>{{ S.full_name }}</h3>
+      <p>{{ t.reports_intro }}</p>
+      <a class="ftr-site" href="{{ S.main_site }}/{{ lang }}/" target="_blank" rel="noopener">{{ m.icon('external') }} {{ t.main_site }}</a>
+    </div>
+    <div>
+      <h3>{{ t.nav.reports }}</h3>
+      <ul>{% for c in cats %}<li><a href="/{{ lang }}/reports/{{ c }}/">{{ t.nav[c] }}</a></li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h3>{{ t.nav.country }}</h3>
+      <ul>{% for r in reports if r.category == 'country' %}<li><a href="{{ r.url }}">{{ r.country_name }}</a></li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h3>{{ t.nav.projects }}</h3>
+      <ul>
+        <li><a href="/{{ lang }}/projects/">{{ t.nav.projects }}</a></li>
+        <li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
+        <li><a href="https://wa.me/{{ contact.whatsapp }}" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ftr-bottom"><div class="container">© {{ S.full_name }} · {{ t.rights }}</div></div>
+</footer>
+{% endblock %}
+<div class="tip" role="status" hidden><strong></strong><span></span></div>
+</body>
+</html>

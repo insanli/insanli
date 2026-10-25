@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ default }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İnsanlık Eli</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l }}" href="/{{ l }}/">
+{% endfor %}
+<script>
+(function () {
+  var langs = {{ langs|tojson }}, pick = '{{ default }}';
+  try {
+    var saved = localStorage.getItem('lang');
+    if (saved && langs.indexOf(saved) > -1) { pick = saved; }
+    else {
+      var prefs = navigator.languages || [navigator.language || ''];
+      for (var i = 0; i < prefs.length; i++) { var c = String(prefs[i]).slice(0, 2).toLowerCase(); if (langs.indexOf(c) > -1) { pick = c; break; } }
+    }
+  } catch (e) {}
+  location.replace('/' + pick + '/');
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=/{{ default }}/"></noscript>
+</head>
+<body>{% for l in langs %}<p><a href="/{{ l }}/">{{ T[l].lang_name }}</a></p>{% endfor %}</body>
+</html>

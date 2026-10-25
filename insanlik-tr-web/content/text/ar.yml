@@ -1,0 +1,77 @@
+# Texts for the العربية version. Change the text after the colon; keep the indentation.
+
+lang_name: العربية
+brand: İnsanlık Eli
+skip: تجاوز إلى المحتوى
+menu: القائمة
+close: إغلاق
+rights: جميع الحقوق محفوظة.
+landing:
+  kicker: جمعية يد الإنسانية للإغاثة والتضامن
+  title: المعرفة والشراكة في العمل الإنساني
+  text: تصفّحوا تقاريرنا عن المناطق التي نعمل فيها ومشاريعنا الجاهزة للشراكة.
+  reports: التقارير
+  reports_text: تقارير إقليمية وتحليلات للاحتياجات وبيانات
+  projects: المشاريع
+  projects_text: مشاريع إنسانية جاهزة للتمويل
+nav:
+  reports: التقارير
+  projects: المشاريع
+  about: من نحن
+  country: التقارير الإقليمية والقُطرية
+  sectoral: التحليلات القطاعية
+  needs: الاحتياجات والأولويات الإنسانية
+  emergency: الطوارئ والاستجابة
+  data: البيانات والرسوم البيانية
+desc:
+  about: تعرّفوا على جمعية يد الإنسانية في موقعنا الرئيسي.
+  country: الوضع الإنساني وأحدث الأرقام في الدول التي نعمل فيها.
+  sectoral: تحليلات لقطاعات مثل الغذاء والمياه والصحة والتعليم والمأوى.
+  needs: الاحتياجات الإنسانية ذات الأولوية وأولويات الاستجابة في كل دولة.
+  emergency: حالات الطوارئ واستجابتنا لها.
+  data: عملنا والوضع الإنساني بالأرقام.
+reports_intro: تقارير عن الوضع الإنساني والاحتياجات وعملنا في المناطق التي ننشط فيها.
+period: فترة التقرير
+updated: آخر تحديث
+sources: المصادر
+read: اقرأ التقرير
+latest: أحدث التقارير
+all: عرض الكل
+empty: لم تُنشر تقارير في هذا القسم بعد.
+key_figures: أرقام رئيسية
+country_projects: المشاريع في هذه الدولة
+download: تحميل PDF
+external: يفتح في نافذة جديدة
+needs_title: الاحتياجات ذات الأولوية
+priorities_title: أولويات الاستجابة
+chart_people: عدد الأشخاص الذين وصلنا إليهم حسب الدولة
+chart_interventions: عدد التدخلات حسب الدولة
+people: شخص
+interventions: تدخل
+show_table: عرض كجدول
+col_country: الدولة
+col_people: الأشخاص الذين وصلنا إليهم
+col_interventions: التدخلات
+situation_figures: 'الوضع الإنساني: أرقام رئيسية حسب الدولة'
+data_source: 'المصدر: بيانات يد الإنسانية الميدانية'
+situation_source: 'المصدر: التقارير القُطرية (UN OCHA، WFP، WHO، UNICEF)'
+main_site: الموقع الرئيسي
+home: الرئيسية
+
+# Top bar on the Projects pages. "page" = which page the item opens.
+projects_nav:
+- title: مناطق العمل
+  text: الأنشطة القُطرية والإقليمية والميدانية
+  page: areas
+- title: مجالات العمل
+  text: الغذاء والصحة والمأوى والتعليم والمياه والإصحاح
+  page: projects
+- title: المساعدات الموسمية
+  text: رمضان والأضاحي ومساعدات الشتاء والمناسبات الخاصة
+  page: seasonal
+- title: دعم الأيتام
+  text: الكفالة والتعليم والاحتياجات الأساسية وحماية الأطفال
+  page: orphan-sponsorship
+- title: التدخلات الطارئة
+  text: ''
+  page: quick-funding

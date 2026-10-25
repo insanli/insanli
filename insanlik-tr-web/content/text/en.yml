@@ -1,0 +1,77 @@
+# Texts for the English version. Change the text after the colon; keep the indentation.
+
+lang_name: English
+brand: İnsanlık Eli
+skip: Skip to content
+menu: Menu
+close: Close
+rights: All rights reserved.
+landing:
+  kicker: İnsanlık Eli · Humanity Hand Aid & Solidarity Association
+  title: Knowledge and partnership for humanitarian action
+  text: Explore our reports on the regions where we work and our projects ready for partnership.
+  reports: Reports
+  reports_text: Regional reports, needs analyses and data
+  projects: Projects
+  projects_text: Humanitarian projects ready for funding
+nav:
+  reports: Reports
+  projects: Projects
+  about: About Us
+  country: Regional & Country Reports
+  sectoral: Sectoral Analyses
+  needs: Humanitarian Needs & Priorities
+  emergency: Emergencies & Response
+  data: Data & Visualizations
+desc:
+  about: Get to know İnsanlık Eli on our main website.
+  country: The humanitarian situation and latest figures in the countries where we work.
+  sectoral: Analyses of sectors such as food, water, health, education and shelter.
+  needs: Priority humanitarian needs and response priorities, country by country.
+  emergency: Emergencies and our response to them.
+  data: Our work and the humanitarian situation in numbers.
+reports_intro: Reports on the humanitarian situation, needs and our work in the regions where we operate.
+period: Reporting Period
+updated: Last Updated
+sources: Sources
+read: Read report
+latest: Latest Reports
+all: View all
+empty: No reports have been published in this section yet.
+key_figures: Key Figures
+country_projects: Projects in this country
+download: Download PDF
+external: Opens in a new tab
+needs_title: Priority Needs
+priorities_title: Response Priorities
+chart_people: People reached by country
+chart_interventions: Interventions by country
+people: people
+interventions: interventions
+show_table: Show as table
+col_country: Country
+col_people: People reached
+col_interventions: Interventions
+situation_figures: 'Humanitarian situation: key figures by country'
+data_source: 'Source: İnsanlık Eli field data'
+situation_source: 'Source: country reports (UN OCHA, WFP, WHO, UNICEF)'
+main_site: Main website
+home: Home
+
+# Top bar on the Projects pages. "page" = which page the item opens.
+projects_nav:
+- title: Areas of Operation
+  text: Country, regional and field activities
+  page: areas
+- title: Fields of Work
+  text: Food, health, shelter, education, water and sanitation
+  page: projects
+- title: Seasonal Aid
+  text: Ramadan, Qurbani, winter aid and special occasions
+  page: seasonal
+- title: Orphan Support
+  text: Sponsorship, education, basic needs and child protection
+  page: orphan-sponsorship
+- title: Emergency Response
+  text: ''
+  page: quick-funding

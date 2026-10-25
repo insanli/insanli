@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% import '_m.html' as m %}
+{% block title %}{{ r.title }}{% endblock %}
+{% block description %}{{ r.summary }}{% endblock %}
+{% block content %}
+{{ m.page_hero(r.title, None, t.nav[r.category], r.image, '/' ~ lang ~ '/reports/' ~ r.category ~ '/', t.nav[r.category]) }}
+
+<section class="stats-strip">
+  <div class="container stats-grid">
+    <div class="st"><span class="small-label">{{ t.period }}</span><strong>{{ r.period|period(lang) }}</strong></div>
+    <div class="st"><span class="small-label">{{ t.updated }}</span><strong>{{ r.updated|date(lang) }}</strong></div>
+    <div class="st"><span class="small-label">{{ t.sources }}</span><strong>{{ r.sources|join(' · ') }}</strong></div>
+  </div>
+</section>
+
+{% if r.figures %}
+<section class="band band-flat">
+  <div class="container band-inner">
+    <div class="sec-head light center"><span class="kicker">{{ t.key_figures }}</span></div>
+    <div class="band-box">
+      {% for f in r.figures %}<div class="band-stat"><strong>{{ f.value }}</strong><span>{{ f.label }}</span></div>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="sec">
+  <div class="container detail">
+    <article>
+      {% for s in r.sections %}
+      <div class="situ">
+        {% if s.kicker %}<span class="kicker">{{ s.kicker }}</span>{% endif %}
+        <h2 class="bar-title h3">{{ s.title }}</h2>
+        {% for para in (s.text or '').split('\n\n') %}<p class="text-lg">{{ para }}</p>{% endfor %}
+      </div>
+      {% endfor %}
+      {% if r.note %}<p class="muted small">{{ r.note }}</p>{% endif %}
+    </article>
+    <aside class="side">
+      <div class="side-box">
+        <h2 class="h4">{{ r.country_name or t.nav[r.category] }}</h2>
+        <div class="btn-col">
+          {% if r.pdf %}<a class="btn btn-gold" href="{{ r.pdf }}" target="_blank" rel="noopener">{{ m.icon('download') }} {{ t.download }}</a>{% endif %}
+          {% if r.country %}<a class="btn btn-primary" href="/{{ lang }}/areas/{{ r.country }}/">{{ m.icon('grid') }} {{ t.country_projects }}</a>{% endif %}
+          <a class="btn btn-ghost" href="mailto:{{ contact.email }}?subject={{ r.title|urlencode }}">{{ m.icon('mail') }} {{ contact.email }}</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% if more %}
+<section class="sec sec-soft">
+  <div class="container">
+    {{ m.heading(t.nav[r.category]) }}
+    <div class="grid g3">{% for x in more %}{{ m.report_card(x, t, lang) }}{% endfor %}</div>
+    <p class="center"><a class="btn btn-primary" href="/{{ lang }}/reports/{{ r.category }}/">{{ t.all }}</a></p>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

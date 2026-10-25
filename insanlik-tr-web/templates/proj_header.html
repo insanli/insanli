@@ -1,0 +1,4 @@
+{% import '_header.html' as h %}
+{% set items = [] %}
+{% for it in t.projects_nav %}{% set _ = items.append(dict(title=it.title, url='/' ~ lang ~ '/' ~ it.page ~ '/', text=it.text, current=(section == it.page))) %}{% endfor %}
+{{ h.site_header(lang, langs, alt, T, S, items, t.nav.projects) }}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% import '_m.html' as m %}
+{% block body_class %}is-landing{% endblock %}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block content %}
+<section class="landing" style="--bg:url('{{ S.landing_image }}')">
+  <div class="landing-top container">
+    <a class="landing-logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}-white.png" alt="{{ S.full_name }}" width="652" height="247"></a>
+    <nav class="landing-langs" aria-label="Language">
+      {% for l in langs %}<a href="{{ alt[l] }}" hreflang="{{ l }}" lang="{{ l }}" class="{{ 'on' if l == lang }}"{% if l == lang %} aria-current="true"{% endif %}>{{ T[l].lang_name }}</a>{% endfor %}
+    </nav>
+  </div>
+  <div class="container landing-body">
+    <span class="kicker light">{{ t.landing.kicker }}</span>
+    <h1>{{ t.landing.title }}</h1>
+    <span class="bar gold" aria-hidden="true"></span>
+    <p class="lead">{{ t.landing.text }}</p>
+    <div class="bigbtns" dir="ltr">
+      <a class="bigbtn" dir="{{ dir }}" href="/{{ lang }}/projects/" style="--bg:url('{{ S.projects_image }}')">
+        <span class="bigbtn-icon">{{ m.icon('grid') }}</span>
+        <span class="bigbtn-title">{{ t.landing.projects }}</span>
+        <span class="bigbtn-text">{{ t.landing.projects_text }}</span>
+        <span class="bigbtn-go">{{ m.icon('arrow', 'flip') }}</span>
+      </a>
+      <a class="bigbtn" dir="{{ dir }}" href="/{{ lang }}/reports/" style="--bg:url('{{ S.reports_image }}')">
+        <span class="bigbtn-icon">{{ m.icon('file') }}</span>
+        <span class="bigbtn-title">{{ t.landing.reports }}</span>
+        <span class="bigbtn-text">{{ t.landing.reports_text }}</span>
+        <span class="bigbtn-go">{{ m.icon('arrow', 'flip') }}</span>
+      </a>
+    </div>
+  </div>
+  <div class="landing-foot container">
+    <a href="{{ S.main_site }}/{{ lang }}/" target="_blank" rel="noopener">{{ m.icon('external') }} {{ t.main_site }}</a>
+    <span>© {{ S.full_name }}</span>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% import '_m.html' as m %}
+{% block title %}{{ t.nav.data }}{% endblock %}
+{% block description %}{{ t.desc.data }}{% endblock %}
+{% block content %}
+{{ m.page_hero(t.nav.data, t.desc.data, t.nav.reports, None, '/' ~ lang ~ '/reports/', t.nav.reports) }}
+
+{% if imp.kpis %}
+<section class="band band-flat">
+  <div class="container band-inner">
+    <div class="sec-head light center"><span class="kicker">{{ imp.snapshot.kicker }}</span><h2 class="sec-title">{{ imp.snapshot.title }}</h2><span class="bar light"></span></div>
+    <div class="band-box">{% for k in imp.kpis %}<div class="band-stat"><strong>{{ k.value|loc(lang) }}</strong><span>{{ k.label }}</span></div>{% endfor %}</div>
+    <p class="band-meta"><span>{{ t.data_source }}, {{ S.get('impact_year', 2026) }}</span></p>
+  </div>
+</section>
+{% endif %}
+
+{% if imp.by_country %}
+<section class="sec">
+  <div class="container">
+    {{ m.heading(imp.reach.title, imp.reach.kicker) }}
+    <div class="charts">
+      <figure class="chart">
+        <figcaption><h3>{{ t.chart_people }}</h3></figcaption>
+        {{ m.bars(imp.by_country, 'people', 'country', t, lang, t.people) }}
+      </figure>
+      <figure class="chart">
+        <figcaption><h3>{{ t.chart_interventions }}</h3></figcaption>
+        {{ m.bars(imp.by_country, 'interventions', 'country', t, lang, t.interventions) }}
+      </figure>
+    </div>
+    <details class="tbl-toggle">
+      <summary>{{ t.show_table }}</summary>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>{{ t.col_country }}</th><th>{{ t.col_people }}</th><th>{{ t.col_interventions }}</th></tr></thead>
+        <tbody>{% for r in imp.by_country|sort(attribute='people', reverse=True) %}<tr><td>{{ r.country }}</td><td class="num">{{ r.people|num(lang) }}</td><td class="num">{{ r.interventions }}</td></tr>{% endfor %}</tbody>
+      </table></div>
+    </details>
+    <p class="muted small">{{ t.data_source }}</p>
+  </div>
+</section>
+{% endif %}
+
+{% if imp.outputs %}
+<section class="sec sec-soft">
+  <div class="container">
+    {{ m.heading(imp.outputs_head.title, imp.outputs_head.kicker) }}
+    <div class="outputs">{% for o in imp.outputs %}<div class="output"><strong>{{ o.value|loc(lang) }}</strong><span>{{ o.label }}</span></div>{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+
+{% if country_reports %}
+<section class="sec">
+  <div class="container">
+    {{ m.heading(t.situation_figures, t.nav.country) }}
+    <div class="figs-grid">
+      {% for r in country_reports %}
+      <a class="figs-card" href="{{ r.url }}">
+        <h3>{{ r.country_name }} <small>{{ r.period|period(lang) }}</small></h3>
+        <dl>{% for f in r.figures %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="muted small">{{ t.situation_source }}</p>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

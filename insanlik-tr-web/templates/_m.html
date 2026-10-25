@@ -1,0 +1,85 @@
+{% set ICONS = {
+  'chev': '<path d="m6 9 6 6 6-6"/>',
+  'arrow': '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+  'menu': '<path d="M4 6h16M4 12h16M4 18h16"/>',
+  'x': '<path d="M18 6 6 18M6 6l12 12"/>',
+  'globe': '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/>',
+  'layers': '<path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/>',
+  'target': '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+  'alert': '<path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/>',
+  'chart': '<path d="M3 3v18h18"/><path d="M8 17V11M13 17V7M18 17v-4"/>',
+  'info': '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
+  'file': '<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M16 13H8M16 17H8M10 9H8"/>',
+  'grid': '<rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/>',
+  'external': '<path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
+  'download': '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/>',
+  'calendar': '<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+  'mail': '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+  'chat': '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
+} %}
+{% set CAT_ICONS = {'about': 'info', 'country': 'globe', 'sectoral': 'layers', 'needs': 'target', 'emergency': 'alert', 'data': 'chart'} %}
+
+{% macro icon(name, cls='') -%}
+<svg class="icon {{ cls }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ ICONS.get(name, ICONS['file'])|safe }}</svg>
+{%- endmacro %}
+
+{% macro heading(title, eyebrow=None, text=None, align='center') -%}
+<div class="sec-head {{ align }}">
+  {% if eyebrow %}<span class="kicker">{{ eyebrow }}</span>{% endif %}
+  <h2 class="sec-title">{{ title }}</h2>
+  <span class="bar" aria-hidden="true"></span>
+  {% if text %}<p>{{ text }}</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro page_hero(title, text=None, eyebrow=None, image=None, back=None, back_label=None) -%}
+<section class="phero {{ 'has-img' if image }}"{% if image %} style="--bg:url('{{ image }}')"{% endif %}>
+  <div class="container">
+    {% if back %}<a class="crumb" href="{{ back }}">{{ icon('arrow', 'back') }} {{ back_label }}</a>{% endif %}
+    {% if eyebrow %}<span class="kicker light">{{ eyebrow }}</span>{% endif %}
+    <h1>{{ title }}</h1>
+    <span class="bar gold" aria-hidden="true"></span>
+    {% if text %}<p class="lead">{{ text }}</p>{% endif %}
+  </div>
+</section>
+{%- endmacro %}
+
+{% macro report_card(r, t, lang) -%}
+<a class="rcard" href="{{ r.url }}">
+  <div class="rcard-media {{ 'has-img' if r.image }}"{% if r.image %} style="--bg:url('{{ r.image }}')"{% endif %}>
+    {% if not r.image %}{{ icon(CAT_ICONS.get(r.category, 'file')) }}{% endif %}
+    <span class="pcard-tag">{{ t.nav[r.category] }}</span>
+  </div>
+  <div class="rcard-body">
+    {% if r.country_name %}<span class="pcard-code">{{ r.country_name }}</span>{% endif %}
+    <h3 class="bar-title">{{ r.title }}</h3>
+    <p class="meta">{{ icon('calendar') }} {{ t.period }}: {{ r.period|period(lang) }}</p>
+    {% if r.figures %}
+    <div class="rcard-figs">
+      {% for f in r.figures[:2] %}<div><strong>{{ f.value }}</strong><span>{{ f.label }}</span></div>{% endfor %}
+    </div>
+    {% endif %}
+    <span class="rcard-go">{{ t.read }} {{ icon('arrow', 'flip') }}</span>
+  </div>
+</a>
+{%- endmacro %}
+
+{% macro empty(t, cat) -%}
+<div class="empty-box">
+  {{ icon(CAT_ICONS.get(cat, 'file')) }}
+  <p>{{ t.empty }}</p>
+</div>
+{%- endmacro %}
+
+{% macro bars(rows, key, label_key, t, lang, unit) -%}
+{% set mx = (rows|map(attribute=key)|max) or 1 %}
+<ol class="hbars">
+  {% for r in rows|sort(attribute=key, reverse=True) %}
+  <li class="hbar" tabindex="0" data-tip-label="{{ r[label_key] }}" data-tip-value="{{ r[key]|num(lang) }} {{ unit }}">
+    <span class="hbar-label">{{ r[label_key] }}</span>
+    <span class="hbar-track"><span class="hbar-fill" style="width: max(3px, {{ (100 * r[key] / mx)|round(2) }}%)"></span></span>
+    <span class="hbar-value">{{ r[key]|num(lang) }}</span>
+  </li>
+  {% endfor %}
+</ol>
+{%- endmacro %}

@@ -1,0 +1,77 @@
+# Texts for the Türkçe version. Change the text after the colon; keep the indentation.
+
+lang_name: Türkçe
+brand: İnsanlık Eli
+skip: İçeriğe geç
+menu: Menü
+close: Kapat
+rights: Tüm hakları saklıdır.
+landing:
+  kicker: İnsanlık Eli Yardımlaşma ve Dayanışma Derneği
+  title: İnsani yardımda bilgi ve iş birliği
+  text: Faaliyet gösterdiğimiz bölgelere ait raporlara ve iş birliğine hazır projelerimize buradan ulaşabilirsiniz.
+  reports: Raporlar
+  reports_text: Bölge raporları, ihtiyaç analizleri ve veriler
+  projects: Projeler
+  projects_text: Finansmana hazır insani yardım projeleri
+nav:
+  reports: Raporlar
+  projects: Projeler
+  about: Biz Kimiz?
+  country: Bölge ve Ülke Raporları
+  sectoral: Sektörel Analizler
+  needs: İhtiyaçlar ve Öncelikler
+  emergency: Acil Durum ve Müdahale
+  data: Veri ve Görselleştirmeler
+desc:
+  about: İnsanlık Eli Derneği'ni ana web sitemizde tanıyın.
+  country: Faaliyet gösterdiğimiz ülkelerdeki insani durum ve güncel veriler.
+  sectoral: Gıda, su, sağlık, eğitim ve barınma gibi sektörlere yönelik analizler.
+  needs: Ülke bazında öncelikli insani ihtiyaçlar ve müdahale öncelikleri.
+  emergency: Acil durumlar ve bu durumlara verdiğimiz müdahaleler.
+  data: Çalışmalarımızın ve insani durumun rakamlarla görünümü.
+reports_intro: Faaliyet gösterdiğimiz bölgelerdeki insani duruma, ihtiyaçlara ve çalışmalarımıza dair raporlar.
+period: Raporlama Dönemi
+updated: Son Güncelleme
+sources: Kaynaklar
+read: Raporu oku
+latest: Son Raporlar
+all: Tümünü gör
+empty: Bu bölümde henüz yayınlanmış rapor yok.
+key_figures: Temel Rakamlar
+country_projects: Bu ülkedeki projeler
+download: PDF olarak indir
+external: Yeni sekmede açılır
+needs_title: Öncelikli İhtiyaçlar
+priorities_title: Müdahale Öncelikleri
+chart_people: Ülkelere göre ulaşılan kişi sayısı
+chart_interventions: Ülkelere göre müdahale sayısı
+people: kişi
+interventions: müdahale
+show_table: Tablo olarak göster
+col_country: Ülke
+col_people: Ulaşılan kişi
+col_interventions: Müdahale
+situation_figures: 'Ülkelerde insani durum: temel rakamlar'
+data_source: 'Kaynak: İnsanlık Eli saha verileri'
+situation_source: 'Kaynak: ülke raporları (UN OCHA, WFP, WHO, UNICEF)'
+main_site: Ana web sitesi
+home: Ana sayfa
+
+# Top bar on the Projects pages. "page" = which page the item opens.
+projects_nav:
+- title: Faaliyet Bölgeleri
+  text: Ülke, bölge ve saha faaliyetleri
+  page: areas
+- title: Faaliyet Alanları
+  text: Gıda, sağlık, barınma, eğitim, su ve sanitasyon
+  page: projects
+- title: Dönemsel Yardımlar
+  text: Ramazan, Kurban, kış yardımları ve özel dönemler
+  page: seasonal
+- title: Yetim Destek
+  text: Sponsorluk, eğitim, temel ihtiyaçlar ve çocukların korunması
+  page: orphan-sponsorship
+- title: Acil Müdahaleler
+  text: ''
+  page: quick-funding

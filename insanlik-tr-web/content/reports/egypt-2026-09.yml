@@ -1,0 +1,97 @@
+# Egypt — Humanitarian Situation Overview
+# category: country | sectoral | needs | emergency  — decides which menu the report appears in.
+# Texts for each language are under tr / en / ar.
+
+category: country
+country: egypt
+period: 2026-09
+updated: '2026-10-05'
+image: /img/countries/egypt.jpg
+pdf: ''
+sources:
+- UN OCHA
+- WFP
+- WHO
+- UNICEF
+order: 3
+tr:
+  country_name: Mısır
+  title: Mısır — İnsani Durum Genel Görünümü
+  summary: Mısır, krizin başlangıcından bu yana Gazze’den ülkeye gelen Filistinliler için önemli bir insani yardım ve sağlık müdahale merkezi olmaya devam etmektedir. Bu nüfus; tıbbi tahliye edilen hastaları, onlara eşlik eden aile üyelerini ve diğer yerinden edilmiş…
+  figures:
+  - value: 100K+
+    label: Mısır’da bulunduğu bildirilen yerinden edilmiş Filistinliler
+  - value: 6.6K+
+    label: Mısır’ın kabul ettiği Gazze’den tıbbi tahliye edilen hastalar
+  - value: 9.3K+
+    label: Tıbbi tahliye edilen hastalarla gelen refakatçiler
+  - value: 18.5K+
+    label: Gazze’de hâlâ tıbbi tahliyeye ihtiyaç duyan hastalar
+  sections:
+  - kind: context
+    kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
+    text: Mısır, krizin başlangıcından bu yana Gazze’den ülkeye gelen Filistinliler için önemli bir insani yardım ve sağlık müdahale merkezi olmaya devam etmektedir. Bu nüfus; tıbbi tahliye edilen hastaları, onlara eşlik eden aile üyelerini ve diğer yerinden edilmiş Filistinlileri kapsamaktadır. Birçok kişi uzman sağlık hizmetleri, ilaç, rehabilitasyon, psikososyal destek, geçici barınma ve temel yaşam giderleri konusunda devam eden ihtiyaçlarla karşı karşıyadır. Geri dönüş ve hareket konusundaki belirsizlik de önemli bir koruma sorunu olmaya devam etmektedir.
+  - kind: needs
+    kicker: İNSANİ İHTİYAÇLAR
+    title: Öncelikli İnsani İhtiyaçlar
+    text: Öncelikli ihtiyaçlar arasında tahliye edilen hastalar için uzman tedavi ve rehabilitasyonun sürdürülmesi, ilaç ve yardımcı cihazlar, psikososyal destek, geçici barınma, temel yardım ve refakatçi aile üyelerine destek bulunmaktadır. Çocuklara, engelli bireylere, kronik veya karmaşık sağlık sorunları olan hastalara ve sınırlı mali kaynaklara sahip hanelere özel önem verilmelidir.
+  - kind: priorities
+    kicker: MÜDAHALE ODAĞI
+    title: Temel Müdahale Öncelikleri
+    text: Müdahale öncelikleri; Filistinli hastalar için tedavi ve sevk yollarının sürdürülmesi, tahliye edilen hastaları kabul eden Mısır hastanelerinin ve sağlık personelinin desteklenmesi, rehabilitasyon ve psikososyal hizmetlerin güçlendirilmesi ve Mısır’daki kırılgan Filistinli ailelere hedefli temel yardım sağlanmasıdır. Koordinasyon ayrıca koşullar elverdiğinde güvenli, onurlu ve gönüllü hareketi desteklemelidir.
+  note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
+en:
+  country_name: Egypt
+  title: Egypt — Humanitarian Situation Overview
+  summary: Egypt continues to play a major humanitarian and health-response role for Palestinians from Gaza who have entered the country since the start of the crisis. This population includes medical evacuees, accompanying family members and other displaced…
+  figures:
+  - value: 100K+
+    label: Displaced Palestinians reported in Egypt
+  - value: 6.6K+
+    label: Gaza medical evacuees received by Egypt
+  - value: 9.3K+
+    label: Companions received with medical evacuees
+  - value: 18.5K+
+    label: Patients in Gaza still requiring medical evacuation
+  sections:
+  - kind: context
+    kicker: CURRENT CONTEXT
+    title: Situation Overview
+    text: Egypt continues to play a major humanitarian and health-response role for Palestinians from Gaza who have entered the country since the start of the crisis. This population includes medical evacuees, accompanying family members and other displaced Palestinians. Many face continuing needs related to specialized healthcare, medication, rehabilitation, psychosocial support, accommodation and basic living costs, while uncertainty around return and movement remains a major protection concern.
+  - kind: needs
+    kicker: HUMANITARIAN NEEDS
+    title: Priority Humanitarian Needs
+    text: Priority needs include continued specialized medical treatment and rehabilitation for evacuated patients, medicines and assistive devices, psychosocial support, temporary accommodation, basic assistance and support for accompanying family members. Particular attention is required for children, people with disabilities, patients with chronic or complex conditions and households with limited financial resources.
+  - kind: priorities
+    kicker: RESPONSE FOCUS
+    title: Key Response Priorities
+    text: Response priorities include sustaining treatment and referral pathways for Palestinian patients, supporting Egyptian hospitals and health personnel receiving evacuees, strengthening rehabilitation and psychosocial services, and providing targeted basic assistance to vulnerable Palestinian families in Egypt. Coordination should also support safe, dignified and voluntary movement when conditions allow.
+  note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
+ar:
+  country_name: مصر
+  title: مصر — نظرة عامة على الوضع الإنساني
+  summary: تواصل مصر أداء دور إنساني وصحي رئيسي للفلسطينيين القادمين من قطاع غزة منذ بداية الأزمة. وتشمل هذه الفئة المرضى الذين تم إجلاؤهم طبيًا، وأفراد أسرهم المرافقين، وغيرهم من الفلسطينيين النازحين. ويواجه كثيرون احتياجات مستمرة تتعلق بالرعاية الطبية التخصصية…
+  figures:
+  - value: 100K+
+    label: فلسطينيون نازحون مُبلّغ عن وجودهم في مصر
+  - value: 6.6K+
+    label: مرضى من غزة استقبلتهم مصر للإجلاء الطبي
+  - value: 9.3K+
+    label: مرافقون وصلوا مع حالات الإجلاء الطبي
+  - value: 18.5K+
+    label: مرضى في غزة ما زالوا بحاجة إلى إجلاء طبي
+  sections:
+  - kind: context
+    kicker: السياق الحالي
+    title: نظرة عامة على الوضع
+    text: تواصل مصر أداء دور إنساني وصحي رئيسي للفلسطينيين القادمين من قطاع غزة منذ بداية الأزمة. وتشمل هذه الفئة المرضى الذين تم إجلاؤهم طبيًا، وأفراد أسرهم المرافقين، وغيرهم من الفلسطينيين النازحين. ويواجه كثيرون احتياجات مستمرة تتعلق بالرعاية الطبية التخصصية والأدوية وإعادة التأهيل والدعم النفسي والاجتماعي والسكن وتكاليف المعيشة الأساسية، في ظل استمرار حالة عدم اليقين المرتبطة بالعودة والحركة.
+  - kind: needs
+    kicker: الاحتياجات الإنسانية
+    title: الاحتياجات الإنسانية ذات الأولوية
+    text: تشمل الاحتياجات ذات الأولوية استمرار العلاج الطبي التخصصي وإعادة التأهيل للمرضى الذين تم إجلاؤهم، وتوفير الأدوية والأجهزة المساعدة، والدعم النفسي والاجتماعي، والسكن المؤقت، والمساعدات الأساسية، ودعم أفراد الأسر المرافقين. ويجب إيلاء اهتمام خاص للأطفال والأشخاص ذوي الإعاقة والمرضى الذين يعانون من حالات مزمنة أو معقدة والأسر محدودة الموارد المالية.
+  - kind: priorities
+    kicker: أولويات الاستجابة
+    title: أولويات الاستجابة الرئيسية
+    text: تشمل أولويات الاستجابة الحفاظ على مسارات العلاج والإحالة للمرضى الفلسطينيين، ودعم المستشفيات المصرية والعاملين الصحيين الذين يستقبلون الحالات المحالة، وتعزيز خدمات إعادة التأهيل والدعم النفسي والاجتماعي، وتقديم مساعدات أساسية موجهة للأسر الفلسطينية الأكثر هشاشة في مصر. كما ينبغي أن يدعم التنسيق الحركة الآمنة والكريمة والطوعية عندما تسمح الظروف بذلك.
+  note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.

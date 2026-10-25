@@ -1,0 +1,97 @@
+# Sudan — Humanitarian Situation Overview
+# category: country | sectoral | needs | emergency  — decides which menu the report appears in.
+# Texts for each language are under tr / en / ar.
+
+category: country
+country: sudan
+period: 2026-09
+updated: '2026-10-05'
+image: /img/countries/sudan.jpg
+pdf: ''
+sources:
+- UN OCHA
+- WFP
+- WHO
+- UNICEF
+order: 2
+tr:
+  country_name: Sudan
+  title: Sudan — İnsani Durum Genel Görünümü
+  summary: Sudan, uzun süren çatışmalar, kitlesel yerinden edilme, akut gıda güvensizliği, hastalık salgınları ve temel hizmetlerdeki aksaklıklar nedeniyle dünyanın en ağır insani krizlerinden biriyle karşı karşıya kalmaya devam etmektedir. İnsani ihtiyaçlar son derece…
+  figures:
+  - value: 33.7M
+    label: İnsani yardıma ihtiyaç duyan kişiler
+  - value: 9.1M
+    label: Ülke içinde yerinden edilmiş kişiler
+  - value: 19.5M
+    label: Kriz veya daha ağır düzeyde akut gıda güvensizliği yaşayan kişiler
+  - value: 37%
+    label: Hizmet dışı sağlık tesisleri
+  sections:
+  - kind: context
+    kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
+    text: Sudan, uzun süren çatışmalar, kitlesel yerinden edilme, akut gıda güvensizliği, hastalık salgınları ve temel hizmetlerdeki aksaklıklar nedeniyle dünyanın en ağır insani krizlerinden biriyle karşı karşıya kalmaya devam etmektedir. İnsani ihtiyaçlar son derece yüksek seyrederken, güvensizlik ve erişim kısıtlamaları çatışmadan etkilenen ve ulaşılması zor bölgelerde yardımların ulaştırılmasını sınırlamaktadır. Darfur, Kordofan ve diğer etkilenen bölgelerdeki aileler açlık, sağlık sistemindeki aksaklıklar, güvenli suya erişim ve yetersiz barınma koşulları nedeniyle özellikle ciddi risklerle karşı karşıyadır.
+  - kind: needs
+    kicker: İNSANİ İHTİYAÇLAR
+    title: Öncelikli İnsani İhtiyaçlar
+    text: Öncelikli ihtiyaçlar arasında acil gıda ve beslenme desteği, güvenli içme suyu ve sanitasyon, temel sağlık hizmetleri ve ilaçlar, acil barınma, koruma hizmetleri ve temel gıda dışı malzemeler bulunmaktadır. Yerinden edilmiş aileler, çocuklar ve çatışmadan etkilenen veya ulaşılması zor bölgelerde yaşayan topluluklar sürdürülebilir ve esnek desteğe ihtiyaç duymaktadır.
+  - kind: priorities
+    kicker: MÜDAHALE ODAĞI
+    title: Temel Müdahale Öncelikleri
+    text: Acil müdahale öncelikleri; hayat kurtarıcı gıda ve beslenme desteğinin sürdürülmesi, güvenli suya ve temel sağlık hizmetlerine erişimin yeniden sağlanması, acil barınma ve yardım malzemelerinin temini ve yerinden edilmiş ve kırılgan hanelere yönelik korumanın güçlendirilmesidir. Müdahale, ağır gıda güvensizliği, hastalık salgınları ve ciddi erişim kısıtlamaları bulunan bölgelere öncelik vermelidir.
+  note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
+en:
+  country_name: Sudan
+  title: Sudan — Humanitarian Situation Overview
+  summary: Sudan continues to face one of the world’s most severe humanitarian crises, driven by prolonged conflict, mass displacement, acute food insecurity, disease outbreaks and the disruption of essential services. Humanitarian needs remain exceptionally high, while…
+  figures:
+  - value: 33.7M
+    label: People requiring humanitarian assistance
+  - value: 9.1M
+    label: Internally displaced people
+  - value: 19.5M
+    label: People facing Crisis or worse acute food insecurity
+  - value: 37%
+    label: Health facilities non-functional
+  sections:
+  - kind: context
+    kicker: CURRENT CONTEXT
+    title: Situation Overview
+    text: Sudan continues to face one of the world’s most severe humanitarian crises, driven by prolonged conflict, mass displacement, acute food insecurity, disease outbreaks and the disruption of essential services. Humanitarian needs remain exceptionally high, while insecurity and access constraints continue to limit assistance in conflict-affected and hard-to-reach areas. Families in Darfur, Kordofan and other affected regions face particularly severe risks linked to hunger, health-system disruption, unsafe water and inadequate shelter.
+  - kind: needs
+    kicker: HUMANITARIAN NEEDS
+    title: Priority Humanitarian Needs
+    text: Priority needs include emergency food and nutrition assistance, safe drinking water and sanitation, essential healthcare and medicines, emergency shelter, protection services and basic non-food items. Displaced families, children and communities in conflict-affected and hard-to-reach areas require sustained and flexible assistance.
+  - kind: priorities
+    kicker: RESPONSE FOCUS
+    title: Key Response Priorities
+    text: Immediate priorities are to sustain lifesaving food and nutrition support, restore access to safe water and essential health services, provide emergency shelter and relief items, and strengthen protection for displaced and vulnerable households. Response efforts should prioritize areas facing severe food insecurity, disease outbreaks and major access constraints.
+  note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
+ar:
+  country_name: السودان
+  title: السودان — نظرة عامة على الوضع الإنساني
+  summary: لا يزال السودان يواجه واحدة من أشد الأزمات الإنسانية في العالم، نتيجة النزاع الممتد والنزوح الواسع وانعدام الأمن الغذائي الحاد وتفشي الأمراض وتعطل الخدمات الأساسية. وتبقى الاحتياجات الإنسانية مرتفعة بصورة استثنائية، فيما تحدّ الأوضاع الأمنية وصعوبات الوصول من…
+  figures:
+  - value: 33.7M
+    label: أشخاص بحاجة إلى مساعدات إنسانية
+  - value: 9.1M
+    label: نازحون داخليًا
+  - value: 19.5M
+    label: أشخاص يواجهون انعدام أمن غذائي حاد بمستوى الأزمة أو أسوأ
+  - value: 37%
+    label: مرافق صحية خارج الخدمة
+  sections:
+  - kind: context
+    kicker: السياق الحالي
+    title: نظرة عامة على الوضع
+    text: لا يزال السودان يواجه واحدة من أشد الأزمات الإنسانية في العالم، نتيجة النزاع الممتد والنزوح الواسع وانعدام الأمن الغذائي الحاد وتفشي الأمراض وتعطل الخدمات الأساسية. وتبقى الاحتياجات الإنسانية مرتفعة بصورة استثنائية، فيما تحدّ الأوضاع الأمنية وصعوبات الوصول من إيصال المساعدات إلى المناطق المتأثرة بالنزاع والمناطق التي يصعب الوصول إليها. وتواجه الأسر في دارفور وكردفان وغيرها من المناطق المتضررة مخاطر شديدة مرتبطة بالجوع وتعطل النظام الصحي ونقص المياه الآمنة والمأوى غير الملائم.
+  - kind: needs
+    kicker: الاحتياجات الإنسانية
+    title: الاحتياجات الإنسانية ذات الأولوية
+    text: تشمل الاحتياجات ذات الأولوية المساعدات الغذائية والتغذوية الطارئة، ومياه الشرب الآمنة وخدمات الصرف الصحي، والرعاية الصحية الأساسية والأدوية، والمأوى الطارئ، وخدمات الحماية، والمواد غير الغذائية الأساسية. وتحتاج الأسر النازحة والأطفال والمجتمعات في المناطق المتأثرة بالنزاع والتي يصعب الوصول إليها إلى دعم مستمر ومرن.
+  - kind: priorities
+    kicker: أولويات الاستجابة
+    title: أولويات الاستجابة الرئيسية
+    text: تشمل أولويات الاستجابة الفورية استمرار المساعدات المنقذة للحياة في مجالي الغذاء والتغذية، واستعادة الوصول إلى المياه الآمنة والخدمات الصحية الأساسية، وتوفير المأوى الطارئ ومواد الإغاثة، وتعزيز الحماية للأسر النازحة والأكثر هشاشة. وينبغي إعطاء الأولوية للمناطق التي تواجه مستويات شديدة من انعدام الأمن الغذائي وتفشي الأمراض والقيود الكبيرة على الوصول.
+  note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.

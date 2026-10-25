@@ -1,0 +1,97 @@
+# Palestine (Gaza) — Humanitarian Situation Overview
+# category: country | sectoral | needs | emergency  — decides which menu the report appears in.
+# Texts for each language are under tr / en / ar.
+
+category: country
+country: gaza
+period: 2026-09
+updated: '2026-09-30'
+image: /img/countries/gaza.jpg
+pdf: ''
+sources:
+- UN OCHA
+- WFP
+- WHO
+- UNICEF
+order: 1
+tr:
+  country_name: Filistin (Gazze)
+  title: Filistin (Gazze) — İnsani Durum Genel Görünümü
+  summary: Gazze Şeridi'ndeki insani koşullar, geniş çaplı yerinden edilme, sivil altyapıda meydana gelen büyük hasar ve temel hizmetler üzerindeki devam eden baskı nedeniyle ağır seyretmektedir. Aileler yeterli gıdaya, güvenli içme suyuna, sağlık hizmetlerine,…
+  figures:
+  - value: 1.7M
+    label: Yerinden edilmiş kişiler
+  - value: 1.4M
+    label: Kriz veya daha ağır düzeyde akut gıda güvensizliği yaşayan kişiler
+  - value: 19 / 36
+    label: En azından kısmen hizmet veren hastaneler
+  - value: 82%
+    label: Su güvensizliği yaşayan aileler
+  sections:
+  - kind: context
+    kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
+    text: Gazze Şeridi'ndeki insani koşullar, geniş çaplı yerinden edilme, sivil altyapıda meydana gelen büyük hasar ve temel hizmetler üzerindeki devam eden baskı nedeniyle ağır seyretmektedir. Aileler yeterli gıdaya, güvenli içme suyuna, sağlık hizmetlerine, barınmaya ve temel ihtiyaçlara erişimde ciddi zorluklarla karşılaşmaya devam etmektedir. Yerinden edilmiş aileler, birçoğunun kalabalık veya yetersiz koşullarda yaşaması ve insani yardıma büyük ölçüde bağımlı olması nedeniyle özellikle kırılgan durumdadır.
+  - kind: needs
+    kicker: İNSANİ İHTİYAÇLAR
+    title: Öncelikli İnsani İhtiyaçlar
+    text: Öncelikli insani ihtiyaçlar arasında güvenli içme suyuna sürdürülebilir erişim, yeterli gıda yardımı, temel sağlık hizmetleri, acil barınma ve temel gıda dışı malzemeler yer almaktadır. Temel hizmetlere sınırlı erişim ve kötüleşen yaşam koşulları nedeniyle yerinden edilmiş ailelere ve diğer kırılgan hanelere özel önem verilmesi gerekmektedir.
+  - kind: priorities
+    kicker: MÜDAHALE ODAĞI
+    title: Temel Müdahale Öncelikleri
+    text: Acil müdahale öncelikleri; güvenli içme suyu, gıda yardımı, acil barınma ve temel gıda dışı malzemelerin sağlanması ile temel sağlık hizmetlerine erişimin desteklenmesini kapsamaktadır. İnsani yardım, sahada hızla değişen ihtiyaçlara yanıt verebilecek esnekliği korurken yerinden edilmiş ve kırılgan hanelere öncelik vermelidir.
+  note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
+en:
+  country_name: Palestine (Gaza)
+  title: Palestine (Gaza) — Humanitarian Situation Overview
+  summary: Humanitarian conditions in the Gaza Strip remain severe, with large-scale displacement, extensive damage to civilian infrastructure, and continued pressure on essential services. Families continue to face major challenges in accessing adequate food, safe…
+  figures:
+  - value: 1.7M
+    label: People remain displaced
+  - value: 1.4M
+    label: People facing Crisis or worse acute food insecurity
+  - value: 19 / 36
+    label: Hospitals functioning at least partially
+  - value: 82%
+    label: Families reported as water insecure
+  sections:
+  - kind: context
+    kicker: CURRENT CONTEXT
+    title: Situation Overview
+    text: Humanitarian conditions in the Gaza Strip remain severe, with large-scale displacement, extensive damage to civilian infrastructure, and continued pressure on essential services. Families continue to face major challenges in accessing adequate food, safe drinking water, healthcare, shelter, and basic necessities. Displaced families remain particularly vulnerable, with many living in overcrowded or inadequate conditions and relying heavily on sustained humanitarian assistance.
+  - kind: needs
+    kicker: HUMANITARIAN NEEDS
+    title: Priority Humanitarian Needs
+    text: Priority humanitarian needs include sustained access to safe drinking water, adequate food assistance, essential healthcare, emergency shelter, and basic non-food items. Particular attention remains necessary for displaced families and other vulnerable households facing limited access to essential services and deteriorating living conditions.
+  - kind: priorities
+    kicker: RESPONSE FOCUS
+    title: Key Response Priorities
+    text: Immediate response priorities include the provision of safe drinking water, food assistance, emergency shelter and essential non-food items, and access to essential healthcare services. Humanitarian assistance should prioritize vulnerable and displaced households while remaining responsive to rapidly changing needs on the ground.
+  note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
+ar:
+  country_name: فلسطين (غزة)
+  title: فلسطين (غزة) — نظرة عامة على الوضع الإنساني
+  summary: لا تزال الأوضاع الإنسانية في قطاع غزة بالغة الصعوبة، في ظل النزوح واسع النطاق والأضرار الكبيرة التي لحقت بالبنية التحتية المدنية واستمرار الضغط على الخدمات الأساسية. وتواجه الأسر تحديات كبيرة في الحصول على الغذاء الكافي ومياه الشرب الآمنة والرعاية الصحية…
+  figures:
+  - value: 1.7M
+    label: أشخاص لا يزالون نازحين
+  - value: 1.4M
+    label: أشخاص يواجهون انعدام أمن غذائي حاد بمستوى الأزمة أو أسوأ
+  - value: 19 / 36
+    label: مستشفيات تعمل بشكل كلي أو جزئي
+  - value: 82%
+    label: أسر تعاني من انعدام الأمن المائي
+  sections:
+  - kind: context
+    kicker: السياق الحالي
+    title: نظرة عامة على الوضع
+    text: لا تزال الأوضاع الإنسانية في قطاع غزة بالغة الصعوبة، في ظل النزوح واسع النطاق والأضرار الكبيرة التي لحقت بالبنية التحتية المدنية واستمرار الضغط على الخدمات الأساسية. وتواجه الأسر تحديات كبيرة في الحصول على الغذاء الكافي ومياه الشرب الآمنة والرعاية الصحية والمأوى والاحتياجات الأساسية. وتبقى الأسر النازحة من بين الفئات الأكثر هشاشة، حيث يعيش الكثير منها في ظروف مكتظة أو غير ملائمة ويعتمد بشكل كبير على استمرار المساعدات الإنسانية.
+  - kind: needs
+    kicker: الاحتياجات الإنسانية
+    title: الاحتياجات الإنسانية ذات الأولوية
+    text: تشمل الاحتياجات الإنسانية ذات الأولوية ضمان الوصول المستمر إلى مياه الشرب الآمنة، والمساعدات الغذائية الكافية، والرعاية الصحية الأساسية، والمأوى الطارئ، والمواد غير الغذائية الأساسية. كما تتطلب الأسر النازحة وغيرها من الأسر الأكثر هشاشة اهتمامًا خاصًا في ظل محدودية الوصول إلى الخدمات الأساسية وتدهور الظروف المعيشية.
+  - kind: priorities
+    kicker: أولويات الاستجابة
+    title: أولويات الاستجابة الرئيسية
+    text: تشمل أولويات الاستجابة العاجلة توفير مياه الشرب الآمنة، والمساعدات الغذائية، والمأوى الطارئ والمواد غير الغذائية الأساسية، وضمان الوصول إلى خدمات الرعاية الصحية الأساسية. وينبغي أن تعطي الاستجابة الإنسانية الأولوية للأسر النازحة والأكثر هشاشة، مع الحفاظ على المرونة للاستجابة للاحتياجات المتغيرة بسرعة على أرض الواقع.
+  note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.
