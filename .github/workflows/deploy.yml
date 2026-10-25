@@ -22,8 +22,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: python build.py
+      - name: Build
+        run: |
+          dir=$(dirname "$(find . -name build.py -not -path './.git/*' | head -1)")
+          echo "Website folder: $dir"
+          pip install Jinja2==3.1.6 PyYAML==6.0.3
+          cd "$dir" && python build.py
+          if [ "$dir" != "." ]; then mv _site "$GITHUB_WORKSPACE/_site"; fi
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
@@ -36,4 +41,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4r
+        uses: actions/deploy-pages@v4
