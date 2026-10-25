@@ -6,7 +6,7 @@
 {% block content %}
 <section class="landing" style="--bg:url('{{ S.landing_image }}')">
   <div class="landing-top container">
-    <a class="landing-logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}-white.png" alt="{{ S.full_name }}" width="652" height="247"></a>
+    <a class="landing-logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
     <nav class="landing-langs" aria-label="Language">
       {% for l in langs %}<a href="{{ alt[l] }}" hreflang="{{ l }}" lang="{{ l }}" class="{{ 'on' if l == lang }}"{% if l == lang %} aria-current="true"{% endif %}>{{ T[l].lang_name }}</a>{% endfor %}
     </nav>
