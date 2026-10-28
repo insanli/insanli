@@ -1,7 +1,7 @@
 # Projects shown under the "Kadın ve Çocuk" option on the Tüm Projeler page.
 # Add or remove project codes here.
 projects: [GAZ-P001, GAZ-P003, GAZ-P004, GAZ-P005, GAZ-P007, GAZ-P009, GAZ-P010, GAZ-P012, GAZ-P016, GAZ-P032, GAZ-P033, GAZ-P040,
-           SDN-P005, SDN-P006, SDN-P008, SDN-P011, EGY-P001, EGY-P002, EGY-P004, SYR-P006, YEM-P007, YEM-P009]
+           SDN-P005, SDN-P006, SDN-P008, SDN-P011, EGY-P001, EGY-P002, EGY-P004, SYR-P006, SYR-P008, YEM-P007, YEM-P009]
 label:
   tr: "Kadın ve Çocuk"
   en: "Women & Children"

@@ -653,3 +653,8 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .landing-logo img { background: none; padding: 0; height: 84px; }
 /* Projects top bar: more space between the logo and the menu, and between items */
 @media (min-width: 1281px) { .shdr .snav.roomy { margin-inline-start: 56px; } .shdr .snav.roomy ul { gap: 16px; } }
+/* start page: same white top bar as Projects and Reports */
+.landing { min-height: calc(100svh - 77px); }
+.shdr.no-nav .shdr-actions { margin-inline-start: auto; }
+@media (max-width: 1280px) { .shdr.no-nav .lang-menu { display: block; } .landing { min-height: calc(100svh - 69px); } }
+.ocard-total { border: 2px solid var(--brand); }

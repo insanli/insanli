@@ -170,12 +170,14 @@ def main():
     import hashlib
     ver = {u: hashlib.md5(open(os.path.join(OUT, u.lstrip('/')), 'rb').read()).hexdigest()[:8]
            for u in ['/css/style.css', '/js/main.js'] + ['/img/brand/' + n for n in os.listdir(os.path.join(OUT, 'img', 'brand')) if n.endswith('.png')]}
+    # prices: thousands written with dots ($10.000 instead of $10,000)
+    price = re.compile(r'(?:\$|USD\s?)\d{1,3}(?:,\d{3})+|\d{1,3}(?:,\d{3})+(?=\s?(?:\$|USD))')
     for f in glob.glob(os.path.join(OUT, '**', '*.html'), recursive=True):
         html = open(f, encoding='utf-8').read()
+        html = price.sub(lambda mm: mm.group(0).replace(',', '.'), html)
         new = re.sub(r'(["\'(])(' + '|'.join(re.escape(u) for u in ver) + r')(?=["\')])', lambda mm: mm.group(1) + mm.group(2) + '?v=' + ver[mm.group(2)], html)
-        if new != html:
-            with open(f, 'w', encoding='utf-8') as fh:
-                fh.write(new)
+        with open(f, 'w', encoding='utf-8') as fh:
+            fh.write(new)
     print(f'Built {len(pages)} report pages (+ project pages) into _site/')
 
 

@@ -1,16 +1,10 @@
 {% extends 'base.html' %}
 {% import '_m.html' as m %}
 {% block body_class %}is-landing{% endblock %}
-{% block header %}{% endblock %}
+{% block header %}{% import '_header.html' as h %}{{ h.site_header(lang, langs, alt, T, S, [], '') }}{% endblock %}
 {% block footer %}{% endblock %}
 {% block content %}
 <section class="landing" style="--bg:url('{{ S.landing_image }}')">
-  <div class="landing-top container">
-    <a class="landing-logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
-    <nav class="landing-langs" aria-label="Language">
-      {% for l in langs %}<a href="{{ alt[l] }}" hreflang="{{ l }}" lang="{{ l }}" class="{{ 'on' if l == lang }}"{% if l == lang %} aria-current="true"{% endif %}>{{ T[l].lang_name }}</a>{% endfor %}
-    </nav>
-  </div>
   <div class="container landing-body">
     <span class="kicker light">{{ t.landing.kicker }}</span>
     <h1>{{ t.landing.title }}</h1>

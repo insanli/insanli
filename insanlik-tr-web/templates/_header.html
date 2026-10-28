@@ -1,8 +1,9 @@
 {% import '_m.html' as m %}
 {% macro site_header(lang, langs, alt, T, S, items, label) %}
-<header class="hdr shdr" id="top">
+<header class="hdr shdr{% if not items %} no-nav{% endif %}" id="top">
   <div class="shdr-in">
     <a class="logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
+    {% if items %}
     <nav class="mainnav snav{% if items|selectattr('text')|list %} roomy{% endif %}" id="mainnav" aria-label="{{ label }}">
       <ul>
         {% for it in items %}
@@ -14,12 +15,13 @@
       </ul>
       <div class="mob-langs">{% for l in langs %}<a href="{{ alt[l] }}" lang="{{ l }}" class="{{ 'on' if l == lang }}">{{ T[l].lang_name }}</a>{% endfor %}</div>
     </nav>
+    {% endif %}
     <div class="shdr-actions">
       <div class="lang-menu">
         <button type="button" class="lang-btn" aria-haspopup="true" aria-label="Language">{{ m.icon('globe') }}<span>{{ lang|upper }}</span>{{ m.icon('chev', 'chev') }}</button>
         <div class="lang-drop">{% for l in langs %}<a href="{{ alt[l] }}" hreflang="{{ l }}" lang="{{ l }}" class="{{ 'on' if l == lang }}"{% if l == lang %} aria-current="true"{% endif %}>{{ T[l].lang_name }}</a>{% endfor %}</div>
       </div>
-      <button class="sq menu-btn" type="button" aria-controls="mainnav" aria-expanded="false" aria-label="Menu">{{ m.icon('menu', 'i-open') }}{{ m.icon('x', 'i-close') }}</button>
+      {% if items %}<button class="sq menu-btn" type="button" aria-controls="mainnav" aria-expanded="false" aria-label="Menu">{{ m.icon('menu', 'i-open') }}{{ m.icon('x', 'i-close') }}</button>{% endif %}
     </div>
   </div>
 </header>
