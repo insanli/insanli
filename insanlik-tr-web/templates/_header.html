@@ -4,12 +4,12 @@
   <div class="shdr-in">
     <a class="logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
     {% if items %}
-    <nav class="mainnav snav{% if items|selectattr('text')|list %} roomy{% endif %}" id="mainnav" aria-label="{{ label }}">
+    <nav class="mainnav snav{% if items|selectattr('children')|list %} roomy{% endif %}" id="mainnav" aria-label="{{ label }}">
       <ul>
         {% for it in items %}
-        <li{% if it.text %} class="has-drop"{% endif %}>
-          <a class="snav-top" href="{{ it.url }}"{% if it.ext %} target="_blank" rel="noopener"{% endif %}{% if it.current %} aria-current="page"{% endif %}>{{ it.title }}{% if it.ext %} {{ m.icon('external', 'ext') }}{% endif %}{% if it.text %} {{ m.icon('chev', 'chev') }}{% endif %}</a>
-          {% if it.text %}<div class="snav-drop"><a href="{{ it.url }}"><span>{{ it.text }}</span>{{ m.icon('arrow', 'flip') }}</a></div>{% endif %}
+        <li{% if it.children %} class="has-drop has-sub"{% endif %}>
+          <a class="snav-top" href="{{ it.url }}"{% if it.ext %} target="_blank" rel="noopener"{% endif %}{% if it.current %} aria-current="page"{% endif %}{% if it.children %} aria-haspopup="true" aria-expanded="false"{% endif %}>{{ it.title }}{% if it.ext %} {{ m.icon('external', 'ext') }}{% endif %}{% if it.children %} {{ m.icon('chev', 'chev') }}{% endif %}</a>
+          {% if it.children %}<div class="snav-drop snav-list">{% for c in it.children %}<a href="{{ c.url }}">{{ c.title }}</a>{% endfor %}</div>{% endif %}
         </li>
         {% endfor %}
       </ul>

@@ -14,7 +14,16 @@
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
     d.querySelectorAll('.mainnav a').forEach(function (a) {
-      a.addEventListener('click', function () { d.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded', 'false'); });
+      a.addEventListener('click', function (e) {
+        var li = a.parentElement;
+        if (li.classList.contains('has-sub') && a.classList.contains('snav-top') && window.matchMedia('(max-width: 1280px)').matches) {
+          e.preventDefault();
+          var o = li.classList.toggle('open');
+          a.setAttribute('aria-expanded', o ? 'true' : 'false');
+          return;
+        }
+        d.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded', 'false');
+      });
     });
     d.addEventListener('keydown', function (e) { if (e.key === 'Escape') { d.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded', 'false'); } });
   }

@@ -98,6 +98,12 @@ def main():
         hdr_tpl = env.get_template('proj_header.html')
         WC = read(os.path.join(CONTENT, 'women-children.yml'))
         for l in langs:
+            areas = []
+            ai = os.path.join(OUT, l, 'areas', 'index.html')
+            if os.path.exists(ai):
+                areas = [dict(url=u.replace('/areas//', '/areas/africa/'), title=n.strip()) for u, n in re.findall(
+                    r'<a class="tile[^"]*" href="(/%s/areas/[^"]*)"[^>]*>(?:(?!</a>).)*?<span class="tile-name">([^<]+)</span>' % l,
+                    open(ai, encoding='utf-8').read(), re.S)]
             for f in glob.glob(os.path.join(OUT, l, '**', '*.html'), recursive=True):
                 html = open(f, encoding='utf-8').read()
                 m = re.search(r'<header class="hdr" id="top">.*?</header>', html, re.S)
@@ -107,9 +113,10 @@ def main():
                 alt = {lg: alt.get(lg, f'/{lg}/projects/') for lg in langs}
                 section = os.path.relpath(f, os.path.join(OUT, l)).split(os.sep)[0]
                 section = {'kits': 'quick-funding', 'about': '', 'achievements': ''}.get(section, section)
-                new = hdr_tpl.render(lang=l, t=T[l], T=T, langs=langs, alt=alt, section=section)
+                new = hdr_tpl.render(lang=l, t=T[l], T=T, langs=langs, alt=alt, section=section, areas=areas)
                 html = html[:m.start()] + new + html[m.end():]
                 html = html.replace('/img/brand/logo-ar.png', '/img/brand/logo-en.png')
+                html = html.replace(f'href="/{l}/areas//"', f'href="/{l}/areas/africa/"')  # Africa tile link
                 # same photo banner as the Reports pages
                 html = html.replace('<section class="phero "', f'<section class="phero has-img" style="--bg:url(\'{S.get("projects_image", "")}\')"')
                 if WC.get('wash_label', {}).get(l):

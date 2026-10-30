@@ -658,3 +658,20 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .shdr.no-nav .shdr-actions { margin-inline-start: auto; }
 @media (max-width: 1280px) { .shdr.no-nav .lang-menu { display: block; } .landing { min-height: calc(100svh - 69px); } }
 .ocard-total { border: 2px solid var(--brand); }
+/* Projects menu: only Faaliyet Bölgeleri has a sub-list (regions) */
+.shdr .snav-list { width: 230px; padding: 6px 0; }
+.shdr .snav-list a { display: block; padding: 10px 18px; font-size: .92rem; font-weight: 600; }
+.shdr .snav-list a:first-child { color: var(--brand); border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+@media (max-width: 1280px) {
+  .shdr .snav li.has-sub .snav-top { padding-bottom: 16px; justify-content: space-between; }
+  .shdr .snav li.has-sub .icon.chev { display: inline-block; width: 1.1em; height: 1.1em; opacity: .6; transition: transform .2s; }
+  .shdr .snav li.has-sub.open .icon.chev { transform: rotate(180deg); }
+  .shdr .snav .snav-list { display: none; padding: 0 0 12px; }
+  .shdr .snav li.has-sub.open .snav-list { display: block; }
+  .shdr .snav .snav-list a { padding: 10px 14px; color: var(--ink); font-size: 1rem; font-weight: 600; border: 0; margin: 0; }
+  .shdr .snav .snav-list a:first-child { color: var(--brand); }
+}
+/* cost block with period and breakdown (e.g. SDN-P012) */
+.st-cost .st-split { list-style: none; margin: 12px 0 0; padding: 0; font-size: .86rem; color: var(--muted); }
+.st-cost .st-split li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-top: 1px solid var(--line); }
+.st-cost .st-split strong { font-family: var(--num); font-size: .95rem; color: var(--ink); white-space: nowrap; }
