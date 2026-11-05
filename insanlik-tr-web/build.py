@@ -45,6 +45,21 @@ def fmt_date(value, lang):
     return f'{int(m.group(3))} {MONTHS[lang][int(m.group(2)) - 1]} {m.group(1)}' if m else str(value or '')
 
 
+ARABIC_DIGITS = str.maketrans('0123456789', '٠١٢٣٤٥٦٧٨٩')
+
+
+def localize_prices(html, lang):
+    """$4.50 -> $4,50 ; $2,250 -> $2.250 ; $9870.00 -> $9.870,00 ; Arabic pages get Arabic digits."""
+    def one(m):
+        raw = m.group(2).replace(',', '')
+        whole, _, dec = raw.partition('.')
+        out = f'{int(whole):,}'.replace(',', '.') + (',' + dec if dec else '')
+        if lang == 'ar':
+            out = out.translate(ARABIC_DIGITS)
+        return (m.group(1) or '') + out
+    return re.sub(r'(\$)?(\d[\d,]*(?:\.\d+)?)(?(1)|(?=\s?\$))', one, html)
+
+
 def main():
     S = read(os.path.join(CONTENT, 'settings.yml'))
     langs = S.get('languages', ['tr', 'en', 'ar'])
@@ -181,6 +196,10 @@ def main():
     price = re.compile(r'(?:\$|USD\s?)\d{1,3}(?:,\d{3})+|\d{1,3}(?:,\d{3})+(?=\s?(?:\$|USD))')
     for f in glob.glob(os.path.join(OUT, '**', '*.html'), recursive=True):
         html = open(f, encoding='utf-8').read()
+        rel = os.path.relpath(f, OUT).replace(os.sep, '/')
+        mm = re.match(r'(tr|en|ar)/(quick-funding/gaza/|kits/gaz-)', rel)
+        if mm:
+            html = localize_prices(html, mm.group(1))
         html = price.sub(lambda mm: mm.group(0).replace(',', '.'), html)
         new = re.sub(r'(["\'(])(' + '|'.join(re.escape(u) for u in ver) + r')(?=["\')])', lambda mm: mm.group(1) + mm.group(2) + '?v=' + ver[mm.group(2)], html)
         with open(f, 'w', encoding='utf-8') as fh:
