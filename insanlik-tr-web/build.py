@@ -73,9 +73,9 @@ GAZA_FOOD = [
 
 # Sentence shown under the title of the Gaza quick-funding page (replaces the old sentence)
 HERO_TEXT = {
-    'tr': 'Barınma ve Temel İhtiyaç Malzemeleri, Eğitim ve Toplum Hizmetleri',
-    'en': 'Shelter and Basic Needs Supplies, Education and Community Services',
-    'ar': 'المأوى والمستلزمات الأساسية، التعليم والخدمات المجتمعية',
+    'tr': 'Gıda Güvenliği • Su, Sanitasyon ve Hijyen • Sağlık • Barınma ve Temel İhtiyaç Malzemeleri • Eğitim ve Toplum Hizmetleri',
+    'en': 'Food Security • Water, Sanitation and Hygiene • Health • Shelter and Basic Needs Supplies • Education and Community Services',
+    'ar': 'الأمن الغذائي • المياه والصرف الصحي والنظافة • الصحة • المأوى والمستلزمات الأساسية • التعليم والخدمات المجتمعية',
 }
 
 
