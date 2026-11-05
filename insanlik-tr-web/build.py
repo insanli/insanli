@@ -60,6 +60,41 @@ def localize_prices(html, lang):
     return re.sub(r'(\$)?(\d[\d,]*(?:\.\d+)?)(?(1)|(?=\s?\$))', one, html)
 
 
+# Gaza "Food Security" table: (price now on the site, new price), in the order they appear on the page:
+# unit cost, then "funding from" for GAZ-I001, I002, I003, I004, I005, I006, I007, I071, I072, I073, I074
+GAZA_FOOD = [
+    (4.5, '5.50'), (2250, '2,750'),
+    (220, '245.00'), (1320, '1,470'),
+    (165, '165.00'), (990, '990'),
+    (20, '30.00'), (4000, '6,000'),
+    (2.2, '2.20'), (2200, '2,200'),
+    (33, '47.00'), (3300, '4,700'),
+    (50, '60.00'), (5000, '6,000'),
+    (9870, '10,164.00'), (9870, '10,164'),
+    (39600, '43,560.00'), (39600, '43,560'),
+    (7770, '6,930.00'), (7770, '6,930'),
+    (30600, '29,700.00'), (30600, '29,700'),
+]
+
+
+def override_prices(html, pairs):
+    """Go through the $ amounts in page order. When an amount equals the next expected old price, write the new one."""
+    state = [0]
+
+    def one(m):
+        if state[0] >= len(pairs):
+            return m.group(0)
+        s = m.group(1)
+        v = float(s.replace('.', '') if re.fullmatch(r'\d{1,3}(?:\.\d{3})+', s) else s.replace(',', ''))
+        old, new = pairs[state[0]]
+        if abs(v - old) < 0.001:
+            state[0] += 1
+            return '$' + new
+        return m.group(0)
+    out = re.sub(r'\$(\d[\d,.]*\d|\d)', one, html)
+    return out, state[0]
+
+
 def main():
     S = read(os.path.join(CONTENT, 'settings.yml'))
     langs = S.get('languages', ['tr', 'en', 'ar'])
@@ -199,6 +234,9 @@ def main():
         rel = os.path.relpath(f, OUT).replace(os.sep, '/')
         mm = re.match(r'(tr|en|ar)/(quick-funding/gaza/|kits/gaz-)', rel)
         if mm:
+            if mm.group(2) == 'quick-funding/gaza/':
+                html, n = override_prices(html, GAZA_FOOD)
+                print(f'PRICES {rel}: {n} of {len(GAZA_FOOD)} updated')
             html = localize_prices(html, mm.group(1))
         html = price.sub(lambda mm: mm.group(0).replace(',', '.'), html)
         new = re.sub(r'(["\'(])(' + '|'.join(re.escape(u) for u in ver) + r')(?=["\')])', lambda mm: mm.group(1) + mm.group(2) + '?v=' + ver[mm.group(2)], html)
