@@ -45,17 +45,12 @@ def fmt_date(value, lang):
     return f'{int(m.group(3))} {MONTHS[lang][int(m.group(2)) - 1]} {m.group(1)}' if m else str(value or '')
 
 
-ARABIC_DIGITS = str.maketrans('0123456789', '٠١٢٣٤٥٦٧٨٩')
-
-
 def localize_prices(html, lang):
-    """$4.50 -> $4,50 ; $2,250 -> $2.250 ; $9870.00 -> $9.870,00 ; Arabic pages get Arabic digits."""
+    """$4.50 -> $4,50 ; $2,250 -> $2.250 ; $9870.00 -> $9.870,00 (English digits in every language)."""
     def one(m):
         raw = m.group(2).replace(',', '')
         whole, _, dec = raw.partition('.')
         out = f'{int(whole):,}'.replace(',', '.') + (',' + dec if dec else '')
-        if lang == 'ar':
-            out = out.translate(ARABIC_DIGITS)
         return (m.group(1) or '') + out
     return re.sub(r'(\$)?(\d[\d,]*(?:\.\d+)?)(?(1)|(?=\s?\$))', one, html)
 
