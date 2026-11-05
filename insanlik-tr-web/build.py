@@ -71,6 +71,19 @@ GAZA_FOOD = [
     (30600, '29,700.00'), (30600, '29,700'),
 ]
 
+# Sentence shown under the title of the Gaza quick-funding page (replaces the old sentence)
+HERO_TEXT = {
+    'tr': 'Barınma ve Temel İhtiyaç Malzemeleri, Eğitim ve Toplum Hizmetleri',
+    'en': 'Shelter and Basic Needs Supplies, Education and Community Services',
+    'ar': 'المأوى والمستلزمات الأساسية، التعليم والخدمات المجتمعية',
+}
+
+
+def replace_hero_text(html, lang):
+    """Replace the intro sentence under the page title (the first <p> right after the first </h1>)."""
+    return re.subn(r'(</h1>(?:(?!<h[12][\s>]|<p[\s>]|</section).)*?<p(?:\s[^>]*)?>)[^<]{10,400}(</p>)',
+                   lambda m: m.group(1) + HERO_TEXT[lang] + m.group(2), html, count=1, flags=re.S)
+
 
 def override_prices(html, pairs):
     """Go through the $ amounts in page order. When an amount equals the next expected old price, write the new one."""
@@ -232,6 +245,8 @@ def main():
             if mm.group(2) == 'quick-funding/gaza/':
                 html, n = override_prices(html, GAZA_FOOD)
                 print(f'PRICES {rel}: {n} of {len(GAZA_FOOD)} updated')
+                html, k = replace_hero_text(html, mm.group(1))
+                print(f'HERO {rel}: ' + ('replaced' if k else 'NOT FOUND'))
             html = localize_prices(html, mm.group(1))
         html = price.sub(lambda mm: mm.group(0).replace(',', '.'), html)
         new = re.sub(r'(["\'(])(' + '|'.join(re.escape(u) for u in ver) + r')(?=["\')])', lambda mm: mm.group(1) + mm.group(2) + '?v=' + ver[mm.group(2)], html)
