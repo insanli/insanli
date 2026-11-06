@@ -41,14 +41,13 @@ tr:
     title: Temel Müdahale Öncelikleri
     text: Müdahale öncelikleri; Filistinli hastalar için tedavi ve sevk yollarının sürdürülmesi, tahliye edilen hastaları kabul eden Mısır hastanelerinin ve sağlık personelinin desteklenmesi, rehabilitasyon ve psikososyal hizmetlerin güçlendirilmesi ve Mısır’daki kırılgan Filistinli ailelere hedefli temel yardım sağlanmasıdır. Koordinasyon ayrıca koşullar elverdiğinde güvenli, onurlu ve gönüllü hareketi desteklemelidir.
   - kind: context
-    kicker: FAALİYETLERİMİZ
-    title: Mısır’daki İnsani Yardım Faaliyetlerimiz ve Hizmet Kapasitemiz
-    text: |
-      Mısır’da, savaş ve zorunlu göç nedeniyle ülkelerini terk etmek zorunda kalan Filistinli ve Sudanlı birey ve ailelere yönelik insani yardım ve sosyal destek faaliyetleri yürütmekteyiz. Faaliyetlerimizi, her iki topluluğun ihtiyaç ve önceliklerini gözeterek farklı program alanlarında gerçekleştirmekteyiz.
-  - kind: context
     kicker: KURUMSAL KAPASİTE
     title: Mısır’daki Resmî Temsil, Operasyonel ve Kurumsal Uygulama Kapasitemiz
     text: |
+      Mısır’daki İnsani Yardım Faaliyetlerimiz ve Hizmet Kapasitemiz
+
+      Mısır’da, savaş ve zorunlu göç nedeniyle ülkelerini terk etmek zorunda kalan Filistinli ve Sudanlı birey ve ailelere yönelik insani yardım ve sosyal destek faaliyetleri yürütmekteyiz. Faaliyetlerimizi, her iki topluluğun ihtiyaç ve önceliklerini gözeterek farklı program alanlarında gerçekleştirmekteyiz.
+
       1. Resmî Temsil ve Kurumsal İş Birlikleri
 
       İnsanlık Eli Derneği olarak Mısır’da resmî temsilcimiz bulunmaktadır. Derneğimiz, Mısır’daki faaliyetlerini ilgili mevzuat ve resmî prosedürlere uygun şekilde yürütmektedir. Bu kapsamda, Mısır’daki ilgili resmî kurumlarla protokol, iş birliği ve mutabakat anlaşmaları çerçevesinde faaliyetlerimizi gerçekleştirebilecek kurumsal altyapıya sahibiz.
@@ -284,14 +283,13 @@ en:
     title: Key Response Priorities
     text: Response priorities include sustaining treatment and referral pathways for Palestinian patients, supporting Egyptian hospitals and health personnel receiving evacuees, strengthening rehabilitation and psychosocial services, and providing targeted basic assistance to vulnerable Palestinian families in Egypt. Coordination should also support safe, dignified and voluntary movement when conditions allow.
   - kind: context
-    kicker: OUR ACTIVITIES
-    title: Our Humanitarian Activities and Service Capacity in Egypt
-    text: |
-      In Egypt, we carry out humanitarian aid and social support activities for Palestinian and Sudanese individuals and families who have been forced to leave their countries because of war and forced displacement. We carry out our activities in different programme areas, taking into account the needs and priorities of both communities.
-  - kind: context
     kicker: INSTITUTIONAL CAPACITY
     title: Our Official Representation, Operational and Institutional Implementation Capacity in Egypt
     text: |
+      Our Humanitarian Activities and Service Capacity in Egypt
+
+      In Egypt, we carry out humanitarian aid and social support activities for Palestinian and Sudanese individuals and families who have been forced to leave their countries because of war and forced displacement. We carry out our activities in different programme areas, taking into account the needs and priorities of both communities.
+
       1. Official Representation and Institutional Partnerships
 
       As İnsanlık Eli Association, we have an official representative in Egypt. Our association carries out its activities in Egypt in accordance with the relevant legislation and official procedures. Within this framework, we have the institutional infrastructure to carry out our activities under protocols, cooperation agreements and memoranda of understanding with the relevant official institutions in Egypt.
@@ -527,14 +525,13 @@ ar:
     title: أولويات الاستجابة الرئيسية
     text: تشمل أولويات الاستجابة الحفاظ على مسارات العلاج والإحالة للمرضى الفلسطينيين، ودعم المستشفيات المصرية والعاملين الصحيين الذين يستقبلون الحالات المحالة، وتعزيز خدمات إعادة التأهيل والدعم النفسي والاجتماعي، وتقديم مساعدات أساسية موجهة للأسر الفلسطينية الأكثر هشاشة في مصر. كما ينبغي أن يدعم التنسيق الحركة الآمنة والكريمة والطوعية عندما تسمح الظروف بذلك.
   - kind: context
-    kicker: أنشطتنا
-    title: أنشطتنا الإنسانية وقدرتنا على تقديم الخدمات في مصر
-    text: |
-      ننفّذ في مصر أنشطة إغاثية ودعمًا اجتماعيًا للأفراد والأسر الفلسطينية والسودانية الذين اضطروا إلى مغادرة بلدانهم بسبب الحرب والنزوح القسري. ونُنفّذ أنشطتنا في مجالات برامجية مختلفة، مع مراعاة احتياجات المجتمعين وأولوياتهما.
-  - kind: context
     kicker: القدرة المؤسسية
     title: قدرتنا على التمثيل الرسمي والتنفيذ التشغيلي والمؤسسي في مصر
     text: |
+      أنشطتنا الإنسانية وقدرتنا على تقديم الخدمات في مصر
+
+      ننفّذ في مصر أنشطة إغاثية ودعمًا اجتماعيًا للأفراد والأسر الفلسطينية والسودانية الذين اضطروا إلى مغادرة بلدانهم بسبب الحرب والنزوح القسري. ونُنفّذ أنشطتنا في مجالات برامجية مختلفة، مع مراعاة احتياجات المجتمعين وأولوياتهما.
+
       1. التمثيل الرسمي والتعاون المؤسسي
 
       لدى جمعية إنسانلك إيلي ممثل رسمي في مصر. وتنفّذ الجمعية أنشطتها في مصر وفق التشريعات والإجراءات الرسمية ذات الصلة. وفي هذا الإطار، نمتلك البنية المؤسسية اللازمة لتنفيذ أنشطتنا ضمن بروتوكولات واتفاقيات تعاون ومذكرات تفاهم مع المؤسسات الرسمية المعنية في مصر.
