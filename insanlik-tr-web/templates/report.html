@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% import '_m.html' as m %}
+{% macro toc(r, t, extra, deep) -%}
+{% if r.sections|length > 1 %}<nav class="toc{{ extra }}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}<li><a href="#s{{ loop.index }}">{{ s.toc or s.title }}</a>{% set hs = (s.blocks or [])|selectattr('h')|list %}{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endfor %}</ol></nav>{% endif %}
+{%- endmacro %}
 {% block title %}{{ r.title }}{% endblock %}
 {% block description %}{{ r.summary }}{% endblock %}
 {% block content %}
@@ -7,9 +10,9 @@
 
 <section class="stats-strip">
   <div class="container stats-grid">
-    <div class="st"><span class="small-label">{{ t.period }}</span><strong>{{ r.period|period(lang) }}</strong></div>
+    <div class="st"><span class="small-label">{{ t.period }}</span><strong>{{ r.period_label or r.period|period(lang) }}</strong></div>
     <div class="st"><span class="small-label">{{ t.updated }}</span><strong>{{ r.updated|date(lang) }}</strong></div>
-    <div class="st"><span class="small-label">{{ t.sources }}</span><strong>{{ r.sources|join(' · ') }}</strong></div>
+    {% if r.sources %}<div class="st"><span class="small-label">{{ t.sources }}</span><strong>{{ r.sources|join(' · ') }}</strong></div>{% endif %}
   </div>
 </section>
 
@@ -27,12 +30,27 @@
 <section class="sec">
   <div class="container detail">
     <article>
-      {% set extra = ' toc-mob' %}{% if r.sections|length > 1 %}<nav class="toc{{ extra }}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}<li><a href="#s{{ loop.index }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>{% endif %}
+      {{ toc(r, t, ' toc-mob', false) }}
       {% for s in r.sections %}
       <div class="situ" id="s{{ loop.index }}">
         {% if s.kicker %}<span class="kicker">{{ s.kicker }}</span>{% endif %}
         <h2 class="bar-title h3">{{ s.title }}</h2>
         {% if s.text %}{% for para in s.text.split('\n\n') %}<p class="text-lg">{{ para }}</p>{% endfor %}{% endif %}
+        {% for b in s.blocks or [] %}
+        {% if b.h %}{% if b.level == 2 %}<h4 class="rsub l2" id="{{ b.id }}">{{ b.h }}</h4>{% else %}<h3 class="rsub" id="{{ b.id }}">{{ b.h }}</h3>{% endif %}
+        {% elif b.p %}<p class="text-lg">{{ b.p }}</p>
+        {% elif b.ol %}<ol class="rlist text-lg">{% for li in b.ol %}<li>{{ li }}</li>{% endfor %}</ol>
+        {% elif b.img %}<figure class="rmap"><img src="{{ b.img }}" alt="{{ b.alt }}"{% if b.size %} width="{{ b.size[0] }}" height="{{ b.size[1] }}"{% endif %} loading="lazy"></figure>
+        {% elif b.table %}{% set tb = b.table %}
+        <figure class="rtbl">
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr>{% for hcell in tb.head %}<th>{{ hcell }}</th>{% endfor %}</tr></thead>
+            <tbody>{% for row in tb.rows %}<tr>{% for c in row %}{% if c is string %}<td{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% else %}<td colspan="{{ c[1] }}">{{ c[0] }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
+            {% if tb.foot %}<tfoot><tr>{% for c in tb.foot %}<td{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% endfor %}</tr></tfoot>{% endif %}
+          </table></div>
+        </figure>
+        {% endif %}
+        {% endfor %}
         {% if s.image %}<figure class="rmap"><img src="{{ s.image }}" alt="{{ s.image_alt }}"{% if s.image_size %} width="{{ s.image_size[0] }}" height="{{ s.image_size[1] }}"{% endif %} loading="lazy"></figure>{% endif %}
         {% for tb in s.tables or [] %}
         <figure class="rtbl">
@@ -48,7 +66,7 @@
       {% if r.note %}<p class="muted small">{{ r.note }}</p>{% endif %}
     </article>
     <aside class="side">
-      {% set extra = '' %}{% if r.sections|length > 1 %}<nav class="toc{{ extra }}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}<li><a href="#s{{ loop.index }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>{% endif %}
+      {{ toc(r, t, '', true) }}
       <div class="side-box">
         <h2 class="h4">{{ r.country_name or t.nav[r.category] }}</h2>
         <div class="btn-col">

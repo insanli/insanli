@@ -53,7 +53,7 @@
   <div class="rcard-body">
     {% if r.country_name %}<span class="pcard-code">{{ r.country_name }}</span>{% endif %}
     <h3 class="bar-title">{{ r.title }}</h3>
-    <p class="meta">{{ icon('calendar') }} {{ t.period }}: {{ r.period|period(lang) }}</p>
+    <p class="meta">{{ icon('calendar') }} {{ t.period }}: {{ r.period_label or r.period|period(lang) }}</p>
     {% if r.figures %}
     <div class="rcard-figs">
       {% for f in r.figures[:2] %}<div><strong>{{ f.value }}</strong><span>{{ f.label }}</span></div>{% endfor %}

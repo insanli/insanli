@@ -726,3 +726,18 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .toc-mob { display: none; }
 .situ { scroll-margin-top: 110px; }
 @media (max-width: 920px) { .toc-mob { display: block; margin-bottom: 28px; } .side .toc { display: none; } }
+/* report text: justified (both edges aligned) */
+.situ p.text-lg { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+
+/* report: sub-headings, numbered lists and the nested contents list */
+.situ .rsub { font-size: 1.05rem; font-weight: 800; color: var(--brand); line-height: 1.35; margin: 28px 0 10px; scroll-margin-top: 110px; }
+.situ .rsub.l2 { font-size: .98rem; color: var(--ink); margin-top: 20px; }
+.situ .rlist { padding-inline-start: 1.5em; margin: 0 0 16px; }
+.situ .rlist li { margin-bottom: 6px; text-align: justify; }
+.toc .toc-sub { margin: -6px 0 8px; }
+.toc .toc-sub li { border-top: 0; counter-increment: none; }
+.toc .toc-sub a { padding: 3px 0; padding-inline-start: 26px; font-size: .8rem; font-weight: 500; color: var(--muted); }
+.toc .toc-sub li.l2 a { padding-inline-start: 40px; }
+.toc .toc-sub a::before { content: none; }
+.toc .toc-sub a:hover { color: var(--brand); }
+.detail > article { min-width: 0; }

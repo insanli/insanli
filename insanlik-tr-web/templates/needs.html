@@ -17,7 +17,7 @@
     <article class="need-row" id="{{ r.country }}">
       <div class="need-head{{ ' has-img' if r.image }}"{% if r.image %} style="--bg:url('{{ r.image }}')"{% endif %}>
         <h2>{{ r.country_name }}</h2>
-        <span>{{ t.period }}: {{ r.period|period(lang) }}</span>
+        <span>{{ t.period }}: {{ r.period_label or r.period|period(lang) }}</span>
       </div>
       <div class="need-cols">
         {% if needs %}<div><h3 class="bar-title">{{ needs.title }}</h3><p>{{ needs.text }}</p></div>{% endif %}

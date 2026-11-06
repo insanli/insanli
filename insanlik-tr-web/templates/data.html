@@ -57,7 +57,7 @@
     <div class="figs-grid">
       {% for r in country_reports %}
       <a class="figs-card" href="{{ r.url }}">
-        <h3>{{ r.country_name }} <small>{{ r.period|period(lang) }}</small></h3>
+        <h3>{{ r.country_name }} <small>{{ r.period_label or r.period|period(lang) }}</small></h3>
         <dl>{% for f in r.figures %}<div><dt>{{ f.label }}</dt><dd>{{ f.value }}</dd></div>{% endfor %}</dl>
       </a>
       {% endfor %}
