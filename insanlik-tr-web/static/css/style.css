@@ -675,3 +675,54 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .st-cost .st-split { list-style: none; margin: 12px 0 0; padding: 0; font-size: .86rem; color: var(--muted); }
 .st-cost .st-split li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 7px 0; border-top: 1px solid var(--line); }
 .st-cost .st-split strong { font-family: var(--num); font-size: .95rem; color: var(--ink); white-space: nowrap; }
+/* top bar: menu centred between the logo and the language button, slightly larger text and logo */
+@media (min-width: 1281px) {
+  .shdr-in { min-height: 86px; }
+  .shdr .snav, .shdr .snav.roomy { flex: 1 1 auto; display: flex; justify-content: center; margin-inline: 24px; }
+  .shdr .snav-top { height: 86px; font-size: .95rem; }
+  html[lang] .shdr .snav-top { font-size: .95rem; }
+  .shdr .logo img { height: 70px; }
+}
+@media (min-width: 1281px) and (max-width: 1439px) {
+  html[lang] .shdr .snav-top { font-size: .9rem; }
+  .shdr .logo img { height: 64px; }
+}
+@media (max-width: 1280px) {
+  .shdr-in { min-height: 72px; }
+  .shdr .logo img { height: 60px; }
+  .shdr .snav { inset: 72px 0 0 0; }
+}
+@media (max-width: 400px) { .shdr .logo img { height: 54px; } }
+/* compact tables inside report sections */
+.rtbl { margin: 22px 0 0; }
+.rtbl figcaption { font-weight: 800; font-size: .88rem; color: var(--ink); margin-bottom: 8px; }
+.rtbl .tbl { font-size: .78rem; line-height: 1.4; }
+.rtbl .tbl th { padding: 6px 8px; font-size: .68rem; white-space: normal; }
+.rtbl .tbl td { padding: 6px 8px; }
+.rtbl .tbl td.n { white-space: nowrap; font-weight: 700; text-align: end; }
+@media (max-width: 700px) { .rtbl .tbl { font-size: .76rem; } }
+/* map under a report section */
+.rmap { margin: 20px 0 0; }
+.rmap img { display: block; width: 100%; height: auto; margin-inline: auto; }
+/* quick-funding tables: the same column widths in every table on the page, so the columns line up */
+.qtbl { table-layout: fixed; }
+.qtbl th:nth-child(1) { width: 46%; }
+.qtbl th:nth-child(2) { width: 20%; }
+.qtbl th:nth-child(3) { width: 17%; }
+.qtbl th:nth-child(4) { width: 17%; }
+.qtbl td:first-child { min-width: 0; }
+.qtbl th, .qtbl td { overflow-wrap: anywhere; }
+@media (max-width: 760px) { .qtbl { min-width: 640px; } }
+/* report index (right column; at the top of the text on phones) */
+.toc { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--brand); padding: 16px 20px 6px; margin-bottom: 18px; }
+.toc-title { margin: 0 0 6px; font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+[dir="rtl"] .toc-title { letter-spacing: 0; font-size: .9rem; }
+.toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
+.toc li { counter-increment: toc; border-top: 1px solid var(--line); }
+.toc li:first-child { border-top: 0; }
+.toc a { display: flex; gap: 10px; padding: 10px 0; color: var(--ink); font-weight: 600; font-size: .9rem; line-height: 1.35; }
+.toc a::before { content: counter(toc); color: var(--brand); font-weight: 800; min-width: 1.1em; }
+.toc a:hover { color: var(--brand); }
+.toc-mob { display: none; }
+.situ { scroll-margin-top: 110px; }
+@media (max-width: 920px) { .toc-mob { display: block; margin-bottom: 28px; } .side .toc { display: none; } }

@@ -30,7 +30,7 @@
 <a class="skip" href="#main">{{ t.skip }}</a>
 {% block header %}
 {% import '_header.html' as h %}
-{% set items = [dict(title=t.nav.about, url=S.main_site ~ '/' ~ lang ~ '/about/', ext=True)] %}
+{% set items = [] %}
 {% for c in cats %}{% set _ = items.append(dict(title=t.nav[c], url='/' ~ lang ~ '/reports/' ~ c ~ '/', current=(ref == 'reports/' ~ c or (r is defined and r.category == c)))) %}{% endfor %}
 {{ h.site_header(lang, langs, alt, T, S, items, t.nav.reports) }}
 {% endblock %}

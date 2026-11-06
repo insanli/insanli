@@ -27,16 +27,28 @@
 <section class="sec">
   <div class="container detail">
     <article>
+      {% set extra = ' toc-mob' %}{% if r.sections|length > 1 %}<nav class="toc{{ extra }}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}<li><a href="#s{{ loop.index }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>{% endif %}
       {% for s in r.sections %}
-      <div class="situ">
+      <div class="situ" id="s{{ loop.index }}">
         {% if s.kicker %}<span class="kicker">{{ s.kicker }}</span>{% endif %}
         <h2 class="bar-title h3">{{ s.title }}</h2>
-        {% for para in (s.text or '').split('\n\n') %}<p class="text-lg">{{ para }}</p>{% endfor %}
+        {% if s.text %}{% for para in s.text.split('\n\n') %}<p class="text-lg">{{ para }}</p>{% endfor %}{% endif %}
+        {% if s.image %}<figure class="rmap"><img src="{{ s.image }}" alt="{{ s.image_alt }}"{% if s.image_size %} width="{{ s.image_size[0] }}" height="{{ s.image_size[1] }}"{% endif %} loading="lazy"></figure>{% endif %}
+        {% for tb in s.tables or [] %}
+        <figure class="rtbl">
+          <figcaption>{{ tb.title }}</figcaption>
+          <div class="tbl-wrap"><table class="tbl">
+            <thead><tr>{% for hcell in tb.head %}<th>{{ hcell }}</th>{% endfor %}</tr></thead>
+            <tbody>{% for row in tb.rows %}<tr>{% for c in row %}<td{% if loop.index0 in (tb.num_cols or []) or (c|replace('.', '')|replace(' aile', '')|trim).isdigit() %} class="n"{% endif %}>{{ c }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+          </table></div>
+        </figure>
+        {% endfor %}
       </div>
       {% endfor %}
       {% if r.note %}<p class="muted small">{{ r.note }}</p>{% endif %}
     </article>
     <aside class="side">
+      {% set extra = '' %}{% if r.sections|length > 1 %}<nav class="toc{{ extra }}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}<li><a href="#s{{ loop.index }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>{% endif %}
       <div class="side-box">
         <h2 class="h4">{{ r.country_name or t.nav[r.category] }}</h2>
         <div class="btn-col">

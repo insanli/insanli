@@ -30,16 +30,55 @@ tr:
   sections:
   - kind: context
     kicker: MEVCUT DURUM
-    title: Durum Genel Görünümü
-    text: Sudan, uzun süren çatışmalar, kitlesel yerinden edilme, akut gıda güvensizliği, hastalık salgınları ve temel hizmetlerdeki aksaklıklar nedeniyle dünyanın en ağır insani krizlerinden biriyle karşı karşıya kalmaya devam etmektedir. İnsani ihtiyaçlar son derece yüksek seyrederken, güvensizlik ve erişim kısıtlamaları çatışmadan etkilenen ve ulaşılması zor bölgelerde yardımların ulaştırılmasını sınırlamaktadır. Darfur, Kordofan ve diğer etkilenen bölgelerdeki aileler açlık, sağlık sistemindeki aksaklıklar, güvenli suya erişim ve yetersiz barınma koşulları nedeniyle özellikle ciddi risklerle karşı karşıyadır.
+    title: "Sudan’daki İnsani Duruma Genel Bakış"
+    text: "Sudan’da 15 Nisan 2023’ten bu yana devam eden savaş ve isyancı milislerin sivillere yönelik yaygın ihlalleri, ülkeyi son derece ağır ve çok boyutlu bir insani krize sürüklemiştir. İsyancı milisler, ülke genelindeki altyapının yaklaşık yüzde 55’ini sistematik biçimde tahrip etmiştir. Hastaneler, okullar, içme suyu kaynakları, enerji tesisleri ve kanalizasyon şebekeleri başta olmak üzere, temel hizmetlerin sunulduğu çok sayıda tesis yakılmış veya kullanılamaz hâle getirilmiştir. Uluslararası toplumun sivilleri isyancı milislerin saldırılarından korumakta yetersiz kalması, Sudan’daki insani krizin daha da derinleşmesine yol açmıştır. Bilinen bazı ülkeler tarafından desteklenen isyancı milislerin saldırıları sonucunda yaklaşık 13,8 milyon kişi, yani Sudan nüfusunun %32’si, uluslararası insancıl hukuk kapsamında suç teşkil eden eylemlere maruz kalmıştır. Büyük Darfur ve Büyük Kordofan bölgelerindeki eyaletler ile Mavi Nil Bölgesi’nin bazı kesimlerinde yaşayan her beş kişiden üçü, uluslararası insan hakları hukukuna göre suç sayılan en az bir eylemin mağduru olmuştur. Raporda toplam 16 tür ihlal ve suçtan söz edilmektedir. Bunlar arasında sivillerin zorla yerinden edilmesi, bir savaş yöntemi olarak aç bırakılması, keyfî biçimde gözaltına alınması ve infaz edilmesi, canlı kalkan olarak kullanılması, mallarının yağmalanması, cinsel köleleştirme, savaş silahı olarak tecavüz ve diğer ağır ihlaller yer almaktadır."
+    tables:
+    - title: "Ağustos 2026 İtibarıyla Kuzey Kordofan Eyaleti’nde Sivillere Yönelik İhlaller"
+      head: ["No.", "Bölge", "Gerçekleştirilen İhlaller", "Etkilenen Aile Sayısı"]
+      rows:
+      - ["1", "Şeykan", "29 köyde yağma ve talan yaşanmış; aralarında kadın ve çocukların da bulunduğu 55 sivil öldürülmüş, 200’den fazla zorla kaybetme vakası kaydedilmiş ve yüzlerce kişi yaralanmıştır.", "60.000 aile"]
+      - ["2", "Cebra eş-Şeyh", "En-Nedirâbe, Cebra el-Medîne, Hamrat el-Vez, el-Hicâb ve Kejmer olmak üzere beş idari birimde halk zorla yerinden edilmiştir. Yedi su istasyonu tahrip edilmiş, 100 binden fazla büyükbaş ve küçükbaş hayvan yağmalanmış ve 220 sivil öldürülmüştür.", "38.000 aile"]
+      - ["3", "Bârâ", "Ümmü Kurfa, Ümmü Siyâle, Cüreych ve diğer bölgeleri kapsayan beş idari birimde siviller zorla yerinden edilmiştir. 22 su kaynağı tahrip edilmiş, aralarında kadınların, çocukların ve yaşlıların da bulunduğu 88 sivil öldürülmüş, ayrıca halkın malları yağmalanmıştır.", "58.000 aile"]
+      - ["4", "Batı Bârâ", "Ümmü Sa‘dûn, Ümmü Kureydim, Demîre et-Tûm ve el-Mezrûb başta olmak üzere çeşitli idari birimlerde siviller zorla yerinden edilmiştir. Mallar, 30 bin baş hayvan ve araçlar yağmalanmış, tarım ürünleri tahrip edilmiş ve aralarında 53 kadın, 28 yaşlı kadın ve 16 çocuğun bulunduğu siviller öldürülmüştür.", "12.000 aile"]
+      - ["5", "Sûdrî", "Köyler işgal edilmiş, yerel halk zorla yerinden edilmiş ve bölgeye yabancı paralı savaşçılar yerleştirilmiştir. Halkın malları ve tarım ürünleri yağmalanmıştır.", "7.000 aile"]
+    - title: "Ağustos 2026 İtibarıyla Sudan Genelinde Sivillere Yönelik İhlaller"
+      head: ["İhlal Türü", "Kaynakta Belirtilen Hukuki Dayanak", "Tahmini Etkilenen Kişi Sayısı"]
+      rows:
+      - ["Sivillerin canlı kalkan olarak kullanılması", "Sudan’da Sivillerin Korunmasına İlişkin Cidde Taahhüt Bildirgesi, Madde 2(C)", "3.600.000"]
+      - ["Keyfî gözaltı", "Sudan’da Sivillerin Korunmasına İlişkin Cidde Taahhüt Bildirgesi, Madde 2(M)", "1.200.000"]
+      - ["Çocukların silahlı gruplara alınması ve çatışmalarda kullanılması", "Sudan’da Sivillerin Korunmasına İlişkin Cidde Taahhüt Bildirgesi, Madde 2(L)", "9.400"]
+      - ["Öldürme, işkence ve zalimane muamele", "1949 tarihli Savaş Zamanında Sivillerin Korunmasına İlişkin Cenevre Sözleşmesi, Madde 3(1)(A)", "480.000"]
+      - ["Aşağılayıcı ve insan onurunu zedeleyici muamele", "1949 tarihli Savaş Zamanında Sivillerin Korunmasına İlişkin Cenevre Sözleşmesi, Madde 3(1)(C)", "730.000"]
+      - ["Tecavüz, fuhşa zorlama ve kadına yönelik şiddet", "1977 tarihli II. Ek Protokol, Madde 4(2)(H)", "3.700"]
+      - ["Yağma ve talan", "1977 tarihli II. Ek Protokol, Madde 4(2)(Z)", "4.300.000"]
+      - ["Bir savaş yöntemi olarak aç bırakma", "Birleşmiş Milletlerin 1998 tarihli Ülke İçinde Yerinden Edilmeye İlişkin Yol Gösterici İlkeleri, İlke 15(2)(B)", "1.800.000"]
+      - ["Keyfî infaz", "Birleşmiş Milletlerin 1998 tarihli Ülke İçinde Yerinden Edilmeye İlişkin Yol Gösterici İlkeleri, İlke 15(1)(C)", "2.500"]
+      - ["Zorla kaybetme", "Birleşmiş Milletlerin 1998 tarihli Ülke İçinde Yerinden Edilmeye İlişkin Yol Gösterici İlkeleri, İlke 15(1)(D)", "670.000"]
+      - ["Zorla yerinden etme", "Afrika’da Yerinden Edilmiş Kişilerin Korunmasına İlişkin Kampala Sözleşmesi, Madde 7(5)(A)", "2.900.000"]
   - kind: needs
     kicker: İNSANİ İHTİYAÇLAR
-    title: Öncelikli İnsani İhtiyaçlar
+    title: "İhtiyaç Grupları ve Coğrafi Bölge Dağılımları"
     text: Öncelikli ihtiyaçlar arasında acil gıda ve beslenme desteği, güvenli içme suyu ve sanitasyon, temel sağlık hizmetleri ve ilaçlar, acil barınma, koruma hizmetleri ve temel gıda dışı malzemeler bulunmaktadır. Yerinden edilmiş aileler, çocuklar ve çatışmadan etkilenen veya ulaşılması zor bölgelerde yaşayan topluluklar sürdürülebilir ve esnek desteğe ihtiyaç duymaktadır.
+    image: /img/maps/sudan-affected-tr.png
+    image_size: [1568, 1182]
+    image_alt: "Bölgelere göre etkilenen kişi sayısı haritası"
   - kind: priorities
     kicker: MÜDAHALE ODAĞI
-    title: Temel Müdahale Öncelikleri
-    text: Acil müdahale öncelikleri; hayat kurtarıcı gıda ve beslenme desteğinin sürdürülmesi, güvenli suya ve temel sağlık hizmetlerine erişimin yeniden sağlanması, acil barınma ve yardım malzemelerinin temini ve yerinden edilmiş ve kırılgan hanelere yönelik korumanın güçlendirilmesidir. Müdahale, ağır gıda güvensizliği, hastalık salgınları ve ciddi erişim kısıtlamaları bulunan bölgelere öncelik vermelidir.
+    title: "Uluslararası İnsani Yardım Müdahalesi Genel Durumu"
+    text: "Savaşın başlamasının ardından ilk aylarda insani yardım faaliyetleri yaklaşık %80 oranında azalmış; ülkede faaliyet gösteren Birleşmiş Milletler kuruluşları ile uluslararası, bölgesel ve yabancı yardım kuruluşlarının müdahale kapasitesi yaklaşık %20’ye düşmüştür. Devletin sağladığı kolaylıklar ve yapılan düzenlemeler sayesinde bu kuruluşlar ihtiyaç sahiplerine ulaşmak için önemli çalışmalar yürütmüş, ancak bu çabalar özellikle Büyük Darfur ve Büyük Kordofan bölgelerinde ağırlaşan insani krizin ihtiyaçlarını karşılamaya yetmemiştir. Bunun başlıca nedenlerinden biri, Sudan’a yönelik uluslararası insani yardım finansmanının yetersiz kalmasıdır; finansman açığı yaklaşık %60’a ulaşmış, bazı alanlarda bu oranı aşmıştır. Bunun sonucunda yaklaşık 15,8 milyon kişi birden fazla sektörü kapsayan insani yardım çalışmalarından yararlanamamıştır. Buna rağmen devletin koruma alanlarını ve güvenli bölgeleri genişletmeye yönelik çalışmaları, yardımların ulaştırılmasını kolaylaştıran girişimleri ve kurumlar arasındaki koordinasyon sayesinde önemli ilerleme kaydedilmiş; Birleşmiş Milletler kuruluşları, yardım ortakları ve dost ve kardeş ülkelerin katkılarıyla 11,5 milyondan fazla kişiye insani yardım ulaştırılmıştır. Gıda güvenliği, sağlık, eğitim, su ve acil yardım alanlarında yaklaşık 325.000 metrik ton insani yardım ulaştırılmış, Birleşmiş Milletlerin insani yardım faaliyetlerinin toplam tutarı 1,17 milyar dolara ulaşmıştır.\n\nSudan hükümeti, insani yardım alanındaki finansman açığını azaltmak ve savaşın yol açtığı krizden etkilenen vatandaşlarının ihtiyaçlarını karşılamak amacıyla sorumluluk üstlenmiştir. Bu doğrultuda, yerinden edilenlerin, yaşadıkları bölgelere geri dönenlerin ve savaştan etkilenen diğer kişilerin ihtiyaçlarının %52’sinden fazlası karşılanmıştır. Yardımlar; Egemenlik Konseyi Başkanı’nın girişimi, Federal Maliye Bakanlığı, federal ve eyalet düzeyindeki kamu kurumları, yerel toplumsal girişimler, yurt dışında yaşayan Sudanlılar ve kurumsal sosyal sorumluluk kapsamında destek sağlayan ulusal şirketler aracılığıyla ulaştırılmıştır. Bu kapsamda, insani ihtiyaçların yoğun olduğu bölgelerde yaşayan 6,9 milyondan fazla kişiye, farklı sektörleri kapsayan toplam 2.585.500 metrik ton insani yardım ulaştırılmıştır. Yardımlarda özellikle Büyük Darfur ve Büyük Kordofan bölgelerinden yerinden edilenlere öncelik verilmiştir."
+  - kind: sector-needs
+    title: "Sektörlere Göre İnsani Yardım İhtiyaçları"
+    tables:
+    - title: "Aralık 2026’ya Kadar Sektörlere Göre Tahmini İnsani Yardım İhtiyaçları"
+      num_cols: [2]
+      head: ["Sektör", "Yardım kapsamında ihtiyaç duyulan malzeme ve ekipmanlar", "Miktar (metrik ton)"]
+      rows:
+      - ["Gıda Güvenliği ve Geçim Kaynakları (FSL)", "Un, mercimek, pirinç, şeker, yemeklik yağ, tuz, tohum, tarımsal verim artırıcı ürünler, gübre, gıda işleme makineleri ve tarımsal mekanizasyon ekipmanları", "1.142.400"]
+      - ["Sağlık", "İlaçlar, tıbbi sarf malzemeleri, diyaliz makineleri, tedavi amaçlı tıbbi cihaz ve ekipmanlar, ambulanslar, sahra hastaneleri, laboratuvarlar ve tanı cihazları", "739.200"]
+      - ["Su, Sanitasyon ve Hijyen (WASH)", "Salgın hastalıklarla ve hastalık taşıyıcılarıyla mücadelede kullanılan ilaç ve ekipmanlar, pompa ve sisleme makineleri, manuel ve otomatik püskürtme cihazları, su tahliye pompaları, dezenfektanlar, temizlik malzemeleri, su arıtma cihazları, klor, içme suyu kaynakları için güneş enerjisi sistemleri, yağmur suyu toplama ekipmanları, dağlık bölgelerde kuyu açma ekipmanları ve su şebekeleri için gerekli malzeme ve araçlar", "604.800"]
+      - ["Eğitim", "Geçici okullar, okul sıraları, eğitim materyalleri, okul donanımları, okul çantaları, defterler, ofis mobilyaları ve uzaktan eğitim teknolojileri", "504.000"]
+      - ["Acil Barınma ve Gıda Dışı Temel İhtiyaçlar (S/NFIEs)", "4 × 6 metre çadırlar, yer yatakları, brandalar, battaniyeler, cibinlikler, mutfak gereçleri, boş su bidonları, kadın hijyen ürünleri, bebek bezleri, inşaat malzemeleri ve prefabrik konut birimleri", "369.600"]
+      - ["Toplam", "—", "3.360.000 metrik ton"]
   note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
 en:
   country_name: Sudan
@@ -57,16 +96,32 @@ en:
   sections:
   - kind: context
     kicker: CURRENT CONTEXT
-    title: Situation Overview
-    text: Sudan continues to face one of the world’s most severe humanitarian crises, driven by prolonged conflict, mass displacement, acute food insecurity, disease outbreaks and the disruption of essential services. Humanitarian needs remain exceptionally high, while insecurity and access constraints continue to limit assistance in conflict-affected and hard-to-reach areas. Families in Darfur, Kordofan and other affected regions face particularly severe risks linked to hunger, health-system disruption, unsafe water and inadequate shelter.
+    title: "Overview of the Humanitarian Situation in Sudan"
+    text: "Since 15 April 2023, the ongoing war and the widespread violations committed by rebel militias against civilians have plunged Sudan into an extremely severe and multidimensional humanitarian crisis. The rebel militias have systematically destroyed around 55 per cent of the country’s infrastructure. Many facilities providing basic services, above all hospitals, schools, drinking-water sources, power plants and sewage networks, have been burned or rendered unusable. The international community’s failure to protect civilians from rebel militia attacks has further deepened the humanitarian crisis in Sudan. As a result of attacks by rebel militias backed by certain known countries, around 13.8 million people – 32% of Sudan’s population – have been subjected to acts that constitute crimes under international humanitarian law. Three out of every five people living in the states of Greater Darfur and Greater Kordofan and in parts of the Blue Nile region have been victims of at least one act considered a crime under international human rights law. The report documents a total of 16 types of violations and crimes. These include the forced displacement of civilians, starvation as a method of warfare, arbitrary detention and execution, use as human shields, looting of property, sexual slavery, rape as a weapon of war and other grave violations."
   - kind: needs
     kicker: HUMANITARIAN NEEDS
-    title: Priority Humanitarian Needs
+    title: "Groups in Need and Geographic Distribution by Region"
     text: Priority needs include emergency food and nutrition assistance, safe drinking water and sanitation, essential healthcare and medicines, emergency shelter, protection services and basic non-food items. Displaced families, children and communities in conflict-affected and hard-to-reach areas require sustained and flexible assistance.
+    image: /img/maps/sudan-affected-en.png
+    image_size: [1568, 1182]
+    image_alt: "Map of the number of people affected by region"
   - kind: priorities
     kicker: RESPONSE FOCUS
-    title: Key Response Priorities
-    text: Immediate priorities are to sustain lifesaving food and nutrition support, restore access to safe water and essential health services, provide emergency shelter and relief items, and strengthen protection for displaced and vulnerable households. Response efforts should prioritize areas facing severe food insecurity, disease outbreaks and major access constraints.
+    title: "Overview of the International Humanitarian Response"
+    text: "In the first months after the war began, humanitarian activities fell by about 80%, and the response capacity of United Nations agencies and international, regional and foreign aid organisations operating in the country dropped to about 20%. Thanks to the facilitation and arrangements provided by the state, these organisations carried out significant work to reach people in need, but these efforts were not enough to meet the needs of the worsening humanitarian crisis, especially in the Greater Darfur and Greater Kordofan regions. One of the main reasons is the shortfall in international humanitarian funding for Sudan: the funding gap reached about 60% and exceeded this level in some sectors. As a result, around 15.8 million people could not benefit from multi-sector humanitarian assistance. Nevertheless, significant progress was made thanks to the state’s efforts to expand protected areas and safe zones, initiatives that facilitated the delivery of aid and coordination between institutions; with contributions from United Nations agencies, aid partners and friendly and brotherly countries, humanitarian assistance reached more than 11.5 million people. Around 325,000 metric tonnes of humanitarian aid were delivered in food security, health, education, water and emergency relief, and the total value of the United Nations’ humanitarian activities reached 1.17 billion dollars.\n\nThe Government of Sudan has taken on responsibility for reducing the humanitarian funding gap and meeting the needs of its citizens affected by the crisis caused by the war. In this regard, more than 52% of the needs of displaced people, those returning to their home areas and others affected by the war have been met. Aid has been delivered through an initiative of the Chairman of the Sovereignty Council, the Federal Ministry of Finance, federal and state public institutions, local community initiatives, Sudanese living abroad and national companies providing support through corporate social responsibility. In this context, a total of 2,585,500 metric tonnes of humanitarian aid covering different sectors was delivered to more than 6.9 million people living in areas with high humanitarian needs. Priority was given in particular to people displaced from the Greater Darfur and Greater Kordofan regions."
+  - kind: sector-needs
+    title: "Humanitarian Needs by Sector"
+    tables:
+    - title: "Estimated Humanitarian Needs Clusters up to December 2026"
+      num_cols: [2]
+      head: ["Sector", "Materials and equipment needed", "Quantity (metric tonnes)"]
+      rows:
+      - ["Food Security and Livelihoods (FSL)", "Flour, lentils, rice, sugar, cooking oil, salt, seeds, agricultural yield enhancers, fertilisers, food-processing machinery and agricultural mechanisation equipment", "1,142,400"]
+      - ["Health", "Medicines, medical consumables, dialysis machines, medical treatment devices and equipment, ambulances, field hospitals, laboratories and diagnostic equipment", "739,200"]
+      - ["Water, Sanitation and Hygiene (WASH)", "Medicines and equipment for combating epidemics and disease vectors, pumps and fogging machines, manual and automatic sprayers, drainage pumps, disinfectants, cleaning supplies, water purification devices, chlorine, solar power systems for drinking-water sources, rainwater harvesting equipment, well-drilling equipment for mountainous areas, and materials and tools needed for water networks", "604,800"]
+      - ["Education", "Temporary schools, school desks, educational materials, school equipment, school bags, notebooks, office furniture and distance-learning technologies", "504,000"]
+      - ["Emergency Shelter and Non-Food Items (S/NFIEs)", "4 × 6 m tents, sleeping mats, tarpaulins, blankets, mosquito nets, kitchen utensils, empty water containers, women’s hygiene products, diapers, construction materials and prefabricated housing units", "369,600"]
+      - ["Total", "—", "3,360,000 metric tonnes"]
   note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
 ar:
   country_name: السودان
@@ -84,14 +139,30 @@ ar:
   sections:
   - kind: context
     kicker: السياق الحالي
-    title: نظرة عامة على الوضع
-    text: لا يزال السودان يواجه واحدة من أشد الأزمات الإنسانية في العالم، نتيجة النزاع الممتد والنزوح الواسع وانعدام الأمن الغذائي الحاد وتفشي الأمراض وتعطل الخدمات الأساسية. وتبقى الاحتياجات الإنسانية مرتفعة بصورة استثنائية، فيما تحدّ الأوضاع الأمنية وصعوبات الوصول من إيصال المساعدات إلى المناطق المتأثرة بالنزاع والمناطق التي يصعب الوصول إليها. وتواجه الأسر في دارفور وكردفان وغيرها من المناطق المتضررة مخاطر شديدة مرتبطة بالجوع وتعطل النظام الصحي ونقص المياه الآمنة والمأوى غير الملائم.
+    title: "نظرة عامة على الوضع الإنساني في السودان"
+    text: "أدت الحرب المستمرة في السودان منذ 15 أبريل 2023 والانتهاكات الواسعة التي ترتكبها الميليشيات المتمردة بحق المدنيين إلى إغراق البلاد في أزمة إنسانية بالغة الشدة ومتعددة الأبعاد. وقد دمّرت الميليشيات المتمردة بشكل ممنهج نحو 55 في المئة من البنية التحتية في البلاد. وأُحرقت أو أصبحت غير صالحة للاستخدام منشآت عديدة تقدّم الخدمات الأساسية، وفي مقدمتها المستشفيات والمدارس ومصادر مياه الشرب ومنشآت الطاقة وشبكات الصرف الصحي. وأدى عجز المجتمع الدولي عن حماية المدنيين من هجمات الميليشيات المتمردة إلى تعميق الأزمة الإنسانية في السودان. ونتيجة لهجمات الميليشيات المتمردة المدعومة من دول معروفة، تعرّض نحو 13.8 مليون شخص، أي 32% من سكان السودان، لأفعال تُعد جرائم بموجب القانون الدولي الإنساني. وكان ثلاثة من كل خمسة أشخاص يعيشون في ولايات إقليمي دارفور الكبرى وكردفان الكبرى وفي أجزاء من إقليم النيل الأزرق ضحايا لفعل واحد على الأقل يُعد جريمة بموجب القانون الدولي لحقوق الإنسان. ويشير التقرير إلى ما مجموعه 16 نوعًا من الانتهاكات والجرائم. ومن بينها التهجير القسري للمدنيين، والتجويع كأسلوب من أساليب الحرب، والاحتجاز التعسفي والإعدام، واستخدامهم دروعًا بشرية، ونهب ممتلكاتهم، والاستعباد الجنسي، والاغتصاب كسلاح حرب، وغيرها من الانتهاكات الجسيمة."
   - kind: needs
     kicker: الاحتياجات الإنسانية
-    title: الاحتياجات الإنسانية ذات الأولوية
+    title: "فئات الاحتياج والتوزيع الجغرافي حسب المناطق"
     text: تشمل الاحتياجات ذات الأولوية المساعدات الغذائية والتغذوية الطارئة، ومياه الشرب الآمنة وخدمات الصرف الصحي، والرعاية الصحية الأساسية والأدوية، والمأوى الطارئ، وخدمات الحماية، والمواد غير الغذائية الأساسية. وتحتاج الأسر النازحة والأطفال والمجتمعات في المناطق المتأثرة بالنزاع والتي يصعب الوصول إليها إلى دعم مستمر ومرن.
+    image: /img/maps/sudan-affected-ar.png
+    image_size: [1568, 1182]
+    image_alt: "خريطة عدد المتضررين حسب المناطق"
   - kind: priorities
     kicker: أولويات الاستجابة
-    title: أولويات الاستجابة الرئيسية
-    text: تشمل أولويات الاستجابة الفورية استمرار المساعدات المنقذة للحياة في مجالي الغذاء والتغذية، واستعادة الوصول إلى المياه الآمنة والخدمات الصحية الأساسية، وتوفير المأوى الطارئ ومواد الإغاثة، وتعزيز الحماية للأسر النازحة والأكثر هشاشة. وينبغي إعطاء الأولوية للمناطق التي تواجه مستويات شديدة من انعدام الأمن الغذائي وتفشي الأمراض والقيود الكبيرة على الوصول.
+    title: "الوضع العام للاستجابة الإنسانية الدولية"
+    text: "تراجعت أنشطة العمل الإنساني بنحو 80% خلال الأشهر الأولى بعد اندلاع الحرب، وانخفضت القدرة على الاستجابة لدى وكالات الأمم المتحدة والمنظمات الدولية والإقليمية والأجنبية العاملة في البلاد إلى نحو 20%. وبفضل التسهيلات والترتيبات التي قدمتها الدولة، نفذت هذه المنظمات أعمالًا مهمة للوصول إلى المحتاجين، إلا أن هذه الجهود لم تكن كافية لتلبية احتياجات الأزمة الإنسانية المتفاقمة، ولا سيما في إقليمي دارفور الكبرى وكردفان الكبرى. ومن أبرز أسباب ذلك عدم كفاية التمويل الإنساني الدولي للسودان، إذ بلغت فجوة التمويل نحو 60% وتجاوزت هذه النسبة في بعض القطاعات. ونتيجة لذلك، لم يتمكن نحو 15.8 مليون شخص من الاستفادة من المساعدات الإنسانية متعددة القطاعات. ورغم ذلك، تحقق تقدم مهم بفضل جهود الدولة في توسيع مناطق الحماية والمناطق الآمنة، والمبادرات التي سهّلت إيصال المساعدات، والتنسيق بين المؤسسات؛ وبمساهمة وكالات الأمم المتحدة والشركاء الإنسانيين والدول الصديقة والشقيقة، وصلت المساعدات الإنسانية إلى أكثر من 11.5 مليون شخص. كما تم إيصال نحو 325,000 طن متري من المساعدات الإنسانية في مجالات الأمن الغذائي والصحة والتعليم والمياه والإغاثة الطارئة، وبلغت القيمة الإجمالية لأنشطة الأمم المتحدة الإنسانية 1.17 مليار دولار.\n\nتحملت حكومة السودان مسؤوليتها في تقليص فجوة التمويل في المجال الإنساني وتلبية احتياجات مواطنيها المتأثرين بالأزمة التي خلفتها الحرب. وفي هذا الإطار، تمت تلبية أكثر من 52% من احتياجات النازحين والعائدين إلى مناطقهم وغيرهم من المتأثرين بالحرب. وقد وصلت المساعدات عبر مبادرة رئيس مجلس السيادة، ووزارة المالية الاتحادية، والمؤسسات الحكومية على المستويين الاتحادي والولائي، والمبادرات المجتمعية المحلية، والسودانيين المقيمين في الخارج، والشركات الوطنية التي قدمت الدعم في إطار المسؤولية الاجتماعية للشركات. وفي هذا السياق، تم إيصال ما مجموعه 2,585,500 طن متري من المساعدات الإنسانية في مختلف القطاعات إلى أكثر من 6.9 مليون شخص يعيشون في المناطق ذات الاحتياجات الإنسانية المرتفعة. وأُعطيت الأولوية بشكل خاص للنازحين من إقليمي دارفور الكبرى وكردفان الكبرى."
+  - kind: sector-needs
+    title: "الاحتياجات الإنسانية حسب القطاعات"
+    tables:
+    - title: "الاحتياجات الإنسانية التقديرية حسب القطاعات حتى ديسمبر 2026"
+      num_cols: [2]
+      head: ["القطاع", "المواد والمعدات المطلوبة", "الكمية (طن متري)"]
+      rows:
+      - ["الأمن الغذائي وسبل العيش (FSL)", "الدقيق والعدس والأرز والسكر وزيت الطهي والملح والبذور ومحسّنات الإنتاج الزراعي والأسمدة وآلات تصنيع الأغذية ومعدات الميكنة الزراعية", "1,142,400"]
+      - ["الصحة", "الأدوية والمستهلكات الطبية وأجهزة غسيل الكلى والأجهزة والمعدات الطبية العلاجية وسيارات الإسعاف والمستشفيات الميدانية والمختبرات وأجهزة التشخيص", "739,200"]
+      - ["المياه والصرف الصحي والنظافة (WASH)", "الأدوية والمعدات المستخدمة في مكافحة الأوبئة ونواقل الأمراض، ومضخات وآلات الرش الضبابي، وأجهزة الرش اليدوية والآلية، ومضخات تصريف المياه، والمطهرات، ومواد النظافة، وأجهزة تنقية المياه، والكلور، وأنظمة الطاقة الشمسية لمصادر مياه الشرب، ومعدات حصاد مياه الأمطار، ومعدات حفر الآبار في المناطق الجبلية، والمواد والأدوات اللازمة لشبكات المياه", "604,800"]
+      - ["التعليم", "المدارس المؤقتة والمقاعد الدراسية والمواد التعليمية والتجهيزات المدرسية والحقائب المدرسية والدفاتر والأثاث المكتبي وتقنيات التعليم عن بُعد", "504,000"]
+      - ["المأوى الطارئ والمواد غير الغذائية (S/NFIEs)", "خيام بمقاس 4 × 6 أمتار وفرش أرضية ومشمعات وبطانيات وناموسيات وأدوات مطبخ وعبوات مياه فارغة ومنتجات النظافة النسائية وحفاضات أطفال ومواد بناء ووحدات سكنية مسبقة الصنع", "369,600"]
+      - ["الإجمالي", "—", "3,360,000 طن متري"]
   note: تعكس الأرقام أحدث البيانات الإنسانية المتاحة لفترة التقرير. وتشمل المصادر تحديثات الوضع الإنساني الرسمية والتقارير القطاعية الصادرة عن مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية وبرنامج الأغذية العالمي ومنظمة الصحة العالمية واليونيسف.
