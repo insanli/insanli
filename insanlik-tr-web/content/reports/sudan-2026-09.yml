@@ -493,22 +493,33 @@ tr:
       level: 1
       id: s6-2
     - p: '1. Gümrük ve vergi muafiyetleri: İnsani yardım faaliyetleri kapsamında ülkeye getirilen tüm malzemeler gümrük vergileri, diğer vergiler ve ilgili ücretlerden muaf tutulmuştur. Haziran 2027’ye kadar sağlanan bu muafiyetlerin toplam değerinin yaklaşık 7,5 milyon dolar olduğu belirtilmiştir.'
+      b: true
     - p: '2. Yardımların nakliye giderlerinin karşılanması: Dost ülkelerden ve bazı insani yardım kuruluşlarından gelen yardımların Sudan’ın tüm eyaletlerine ulaştırılması için nakliye masrafları karşılanmıştır. Haziran 2026’ya kadar bu amaçla yapılan harcamaların yaklaşık 1,8 milyon dolar olduğu belirtilmiştir.'
+      b: true
     - p: '3. İdari ve teknik işlemlerin yürütülmesi: Haziran 2026’ya kadar, insani yardımların ulaştırılmasını kolaylaştırmak amacıyla federal ve eyalet düzeylerinde 35.500’ün üzerinde idari ve teknik işlem gerçekleştirilmiştir. Bu işlemler arasında giriş vizelerinin düzenlenmesi, gümrük ve vergi muafiyetlerinin sağlanması, insani yardım çalışanlarına hareket izinlerinin verilmesi, yardım sevkiyatlarının onaylanması, kuruluşların kayıtlarının yenilenmesi ve kuruluşlar adına banka hesaplarının açılması yer almaktadır. İşlemlerde genel onay oranı %99,6 olarak gerçekleşmiştir.'
+      b: true
     - p: '4. Sınır geçiş noktalarının artırılması: İnsani yardımların ulaştırılmasında kullanılan kara, hava, deniz ve nehir geçiş noktalarının sayısı 2’den 14’e çıkarılmıştır. Bu noktalardan biri olan Adre sınır kapısının açılış tarihlerinin düzenli olarak belirlenmesi konusunda Sudan Hükümeti taahhütte bulunmuştur.'
+      b: true
     - p: '5. BM insani yardım planlarının ulusal önceliklerle uyumlaştırılması: Birleşmiş Milletlerin 2026 yılı insani ihtiyaç ve müdahale planlarının Sudan’ın ulusal öncelikleri ve egemenliğiyle uyumlu olması için çalışmalar yürütülmüştür. Bu kapsamda Komisyon, BM’nin insani yardım planlarına ilişkin ulusal teknik koordinasyon mekanizmasına başkanlık etmiştir.'
+      b: true
     - p: '6. Saha değerlendirmeleri: İnsani ihtiyaçların belirlenmesi amacıyla 10 eyalette 8 saha çalışması gerçekleştirilmiştir.'
+      b: true
     - p: '7. İnsani yardım kuruluşlarının yasal durumlarının düzenlenmesi: İnsani yardım faaliyetlerinde bulunan kuruluşların yasal statülerinin mevzuata uygun hâle getirilmesi için gerekli çalışmalar yürütülmüştür.'
-    - h: İnsani Yardıma Erişimi Kolaylaştırmaya Yönelik İşlemlerin İzleme Tablosu (Ağustos 2026’ya Kadar)
-      toc: İnsani Yardıma Erişimi Kolaylaştırmaya Yönelik İşlemlerin İzleme Tablosu
-      level: 1
-      id: s6-3
-    - p: EKLENECEK
+      b: true
     - h: Sudan’da İnsani Yardım Erişimi İçin Onaylanan Sınır Kapıları
       toc: Sudan’da İnsani Yardım Erişimi İçin Onaylanan Sınır Kapıları
       level: 1
       id: s6-4
-    - p: EKLENECEK
+    - img: /img/maps/sudan-needs-sectors-tr.png
+      size:
+      - 1400
+      - 940
+      alt: Sektörlere göre insani ihtiyaç oranları
+    - img: /img/maps/sudan-border-crossings-tr.png
+      size:
+      - 1400
+      - 828
+      alt: Sudan’da insani yardım erişimi için onaylanan sınır kapıları
     - p: Geçiş Dönemi Egemenlik Konseyi’nin kararı, Mayıs 2023’te yayımlanan Cidde Bildirgesi’nin ilkeleri, 2009 tarihli Ulusal Yerinden Edilme Politikası ile 2016 tarihli İnsani Yardım Çalışmaları Yönerge ve Usulleri doğrultusunda Sudan Hükümeti, yerinden edilmiş kişilere, geri dönenlere ve savaştan etkilenen ev sahibi topluluklara karşı sorumluluklarını yerine getirmek amacıyla insani yardım sevkiyatlarında kullanılmak üzere kara, hava ve nehir yolu üzerindeki toplam 14 sınır kapısını ve giriş noktasını onaylamıştır. Böylece onaylanan noktaların sayısı 12 artırılmıştır. Bu noktalardan 1–7 numaralı olanlar, Ocak–Ağustos 2026 döneminde insani yardımların ülkeye girişinde aktif olarak kullanılan geçiş noktaları olarak kaydedilmiştir.
     - p: Bunlara ek olarak, insani yardım sevkiyatlarında kullanılan yaklaşık 6.000 iç güzergâh bulunmaktadır. Bu güzergâhlar, 18 eyaletteki 773 idari birimi kapsamakta ve insani yardımların ihtiyaç duyulan bölgelere ulaştırılmasını kolaylaştırmaktadır. Söz konusu yardımlar; sağlık, eğitim, su ve çevre sağlığı alanlarındaki insani yardım malzemelerini de içermektedir. Onaylanan sınır kapıları ve giriş noktaları aşağıda sıralanmıştır.
     - h: Onaylanan Sınır Kapıları ve Giriş Noktaları
@@ -1039,22 +1050,33 @@ en:
       level: 1
       id: s6-2
     - p: '1. Customs and tax exemptions: All materials brought into the country for humanitarian activities have been exempted from customs duties, other taxes and related fees. The total value of these exemptions granted up to June 2027 is stated to be around $7.5 million.'
+      b: true
     - p: '2. Covering the transport costs of aid: Transport costs were covered to deliver aid from friendly countries and some humanitarian organisations to all states of Sudan. Expenditure for this purpose up to June 2026 is stated to be around $1.8 million.'
+      b: true
     - p: '3. Administrative and technical procedures: Up to June 2026, more than 35,500 administrative and technical procedures were carried out at federal and state level to facilitate the delivery of humanitarian aid. These included issuing entry visas, granting customs and tax exemptions, issuing travel permits to humanitarian workers, approving aid shipments, renewing organisations’ registrations and opening bank accounts on behalf of organisations. The overall approval rate for these procedures was 99.6%.'
+      b: true
     - p: '4. Increasing the number of crossing points: The number of land, air, sea and river crossing points used to deliver humanitarian aid was increased from 2 to 14. The Government of Sudan has committed to regularly setting the opening dates of the Adre border crossing, one of these points.'
+      b: true
     - p: '5. Aligning UN humanitarian plans with national priorities: Work was carried out to ensure that the United Nations’ 2026 humanitarian needs and response plans are consistent with Sudan’s national priorities and sovereignty. In this context, the Commission chaired the national technical coordination mechanism for the UN humanitarian plans.'
+      b: true
     - p: '6. Field assessments: 8 field studies were carried out in 10 states to identify humanitarian needs.'
+      b: true
     - p: '7. Regularising the legal status of humanitarian organisations: The necessary work was carried out to bring the legal status of organisations engaged in humanitarian activities into line with the legislation.'
-    - h: Tracking Table of Procedures to Facilitate Humanitarian Access (up to August 2026)
-      toc: Tracking Table of Procedures to Facilitate Humanitarian Access (up to August 2026)
-      level: 1
-      id: s6-3
-    - p: EKLENECEK
+      b: true
     - h: Border Crossings Approved for Humanitarian Access in Sudan
       toc: Border Crossings Approved for Humanitarian Access in Sudan
       level: 1
       id: s6-4
-    - p: EKLENECEK
+    - img: /img/maps/sudan-needs-sectors-en.png
+      size:
+      - 1400
+      - 940
+      alt: Percentages of humanitarian needs by sector
+    - img: /img/maps/sudan-border-crossings-en.png
+      size:
+      - 1400
+      - 828
+      alt: Border crossings approved for humanitarian access in Sudan
     - p: In line with the decision of the Transitional Sovereignty Council, the principles of the Jeddah Declaration issued in May 2023, the National Policy on Internal Displacement of 2009 and the Humanitarian Work Guidelines and Procedures of 2016, the Government of Sudan approved a total of 14 land, air and river border crossings and entry points for humanitarian aid shipments in order to fulfil its responsibilities towards displaced persons, returnees and war-affected host communities. This increased the number of approved points by 12. Points 1–7 were recorded as crossing points actively used for the entry of humanitarian aid into the country in January–August 2026.
     - p: In addition, there are around 6,000 internal routes used for humanitarian aid shipments. These routes cover 773 administrative units in 18 states and facilitate the delivery of humanitarian aid to the areas where it is needed. This aid also includes humanitarian supplies in the areas of health, education, water and environmental health. The approved border crossings and entry points are listed below.
     - h: Approved Border Crossings and Entry Points
@@ -1586,22 +1608,33 @@ ar:
       level: 1
       id: s6-2
     - p: '1. الإعفاءات الجمركية والضريبية: أُعفيت جميع المواد التي أُدخلت إلى البلاد في إطار الأنشطة الإنسانية من الرسوم الجمركية والضرائب الأخرى والرسوم ذات الصلة، ويُذكر أن إجمالي قيمة هذه الإعفاءات الممنوحة حتى يونيو 2027 بلغ نحو 7.5 مليون دولار.'
+      b: true
     - p: '2. تغطية تكاليف نقل المساعدات: جرت تغطية تكاليف نقل المساعدات الواردة من الدول الصديقة وبعض المنظمات الإنسانية إلى جميع ولايات السودان، ويُذكر أن النفقات المخصصة لهذا الغرض حتى يونيو 2026 بلغت نحو 1.8 مليون دولار.'
+      b: true
     - p: '3. تنفيذ الإجراءات الإدارية والفنية: حتى يونيو 2026، نُفذ أكثر من 35,500 إجراء إداري وفني على المستويين الاتحادي والولائي لتسهيل إيصال المساعدات الإنسانية، شملت إصدار تأشيرات الدخول، ومنح الإعفاءات الجمركية والضريبية، وإصدار أذونات التنقل للعاملين في المجال الإنساني، والموافقة على شحنات المساعدات، وتجديد تسجيل المنظمات، وفتح حسابات مصرفية باسم المنظمات. وبلغت نسبة الموافقة الإجمالية على هذه الإجراءات 99.6%.'
+      b: true
     - p: '4. زيادة نقاط العبور: رُفع عدد نقاط العبور البرية والجوية والبحرية والنهرية المستخدمة في إيصال المساعدات الإنسانية من 2 إلى 14، والتزمت حكومة السودان بتحديد مواعيد فتح معبر أدري الحدودي، وهو أحد هذه النقاط، بصورة منتظمة.'
+      b: true
     - p: '5. مواءمة خطط الأمم المتحدة الإنسانية مع الأولويات الوطنية: بُذلت جهود لضمان اتساق خطط الاحتياجات والاستجابة الإنسانية للأمم المتحدة لعام 2026 مع الأولويات الوطنية للسودان وسيادته، وفي هذا الإطار ترأست المفوضية الآلية الوطنية للتنسيق الفني الخاصة بخطط الأمم المتحدة الإنسانية.'
+      b: true
     - p: '6. التقييمات الميدانية: نُفذت 8 دراسات ميدانية في 10 ولايات لتحديد الاحتياجات الإنسانية.'
+      b: true
     - p: '7. تنظيم الأوضاع القانونية للمنظمات الإنسانية: نُفذت الأعمال اللازمة لمواءمة الأوضاع القانونية للمنظمات العاملة في الأنشطة الإنسانية مع التشريعات.'
-    - h: جدول متابعة إجراءات تسهيل الوصول الإنساني (حتى أغسطس 2026)
-      toc: جدول متابعة إجراءات تسهيل الوصول الإنساني (حتى أغسطس 2026)
-      level: 1
-      id: s6-3
-    - p: EKLENECEK
+      b: true
     - h: المعابر الحدودية المعتمدة للوصول الإنساني في السودان
       toc: المعابر الحدودية المعتمدة للوصول الإنساني في السودان
       level: 1
       id: s6-4
-    - p: EKLENECEK
+    - img: /img/maps/sudan-needs-sectors-ar.png
+      size:
+      - 1400
+      - 940
+      alt: نسب الاحتياجات الإنسانية حسب القطاعات
+    - img: /img/maps/sudan-border-crossings-ar.png
+      size:
+      - 1400
+      - 828
+      alt: المعابر المعتمدة لوصول المساعدات الإنسانية في السودان
     - p: تماشيًا مع قرار مجلس السيادة الانتقالي، ومبادئ إعلان جدة الصادر في مايو 2023، والسياسة الوطنية للنزوح الداخلي لسنة 2009، وموجهات وإجراءات العمل الإنساني لسنة 2016، اعتمدت حكومة السودان ما مجموعه 14 معبرًا حدوديًا ونقطة دخول برية وجوية ونهرية لاستخدامها في شحنات المساعدات الإنسانية، وذلك للوفاء بمسؤولياتها تجاه النازحين والعائدين والمجتمعات المضيفة المتأثرة بالحرب. وبذلك زاد عدد النقاط المعتمدة بمقدار 12 نقطة. وسُجّلت النقاط من 1 إلى 7 بوصفها نقاط العبور المستخدمة فعليًا لدخول المساعدات الإنسانية إلى البلاد خلال الفترة من يناير إلى أغسطس 2026.
     - p: إضافة إلى ذلك، توجد نحو 6,000 طريق داخلي تُستخدم في شحنات المساعدات الإنسانية، تغطي 773 وحدة إدارية في 18 ولاية، وتسهّل إيصال المساعدات الإنسانية إلى المناطق المحتاجة إليها. وتشمل هذه المساعدات أيضًا الإمدادات الإنسانية في مجالات الصحة والتعليم والمياه وصحة البيئة. وفيما يلي المعابر الحدودية ونقاط الدخول المعتمدة.
     - h: المعابر الحدودية ونقاط الدخول المعتمدة

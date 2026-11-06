@@ -38,6 +38,7 @@
         {% if s.text %}{% for para in s.text.split('\n\n') %}<p class="text-lg">{{ para }}</p>{% endfor %}{% endif %}
         {% for b in s.blocks or [] %}
         {% if b.h %}{% if b.level == 2 %}<h4 class="rsub l2" id="{{ b.id }}">{{ b.h }}</h4>{% else %}<h3 class="rsub" id="{{ b.id }}">{{ b.h }}</h3>{% endif %}
+        {% elif b.p and b.b %}{% set k = b.p.find(':') + 1 %}<p class="text-lg"><strong>{{ b.p[:k] }}</strong>{{ b.p[k:] }}</p>
         {% elif b.p %}<p class="text-lg">{{ b.p }}</p>
         {% elif b.ol %}<ol class="rlist text-lg">{% for li in b.ol %}<li>{{ li }}</li>{% endfor %}</ol>
         {% elif b.img %}<figure class="rmap"><img src="{{ b.img }}" alt="{{ b.alt }}"{% if b.size %} width="{{ b.size[0] }}" height="{{ b.size[1] }}"{% endif %} loading="lazy"></figure>
