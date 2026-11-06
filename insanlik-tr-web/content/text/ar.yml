@@ -40,6 +40,7 @@ all: عرض الكل
 empty: لم تُنشر تقارير في هذا القسم بعد.
 key_figures: أرقام رئيسية
 country_projects: المشاريع في هذه الدولة
+country_projects_fmt: "مشاريعنا في {}"
 download: تحميل PDF
 external: يفتح في نافذة جديدة
 needs_title: الاحتياجات ذات الأولوية

@@ -742,5 +742,27 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .toc .toc-sub a:hover { color: var(--brand); }
 .detail > article { min-width: 0; }
 
-:lang(tr) .detail article:has(.rsub) .situ p.text-lg, :lang(tr) .detail article:has(.rsub) .rlist, :lang(tr) .detail article:has(.rsub) .rtbl .tbl td, :lang(tr) .detail article:has(.rsub) .rtbl .tbl th { font-size: 12pt; }
-:lang(tr) .detail article:has(.rsub) .bar-title, :lang(tr) .detail article:has(.rsub) .rsub { font-size: 13pt; }
+.detail article:has(.rsub) .situ p.text-lg, .detail article:has(.rsub) .rlist, .detail article:has(.rsub) .rtbl .tbl td, .detail article:has(.rsub) .rtbl .tbl th { font-size: 12pt; }
+.detail article:has(.rsub) .bar-title, .detail article:has(.rsub) .rsub { font-size: 13pt; }
+
+/* report side box: smaller */
+.detail .side .side-box { padding: 16px 18px; }
+.detail .side .side-box .h4 { font-size: .95rem; margin-bottom: 10px; }
+.detail .side .side-box .btn { padding: 9px 12px; font-size: .8rem; min-height: 0; }
+.detail .side .side-box .btn svg { width: 15px; height: 15px; }
+/* report tables on phones: each row becomes a card */
+@media (max-width: 760px) {
+  .rtbl .tbl-wrap { overflow: visible; }
+  .rtbl .tbl, .rtbl .tbl tbody, .rtbl .tbl tfoot, .rtbl .tbl tr, .rtbl .tbl td { display: block; width: 100%; min-width: 0; }
+  .rtbl .tbl thead { display: none; }
+  .rtbl .tbl tr { border: 1px solid var(--line); margin-bottom: 10px; background: #fff; }
+  .rtbl .tbl td { display: flex; gap: 12px; justify-content: space-between; text-align: start; padding: 7px 10px; border: 0; border-top: 1px solid var(--line); white-space: normal; }
+  .rtbl .tbl tr td:first-child { border-top: 0; }
+  .rtbl .tbl td::before { content: attr(data-label); flex: 0 0 38%; font-weight: 700; color: var(--muted); font-size: .9em; }
+  .rtbl .tbl td.n { text-align: end; }
+  .rtbl .tbl td { overflow-wrap: anywhere; }
+  .rtbl .tbl td::before { min-width: 0; overflow-wrap: anywhere; }
+  .rtbl .tbl tr { width: auto; }
+  .rtbl .tbl td:empty { display: none; }
+  .rtbl .tbl tfoot tr { border-top: 2px solid var(--brand); }
+}

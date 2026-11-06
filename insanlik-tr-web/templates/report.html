@@ -45,8 +45,8 @@
         <figure class="rtbl">
           <div class="tbl-wrap"><table class="tbl">
             <thead><tr>{% for hcell in tb.head %}<th>{{ hcell }}</th>{% endfor %}</tr></thead>
-            <tbody>{% for row in tb.rows %}<tr>{% for c in row %}{% if c is string %}<td{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% else %}<td colspan="{{ c[1] }}">{{ c[0] }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
-            {% if tb.foot %}<tfoot><tr>{% for c in tb.foot %}<td{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% endfor %}</tr></tfoot>{% endif %}
+            <tbody>{% for row in tb.rows %}<tr>{% for c in row %}{% if c is string %}<td data-label="{{ tb.head[loop.index0] }}"{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% else %}<td data-label="{{ tb.head[loop.index0] }}" colspan="{{ c[1] }}">{{ c[0] }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
+            {% if tb.foot %}<tfoot><tr>{% for c in tb.foot %}<td data-label="{{ tb.head[loop.index0] }}"{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% endfor %}</tr></tfoot>{% endif %}
           </table></div>
         </figure>
         {% endif %}
@@ -71,7 +71,7 @@
         <h2 class="h4">{{ r.country_name or t.nav[r.category] }}</h2>
         <div class="btn-col">
           {% if r.pdf %}<a class="btn btn-gold" href="{{ r.pdf }}" target="_blank" rel="noopener">{{ m.icon('download') }} {{ t.download }}</a>{% endif %}
-          {% if r.country %}<a class="btn btn-primary" href="/{{ lang }}/areas/{{ r.country }}/">{{ m.icon('grid') }} {{ t.country_projects }}</a>{% endif %}
+          {% if r.country %}<a class="btn btn-primary" href="/{{ lang }}/areas/{{ r.country }}/">{{ m.icon('grid') }} {{ t.country_projects_fmt|replace('{}', r.country_name) if t.country_projects_fmt and r.country_name else t.country_projects }}</a>{% endif %}
           <a class="btn btn-ghost" href="mailto:{{ contact.email }}?subject={{ r.title|urlencode }}">{{ m.icon('mail') }} {{ contact.email }}</a>
         </div>
       </div>
