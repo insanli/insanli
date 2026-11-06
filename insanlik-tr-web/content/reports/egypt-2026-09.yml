@@ -24,11 +24,13 @@ tr:
   - value: 18.5K+
     label: Gazze’de hâlâ tıbbi tahliyeye ihtiyaç duyan hastalar
   sections:
-  - title: Durum Genel Görünümü
+  - kicker: MEVCUT DURUM
+    title: Durum Genel Görünümü
     toc: DURUM GENEL GÖRÜNÜMÜ
     blocks:
     - p: Mısır, krizin başlangıcından bu yana Gazze’den ülkeye gelen Filistinliler için önemli bir insani yardım ve sağlık müdahale merkezi olmaya devam etmektedir. Bu nüfus; tıbbi tahliye edilen hastaları, onlara eşlik eden aile üyelerini ve diğer yerinden edilmiş Filistinlileri kapsamaktadır. Birçok kişi uzman sağlık hizmetleri, ilaç, rehabilitasyon, psikososyal destek, geçici barınma ve temel yaşam giderleri konusunda devam eden ihtiyaçlarla karşı karşıyadır. Geri dönüş ve hareket konusundaki belirsizlik de önemli bir koruma sorunu olmaya devam etmektedir.
-  - title: İnsani İhtiyaçlar ve Müdahale Öncelikleri
+  - kicker: İNSANİ İHTİYAÇLAR VE MÜDAHALE ODAĞI
+    title: İnsani İhtiyaçlar ve Müdahale Öncelikleri
     toc: İNSANİ İHTİYAÇLAR VE MÜDAHALE ÖNCELİKLERİ
     blocks:
     - p: Öncelikli ihtiyaçlar ve müdahale alanları; Filistinli hastalar için uzman tedavi, rehabilitasyon ve sevk süreçlerinin sürdürülmesini, tahliye edilen hastaları kabul eden Mısır hastanelerinin ve sağlık personelinin desteklenmesini, ilaç ve yardımcı tıbbi cihazların teminini, psikososyal destek hizmetlerinin güçlendirilmesini ve geçici barınma imkânlarının sağlanmasını kapsamaktadır.
