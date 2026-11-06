@@ -66,7 +66,7 @@
       {% if r.note %}<p class="muted small">{{ r.note }}</p>{% endif %}
     </article>
     <aside class="side">
-      {{ toc(r, t, '', true) }}
+      {{ toc(r, t, '', false) }}
       <div class="side-box">
         <h2 class="h4">{{ r.country_name or t.nav[r.category] }}</h2>
         <div class="btn-col">

@@ -17,7 +17,7 @@ tr:
   sources: []
   summary: Sudan’da 15 Nisan 2023’ten bu yana devam eden savaş ve isyancı milislerin sivillere yönelik yaygın ihlalleri, ülkeyi son derece ağır ve çok boyutlu bir insani krize sürüklemiştir.
   sections:
-  - title: 1. Sudan’daki İnsani Durum
+  - title: Sudan’daki İnsani Durum
     toc: SUDAN’DAKİ İNSANİ DURUM
     blocks:
     - h: Sudan’daki İnsani Felaketin Mevcut Durumu
@@ -29,7 +29,7 @@ tr:
     - p: Uluslararası kamuoyunun yaşananlar karşısındaki sessizliği, Abu Dabi yönetiminin paralı savaşçılara ölümcül silahlar sağlaması ve isyancı milislerin acımasız saldırıları, Sudan’daki insani felaketi (Humanitarian Tragedy Curve) daha da ağırlaştırmıştır. Bu hafta, insani krizin boyutları ve sivillerin maruz kaldığı ihlaller en kritik seviyeye ulaşmıştır. Ağır silahlarla donatılmış milislerin Büyük Kordofan bölgesindeki eyaletlerde ve Mavi Nil Bölgesi’nde 3,8 milyondan fazla savunmasız sivili tehdit eden saldırıları ve yarattığı çok yönlü riskler, uluslararası insancıl hukuk ve uluslararası insan hakları hukuku kapsamında suç teşkil eden eylemler niteliğindedir.
     - p: Bütün bunlar, Sudan’daki insani felaketin, bir tarafta isyancı bir askerî milis gücünün, diğer tarafta ise kadınların, çocukların, yaşlıların ve silahsız sivillerin bulunduğu; taraflar arasında ciddi bir güç eşitsizliğinin yaşandığı bir çatışmanın sonucu olduğunu göstermektedir.
     - p: Bu nedenle uluslararası toplumun yaşanan felaketi tarafsız ve nesnel bir bakış açısıyla değerlendirmesi, olayları gerçek niteliğine uygun biçimde tanımlaması ve tarafların sorumluluklarını birbirinden ayırması büyük önem taşımaktadır. Uluslararası hukuku sistematik biçimde ihlal eden isyancı bir milis gücü ile vatandaşlarını korumak, onların onurunu gözetmek ve ülkesini savunmakla yükümlü Sudan Silahlı Kuvvetleri aynı şekilde değerlendirilmemelidir. Sudan Silahlı Kuvvetleri bu görevlerini, başta 1977 tarihli ve Cenevre Sözleşmelerine ek II. Protokol olmak üzere ilgili uluslararası hukuk düzenlemeleri çerçevesinde yerine getirmektedir.
-    - h: Ağustos 2026 İtibarıyla Sudan’daki İnsani Duruma Genel Bakış
+    - h: Sudan’daki İnsani Duruma Genel Bakış (Ağustos 2026 İtibarıyla)
       toc: Ağustos 2026 İtibarıyla Sudan’daki İnsani Duruma Genel Bakış
       level: 1
       id: s1-2
@@ -47,10 +47,10 @@ tr:
     - p: Uluslararası toplumun sivilleri isyancı milislerin saldırılarından korumakta yetersiz kalması, Sudan’daki insani krizin daha da derinleşmesine yol açmıştır. Sahadan elde edilen nesnel verilere dayanan raporlara göre Sudan, isyancı milislerin saldırıları nedeniyle hakları ihlal edilen ve çeşitli suçlara maruz kalan sivillerin sayısı bakımından dünyada öne çıkan ülkelerden biri hâline gelmiştir.
     - p: Bilinen bazı ülkeler tarafından desteklenen isyancı milislerin saldırıları sonucunda yaklaşık 13,8 milyon kişi, yani Sudan nüfusunun %32’si, uluslararası insancıl hukuk kapsamında suç teşkil eden eylemlere maruz kalmıştır. Büyük Darfur ve Büyük Kordofan bölgelerindeki eyaletler ile Mavi Nil Bölgesi’nin bazı kesimlerinde yaşayan her beş kişiden üçü, uluslararası insan hakları hukukuna göre suç sayılan en az bir eylemin mağduru olmuştur.
     - p: Raporda toplam 16 tür ihlal ve suçtan söz edilmektedir. Bunlar arasında sivillerin zorla yerinden edilmesi, bir savaş yöntemi olarak aç bırakılması, keyfî biçimde gözaltına alınması ve infaz edilmesi, canlı kalkan olarak kullanılması, mallarının yağmalanması, cinsel köleleştirme, savaş silahı olarak tecavüz ve diğer ağır ihlaller yer almaktadır. Aşağıdaki tablolar, savaşın siviller üzerindeki insani bilançosunu ayrıntılı biçimde ortaya koymaktadır.
-  - title: 2. Sivillere Yönelik İhlaller ve Etkilenen Bölgeler
+  - title: Sivillere Yönelik İhlaller ve Etkilenen Bölgeler
     toc: SİVİLLERE YÖNELİK İHLALLER VE ETKİLENEN BÖLGELER
     blocks:
-    - h: Ağustos 2026 İtibarıyla Kuzey Kordofan Eyaleti’nde Sivillere Yönelik İhlaller
+    - h: Kuzey Kordofan Eyaleti’nde Sivillere Yönelik İhlaller (Ağustos 2026 İtibarıyla)
       toc: Ağustos 2026 İtibarıyla Kuzey Kordofan Eyaleti’nde Sivillere Yönelik İhlaller
       level: 1
       id: s2-1
@@ -85,7 +85,7 @@ tr:
         num_cols:
         - 0
         - 3
-    - h: Ağustos 2026 İtibarıyla Sudan Genelinde Sivillere Yönelik İhlaller
+    - h: Sudan Genelinde Sivillere Yönelik İhlaller (Ağustos 2026 İtibarıyla)
       toc: Ağustos 2026 İtibarıyla Sudan Genelinde Sivillere Yönelik İhlaller
       level: 1
       id: s2-2
@@ -131,7 +131,7 @@ tr:
           - 2.900.000
         num_cols:
         - 2
-  - title: 3. İnsani Krizden Etkilenen Gruplar ve Coğrafi Dağılım
+  - title: İnsani Krizden Etkilenen Gruplar ve Coğrafi Dağılım
     toc: İNSANİ KRİZDEN ETKİLENEN GRUPLAR VE COĞRAFİ DAĞILIM
     blocks:
     - h: İnsani krizden etkilenen ve en fazla desteğe ihtiyaç duyan grupların coğrafi bölgelere göre dağılımı
@@ -143,10 +143,10 @@ tr:
       - 1568
       - 1182
       alt: İnsani krizden etkilenen ve en fazla desteğe ihtiyaç duyan grupların coğrafi bölgelere göre dağılımı
-  - title: 4. Sudan’da İnsani Yardım Çalışmaları
+  - title: Sudan’da İnsani Yardım Çalışmaları
     toc: SUDAN’DA İNSANİ YARDIM ÇALIŞMALARI
     blocks:
-    - h: A. Nisan 2023 – Ağustos 2026 Döneminde Sudan’a Yönelik Uluslararası İnsani Yardımın Genel Durumu
+    - h: A. Sudan’a Yönelik Uluslararası İnsani Yardımın Genel Durumu (Nisan 2023 – Ağustos 2026)
       toc: A. Nisan 2023 – Ağustos 2026 Döneminde Sudan’a Yönelik Uluslararası İnsani Yardımın Genel Durumu
       level: 1
       id: s4-1
@@ -200,7 +200,7 @@ tr:
     - p: Dönem boyunca insani yardım için ayrılan kaynaklarla farklı sektörlerdeki ihtiyaçlar arasında ciddi bir finansman açığı oluşmuş, kaynak metne göre bu açık bazı alanlarda %60’ı aşmıştır. Bunun sonucunda, Ocak–Ağustos 2026 döneminde yaklaşık 15,8 milyon kişi birden fazla sektörü kapsayan insani yardım çalışmalarından yararlanamamıştır.
     - p: Buna rağmen devletin koruma alanlarını ve güvenli bölgeleri genişletmeye yönelik çalışmaları, insani yardımların ihtiyaç sahiplerine ulaştırılmasını kolaylaştıran girişimleri ve kurumlar arasındaki koordinasyon sayesinde önemli ilerleme kaydedilmiştir. Birleşmiş Milletler kuruluşları, yardım ortakları ve dost ve kardeş ülkelerin katkılarıyla söz konusu dönemde 11,5 milyondan fazla kişiye insani yardım ulaştırılmıştır.
     - p: Aynı dönemde gıda güvenliği, sağlık, eğitim, su ve acil yardım alanlarında yaklaşık 325.000 metrik ton insani yardım ulaştırıldığı kaydedilmiştir. Birleşmiş Milletlerin insani yardım faaliyetleri kapsamında yürüttüğü çalışmaların toplam tutarı ise 1,17 milyar dolara ulaşmıştır. Sektörlere göre sağlanan finansman ve karşılanma oranları aşağıdaki tabloda sunulmaktadır.
-    - h: Ocak–Ağustos 2026 Döneminde Birleşmiş Milletler ve Ortakları Tarafından Gerçekleştirilen İnsani Yardımlar
+    - h: Birleşmiş Milletler ve Ortakları Tarafından Gerçekleştirilen İnsani Yardımlar (Ocak–Ağustos 2026)
       toc: Ocak–Ağustos 2026 Döneminde Birleşmiş Milletler ve Ortakları Tarafından Gerçekleştirilen İnsani Yardımlar
       level: 1
       id: s4-3
@@ -246,7 +246,7 @@ tr:
         num_cols:
         - 1
         - 2
-    - h: B. Sudan’ın Ocak–Ağustos 2026 Dönemindeki Ulusal İnsani Yardım Çalışmalarının Özeti
+    - h: B. Sudan’ın Ulusal İnsani Yardım Çalışmalarının Özeti (Ocak–Ağustos 2026)
       toc: B. Sudan’ın Ocak–Ağustos 2026 Dönemindeki Ulusal İnsani Yardım Çalışmalarının Özeti
       level: 1
       id: s4-4
@@ -254,7 +254,7 @@ tr:
     - p: Yardımlar; Egemenlik Konseyi Başkanı’nın girişimi, Federal Maliye Bakanlığı, federal ve eyalet düzeyindeki kamu kurumları, yerel toplumsal girişimler, yurt dışında yaşayan Sudanlılar ve kurumsal sosyal sorumluluk kapsamında destek sağlayan ulusal şirketler aracılığıyla ulaştırılmıştır.
     - p: Bu çalışmalar, 2006 tarihli Gönüllü ve İnsani Yardım Faaliyetlerini Düzenleme Kanunu’nun 6. maddesinin (d) bendi ile 2009 tarihli Ulusal Yerinden Edilmiş Kişiler Politikası’nın 3. ve 5. maddeleri doğrultusunda yürütülmüştür. Ayrıca, Birleşmiş Milletler’in 1998 tarihli Ülke İçinde Yerinden Edilmeye İlişkin Yol Gösterici İlkeleri’nin 25. ve 1. ilkeleri esas alınmıştır.
     - p: Bu kapsamda, insani ihtiyaçların yoğun olduğu bölgelerde yaşayan 6,9 milyondan fazla kişiye, farklı sektörleri kapsayan toplam 2.585.500 metrik ton insani yardım ulaştırılmıştır. Yardımlarda özellikle Büyük Darfur ve Büyük Kurdufan bölgelerinden yerinden edilenlere öncelik verilmiştir. Yardım kaynakları ve dağılımına ilişkin ayrıntılar aşağıdaki tabloda yer almaktadır.
-    - h: Ağustos 2026’ya Kadar Sağlanan Ulusal İnsani Yardımlar
+    - h: Sağlanan Ulusal İnsani Yardımlar (Ağustos 2026’ya Kadar)
       toc: Ağustos 2026’ya Kadar Sağlanan Ulusal İnsani Yardımlar
       level: 1
       id: s4-5
@@ -297,10 +297,10 @@ tr:
         - —
         - 2.585.500
         - —
-  - title: 5. İnsani İhtiyaçlar ve Yardım Öncelikleri
-    toc: İNSANİ İHTİYAÇLAR VE YARDIM ÖNCELİKLERİ
+  - title: Sektörlere Göre İnsani Yardım İhtiyaçları ve Öncelikleri
+    toc: SEKTÖRLERE GÖRE İNSANİ YARDIM İHTİYAÇLARI VE ÖNCELİKLERİ
     blocks:
-    - h: Aralık 2026’ya Kadar Sektörlere Göre Tahmini İnsani Yardım İhtiyaçları
+    - h: Sektörlere Göre Tahmini İnsani Yardım İhtiyaçları (Aralık 2026’ya Kadar)
       toc: Aralık 2026’ya Kadar Sektörlere Göre Tahmini İnsani Yardım İhtiyaçları
       level: 1
       id: s5-1
@@ -331,11 +331,11 @@ tr:
         - Toplam
         - —
         - 3.360.000 metrik ton
-    - h: Ekim 2020’ye Kadar Sonbahar Acil Durumları Kapsamında Gıda ve Barınma İhtiyaçları
+    - h: Sonbahar Acil Durumları Kapsamında Gıda ve Barınma İhtiyaçları (Ekim 2020’ye Kadar)
       toc: Ekim 2020’ye Kadar Sonbahar Acil Durumları Kapsamında Gıda ve Barınma İhtiyaçları
       level: 1
       id: s5-2
-    - h: 1. Gıda Yardımı
+    - h: Gıda Yardımı
       toc: Gıda Yardımı
       level: 2
       id: s5-3
@@ -381,7 +381,7 @@ tr:
         - 659.000 ton
         - ''
         - ''
-    - h: 2. Barınma Malzemeleri
+    - h: Barınma Malzemeleri
       toc: Barınma Malzemeleri
       level: 2
       id: s5-4
@@ -477,7 +477,7 @@ tr:
         - ''
         - Toplam
         - 2.576.398 birim
-  - title: 6. İnsani Yardımların Ulaştırılması ve Erişim Kolaylıkları
+  - title: İnsani Yardımların Ulaştırılması ve Erişim Kolaylıkları
     toc: İNSANİ YARDIMLARIN ULAŞTIRILMASI VE ERİŞİM KOLAYLIKLARI
     blocks:
     - h: Sudan’ın İnsani Yardımların Ulaştırılmasını Kolaylaştırmaya Yönelik Çalışmaları
@@ -530,7 +530,7 @@ tr:
       - El-Obeid Uluslararası Havalimanı.
       - El-Faşir Havalimanı.
       - Dongola Uluslararası Havalimanı.
-  - title: 7. İnsani Yardım Çalışmalarında Karşılaşılan Zorluklar
+  - title: İnsani Yardım Çalışmalarında Karşılaşılan Zorluklar
     toc: İNSANİ YARDIM ÇALIŞMALARINDA KARŞILAŞILAN ZORLUKLAR
     blocks:
     - h: Sudan’daki İnsani Yardım Müdahale Çalışmalarının Karşılaştığı Zorluklar
@@ -545,7 +545,7 @@ tr:
     - p: 6. İnsani yardımların isyancı güçler tarafından giderek daha fazla yağmalanması ve askerî amaçlarla kullanılması.
     - p: 7. İsyancı güçlerin, insani yardım sevkiyatları için kullanılan sınır kapılarını silah sokmak ve bu silahları savunmasız sivillere karşı kullanmak amacıyla istismar etmesi.
     - p: 8. İsyancı güçlerin insani yardım çalışanlarına yönelik saldırılarını sürdürmesi ve insani yardım kuruluşlarının varlıklarını ve mülklerini yağmalaması.
-  - title: 8. İnsani Durumun İyileştirilmesine Yönelik Öneriler
+  - title: İnsani Durumun İyileştirilmesine Yönelik Öneriler
     toc: İNSANİ DURUMUN İYİLEŞTİRİLMESİNE YÖNELİK ÖNERİLER
     blocks:
     - h: Sudan’daki İnsani Durumun İyileştirilmesine Yönelik Bazı Öneriler
