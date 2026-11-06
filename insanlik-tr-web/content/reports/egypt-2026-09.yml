@@ -11,6 +11,7 @@ sources:
 - UNICEF
 order: 3
 tr:
+  black_heads: true
   country_name: Mısır
   title: Mısır — İnsani Durum Genel Görünümü
   summary: Mısır, krizin başlangıcından bu yana Gazze’den ülkeye gelen Filistinliler için önemli bir insani yardım ve sağlık müdahale merkezi olmaya devam etmektedir. Bu nüfus; tıbbi tahliye edilen hastaları, onlara eşlik eden aile üyelerini ve diğer yerinden edilmiş…
@@ -35,11 +36,13 @@ tr:
     blocks:
     - p: Öncelikli ihtiyaçlar ve müdahale alanları; Filistinli hastalar için uzman tedavi, rehabilitasyon ve sevk süreçlerinin sürdürülmesini, tahliye edilen hastaları kabul eden Mısır hastanelerinin ve sağlık personelinin desteklenmesini, ilaç ve yardımcı tıbbi cihazların teminini, psikososyal destek hizmetlerinin güçlendirilmesini ve geçici barınma imkânlarının sağlanmasını kapsamaktadır.
     - p: Ayrıca çocuklar, engelli bireyler, kronik veya karmaşık sağlık sorunları bulunan hastalar, sınırlı mali kaynaklara sahip haneler ve hastalara refakat eden aile üyeleri öncelikli destek grupları arasında değerlendirilmelidir. Mısır'daki kırılgan Filistinli ailelere yönelik temel insani yardımların ulaştırılması ve koşullar elverdiğinde güvenli, onurlu ve gönüllü hareketin desteklenmesi de müdahale öncelikleri arasında yer almalıdır.
-  - title: Mısır’daki İnsani Yardım Faaliyetlerimiz ve Hizmet Kapasitemiz
+  - kicker: FAALİYETLERİMİZ
+    title: Mısır’daki İnsani Yardım Faaliyetlerimiz ve Hizmet Kapasitemiz
     toc: MISIR’DAKİ İNSANİ YARDIM FAALİYETLERİMİZ VE HİZMET KAPASİTEMİZ
     blocks:
     - p: Mısır’da, savaş ve zorunlu göç nedeniyle ülkelerini terk etmek zorunda kalan Filistinli ve Sudanlı birey ve ailelere yönelik insani yardım ve sosyal destek faaliyetleri yürütmekteyiz. Faaliyetlerimizi, her iki topluluğun ihtiyaç ve önceliklerini gözeterek farklı program alanlarında gerçekleştirmekteyiz.
-  - title: Mısır’daki Resmî Temsil, Operasyonel ve Kurumsal Uygulama Kapasitemiz
+  - kicker: KURUMSAL KAPASİTE
+    title: Mısır’daki Resmî Temsil, Operasyonel ve Kurumsal Uygulama Kapasitemiz
     toc: MISIR’DAKİ RESMÎ TEMSİL, OPERASYONEL VE KURUMSAL UYGULAMA KAPASİTEMİZ
     blocks:
     - h: Resmî Temsil ve Kurumsal İş Birlikleri
@@ -57,7 +60,8 @@ tr:
       level: 1
       id: s4-3
     - p: Derneğimiz, Mısır'da çok sayıda aile ve katılımcının yer aldığı yardım organizasyonları ve sosyal etkinlikleri düzenlemek için gerekli izin süreçlerini yürütebilmektedir. Toplu iftar programları, yardım dağıtımları ve benzeri geniş katılımlı etkinlikler, ilgili makamlardan gerekli izinlerin alınarak düzenlenebilmektedir.
-  - title: Mısır’daki Temel Faaliyet Alanlarımız
+  - kicker: FAALİYET ALANLARI
+    title: Mısır’daki Temel Faaliyet Alanlarımız
     toc: MISIR’DAKİ TEMEL FAALİYET ALANLARIMIZ
     blocks:
     - h: Sağlık ve Rehabilitasyon Hizmetleri
@@ -121,7 +125,8 @@ tr:
       - Farklı alanlarda meslek edindirme kurslarının sunulması
       - Katılımcıların mesleki bilgi ve becerilerinin geliştirilmesi
       - İstihdam olanaklarına ve ekonomik bağımsızlığa erişimlerinin desteklenmesi
-  - title: Mısır’daki Temel Faaliyet Alanlarımız
+  - kicker: HİZMETLERİMİZ
+    title: Mısır’daki Temel Faaliyet Alanlarımız
     toc: MISIR’DAKİ TEMEL FAALİYET ALANLARIMIZ
     blocks:
     - h: Cerrahi Hizmetler ve Sağlık Kuruluşlarıyla İş Birlikleri
@@ -217,7 +222,8 @@ tr:
       id: s6-9
     - p: Savaş nedeniyle evlerini terk ederek Mısır'a sığınmak zorunda kalan ailelerin barınma ihtiyaçlarına katkı sağlamak amacıyla kira yardımı yapılması.
     - p: Bu destekle ailelerin kira giderlerini karşılayabilmelerine, barınma sorunlarını hafifletmelerine ve daha güvenli koşullarda yaşamalarını sürdürmelerine katkı sağlanması amaçlanmaktadır.
-  - title: Mısır'da Kapsamlı Sağlık Hizmetleri İçin Yerel Uygulama ve İş Birliği Ağı
+  - kicker: İŞ BİRLİĞİ AĞI
+    title: Mısır'da Kapsamlı Sağlık Hizmetleri İçin Yerel Uygulama ve İş Birliği Ağı
     toc: MISIR'DA KAPSAMLI SAĞLIK HİZMETLERİ İÇİN YEREL UYGULAMA VE İŞ BİRLİĞİ AĞI
     blocks:
     - p: Kurumumuz, insani yardım alanında faaliyet gösteren paydaşları Mısır'daki yerel sağlık hizmeti sağlayıcılarıyla buluşturmayı ve hastaların müdahale aşamasından iyileşme, rehabilitasyon, takip ve dokümantasyon süreçlerine kadar koordinasyonunu sağlamayı hedeflemektedir.
