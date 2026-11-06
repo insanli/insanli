@@ -766,3 +766,9 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
   .rtbl .tbl td:empty { display: none; }
   .rtbl .tbl tfoot tr { border-top: 2px solid var(--brand); }
 }
+/* report side column: always stays on screen while scrolling */
+@media (min-width: 921px) {
+  .detail > .side { top: 106px; max-height: calc(100vh - 122px); overflow-y: auto; scrollbar-width: thin; }
+  .detail > .side .toc { margin-bottom: 12px; }
+}
+.toc a { color: #0f2147; }
