@@ -27,18 +27,18 @@ tr:
   sections:
   - kicker: MEVCUT DURUM
     title: Durum Genel Görünümü
-    toc: DURUM GENEL GÖRÜNÜMÜ
+    toc: Durum genel görünümü
     blocks:
     - p: Mısır, krizin başlangıcından bu yana Gazze’den ülkeye gelen Filistinliler için önemli bir insani yardım ve sağlık müdahale merkezi olmaya devam etmektedir. Bu nüfus; tıbbi tahliye edilen hastaları, onlara eşlik eden aile üyelerini ve diğer yerinden edilmiş Filistinlileri kapsamaktadır. Birçok kişi uzman sağlık hizmetleri, ilaç, rehabilitasyon, psikososyal destek, geçici barınma ve temel yaşam giderleri konusunda devam eden ihtiyaçlarla karşı karşıyadır. Geri dönüş ve hareket konusundaki belirsizlik de önemli bir koruma sorunu olmaya devam etmektedir.
   - kicker: İNSANİ İHTİYAÇLAR VE MÜDAHALE ODAĞI
     title: İnsani İhtiyaçlar ve Müdahale Öncelikleri
-    toc: İNSANİ İHTİYAÇLAR VE MÜDAHALE ÖNCELİKLERİ
+    toc: İnsani ihtiyaçlar ve müdahale öncelikleri
     blocks:
     - p: Öncelikli ihtiyaçlar ve müdahale alanları; Filistinli hastalar için uzman tedavi, rehabilitasyon ve sevk süreçlerinin sürdürülmesini, tahliye edilen hastaları kabul eden Mısır hastanelerinin ve sağlık personelinin desteklenmesini, ilaç ve yardımcı tıbbi cihazların teminini, psikososyal destek hizmetlerinin güçlendirilmesini ve geçici barınma imkânlarının sağlanmasını kapsamaktadır.
     - p: Ayrıca çocuklar, engelli bireyler, kronik veya karmaşık sağlık sorunları bulunan hastalar, sınırlı mali kaynaklara sahip haneler ve hastalara refakat eden aile üyeleri öncelikli destek grupları arasında değerlendirilmelidir. Mısır'daki kırılgan Filistinli ailelere yönelik temel insani yardımların ulaştırılması ve koşullar elverdiğinde güvenli, onurlu ve gönüllü hareketin desteklenmesi de müdahale öncelikleri arasında yer almalıdır.
   - kicker: FAALİYETLERİMİZ
     title: Mısır’daki İnsani Yardım Faaliyetlerimiz ve Hizmet Kapasitemiz
-    toc: MISIR’DAKİ İNSANİ YARDIM FAALİYETLERİMİZ VE HİZMET KAPASİTEMİZ
+    toc: Mısır’daki insani yardım faaliyetlerimiz ve hizmet kapasitemiz
     blocks:
     - p: Mısır’da, savaş ve zorunlu göç nedeniyle ülkelerini terk etmek zorunda kalan Filistinli ve Sudanlı birey ve ailelere yönelik insani yardım ve sosyal destek faaliyetleri yürütmekteyiz. Faaliyetlerimizi, her iki topluluğun ihtiyaç ve önceliklerini gözeterek farklı program alanlarında gerçekleştirmekteyiz.
     - h: Resmî Temsil ve Kurumsal İş Birlikleri
@@ -212,7 +212,7 @@ tr:
     - p: Bu destekle ailelerin kira giderlerini karşılayabilmelerine, barınma sorunlarını hafifletmelerine ve daha güvenli koşullarda yaşamalarını sürdürmelerine katkı sağlanması amaçlanmaktadır.
   - kicker: İŞ BİRLİĞİ AĞI
     title: Mısır'da Kapsamlı Sağlık Hizmetleri İçin Yerel Uygulama ve İş Birliği Ağı
-    toc: MISIR'DA KAPSAMLI SAĞLIK HİZMETLERİ İÇİN YEREL UYGULAMA VE İŞ BİRLİĞİ AĞI
+    toc: "Mısır'da kapsamlı sağlık hizmetleri için yerel uygulama ve iş birliği ağı"
     blocks:
     - p: Kurumumuz, insani yardım alanında faaliyet gösteren paydaşları Mısır'daki yerel sağlık hizmeti sağlayıcılarıyla buluşturmayı ve hastaların müdahale aşamasından iyileşme, rehabilitasyon, takip ve dokümantasyon süreçlerine kadar koordinasyonunu sağlamayı hedeflemektedir.
     - h: İş Birliği ve Proje Geliştirme Alanları
@@ -248,18 +248,21 @@ en:
   - kind: context
     kicker: CURRENT CONTEXT
     title: Situation Overview
+    toc: Situation overview
     text: Egypt continues to play a major humanitarian and health-response role for Palestinians from Gaza who have entered the country since the start of the crisis. This population includes medical evacuees, accompanying family members and other displaced Palestinians. Many face continuing needs related to specialized healthcare, medication, rehabilitation, psychosocial support, accommodation and basic living costs, while uncertainty around return and movement remains a major protection concern.
   - kind: needs
     kicker: HUMANITARIAN NEEDS
     title: Priority Humanitarian Needs
+    toc: Priority humanitarian needs
     text: Priority needs include continued specialized medical treatment and rehabilitation for evacuated patients, medicines and assistive devices, psychosocial support, temporary accommodation, basic assistance and support for accompanying family members. Particular attention is required for children, people with disabilities, patients with chronic or complex conditions and households with limited financial resources.
   - kind: priorities
     kicker: RESPONSE FOCUS
     title: Key Response Priorities
+    toc: Key response priorities
     text: Response priorities include sustaining treatment and referral pathways for Palestinian patients, supporting Egyptian hospitals and health personnel receiving evacuees, strengthening rehabilitation and psychosocial services, and providing targeted basic assistance to vulnerable Palestinian families in Egypt. Coordination should also support safe, dignified and voluntary movement when conditions allow.
   - kicker: OUR ACTIVITIES
     title: Our Humanitarian Activities and Service Capacity in Egypt
-    toc: OUR HUMANITARIAN ACTIVITIES AND SERVICE CAPACITY IN EGYPT
+    toc: Our humanitarian activities and service capacity in Egypt
     blocks:
     - p: In Egypt, we carry out humanitarian aid and social support activities for Palestinian and Sudanese individuals and families who have been forced to leave their countries because of war and forced displacement. We implement our activities across different program areas, taking into account the needs and priorities of both communities.
     - h: Official Representation and Institutional Partnerships
@@ -433,7 +436,7 @@ en:
     - p: This support aims to help families cover their rent costs, ease their housing problems and continue living in safer conditions.
   - kicker: PARTNERSHIP NETWORK
     title: Local Implementation and Partnership Network for Comprehensive Health Services in Egypt
-    toc: LOCAL IMPLEMENTATION AND PARTNERSHIP NETWORK FOR COMPREHENSIVE HEALTH SERVICES IN EGYPT
+    toc: Local implementation and partnership network for comprehensive health services in Egypt
     blocks:
     - p: Our organization aims to bring stakeholders working in the humanitarian field together with local healthcare providers in Egypt, and to coordinate patients’ care from the intervention stage through recovery, rehabilitation, follow-up and documentation.
     - h: Areas of Cooperation and Project Development

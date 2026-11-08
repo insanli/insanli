@@ -40,7 +40,7 @@ all: Tümünü gör
 empty: Bu bölümde henüz yayınlanmış rapor yok.
 key_figures: Temel Rakamlar
 country_projects: Bu ülkedeki projeler
-country_projects_fmt: "{} Projelerimiz"
+country_projects_fmt: "{} projelerimiz"
 download: PDF olarak indir
 external: Yeni sekmede açılır
 needs_title: Öncelikli İhtiyaçlar

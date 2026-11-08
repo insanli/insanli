@@ -18,7 +18,7 @@ tr:
   summary: Sudan’da 15 Nisan 2023’ten bu yana devam eden savaş ve isyancı milislerin sivillere yönelik yaygın ihlalleri, ülkeyi son derece ağır ve çok boyutlu bir insani krize sürüklemiştir.
   sections:
   - title: Sudan’daki İnsani Durum
-    toc: SUDAN’DAKİ İNSANİ DURUM
+    toc: Sudan’daki insani durum
     blocks:
     - h: Sudan’daki İnsani Felaketin Mevcut Durumu
       toc: Sudan’daki İnsani Felaketin Mevcut Durumu
@@ -48,7 +48,7 @@ tr:
     - p: Bilinen bazı ülkeler tarafından desteklenen isyancı milislerin saldırıları sonucunda yaklaşık 13,8 milyon kişi, yani Sudan nüfusunun %32’si, uluslararası insancıl hukuk kapsamında suç teşkil eden eylemlere maruz kalmıştır. Büyük Darfur ve Büyük Kordofan bölgelerindeki eyaletler ile Mavi Nil Bölgesi’nin bazı kesimlerinde yaşayan her beş kişiden üçü, uluslararası insan hakları hukukuna göre suç sayılan en az bir eylemin mağduru olmuştur.
     - p: Raporda toplam 16 tür ihlal ve suçtan söz edilmektedir. Bunlar arasında sivillerin zorla yerinden edilmesi, bir savaş yöntemi olarak aç bırakılması, keyfî biçimde gözaltına alınması ve infaz edilmesi, canlı kalkan olarak kullanılması, mallarının yağmalanması, cinsel köleleştirme, savaş silahı olarak tecavüz ve diğer ağır ihlaller yer almaktadır. Aşağıdaki tablolar, savaşın siviller üzerindeki insani bilançosunu ayrıntılı biçimde ortaya koymaktadır.
   - title: Sivillere Yönelik İhlaller ve Etkilenen Bölgeler
-    toc: SİVİLLERE YÖNELİK İHLALLER VE ETKİLENEN BÖLGELER
+    toc: Sivillere yönelik ihlaller ve etkilenen bölgeler
     blocks:
     - h: Kuzey Kordofan Eyaleti’nde Sivillere Yönelik İhlaller (Ağustos 2026 İtibarıyla)
       toc: Ağustos 2026 İtibarıyla Kuzey Kordofan Eyaleti’nde Sivillere Yönelik İhlaller
@@ -132,7 +132,7 @@ tr:
         num_cols:
         - 2
   - title: İnsani Krizden Etkilenen Gruplar ve Coğrafi Dağılım
-    toc: İNSANİ KRİZDEN ETKİLENEN GRUPLAR VE COĞRAFİ DAĞILIM
+    toc: İnsani krizden etkilenen gruplar ve coğrafi dağılım
     blocks:
     - h: İnsani krizden etkilenen ve en fazla desteğe ihtiyaç duyan grupların coğrafi bölgelere göre dağılımı
       toc: İnsani Krizden Etkilenen ve En Fazla Desteğe İhtiyaç Duyan Grupların Coğrafi Bölgelere Göre Dağılımı
@@ -144,7 +144,7 @@ tr:
       - 1182
       alt: İnsani krizden etkilenen ve en fazla desteğe ihtiyaç duyan grupların coğrafi bölgelere göre dağılımı
   - title: Sudan’da İnsani Yardım Çalışmaları
-    toc: SUDAN’DA İNSANİ YARDIM ÇALIŞMALARI
+    toc: Sudan’da insani yardım çalışmaları
     blocks:
     - h: A. Sudan’a Yönelik Uluslararası İnsani Yardımın Genel Durumu (Nisan 2023 – Ağustos 2026)
       toc: A. Nisan 2023 – Ağustos 2026 Döneminde Sudan’a Yönelik Uluslararası İnsani Yardımın Genel Durumu
@@ -298,7 +298,7 @@ tr:
         - 2.585.500
         - —
   - title: Sektörlere Göre İnsani Yardım İhtiyaçları ve Öncelikleri
-    toc: SEKTÖRLERE GÖRE İNSANİ YARDIM İHTİYAÇLARI VE ÖNCELİKLERİ
+    toc: Sektörlere göre insani yardım ihtiyaçları ve öncelikleri
     blocks:
     - h: Sektörlere Göre Tahmini İnsani Yardım İhtiyaçları (Aralık 2026’ya Kadar)
       toc: Aralık 2026’ya Kadar Sektörlere Göre Tahmini İnsani Yardım İhtiyaçları
@@ -478,7 +478,7 @@ tr:
         - Toplam
         - 2.576.398 birim
   - title: İnsani Yardımların Ulaştırılması ve Erişim Kolaylıkları
-    toc: İNSANİ YARDIMLARIN ULAŞTIRILMASI VE ERİŞİM KOLAYLIKLARI
+    toc: İnsani yardımların ulaştırılması ve erişim kolaylıkları
     blocks:
     - h: Sudan’ın İnsani Yardımların Ulaştırılmasını Kolaylaştırmaya Yönelik Çalışmaları
       toc: Sudan’ın İnsani Yardımların Ulaştırılmasını Kolaylaştırmaya Yönelik Çalışmaları
@@ -542,7 +542,7 @@ tr:
       - El-Faşir Havalimanı.
       - Dongola Uluslararası Havalimanı.
   - title: İnsani Yardım Çalışmalarında Karşılaşılan Zorluklar
-    toc: İNSANİ YARDIM ÇALIŞMALARINDA KARŞILAŞILAN ZORLUKLAR
+    toc: İnsani yardım çalışmalarında karşılaşılan zorluklar
     blocks:
     - h: Sudan’daki İnsani Yardım Müdahale Çalışmalarının Karşılaştığı Zorluklar
       toc: Sudan’daki İnsani Yardım Müdahale Çalışmalarının Karşılaştığı Zorluklar
@@ -557,7 +557,7 @@ tr:
     - p: 7. İsyancı güçlerin, insani yardım sevkiyatları için kullanılan sınır kapılarını silah sokmak ve bu silahları savunmasız sivillere karşı kullanmak amacıyla istismar etmesi.
     - p: 8. İsyancı güçlerin insani yardım çalışanlarına yönelik saldırılarını sürdürmesi ve insani yardım kuruluşlarının varlıklarını ve mülklerini yağmalaması.
   - title: İnsani Durumun İyileştirilmesine Yönelik Öneriler
-    toc: İNSANİ DURUMUN İYİLEŞTİRİLMESİNE YÖNELİK ÖNERİLER
+    toc: İnsani durumun iyileştirilmesine yönelik öneriler
     blocks:
     - h: Sudan’daki İnsani Durumun İyileştirilmesine Yönelik Bazı Öneriler
       toc: Sudan’daki İnsani Durumun İyileştirilmesine Yönelik Bazı Öneriler
@@ -606,7 +606,7 @@ en:
     - p: The international community’s failure to protect civilians from rebel militia attacks has further deepened the humanitarian crisis in Sudan. According to reports based on objective data from the field, Sudan has become one of the leading countries in the world in terms of the number of civilians whose rights have been violated and who have been subjected to various crimes as a result of rebel militia attacks.
     - p: As a result of attacks by rebel militias backed by certain known countries, around 13.8 million people – 32% of Sudan’s population – have been subjected to acts that constitute crimes under international humanitarian law. Three out of every five people living in the states of Greater Darfur and Greater Kordofan and in parts of the Blue Nile region have been victims of at least one act considered a crime under international human rights law.
     - p: The report documents a total of 16 types of violations and crimes. These include the forced displacement of civilians, starvation as a method of warfare, arbitrary detention and execution, use as human shields, looting of property, sexual slavery, rape as a weapon of war and other grave violations. The tables below set out in detail the human toll of the war on civilians.
-    toc: HUMANITARIAN SITUATION IN SUDAN
+    toc: Humanitarian situation in Sudan
   - title: Violations against Civilians and Affected Areas
     blocks:
     - h: Violations against Civilians in North Kordofan State (as of August 2026)
@@ -690,7 +690,7 @@ en:
           - 2,900,000
         num_cols:
         - 2
-    toc: VIOLATIONS AGAINST CIVILIANS AND AFFECTED AREAS
+    toc: Violations against civilians and affected areas
   - title: Groups Affected by the Humanitarian Crisis and Geographical Distribution
     blocks:
     - h: Distribution of the Groups Affected by the Humanitarian Crisis and Most in Need of Support by Geographical Region
@@ -700,7 +700,7 @@ en:
     - img: /img/maps/sudan-affected-en.png
       size: *id001
       alt: Distribution of the Groups Affected by the Humanitarian Crisis and Most in Need of Support by Geographical Region
-    toc: GROUPS AFFECTED BY THE HUMANITARIAN CRISIS AND GEOGRAPHICAL DISTRIBUTION
+    toc: Groups affected by the humanitarian crisis and geographical distribution
   - title: Humanitarian Aid Operations in Sudan
     blocks:
     - h: A. Overall Status of International Humanitarian Aid to Sudan (April 2023 – August 2026)
@@ -854,7 +854,7 @@ en:
         - —
         - 2,585,500
         - —
-    toc: HUMANITARIAN AID OPERATIONS IN SUDAN
+    toc: Humanitarian aid operations in Sudan
   - title: Humanitarian Aid Needs and Priorities by Sector
     blocks:
     - h: Estimated Humanitarian Aid Needs by Sector (up to December 2026)
@@ -1034,7 +1034,7 @@ en:
         - ''
         - Total
         - 2,576,398 units
-    toc: HUMANITARIAN AID NEEDS AND PRIORITIES BY SECTOR
+    toc: Humanitarian aid needs and priorities by sector
   - title: Delivery of Humanitarian Aid and Access Facilitation
     blocks:
     - h: Sudan’s Efforts to Facilitate the Delivery of Humanitarian Aid
@@ -1098,7 +1098,7 @@ en:
       - El Obeid International Airport.
       - El Fasher Airport.
       - Dongola International Airport.
-    toc: DELIVERY OF HUMANITARIAN AID AND ACCESS FACILITATION
+    toc: Delivery of humanitarian aid and access facilitation
   - title: Challenges Faced in Humanitarian Aid Operations
     blocks:
     - h: Challenges Facing Humanitarian Response Efforts in Sudan
@@ -1113,7 +1113,7 @@ en:
     - p: 6. The increasing looting of humanitarian aid by the rebel forces and its use for military purposes.
     - p: 7. The rebel forces’ exploitation of the border crossings used for humanitarian aid shipments to bring in weapons and use them against defenceless civilians.
     - p: 8. The rebel forces’ continued attacks on humanitarian workers and looting of the assets and property of humanitarian organisations.
-    toc: CHALLENGES FACED IN HUMANITARIAN AID OPERATIONS
+    toc: Challenges faced in humanitarian aid operations
   - title: Recommendations for Improving the Humanitarian Situation
     blocks:
     - h: Some Recommendations for Improving the Humanitarian Situation in Sudan
@@ -1127,7 +1127,7 @@ en:
     - p: 5. Conducting humanitarian aid activities in Sudan in line with UN resolution 46/182 of 1991, which provides for respect for the national sovereignty of states, with this approach contributing to preserving Sudan’s unity and territorial integrity.
     - p: 6. Removing the mercenaries affiliated with the Rapid Support Forces from civilian homes and preventing the use of these homes for military purposes, in line with the 2005 United Nations principles on housing and property restitution for displaced civilians.
     - p: 7. Increasing international funding for Sudan across the different areas of humanitarian aid in proportion to the scale of the humanitarian crisis in the country.
-    toc: RECOMMENDATIONS FOR IMPROVING THE HUMANITARIAN SITUATION
+    toc: Recommendations for improving the humanitarian situation
 ar:
   country_name: السودان
   title: تقرير الوضع الإنساني في السودان

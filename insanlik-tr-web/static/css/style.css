@@ -726,7 +726,9 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 @media (max-width: 760px) { .qtbl { min-width: 640px; } }
 /* report index (right column; at the top of the text on phones) */
 .toc { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--brand); padding: 16px 20px 6px; margin-bottom: 18px; }
-.toc-title { margin: 0 0 6px; font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.toc-title { margin: 0 0 6px; font-size: .85rem; font-weight: 800; letter-spacing: 0; text-transform: none; color: var(--muted); }
+/* report pages: buttons in the box under the contents list keep their normal capitals (not ALL CAPS) */
+.toc ~ .side-box .btn { text-transform: none; letter-spacing: 0; }
 [dir="rtl"] .toc-title { letter-spacing: 0; font-size: .9rem; }
 .toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
 .toc li { counter-increment: toc; border-top: 1px solid var(--line); }

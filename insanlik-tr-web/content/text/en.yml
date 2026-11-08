@@ -40,7 +40,7 @@ all: View all
 empty: No reports have been published in this section yet.
 key_figures: Key Figures
 country_projects: Projects in this country
-country_projects_fmt: "Our {} Projects"
+country_projects_fmt: "Our {} projects"
 download: Download PDF
 external: Opens in a new tab
 needs_title: Priority Needs
