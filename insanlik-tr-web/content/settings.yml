@@ -1,0 +1,30 @@
+# General settings: addresses, languages, page images, contact details.
+
+site_name: İnsanlık Eli
+full_name: İnsanlık Eli Yardımlaşma ve Dayanışma Derneği
+url: https://www.insanlik.tr
+main_site: https://www.insanlikeli.tr
+languages:
+- tr
+- en
+- ar
+default_lang: tr
+landing_image: /img/hero.jpg
+reports_image: /img/countries/sudan.jpg
+projects_image: /img/countries/gaza.jpg
+categories:
+- country
+- sectoral
+- needs
+- emergency
+- data
+contacts:
+  tr:
+    email: bilgi@insanlikeli.org
+    whatsapp: '905342400317'
+  en:
+    email: partnership@insanlikeli.org
+    whatsapp: '905064846735'
+  ar:
+    email: partnership@insanlikeli.org
+    whatsapp: '905064846735'

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% import '_m.html' as m %}
+{% block title %}{{ t.nav.reports }}{% endblock %}
+{% block description %}{{ t.reports_intro }}{% endblock %}
+{% block content %}
+{{ m.page_hero(t.nav.reports, t.reports_intro, S.site_name, S.reports_image) }}
+<section class="sec">
+  <div class="container">
+    <div class="menu-cards">
+      <a class="mcard" href="{{ S.main_site }}/{{ lang }}/about/" target="_blank" rel="noopener">
+        <span class="mcard-icon">{{ m.icon('info') }}</span>
+        <span class="mcard-title">{{ t.nav.about }} {{ m.icon('external', 'ext') }}</span>
+        <span class="mcard-text">{{ t.desc.about }}</span>
+      </a>
+      {% for c in cats %}
+      {% set n = reports|selectattr('category', 'equalto', c)|list|length %}
+      <a class="mcard" href="/{{ lang }}/reports/{{ c }}/">
+        <span class="mcard-icon">{{ m.icon(m.CAT_ICONS[c]) }}</span>
+        <span class="mcard-title">{{ t.nav[c] }}</span>
+        <span class="mcard-text">{{ t.desc[c] }}</span>
+        {% if c not in ('data', 'needs') %}<span class="mcard-count">{{ n }}</span>{% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% if reports %}
+<section class="sec sec-soft">
+  <div class="container">
+    {{ m.heading(t.latest, t.nav.reports) }}
+    <div class="grid g3">{% for r in reports[:6] %}{{ m.report_card(r, t, lang) }}{% endfor %}</div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

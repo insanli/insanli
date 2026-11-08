@@ -1,0 +1,333 @@
+# Impact figures shown on the "Veri ve Görselleştirmeler" page. Numbers per language must match.
+
+year: 2026
+tr:
+  title: Başarılarımız
+  intro: Hizmet verdiğimiz topluluklardaki insani yardım çalışmalarımızın; programlarımızın erişimini ve farklı ülke ve sektörlerde ulaştırılan desteği yansıtan açık bir görünümü.
+  snapshot:
+    kicker: 2026 ETKİ
+    title: Etki Özeti
+  reach:
+    kicker: ETKİYİ KEŞFEDİN
+    title: Çalışmalarımızın Ulaştığı Alanlar
+  outputs_head:
+    kicker: ULAŞTIRILAN YARDIMLAR
+    title: Rakamlarla Etki
+  kpis:
+  - value: 665,674
+    label: Ulaşılan Kişi
+  - value: 133,135
+    label: Desteklenen Aile
+  - value: '97'
+    label: Gerçekleştirilen Müdahale
+  - value: '9'
+    label: Ulaşılan Ülke
+  by_country:
+  - country: Filistin (Gazze)
+    people: 658164
+    interventions: 82
+  - country: Nijerya
+    people: 720
+    interventions: 4
+  - country: Mısır
+    people: 750
+    interventions: 2
+  - country: Türkiye
+    people: 2650
+    interventions: 2
+  - country: Suriye
+    people: 40
+    interventions: 1
+  - country: Benin
+    people: 800
+    interventions: 2
+  - country: Somali
+    people: 50
+    interventions: 1
+  - country: Çad
+    people: 500
+    interventions: 1
+  - country: Sudan
+    people: 2000
+    interventions: 2
+  outputs:
+  - value: 2,410
+    label: İçme Suyu Dağıtımı
+  - value: 4,501
+    label: Gıda Kolileri
+  - value: '600'
+    label: Giyim
+  - value: '450'
+    label: İftar Yemekleri
+  - value: '12'
+    label: Zekât Yardımı
+  - value: '4'
+    label: Su Kuyusu
+  - value: '6'
+    label: Banyo İnşası
+  - value: '2'
+    label: Cami İnşası
+  - value: '142'
+    label: Konserve Kurban Eti
+  - value: '112'
+    label: Nakdi Yardım
+  - value: '70'
+    label: Kur'an-ı Kerim Dağıtımı
+  - value: '185'
+    label: Dondurulmuş Kurban Eti
+  - value: '96'
+    label: Dondurulmuş Kurban Eti
+  - value: 1,367
+    label: Yetim Sponsorluğu
+  - value: '10'
+    label: Evlilik Desteği
+  - value: '1'
+    label: Ev Onarımı
+  - value: '2'
+    label: Aile Sponsorluğu
+  - value: '340'
+    label: Ekmek Dağıtımı
+  - value: '1'
+    label: Su Kuyusu Bakımı
+  - value: '5'
+    label: Kurban Eti
+  - value: '851'
+    label: Bebek Maması
+  - value: 8,000
+    label: Sıcak Yemekler
+  - value: '500'
+    label: Bebek Bezi
+  - value: '35'
+    label: Taze Kurban Eti
+  - value: '88'
+    label: Aşevi
+  - value: 4,100
+    label: Un Dağıtımı
+  - value: 3,000
+    label: Hijyen Kitleri
+  - value: 1,000
+    label: Eğitim Desteği
+  - value: '1'
+    label: Eğitim Desteği
+  - value: '250'
+    label: Hijyen Kitleri
+en:
+  title: Our Achievements
+  intro: A clear view of our humanitarian response across the communities we serve, reflecting the reach of our programmes and the assistance delivered across countries and sectors.
+  snapshot:
+    kicker: 2026 IMPACT
+    title: Impact Snapshot
+  reach:
+    kicker: EXPLORE THE IMPACT
+    title: Where Our Work Reaches
+  outputs_head:
+    kicker: DELIVERED ASSISTANCE
+    title: Impact in Numbers
+  kpis:
+  - value: 665,674
+    label: People Reached
+  - value: 133,135
+    label: Families Supported
+  - value: '97'
+    label: Interventions Delivered
+  - value: '9'
+    label: Countries Reached
+  by_country:
+  - country: Palestine (Gaza)
+    people: 658164
+    interventions: 82
+  - country: Nigeria
+    people: 720
+    interventions: 4
+  - country: Egypt
+    people: 750
+    interventions: 2
+  - country: Türkiye
+    people: 2650
+    interventions: 2
+  - country: Syria
+    people: 40
+    interventions: 1
+  - country: Benin
+    people: 800
+    interventions: 2
+  - country: Somalia
+    people: 50
+    interventions: 1
+  - country: Chad
+    people: 500
+    interventions: 1
+  - country: Sudan
+    people: 2000
+    interventions: 2
+  outputs:
+  - value: 2,410
+    label: Water Distribution
+  - value: 4,501
+    label: Food Parcels
+  - value: '600'
+    label: Clothing
+  - value: '450'
+    label: Iftar Meals
+  - value: '12'
+    label: Zakat Assistance
+  - value: '4'
+    label: Water Well
+  - value: '6'
+    label: Bathroom Construction
+  - value: '2'
+    label: Mosque Construction
+  - value: '142'
+    label: Canned Qurbani Meat
+  - value: '112'
+    label: Cash Assistance
+  - value: '70'
+    label: Quran Distribution
+  - value: '185'
+    label: Frozen Qurbani Meat
+  - value: '96'
+    label: Frozen Qurbani Meat
+  - value: 1,367
+    label: Orphan Sponsorship
+  - value: '10'
+    label: Marriage Support
+  - value: '1'
+    label: House Repair
+  - value: '2'
+    label: Family Sponsorship
+  - value: '340'
+    label: Bread Distribution
+  - value: '1'
+    label: Water Well Maintenance
+  - value: '5'
+    label: Sacrificial Meat
+  - value: '851'
+    label: Baby Formula
+  - value: 8,000
+    label: Hot Meals
+  - value: '500'
+    label: Baby Diapers
+  - value: '35'
+    label: Fresh Qurbani Meat
+  - value: '88'
+    label: Tekkeya
+  - value: 4,100
+    label: Flour Distribution
+  - value: 3,000
+    label: Hygiene Kits
+  - value: 1,000
+    label: Education Support
+  - value: '1'
+    label: Education Support
+  - value: '250'
+    label: Hygiene Kits
+ar:
+  title: إنجازاتنا
+  intro: نظرة واضحة على استجابتنا الإنسانية في المجتمعات التي نخدمها، تعكس نطاق وصول برامجنا والمساعدات التي قدمناها عبر مختلف البلدان والقطاعات.
+  snapshot:
+    kicker: الأثر 2026
+    title: ملخص الأثر
+  reach:
+    kicker: نطاق الأثر
+    title: نطاق وصول أعمالنا
+  outputs_head:
+    kicker: حصيلة التدخلات
+    title: الأثر بالأرقام
+  kpis:
+  - value: 665,674
+    label: الأشخاص الذين تم الوصول إليهم
+  - value: 133,135
+    label: الأسر المستفيدة
+  - value: '97'
+    label: التدخلات المنفذة
+  - value: '9'
+    label: الدول التي وصلنا إليها
+  by_country:
+  - country: فلسطين (غزة)
+    people: 658164
+    interventions: 82
+  - country: نيجيريا
+    people: 720
+    interventions: 4
+  - country: مصر
+    people: 750
+    interventions: 2
+  - country: تركيا
+    people: 2650
+    interventions: 2
+  - country: سوريا
+    people: 40
+    interventions: 1
+  - country: بنين
+    people: 800
+    interventions: 2
+  - country: الصومال
+    people: 50
+    interventions: 1
+  - country: تشاد
+    people: 500
+    interventions: 1
+  - country: السودان
+    people: 2000
+    interventions: 2
+  outputs:
+  - value: 2,410
+    label: توزيع مياه الشرب
+  - value: 4,501
+    label: سلال غذائية
+  - value: '600'
+    label: ملابس
+  - value: '450'
+    label: وجبات إفطار
+  - value: '12'
+    label: مساعدات الزكاة
+  - value: '4'
+    label: بئر مياه
+  - value: '6'
+    label: إنشاء حمامات
+  - value: '2'
+    label: إنشاء المساجد
+  - value: '142'
+    label: لحوم أضاحي معلبة
+  - value: '112'
+    label: مساعدات نقدية
+  - value: '70'
+    label: توزيع المصاحف
+  - value: '185'
+    label: لحوم أضاحي مجمدة
+  - value: '96'
+    label: لحوم أضاحي مجمدة
+  - value: 1,367
+    label: كفالة الأيتام
+  - value: '10'
+    label: دعم الزواج
+  - value: '1'
+    label: ترميم المنازل
+  - value: '2'
+    label: كفالة الأسر
+  - value: '340'
+    label: توزيع الخبز
+  - value: '1'
+    label: صيانة آبار المياه
+  - value: '5'
+    label: لحوم الأضاحي
+  - value: '851'
+    label: حليب الأطفال
+  - value: 8,000
+    label: وجبات ساخنة
+  - value: '500'
+    label: حفاضات الأطفال
+  - value: '35'
+    label: لحوم أضاحي طازجة
+  - value: '88'
+    label: تكية
+  - value: 4,100
+    label: توزيع الطحين
+  - value: 3,000
+    label: حقائب النظافة
+  - value: 1,000
+    label: دعم تعليمي
+  - value: '1'
+    label: دعم تعليمي
+  - value: '250'
+    label: حقائب النظافة
