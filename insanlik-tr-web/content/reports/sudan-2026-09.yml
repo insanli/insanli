@@ -477,6 +477,11 @@ tr:
         - ''
         - Toplam
         - 2.576.398 birim
+    - img: /img/maps/sudan-needs-sectors-tr.png
+      size:
+      - 1400
+      - 940
+      alt: Sektörlere göre insani ihtiyaç oranları
   - title: İnsani Yardımların Ulaştırılması ve Erişim Kolaylıkları
     toc: İnsani yardımların ulaştırılması ve erişim kolaylıkları
     blocks:
@@ -510,11 +515,6 @@ tr:
       toc: Sudan’da İnsani Yardım Erişimi İçin Onaylanan Sınır Kapıları
       level: 1
       id: s6-4
-    - img: /img/maps/sudan-needs-sectors-tr.png
-      size:
-      - 1400
-      - 940
-      alt: Sektörlere göre insani ihtiyaç oranları
     - img: /img/maps/sudan-border-crossings-tr.png
       size:
       - 1400
@@ -1034,6 +1034,11 @@ en:
         - ''
         - Total
         - 2,576,398 units
+    - img: /img/maps/sudan-needs-sectors-en.png
+      size:
+      - 1400
+      - 940
+      alt: Percentages of humanitarian needs by sector
     toc: Humanitarian aid needs and priorities by sector
   - title: Delivery of Humanitarian Aid and Access Facilitation
     blocks:
@@ -1067,11 +1072,6 @@ en:
       toc: Border Crossings Approved for Humanitarian Access in Sudan
       level: 1
       id: s6-4
-    - img: /img/maps/sudan-needs-sectors-en.png
-      size:
-      - 1400
-      - 940
-      alt: Percentages of humanitarian needs by sector
     - img: /img/maps/sudan-border-crossings-en.png
       size:
       - 1400
@@ -1592,6 +1592,11 @@ ar:
         - ''
         - الإجمالي
         - 2,576,398 وحدة
+    - img: /img/maps/sudan-needs-sectors-ar.png
+      size:
+      - 1400
+      - 940
+      alt: نسب الاحتياجات الإنسانية حسب القطاعات
     toc: احتياجات المساعدات الإنسانية وأولوياتها حسب القطاعات
   - title: إيصال المساعدات الإنسانية وتسهيلات الوصول
     blocks:
@@ -1625,11 +1630,6 @@ ar:
       toc: المعابر الحدودية المعتمدة للوصول الإنساني في السودان
       level: 1
       id: s6-4
-    - img: /img/maps/sudan-needs-sectors-ar.png
-      size:
-      - 1400
-      - 940
-      alt: نسب الاحتياجات الإنسانية حسب القطاعات
     - img: /img/maps/sudan-border-crossings-ar.png
       size:
       - 1400
