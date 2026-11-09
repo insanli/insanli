@@ -63,6 +63,7 @@ tr:
   - kicker: FAALİYET ALANLARI
     title: Mısır’daki Temel Faaliyet Alanlarımız
     toc: Mısır’daki temel faaliyet alanlarımız
+    nav_after: 4  # the box with the sub-headings comes after the first 4 blocks (the two lists)
     blocks:
     - h: Sağlık ve Rehabilitasyon Hizmetleri
       toc: Sağlık ve Rehabilitasyon Hizmetleri
@@ -73,6 +74,7 @@ tr:
       - Protez hizmetleri ve rehabilitasyon
       - Fizik tedavi ve ameliyat sonrası iyileşme süreçleri
       - Çocuklara yönelik ruh sağlığı ve psikososyal destek
+      links: [s6-1, s6-2, s6-3, s6-5]  # each item opens its detailed part below
     - h: Temel İnsani Yardım ve Aile Destek Hizmetleri
       toc: Temel İnsani Yardım ve Aile Destek Hizmetleri
       level: 1
@@ -81,6 +83,7 @@ tr:
       - Gıda Kolisi Desteği
       - Ailelere Düzenli Aylık Nakdî Destek
       - Kira ve Barınma Desteği
+      links: [s6-7, s6-8, s6-9]
     - h: Filistinlilere Yönelik İnsani Yardım ve Destek Faaliyetlerimiz
       toc: Filistinlilere Yönelik İnsani Yardım ve Destek Faaliyetlerimiz
       level: 1
@@ -303,6 +306,7 @@ en:
   - kicker: AREAS OF ACTIVITY
     title: Our Main Areas of Activity in Egypt
     toc: Our main areas of activity in Egypt
+    nav_after: 4  # the box with the sub-headings comes after the first 4 blocks (the two lists)
     blocks:
     - h: Health and Rehabilitation Services
       toc: Health and Rehabilitation Services
@@ -313,6 +317,7 @@ en:
       - Prosthetic services and rehabilitation
       - Physical therapy and post-operative recovery
       - Mental health and psychosocial support for children
+      links: [s6-1, s6-2, s6-3, s6-5]  # each item opens its detailed part below
     - h: Basic Humanitarian Aid and Family Support Services
       toc: Basic Humanitarian Aid and Family Support Services
       level: 1
@@ -321,6 +326,7 @@ en:
       - Food Parcel Support
       - Regular Monthly Cash Support for Families
       - Rent and Shelter Support
+      links: [s6-7, s6-8, s6-9]
     - h: Our Humanitarian Aid and Support Activities for Palestinians
       toc: Our Humanitarian Aid and Support Activities for Palestinians
       level: 1
@@ -540,6 +546,7 @@ ar:
   - kicker: مجالات العمل
     title: مجالات عملنا الرئيسية في مصر
     toc: مجالات عملنا الرئيسية في مصر
+    nav_after: 4  # the box with the sub-headings comes after the first 4 blocks (the two lists)
     blocks:
     - h: الخدمات الصحية وخدمات إعادة التأهيل
       toc: الخدمات الصحية وخدمات إعادة التأهيل
@@ -550,6 +557,7 @@ ar:
       - خدمات الأطراف الصناعية وإعادة التأهيل
       - العلاج الطبيعي ومراحل التعافي بعد العمليات الجراحية
       - الصحة النفسية والدعم النفسي والاجتماعي للأطفال
+      links: [s6-1, s6-2, s6-3, s6-5]  # each item opens its detailed part below
     - h: خدمات المساعدات الإنسانية الأساسية ودعم الأسر
       toc: خدمات المساعدات الإنسانية الأساسية ودعم الأسر
       level: 1
@@ -558,6 +566,7 @@ ar:
       - دعم السلال الغذائية
       - الدعم النقدي الشهري المنتظم للأسر
       - دعم الإيجار والإيواء
+      links: [s6-7, s6-8, s6-9]
     - h: أنشطتنا الإنسانية والداعمة للفلسطينيين
       toc: أنشطتنا الإنسانية والداعمة للفلسطينيين
       level: 1

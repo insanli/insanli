@@ -36,7 +36,11 @@
       <div class="situ" id="s{{ loop.index }}">
         {% if s.kicker %}<span class="kicker">{{ s.kicker }}</span>{% endif %}
         {% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}
-        {% if r.toc_deep and hs %}
+        {% set si = loop.index %}
+        {% if r.toc_deep and hs and s.nav_after %}
+        {#- the title opens the box with the sub-headings, which stands after the first blocks of the section -#}
+        <details class="sec-dd sec-dd-split" data-nav="secnav-s{{ si }}"><summary><h2 class="bar-title h3">{{ s.title }}</h2><span class="sec-dd-ico" aria-hidden="true"></span></summary></details>
+        {% elif r.toc_deep and hs %}
         <details class="sec-dd"><summary><h2 class="bar-title h3">{{ s.title }}</h2><span class="sec-dd-ico" aria-hidden="true"></span></summary>
           <nav class="sec-nav" aria-label="{{ s.title }}"><ol>{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol></nav>
         </details>
@@ -49,7 +53,7 @@
         {% elif b.p and b.b %}{% set k = b.p.find(':') + 1 %}<p class="text-lg"><strong>{{ b.p[:k] }}</strong>{{ b.p[k:] }}</p>
         {% elif b.p %}<p class="text-lg">{{ b.p }}</p>
         {% elif b.ol %}<ol class="rlist text-lg">{% for li in b.ol %}<li>{{ li }}</li>{% endfor %}</ol>
-        {% elif b.ul %}<ul class="rlist text-lg">{% for li in b.ul %}<li>{{ li }}</li>{% endfor %}</ul>
+        {% elif b.ul %}<ul class="rlist text-lg">{% for li in b.ul %}<li>{% if b.links and b.links[loop.index0] %}<a class="rjump" href="#{{ b.links[loop.index0] }}">{{ li }}</a>{% else %}{{ li }}{% endif %}</li>{% endfor %}</ul>
         {% elif b.lab %}<p class="rlab">{{ b.lab }}</p>
         {% elif b.img %}<figure class="rmap"><img src="{{ b.img }}" alt="{{ b.alt }}"{% if b.size %} width="{{ b.size[0] }}" height="{{ b.size[1] }}"{% endif %} loading="lazy"></figure>
         {% elif b.table %}{% set tb = b.table %}
@@ -61,6 +65,7 @@
           </table></div>
         </figure>
         {% endif %}
+        {% if s.nav_after and r.toc_deep and hs and loop.index == s.nav_after %}<nav class="sec-nav sec-nav-split" id="secnav-s{{ si }}" aria-label="{{ s.title }}"><ol>{% for h in hs %}<li class="l{{ h.level }}"><a href="#{{ h.id }}">{{ h.toc or h.h }}</a></li>{% endfor %}</ol></nav>{% endif %}
         {% endfor %}
         {% if s.image %}<figure class="rmap"><img src="{{ s.image }}" alt="{{ s.image_alt }}"{% if s.image_size %} width="{{ s.image_size[0] }}" height="{{ s.image_size[1] }}"{% endif %} loading="lazy"></figure>{% endif %}
         {% for tb in s.tables or [] %}
@@ -92,6 +97,13 @@
 {% if r.toc_deep %}
 <script>
 /* contents list: clicking a main heading goes to it and opens its sub-headings (one section open at a time) */
+/* a section title whose box of sub-headings stands further down: opening the title shows that box */
+document.querySelectorAll('.sec-dd-split').forEach(function (d) {
+  var box = document.getElementById(d.getAttribute('data-nav'));
+  if (!box) return;
+  var sync = function () { box.hidden = !d.open; };
+  d.addEventListener('toggle', sync); sync();
+});
 document.querySelectorAll('.toc.deep').forEach(function (nav) {
   nav.classList.add('js');
   nav.querySelectorAll('li.has-sub > a').forEach(function (a) {

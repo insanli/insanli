@@ -897,3 +897,8 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 /* Yetim Destek: a link from the start page menu lands on the country card below the top bar */
 .orphan-card[id] { scroll-margin-top: 110px; }
 @media (min-width: 1281px) { .is-landing .shdr .snav ul { gap: 16px; } }
+/* Egypt report: list items that open their detailed part further down; the sub-heading box after the two lists */
+.situ .rlist a.rjump { color: var(--brand); }
+.situ .rlist a.rjump:hover { text-decoration: underline; text-underline-offset: 3px; }
+.sec-nav.sec-nav-split { margin-top: 4px; }
+.sec-nav[hidden] { display: none; }
