@@ -13,6 +13,7 @@ order: 3
 tr:
   black_heads: true
   country_name: Mısır
+  head_sizes: [13, 12, 11]
   title: Mısır — İnsani Durum Genel Görünümü
   summary: Mısır, krizin başlangıcından bu yana Gazze’den ülkeye gelen Filistinliler için önemli bir insani yardım ve sağlık müdahale merkezi olmaya devam etmektedir. Bu nüfus; tıbbi tahliye edilen hastaları, onlara eşlik eden aile üyelerini ve diğer yerinden edilmiş…
   figures:
@@ -24,6 +25,9 @@ tr:
     label: Tıbbi tahliye edilen hastalarla gelen refakatçiler
   - value: 18.5K+
     label: Gazze’de hâlâ tıbbi tahliyeye ihtiyaç duyan hastalar
+  toc_deep: true
+  static_header: true
+  compact: true
   sections:
   - kicker: MEVCUT DURUM
     title: Durum Genel Görünümü
@@ -36,9 +40,9 @@ tr:
     blocks:
     - p: Öncelikli ihtiyaçlar ve müdahale alanları; Filistinli hastalar için uzman tedavi, rehabilitasyon ve sevk süreçlerinin sürdürülmesini, tahliye edilen hastaları kabul eden Mısır hastanelerinin ve sağlık personelinin desteklenmesini, ilaç ve yardımcı tıbbi cihazların teminini, psikososyal destek hizmetlerinin güçlendirilmesini ve geçici barınma imkânlarının sağlanmasını kapsamaktadır.
     - p: Ayrıca çocuklar, engelli bireyler, kronik veya karmaşık sağlık sorunları bulunan hastalar, sınırlı mali kaynaklara sahip haneler ve hastalara refakat eden aile üyeleri öncelikli destek grupları arasında değerlendirilmelidir. Mısır'daki kırılgan Filistinli ailelere yönelik temel insani yardımların ulaştırılması ve koşullar elverdiğinde güvenli, onurlu ve gönüllü hareketin desteklenmesi de müdahale öncelikleri arasında yer almalıdır.
-  - kicker: FAALİYETLERİMİZ
-    title: Mısır’daki İnsani Yardım Faaliyetlerimiz ve Hizmet Kapasitemiz
-    toc: Mısır’daki insani yardım faaliyetlerimiz ve hizmet kapasitemiz
+  - kicker: KURUMSAL KAPASİTE
+    title: Mısır'daki Resmî Temsil, Operasyonel ve Kurumsal Kapasitemiz
+    toc: Mısır'daki resmî temsil, operasyonel ve kurumsal kapasitemiz
     blocks:
     - p: Mısır’da, savaş ve zorunlu göç nedeniyle ülkelerini terk etmek zorunda kalan Filistinli ve Sudanlı birey ve ailelere yönelik insani yardım ve sosyal destek faaliyetleri yürütmekteyiz. Faaliyetlerimizi, her iki topluluğun ihtiyaç ve önceliklerini gözeterek farklı program alanlarında gerçekleştirmekteyiz.
     - h: Resmî Temsil ve Kurumsal İş Birlikleri
@@ -56,6 +60,10 @@ tr:
       level: 1
       id: s4-3
     - p: Derneğimiz, Mısır'da çok sayıda aile ve katılımcının yer aldığı yardım organizasyonları ve sosyal etkinlikleri düzenlemek için gerekli izin süreçlerini yürütebilmektedir. Toplu iftar programları, yardım dağıtımları ve benzeri geniş katılımlı etkinlikler, ilgili makamlardan gerekli izinlerin alınarak düzenlenebilmektedir.
+  - kicker: FAALİYET ALANLARI
+    title: Mısır’daki Temel Faaliyet Alanlarımız
+    toc: Mısır’daki temel faaliyet alanlarımız
+    blocks:
     - h: Sağlık ve Rehabilitasyon Hizmetleri
       toc: Sağlık ve Rehabilitasyon Hizmetleri
       level: 1
@@ -77,6 +85,7 @@ tr:
       toc: Filistinlilere Yönelik İnsani Yardım ve Destek Faaliyetlerimiz
       level: 1
       id: s5-3
+      nav: true
     - p: Gazze’deki savaş nedeniyle Mısır’a tahliye edilen veya yerinden edilerek Mısır’da yaşamını sürdürmek zorunda kalan Filistinli birey ve ailelere yönelik sağlık, rehabilitasyon, psikososyal destek ve temel insani yardım faaliyetleri yürütmekteyiz.
     - p: Kurumumuz, Mısır'da faaliyet gösteren sağlık hizmeti sağlayıcılarıyla kurduğu iş birlikleri aracılığıyla uzman sağlık hizmetleri, protez uygulamaları, rehabilitasyon ve psikososyal destek alanlarında kapsamlı hizmetler sunmayı hedeflemektedir. Bu kapsamda Gazze'den tahliye edilen hastalara yönelik sağlık ve bakım desteği de faaliyet alanlarımız arasında yer almaktadır.
     - h: Sağlık, tedavi ve bakım hizmetleri
@@ -110,6 +119,7 @@ tr:
       toc: Sudanlılara Yönelik İnsani Yardım ve Destek Faaliyetlerimiz
       level: 1
       id: s5-7
+      nav: true
     - p: Sudanlı ailelere yönelik çalışmalarımızda da Filistinli aileler için yürüttüğümüz sağlık, rehabilitasyon, psikososyal destek ve temel insani yardım programlarını sürdürmekteyiz. Bu kapsamda sağlık ve tedavi desteği, protez ve rehabilitasyon hizmetleri, çocuklara yönelik psikososyal destek, gıda kolisi, düzenli nakdî yardım ve kira-barınma desteği sağlamaktayız.
     - p: Bunlara ek olarak Sudanlılara yönelik mesleki eğitim ve beceri geliştirme programları da düzenlemekteyiz.
     - ul:
@@ -117,6 +127,12 @@ tr:
       - Farklı alanlarda meslek edindirme kurslarının sunulması
       - Katılımcıların mesleki bilgi ve becerilerinin geliştirilmesi
       - İstihdam olanaklarına ve ekonomik bağımsızlığa erişimlerinin desteklenmesi
+    - h: Faaliyetlerimizin Detaylı Açıklaması
+      toc: Faaliyetlerimizin Detaylı Açıklaması
+      level: 1
+      id: s6-0
+      nav: true
+      style: main
     - h: Cerrahi Hizmetler ve Sağlık Kuruluşlarıyla İş Birlikleri
       toc: Cerrahi Hizmetler ve Sağlık Kuruluşlarıyla İş Birlikleri
       level: 1
@@ -190,8 +206,8 @@ tr:
       - Ek desteğe ihtiyaç duyan çocukların belirlenmesi
       - İhtiyaç duyan çocukların uzmanlara yönlendirilmesi
       - Gerekli destek mekanizmalarıyla bağlantı kurulması
-    - h: B. Temel İnsani Yardım ve Aile Destek Hizmetleri
-      toc: B. Temel İnsani Yardım ve Aile Destek Hizmetleri
+    - h: Temel İnsani Yardım ve Aile Destek Hizmetleri
+      toc: Temel İnsani Yardım ve Aile Destek Hizmetleri
       level: 1
       id: s6-6
     - h: Gıda Kolisi Desteği
@@ -210,10 +226,10 @@ tr:
       id: s6-9
     - p: Savaş nedeniyle evlerini terk ederek Mısır'a sığınmak zorunda kalan ailelerin barınma ihtiyaçlarına katkı sağlamak amacıyla kira yardımı yapılması.
     - p: Bu destekle ailelerin kira giderlerini karşılayabilmelerine, barınma sorunlarını hafifletmelerine ve daha güvenli koşullarda yaşamalarını sürdürmelerine katkı sağlanması amaçlanmaktadır.
-  - kicker: İŞ BİRLİĞİ AĞI
-    title: Mısır'da Kapsamlı Sağlık Hizmetleri İçin Yerel Uygulama ve İş Birliği Ağı
-    toc: "Mısır'da kapsamlı sağlık hizmetleri için yerel uygulama ve iş birliği ağı"
-    blocks:
+    - h: Mısır'da Kapsamlı Sağlık Hizmetleri İçin Yerel Uygulama ve İş Birliği Ağı
+      toc: Mısır'da Kapsamlı Sağlık Hizmetleri İçin Yerel Uygulama ve İş Birliği Ağı
+      level: 1
+      id: s7-0
     - p: Kurumumuz, insani yardım alanında faaliyet gösteren paydaşları Mısır'daki yerel sağlık hizmeti sağlayıcılarıyla buluşturmayı ve hastaların müdahale aşamasından iyileşme, rehabilitasyon, takip ve dokümantasyon süreçlerine kadar koordinasyonunu sağlamayı hedeflemektedir.
     - h: İş Birliği ve Proje Geliştirme Alanları
       toc: İş Birliği ve Proje Geliştirme Alanları
@@ -233,6 +249,7 @@ tr:
   note: Rakamlar, raporlama dönemi için mevcut en güncel insani verileri yansıtmaktadır. Kaynaklar; UN OCHA, WFP, WHO ve UNICEF'in resmi insani durum güncellemeleri ile sektörel raporlarını içermektedir.
 en:
   country_name: Egypt
+  head_sizes: [13, 12, 11]
   title: Egypt — Humanitarian Situation Overview
   summary: Egypt continues to play a major humanitarian and health-response role for Palestinians from Gaza who have entered the country since the start of the crisis. This population includes medical evacuees, accompanying family members and other displaced…
   figures:
@@ -244,6 +261,9 @@ en:
     label: Companions received with medical evacuees
   - value: 18.5K+
     label: Patients in Gaza still requiring medical evacuation
+  toc_deep: true
+  static_header: true
+  compact: true
   sections:
   - kind: context
     kicker: CURRENT CONTEXT
@@ -260,9 +280,9 @@ en:
     title: Key Response Priorities
     toc: Key response priorities
     text: Response priorities include sustaining treatment and referral pathways for Palestinian patients, supporting Egyptian hospitals and health personnel receiving evacuees, strengthening rehabilitation and psychosocial services, and providing targeted basic assistance to vulnerable Palestinian families in Egypt. Coordination should also support safe, dignified and voluntary movement when conditions allow.
-  - kicker: OUR ACTIVITIES
-    title: Our Humanitarian Activities and Service Capacity in Egypt
-    toc: Our humanitarian activities and service capacity in Egypt
+  - kicker: INSTITUTIONAL CAPACITY
+    title: Our Official Representation, Operational and Institutional Capacity in Egypt
+    toc: Our official representation, operational and institutional capacity in Egypt
     blocks:
     - p: In Egypt, we carry out humanitarian aid and social support activities for Palestinian and Sudanese individuals and families who have been forced to leave their countries because of war and forced displacement. We implement our activities across different program areas, taking into account the needs and priorities of both communities.
     - h: Official Representation and Institutional Partnerships
@@ -280,6 +300,10 @@ en:
       level: 1
       id: s4-3
     - p: Our association is able to carry out the permit procedures required to organize aid events and social activities involving large numbers of families and participants in Egypt. Collective iftar programs, aid distributions and similar large-scale events can be organized once the necessary permits have been obtained from the relevant authorities.
+  - kicker: AREAS OF ACTIVITY
+    title: Our Main Areas of Activity in Egypt
+    toc: Our main areas of activity in Egypt
+    blocks:
     - h: Health and Rehabilitation Services
       toc: Health and Rehabilitation Services
       level: 1
@@ -301,6 +325,7 @@ en:
       toc: Our Humanitarian Aid and Support Activities for Palestinians
       level: 1
       id: s5-3
+      nav: true
     - p: We carry out health, rehabilitation, psychosocial support and basic humanitarian aid activities for Palestinian individuals and families who were evacuated to Egypt because of the war in Gaza, or who were displaced and have had to continue their lives in Egypt.
     - p: Through partnerships with healthcare providers operating in Egypt, our organization aims to provide comprehensive services in specialized healthcare, prosthetics, rehabilitation and psychosocial support. In this context, health and care support for patients evacuated from Gaza is also among our areas of activity.
     - h: Health, treatment and care services
@@ -334,6 +359,7 @@ en:
       toc: Our Humanitarian Aid and Support Activities for Sudanese People
       level: 1
       id: s5-7
+      nav: true
     - p: In our work with Sudanese families, we also continue the health, rehabilitation, psychosocial support and basic humanitarian aid programs that we carry out for Palestinian families. In this context, we provide health and treatment support, prosthetic and rehabilitation services, psychosocial support for children, food parcels, regular cash assistance, and rent and shelter support.
     - p: In addition, we organize vocational training and skills development programs for Sudanese people.
     - ul:
@@ -341,6 +367,12 @@ en:
       - Offering courses to learn a trade in different fields
       - Developing participants’ professional knowledge and skills
       - Supporting their access to employment opportunities and economic independence
+    - h: Detailed Description of Our Activities
+      toc: Detailed Description of Our Activities
+      level: 1
+      id: s6-0
+      nav: true
+      style: main
     - h: Surgical Services and Partnerships with Health Institutions
       toc: Surgical Services and Partnerships with Health Institutions
       level: 1
@@ -414,8 +446,8 @@ en:
       - Identifying children who need additional support
       - Referring children in need to specialists
       - Connecting them with the necessary support mechanisms
-    - h: B. Basic Humanitarian Aid and Family Support Services
-      toc: B. Basic Humanitarian Aid and Family Support Services
+    - h: Basic Humanitarian Aid and Family Support Services
+      toc: Basic Humanitarian Aid and Family Support Services
       level: 1
       id: s6-6
     - h: Food Parcel Support
@@ -434,10 +466,10 @@ en:
       id: s6-9
     - p: Providing rent assistance to help meet the housing needs of families who were forced to leave their homes because of the war and take refuge in Egypt.
     - p: This support aims to help families cover their rent costs, ease their housing problems and continue living in safer conditions.
-  - kicker: PARTNERSHIP NETWORK
-    title: Local Implementation and Partnership Network for Comprehensive Health Services in Egypt
-    toc: Local implementation and partnership network for comprehensive health services in Egypt
-    blocks:
+    - h: Local Implementation and Partnership Network for Comprehensive Health Services in Egypt
+      toc: Local Implementation and Partnership Network for Comprehensive Health Services in Egypt
+      level: 1
+      id: s7-0
     - p: Our organization aims to bring stakeholders working in the humanitarian field together with local healthcare providers in Egypt, and to coordinate patients’ care from the intervention stage through recovery, rehabilitation, follow-up and documentation.
     - h: Areas of Cooperation and Project Development
       toc: Areas of Cooperation and Project Development
@@ -457,6 +489,7 @@ en:
   note: Figures reflect the latest available humanitarian data for the reporting period. Sources include official humanitarian situation updates and sector-specific reporting from UN OCHA, WFP, WHO and UNICEF.
 ar:
   country_name: مصر
+  head_sizes: [13, 12, 11]
   title: مصر — نظرة عامة على الوضع الإنساني
   summary: تواصل مصر أداء دور إنساني وصحي رئيسي للفلسطينيين القادمين من قطاع غزة منذ بداية الأزمة. وتشمل هذه الفئة المرضى الذين تم إجلاؤهم طبيًا، وأفراد أسرهم المرافقين، وغيرهم من الفلسطينيين النازحين. ويواجه كثيرون احتياجات مستمرة تتعلق بالرعاية الطبية التخصصية…
   figures:
@@ -468,6 +501,9 @@ ar:
     label: مرافقون وصلوا مع حالات الإجلاء الطبي
   - value: 18.5K+
     label: مرضى في غزة ما زالوا بحاجة إلى إجلاء طبي
+  toc_deep: true
+  static_header: true
+  compact: true
   sections:
   - kind: context
     kicker: السياق الحالي
@@ -481,9 +517,9 @@ ar:
     kicker: أولويات الاستجابة
     title: أولويات الاستجابة الرئيسية
     text: تشمل أولويات الاستجابة الحفاظ على مسارات العلاج والإحالة للمرضى الفلسطينيين، ودعم المستشفيات المصرية والعاملين الصحيين الذين يستقبلون الحالات المحالة، وتعزيز خدمات إعادة التأهيل والدعم النفسي والاجتماعي، وتقديم مساعدات أساسية موجهة للأسر الفلسطينية الأكثر هشاشة في مصر. كما ينبغي أن يدعم التنسيق الحركة الآمنة والكريمة والطوعية عندما تسمح الظروف بذلك.
-  - kicker: أنشطتنا
-    title: أنشطتنا الإنسانية وقدراتنا الخدمية في مصر
-    toc: أنشطتنا الإنسانية وقدراتنا الخدمية في مصر
+  - kicker: القدرات المؤسسية
+    title: تمثيلنا الرسمي وقدراتنا التشغيلية والمؤسسية في مصر
+    toc: تمثيلنا الرسمي وقدراتنا التشغيلية والمؤسسية في مصر
     blocks:
     - p: ننفّذ في مصر أنشطة إغاثية وإنسانية وأنشطة دعم اجتماعي لصالح الأفراد والأسر الفلسطينية والسودانية الذين اضطروا إلى مغادرة بلدانهم بسبب الحرب والتهجير القسري. ونُنفّذ أنشطتنا في مجالات برامجية متعددة، مع مراعاة احتياجات المجتمعين وأولوياتهما.
     - h: التمثيل الرسمي والشراكات المؤسسية
@@ -501,6 +537,10 @@ ar:
       level: 1
       id: s4-3
     - p: تستطيع جمعيتنا استكمال إجراءات الحصول على التصاريح اللازمة لتنظيم الفعاليات الإغاثية والأنشطة الاجتماعية التي يشارك فيها عدد كبير من الأسر والمشاركين في مصر. ويمكن تنظيم موائد الإفطار الجماعية وتوزيع المساعدات وغيرها من الفعاليات واسعة المشاركة بعد الحصول على التصاريح اللازمة من الجهات المختصة.
+  - kicker: مجالات العمل
+    title: مجالات عملنا الرئيسية في مصر
+    toc: مجالات عملنا الرئيسية في مصر
+    blocks:
     - h: الخدمات الصحية وخدمات إعادة التأهيل
       toc: الخدمات الصحية وخدمات إعادة التأهيل
       level: 1
@@ -522,6 +562,7 @@ ar:
       toc: أنشطتنا الإنسانية والداعمة للفلسطينيين
       level: 1
       id: s5-3
+      nav: true
     - p: ننفّذ أنشطة في مجالات الصحة وإعادة التأهيل والدعم النفسي والاجتماعي والمساعدات الإنسانية الأساسية لصالح الأفراد والأسر الفلسطينية الذين أُجلوا إلى مصر بسبب الحرب في غزة، أو الذين نزحوا واضطروا إلى مواصلة حياتهم في مصر.
     - p: تهدف مؤسستنا، من خلال الشراكات التي أقامتها مع مقدّمي الخدمات الصحية العاملين في مصر، إلى تقديم خدمات شاملة في مجالات الرعاية الصحية التخصصية، والأطراف الصناعية، وإعادة التأهيل، والدعم النفسي والاجتماعي. وفي هذا الإطار، يُعدّ تقديم الدعم الصحي والرعاية للمرضى الذين أُجلوا من غزة من ضمن مجالات عملنا أيضًا.
     - h: خدمات الصحة والعلاج والرعاية
@@ -555,6 +596,7 @@ ar:
       toc: أنشطتنا الإنسانية والداعمة للسودانيين
       level: 1
       id: s5-7
+      nav: true
     - p: نواصل في عملنا مع الأسر السودانية تنفيذ برامج الصحة وإعادة التأهيل والدعم النفسي والاجتماعي والمساعدات الإنسانية الأساسية نفسها التي ننفّذها للأسر الفلسطينية. وفي هذا الإطار، نقدّم الدعم الصحي والعلاجي، وخدمات الأطراف الصناعية وإعادة التأهيل، والدعم النفسي والاجتماعي للأطفال، والسلال الغذائية، والمساعدات النقدية المنتظمة، ودعم الإيجار والإيواء.
     - p: وإلى جانب ذلك، ننظّم برامج للتدريب المهني وتنمية المهارات لصالح السودانيين.
     - ul:
@@ -562,6 +604,12 @@ ar:
       - تقديم دورات لاكتساب المهن في مجالات مختلفة
       - تنمية المعارف والمهارات المهنية لدى المشاركين
       - دعم وصولهم إلى فرص العمل وتحقيق الاستقلال الاقتصادي
+    - h: شرح مفصل لأنشطتنا
+      toc: شرح مفصل لأنشطتنا
+      level: 1
+      id: s6-0
+      nav: true
+      style: main
     - h: الخدمات الجراحية والشراكات مع المؤسسات الصحية
       toc: الخدمات الجراحية والشراكات مع المؤسسات الصحية
       level: 1
@@ -635,8 +683,8 @@ ar:
       - تحديد الأطفال الذين يحتاجون إلى دعم إضافي
       - إحالة الأطفال المحتاجين إلى المتخصصين
       - ربطهم بآليات الدعم اللازمة
-    - h: ب. خدمات المساعدات الإنسانية الأساسية ودعم الأسر
-      toc: ب. خدمات المساعدات الإنسانية الأساسية ودعم الأسر
+    - h: خدمات المساعدات الإنسانية الأساسية ودعم الأسر
+      toc: خدمات المساعدات الإنسانية الأساسية ودعم الأسر
       level: 1
       id: s6-6
     - h: دعم السلال الغذائية
@@ -655,10 +703,10 @@ ar:
       id: s6-9
     - p: تقديم مساعدات لدفع الإيجار بهدف المساهمة في تلبية احتياجات السكن للأسر التي اضطرت إلى ترك منازلها بسبب الحرب واللجوء إلى مصر.
     - p: ويهدف هذا الدعم إلى مساعدة الأسر على تغطية نفقات الإيجار، والتخفيف من مشكلات السكن، ومواصلة حياتها في ظروف أكثر أمانًا.
-  - kicker: شبكة الشراكات
-    title: شبكة التنفيذ المحلي والشراكات لتقديم خدمات صحية شاملة في مصر
-    toc: شبكة التنفيذ المحلي والشراكات لتقديم خدمات صحية شاملة في مصر
-    blocks:
+    - h: شبكة التنفيذ المحلي والشراكات لتقديم خدمات صحية شاملة في مصر
+      toc: شبكة التنفيذ المحلي والشراكات لتقديم خدمات صحية شاملة في مصر
+      level: 1
+      id: s7-0
     - p: تهدف مؤسستنا إلى الربط بين الجهات العاملة في المجال الإنساني ومقدّمي الخدمات الصحية المحليين في مصر، وإلى تنسيق رعاية المرضى بدءًا من مرحلة التدخل، مرورًا بالتعافي وإعادة التأهيل والمتابعة، وصولًا إلى التوثيق.
     - h: مجالات التعاون وتطوير المشاريع
       toc: مجالات التعاون وتطوير المشاريع

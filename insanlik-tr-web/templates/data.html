@@ -6,7 +6,7 @@
 {{ m.page_hero(t.nav.data, t.desc.data, t.nav.reports, None, '/' ~ lang ~ '/reports/', t.nav.reports) }}
 
 {% if imp.kpis %}
-<section class="band band-flat">
+<section class="band band-flat" id="impact-summary">
   <div class="container band-inner">
     <div class="sec-head light center"><span class="kicker">{{ imp.snapshot.kicker }}</span><h2 class="sec-title">{{ imp.snapshot.title }}</h2><span class="bar light"></span></div>
     <div class="band-box">{% for k in imp.kpis %}<div class="band-stat"><strong>{{ k.value|loc(lang) }}</strong><span>{{ k.label }}</span></div>{% endfor %}</div>
@@ -16,7 +16,7 @@
 {% endif %}
 
 {% if imp.by_country %}
-<section class="sec">
+<section class="sec" id="reach">
   <div class="container">
     {{ m.heading(imp.reach.title, imp.reach.kicker) }}
     <div class="charts">
@@ -42,7 +42,7 @@
 {% endif %}
 
 {% if imp.outputs %}
-<section class="sec sec-soft">
+<section class="sec sec-soft" id="impact-figures">
   <div class="container">
     {{ m.heading(imp.outputs_head.title, imp.outputs_head.kicker) }}
     <div class="outputs">{% for o in imp.outputs %}<div class="output"><strong>{{ o.value|loc(lang) }}</strong><span>{{ o.label }}</span></div>{% endfor %}</div>
@@ -51,7 +51,7 @@
 {% endif %}
 
 {% if country_reports %}
-<section class="sec">
+<section class="sec" id="country-figures">
   <div class="container">
     {{ m.heading(t.situation_figures, t.nav.country) }}
     <div class="figs-grid">

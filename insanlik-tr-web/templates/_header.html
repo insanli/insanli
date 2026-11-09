@@ -1,15 +1,16 @@
 {% import '_m.html' as m %}
+{% macro rep_panel(it) %}<div class="snav-drop snav-list rep-panel">{% for c in it.children %}<a href="{{ c.url }}"><span class="rp-t">{{ c.title }}</span>{% if c.sub %}<span class="rp-s">{{ c.sub }}</span>{% endif %}</a>{% endfor %}<a class="rp-all" href="{{ it.url }}">{{ it.all }}</a></div>{% endmacro %}
 {% macro site_header(lang, langs, alt, T, S, items, label) %}
 <header class="hdr shdr{% if not items %} no-nav{% endif %}" id="top">
   <div class="shdr-in">
     <a class="logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
     {% if items %}
-    <nav class="mainnav snav{% if items|selectattr('children')|list %} roomy{% endif %}" id="mainnav" aria-label="{{ label }}">
+    <nav class="mainnav snav{% if items|selectattr('children')|rejectattr('drop')|list %} roomy{% endif %}" id="mainnav" aria-label="{{ label }}">
       <ul>
         {% for it in items %}
-        <li{% if it.children %} class="has-drop has-sub"{% endif %}>
+        <li{% if it.children %} class="has-drop has-sub{% if it.drop %} rep-drop{% endif %}"{% endif %}>
           <a class="snav-top" href="{{ it.url }}"{% if it.ext %} target="_blank" rel="noopener"{% endif %}{% if it.current %} aria-current="page"{% endif %}{% if it.children %} aria-haspopup="true" aria-expanded="false"{% endif %}>{{ it.title }}{% if it.ext %} {{ m.icon('external', 'ext') }}{% endif %}{% if it.children %} {{ m.icon('chev', 'chev') }}{% endif %}</a>
-          {% if it.children %}<div class="snav-drop snav-list">{% for c in it.children %}<a href="{{ c.url }}">{{ c.title }}</a>{% endfor %}</div>{% endif %}
+          {% if it.drop %}{{ rep_panel(it) }}{% elif it.children %}<div class="snav-drop snav-list">{% for c in it.children %}<a href="{{ c.url }}">{{ c.title }}</a>{% endfor %}</div>{% endif %}
         </li>
         {% endfor %}
       </ul>
@@ -17,7 +18,7 @@
     </nav>
     {% endif %}
     {% if items %}
-    <nav class="snav-inline" aria-label="{{ label }}"><ul>{% for it in items %}<li><a href="{{ it.url }}"{% if it.ext %} target="_blank" rel="noopener"{% endif %}{% if it.current %} aria-current="page"{% endif %}>{{ it.title }}</a></li>{% endfor %}</ul></nav>
+    <nav class="snav-inline" aria-label="{{ label }}"><ul>{% for it in items %}<li{% if it.drop %} class="has-drop rep-drop"{% endif %}><a href="{{ it.url }}"{% if it.ext %} target="_blank" rel="noopener"{% endif %}{% if it.current %} aria-current="page"{% endif %}{% if it.drop %} aria-haspopup="true" aria-expanded="false"{% endif %}>{{ it.title }}{% if it.drop %} {{ m.icon('chev', 'chev') }}{% endif %}</a>{% if it.drop %}{{ rep_panel(it) }}{% endif %}</li>{% endfor %}</ul></nav>
     {% endif %}
     <div class="shdr-actions">
       <div class="lang-menu">

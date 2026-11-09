@@ -31,7 +31,18 @@
 {% block header %}
 {% import '_header.html' as h %}
 {% set items = [] %}
-{% for c in cats %}{% set _ = items.append(dict(title=t.nav[c], url='/' ~ lang ~ '/reports/' ~ c ~ '/', current=(ref == 'reports/' ~ c or (r is defined and r.category == c)))) %}{% endfor %}
+{% for c in cats %}{% set base_url = '/' ~ lang ~ '/reports/' ~ c ~ '/' %}{% set kids = [] %}
+{%- if c == 'data' %}
+{%- if menu_imp.kpis %}{% set _ = kids.append(dict(title=menu_imp.snapshot.title, url=base_url ~ '#impact-summary')) %}{% endif %}
+{%- if menu_imp.by_country %}{% set _ = kids.append(dict(title=menu_imp.reach.title, url=base_url ~ '#reach')) %}{% endif %}
+{%- if menu_imp.outputs %}{% set _ = kids.append(dict(title=menu_imp.outputs_head.title, url=base_url ~ '#impact-figures')) %}{% endif %}
+{%- if reports|selectattr('category', 'equalto', 'country')|list %}{% set _ = kids.append(dict(title=t.situation_figures, url=base_url ~ '#country-figures')) %}{% endif %}
+{%- elif c == 'needs' %}
+{%- for x in reports if x.category == 'country' %}{% set _ = kids.append(dict(title=x.country_name, url=base_url ~ '#' ~ x.country)) %}{% endfor %}
+{%- else %}
+{%- for x in reports if x.category == c %}{% set _ = kids.append(dict(title=x.country_name or x.title, sub=(x.period_label or x.period|period(lang)), url=x.url)) %}{% endfor %}
+{%- endif %}
+{%- set _ = items.append(dict(title=t.nav[c], url=base_url, current=(ref == 'reports/' ~ c or (r is defined and r.category == c)), children=kids, drop=(kids|length > 0), all=t.all)) %}{% endfor %}
 {{ h.site_header(lang, langs, alt, T, S, items, t.nav.reports) }}
 {% endblock %}
 

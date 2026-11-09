@@ -28,6 +28,21 @@
     d.addEventListener('keydown', function (e) { if (e.key === 'Escape') { d.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded', 'false'); } });
   }
 
+  // Reports menu: clicking a category opens its contents (the phone menu keeps its own open/close above)
+  var repClose = function (except) {
+    d.querySelectorAll('.shdr li.rep-drop.open').forEach(function (x) { if (x !== except) { x.classList.remove('open'); x.firstElementChild.setAttribute('aria-expanded', 'false'); } });
+  };
+  d.querySelectorAll('.shdr li.rep-drop > a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (a.closest('.mainnav') && window.matchMedia('(max-width: 1280px)').matches) return;
+      e.preventDefault();
+      var li = a.parentElement, o = !li.classList.contains('open');
+      repClose(li); li.classList.toggle('open', o); a.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  });
+  d.addEventListener('click', function (e) { if (!e.target.closest('.rep-drop')) repClose(null); });
+  d.addEventListener('keydown', function (e) { if (e.key === 'Escape') repClose(null); });
+
   // project list filters (sector + country), also reads ?country= / ?sector= from the address
   var box = d.querySelector('.filters[data-filter-for]');
   if (box) {

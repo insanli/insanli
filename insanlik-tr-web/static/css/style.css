@@ -890,7 +890,3 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 @media (min-width: 1080px) and (max-width: 1199px) {
   html[lang="en"] .shdr .snav-inline:has(.rep-drop) > ul > li > a { padding: 0 4px; font-size: .74rem; }
 }
-/* start page: Projects and Reports in the top bar (clicking one opens its main contents); the language button stays */
-@media (max-width: 1280px) { .is-landing .shdr .lang-menu { display: block; } }
-@media (min-width: 1080px) and (max-width: 1280px) { .is-landing .shdr .menu-btn { display: none; } }
-@media (max-width: 1280px) { .shdr .snav .rep-panel a:first-child { color: var(--ink); } }

@@ -448,7 +448,7 @@ def main():
             x['url'] = f'/{l}/reports/{r["category"]}/{r["slug"]}/'
             R.append(x)
         imp = dict(impact.get(l) or {})
-        base = dict(lang=l, t=t, dir='rtl' if l == 'ar' else 'ltr', langs=langs, T=T, reports=R,
+        base = dict(lang=l, t=t, dir='rtl' if l == 'ar' else 'ltr', langs=langs, T=T, reports=R, menu_imp=imp,
                     contact=(S.get('contacts') or {}).get(l, {}))
 
         def add(tpl, url, ref, **kw):

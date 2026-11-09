@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% import '_m.html' as m %}
 {% macro toc(r, t, extra, deep) -%}
-{% if r.sections|length > 1 %}<nav class="toc{{ extra }}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}<li><a href="#s{{ loop.index }}">{{ s.toc or s.title }}</a>{% set hs = (s.blocks or [])|selectattr('h')|list %}{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endfor %}</ol></nav>{% endif %}
+{% if r.sections|length > 1 %}<nav class="toc{{ extra }}{% if deep %} deep{% endif %}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}{% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}<li{% if deep and hs %} class="has-sub"{% endif %}><a href="#{{ s.toc_target or ('s' ~ loop.index) }}">{{ s.toc or s.title }}</a>{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endfor %}</ol></nav>{% endif %}
 {%- endmacro %}
 {% block title %}{{ r.title }}{% endblock %}
+{% block body_class %}{% if r.static_header %}hdr-static{% endif %}{% if r.compact %} rep-compact{% endif %}{% endblock %}
 {% block description %}{{ r.summary }}{% endblock %}
 {% block content %}
 {{ m.page_hero(r.title, None, t.nav[r.category], r.image, '/' ~ lang ~ '/reports/' ~ r.category ~ '/', t.nav[r.category]) }}
@@ -29,15 +30,22 @@
 
 <section class="sec">
   <div class="container detail">
-    <article>
-      {{ toc(r, t, ' toc-mob', false) }}
+    <article{% if r.head_sizes %} class="hsz" style="--hs1:{{ r.head_sizes[0] }}pt;--hs2:{{ r.head_sizes[1] }}pt;--hs3:{{ r.head_sizes[2] }}pt"{% endif %}>
+      {{ toc(r, t, ' toc-mob', r.toc_deep) }}
       {% for s in r.sections %}
       <div class="situ" id="s{{ loop.index }}">
         {% if s.kicker %}<span class="kicker">{{ s.kicker }}</span>{% endif %}
+        {% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}
+        {% if r.toc_deep and hs %}
+        <details class="sec-dd"><summary><h2 class="bar-title h3">{{ s.title }}</h2><span class="sec-dd-ico" aria-hidden="true"></span></summary>
+          <nav class="sec-nav" aria-label="{{ s.title }}"><ol>{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol></nav>
+        </details>
+        {% else %}
         <h2 class="bar-title h3">{{ s.title }}</h2>
+        {% endif %}
         {% if s.text %}{% for para in s.text.split('\n\n') %}<p class="text-lg">{{ para }}</p>{% endfor %}{% endif %}
         {% for b in s.blocks or [] %}
-        {% if b.h %}{% if b.level == 2 %}<h4 class="rsub l2" id="{{ b.id }}">{{ b.h }}</h4>{% else %}<h3 class="rsub" id="{{ b.id }}">{{ b.h }}</h3>{% endif %}
+        {% if b.h %}{% if b.style == 'main' %}<h2 class="bar-title h3 rmain" id="{{ b.id }}">{{ b.h }}</h2>{% elif b.level == 2 %}<h4 class="rsub l2" id="{{ b.id }}">{{ b.h }}</h4>{% else %}<h3 class="rsub" id="{{ b.id }}">{{ b.h }}</h3>{% endif %}
         {% elif b.p and b.b %}{% set k = b.p.find(':') + 1 %}<p class="text-lg"><strong>{{ b.p[:k] }}</strong>{{ b.p[k:] }}</p>
         {% elif b.p %}<p class="text-lg">{{ b.p }}</p>
         {% elif b.ol %}<ol class="rlist text-lg">{% for li in b.ol %}<li>{{ li }}</li>{% endfor %}</ol>
@@ -69,7 +77,7 @@
       {% if r.note %}<p class="muted small">{{ r.note }}</p>{% endif %}
     </article>
     <aside class="side">
-      {{ toc(r, t, '', false) }}
+      {{ toc(r, t, '', r.toc_deep) }}
       <div class="side-box">
         <h2 class="h4">{{ r.country_name or t.nav[r.category] }}</h2>
         <div class="btn-col">
@@ -81,6 +89,23 @@
     </aside>
   </div>
 </section>
+{% if r.toc_deep %}
+<script>
+/* contents list: clicking a main heading goes to it and opens its sub-headings (one section open at a time) */
+document.querySelectorAll('.toc.deep').forEach(function (nav) {
+  nav.classList.add('js');
+  nav.querySelectorAll('li.has-sub > a').forEach(function (a) {
+    a.setAttribute('aria-expanded', 'false');
+    a.addEventListener('click', function () {
+      var li = a.parentNode, open = !li.classList.contains('open');
+      nav.querySelectorAll('li.has-sub.open').forEach(function (x) { if (x !== li) { x.classList.remove('open'); x.firstElementChild.setAttribute('aria-expanded', 'false'); } });
+      li.classList.toggle('open', open);
+      a.setAttribute('aria-expanded', String(open));
+    });
+  });
+});
+</script>
+{% endif %}
 
 {% if more %}
 <section class="sec sec-soft">
