@@ -2,11 +2,8 @@
 {% import '_m.html' as m %}
 {% block body_class %}is-landing{% endblock %}
 {% block header %}{% import '_header.html' as h %}
-{#- top bar on the first page: Projects and Reports; clicking one opens its main contents -#}
-{%- set pk = [] %}{% for it in t.projects_nav %}{% set _ = pk.append(dict(title=it.title, sub=it.text, url='/' ~ lang ~ '/' ~ it.page ~ '/')) %}{% endfor %}
-{%- set rk = [] %}{% for c in cats %}{% set _ = rk.append(dict(title=t.nav[c], sub=t.desc[c], url='/' ~ lang ~ '/reports/' ~ c ~ '/')) %}{% endfor %}
-{%- set items = [dict(title=t.landing.projects, url='/' ~ lang ~ '/projects/', children=pk, drop=true, all=t.all), dict(title=t.landing.reports, url='/' ~ lang ~ '/reports/', children=rk, drop=true, all=t.all)] %}
-{{ h.site_header(lang, langs, alt, T, S, items, t.menu) }}{% endblock %}
+{#- top bar on the start page: the same headings as the Projects top bar; clicking one opens the main contents of its page -#}
+{{ h.site_header(lang, langs, alt, T, S, home_nav or [], t.menu) }}{% endblock %}
 {% block footer %}{% endblock %}
 {% block content %}
 <section class="landing" style="--bg:url('{{ S.landing_image }}')">

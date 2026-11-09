@@ -346,6 +346,50 @@ def cards_with_facts(html, lang, facts):
     return out, n[0]
 
 
+def home_nav(lang, t, areas):
+    """Start page top bar: the same headings as the Projects top bar; each one opens the main contents of its page.
+    Read from the project pages already written to _site (so titles and links are always the current ones)."""
+    import html as H
+
+    def page(name):
+        f = os.path.join(OUT, lang, name, 'index.html')
+        return open(f, encoding='utf-8').read() if os.path.exists(f) else ''
+
+    def txt(v):
+        return H.unescape(re.sub(r'<[^>]+>', '', v)).strip()
+    slug = {a['title']: a['url'].rstrip('/').split('/')[-1] for a in areas}
+    kids = {'areas': [dict(title=a['title'], url=a['url']) for a in areas]}
+    sel = re.search(r'<select data-filter="sector">(.*?)</select>', page('projects'), re.S)
+    kids['projects'] = [dict(title=txt(n), url=f'/{lang}/projects/?sector={v}') for v, n in
+                        re.findall(r'<option value="([^"]+)">([^<]*)</option>', sel.group(1))] if sel else []
+    kids['seasonal'] = [dict(title=txt(n), url=u) for u, n in re.findall(
+        r'<a class="ccard" href="(/%s/seasonal/[^"]+/)">.*?<h3[^>]*>(.*?)</h3>' % lang, page('seasonal'), re.S)]
+    kids['quick-funding'] = [dict(title=txt(n), url=u) for u, n in re.findall(
+        r'<a class="tile[^"]*" href="(/%s/quick-funding/[^"]+/)"[^>]*>\s*<span class="tile-name">([^<]+)</span>' % lang,
+        page('quick-funding'), re.S)]
+    # Yetim Destek: one entry per country card; each card gets an id so the link goes straight to it
+    f = os.path.join(OUT, lang, 'orphan-sponsorship', 'index.html')
+    kids['orphan-sponsorship'] = []
+    if os.path.exists(f):
+        src = open(f, encoding='utf-8').read()
+
+        def card(m):
+            name = txt(m.group(2))
+            sid = slug.get(name)
+            if not sid:
+                return m.group(0)
+            kids['orphan-sponsorship'].append(dict(title=name, url=f'/{lang}/orphan-sponsorship/#{sid}'))
+            return f'<div class="ocard orphan-card" id="{sid}">' + m.group(1)
+        src = re.sub(r'<div class="ocard orphan-card">(\s*<h3 class="bar-title">(.*?)</h3>)', card, src, flags=re.S)
+        with open(f, 'w', encoding='utf-8') as fh:
+            fh.write(src)
+    out = []
+    for it in t.get('projects_nav') or []:
+        k = kids.get(it['page']) or []
+        out.append(dict(title=it['title'], url=f"/{lang}/{it['page']}/", children=k, drop=bool(k), all=t.get('all')))
+    return out
+
+
 def main():
     S = read(os.path.join(CONTENT, 'settings.yml'))
     langs = S.get('languages', ['tr', 'en', 'ar'])
@@ -388,6 +432,7 @@ def main():
     shutil.copytree(os.path.join(ROOT, 'static'), OUT)
     # project pages (built earlier from the Zoho portfolio): copied, with the Projects top bar put in
     has_projects = True
+    HN = {}  # start page top bar: the Projects headings and the main contents of each
     if os.path.isdir(os.path.join(ROOT, 'portfolio')):
         shutil.copytree(os.path.join(ROOT, 'portfolio'), OUT, dirs_exist_ok=True)
     elif os.path.exists(os.path.join(ROOT, 'portfolio.zip')):
@@ -437,6 +482,7 @@ def main():
                 with open(f, 'w', encoding='utf-8') as fh:
                     fh.write(html)
             print(f'CARDS {l}: {cards_done} project cards now show beneficiaries + duration ({len(facts)} project pages read)')
+            HN[l] = home_nav(l, T[l], areas)
 
     pages, refs = [], {}
     for l in langs:
@@ -455,7 +501,7 @@ def main():
             pages.append((tpl, url, ref, dict(base, **kw)))
             refs.setdefault(ref, {})[l] = url
 
-        add('landing.html', f'/{l}/', 'home')
+        add('landing.html', f'/{l}/', 'home', home_nav=HN.get(l, []))
         add('reports_home.html', f'/{l}/reports/', 'reports')
         for c in cats:
             if c == 'data':
