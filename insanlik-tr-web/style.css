@@ -910,18 +910,18 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 /* big boxes: the corner button also carries its words ("Projeleri İncele →") */
 .bigbtn.with-go { padding-top: 110px; padding-bottom: 94px; }
 .bigbtn.with-go .bigbtn-go { width: auto; gap: 10px; padding-inline: 22px; font-weight: 800; font-size: .95rem; }
-/* start page: title bold, 5 pt smaller than before (48 -> 41.6 px); the yellow lines (association name and slogan)
-   bold, 5 pt bigger than before (17.6 -> 24.3 px, Arabic 20 -> 26.7 px). These are the Mac sizes (1440 px and wider);
-   narrower Windows screens get the same proportions, phones keep their sizes. */
-.landing-body h1 { font-size: clamp(1.65rem, 2.889vw, 2.6rem); font-weight: 900; }
-.landing-body .kicker, .landing-body .slogan { font-size: clamp(1.1rem, 1.689vw, 1.52rem); font-weight: 900; }
-[dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: clamp(1.25rem, 1.856vw, 1.67rem); }
+/* start page, all three languages: title bold 40 px; the yellow lines (association name and slogan) bold 29 px;
+   the white text 8 px bigger (17.6 -> 25.6 px). These are the Mac sizes (1440 px and wider); narrower Windows
+   screens get the same proportions, phones keep their sizes. */
+.landing-body h1 { font-size: clamp(1.65rem, 2.778vw, 40px); font-weight: 900; }
+.landing-body .kicker, .landing-body .slogan { font-size: clamp(1.1rem, 2.014vw, 29px); font-weight: 900; }
+[dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: clamp(1.25rem, 2.014vw, 29px); }
+.landing-body .lead { font-size: clamp(1.1rem, 1.778vw, 25.6px); }
 /* Same look on Windows as on a Mac: Windows display scaling (125-150 %) makes the page narrower than on a Mac
    (about 1280 px instead of 1440 px), so between 1000 and 1439 px the start page shrinks with the page width
    and keeps the Mac proportions (text sizes, big boxes and side margins). */
 @media (min-width: 1000px) and (max-width: 1439px) {
   .landing > .container { max-width: 86.11vw; }
-  .landing-body .lead { font-size: 1.222vw; }
   .bigbtn-title { font-size: 4vw; }
   .bigbtn-text { font-size: 1.167vw; }
 }
