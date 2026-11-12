@@ -910,8 +910,25 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 /* big boxes: the corner button also carries its words ("Projeleri İncele →") */
 .bigbtn.with-go { padding-top: 110px; padding-bottom: 94px; }
 .bigbtn.with-go .bigbtn-go { width: auto; gap: 10px; padding-inline: 22px; font-weight: 800; font-size: .95rem; }
-/* start page: the title is not bold and about 3 pt smaller; the yellow lines (association name and slogan)
-   about 3-4 pt bigger and bold */
-.landing-body h1 { font-weight: 400; font-size: clamp(1.75rem, 4.3vw, 3.15rem); }
-.landing-body .kicker, .landing-body .slogan { font-size: 1.3rem; font-weight: 900; }
-[dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: 1.45rem; }
+/* start page: title bold, 5 pt smaller than before (48 -> 41.6 px); the yellow lines (association name and slogan)
+   bold, 5 pt bigger than before (17.6 -> 24.3 px, Arabic 20 -> 26.7 px). These are the Mac sizes (1440 px and wider);
+   narrower Windows screens get the same proportions, phones keep their sizes. */
+.landing-body h1 { font-size: clamp(1.65rem, 2.889vw, 2.6rem); font-weight: 900; }
+.landing-body .kicker, .landing-body .slogan { font-size: clamp(1.1rem, 1.689vw, 1.52rem); font-weight: 900; }
+[dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: clamp(1.25rem, 1.856vw, 1.67rem); }
+/* Same look on Windows as on a Mac: Windows display scaling (125-150 %) makes the page narrower than on a Mac
+   (about 1280 px instead of 1440 px), so between 1000 and 1439 px the start page shrinks with the page width
+   and keeps the Mac proportions (text sizes, big boxes and side margins). */
+@media (min-width: 1000px) and (max-width: 1439px) {
+  .landing > .container { max-width: 86.11vw; }
+  .landing-body .lead { font-size: 1.222vw; }
+  .bigbtn-title { font-size: 4vw; }
+  .bigbtn-text { font-size: 1.167vw; }
+}
+/* top bar: the logo and the language button line up with the page text below (same width as the page content).
+   Reports pages on wide screens keep the wider bar: their five long menu words do not fit in the text width. */
+.shdr-in { max-width: 1240px; padding-inline: 20px; }
+@media (min-width: 1000px) and (max-width: 1439px) { .is-landing .shdr-in { max-width: 86.11vw; } }
+@media (min-width: 1281px) and (max-width: 1365px) { .is-landing .shdr .snav ul { gap: 8px; } }
+@media (min-width: 1281px) { body:not(.is-landing) .shdr-in:has(.rep-drop) { max-width: 1400px; padding-inline: 24px; } }
+@media (min-width: 1281px) and (max-width: 1365px) { body:not(.is-landing) .shdr-in:has(.rep-drop) { padding-inline: 18px; } }
