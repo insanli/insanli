@@ -18,6 +18,17 @@ categories:
 - needs
 - emergency
 - data
+# Order of the regions in the top-bar menus (Bölge ve Ülke Raporları, İhtiyaçlar ve Öncelikler,
+# Faaliyet Bölgeleri, Yetim Destek, Acil Müdahaleler) – the same in every language
+region_order:
+- gaza
+- sudan
+- syria
+- yemen
+- egypt
+- bangladesh
+- turkiye
+- africa
 contacts:
   tr:
     email: bilgi@insanlikeli.org

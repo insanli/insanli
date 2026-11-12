@@ -98,6 +98,20 @@ GAZA_KITS = {
                                          3.65, 2.25, 4.50, 2.75, 2.60, 1.10, 3.70]},
     'gaz-i082': {'total': 34, 'prices': [3.20, 1.15, 1.80, 4.40, 0.675, 2.75, 0.50, 1.50, 4.50, 4.50]},
 }
+REGION_ORDER = []   # filled from settings.yml (region_order) when the build starts
+
+
+def region_pos(slug):
+    """Place of a region in the top-bar menus (settings.yml region_order); regions not in the list go last."""
+    return REGION_ORDER.index(slug) if slug in REGION_ORDER else len(REGION_ORDER)
+
+
+def by_region(items, attr='country'):
+    """Template filter: the same list in region order (the order of everything else stays as it was)."""
+    get = lambda x: x.get(attr) if isinstance(x, dict) else getattr(x, attr, None)
+    return sorted(items, key=lambda x: region_pos(get(x)))
+
+
 LANG_INDEX = {'tr': 0, 'en': 1, 'ar': 2}
 
 
@@ -191,6 +205,59 @@ def dollar_right(html, lang):
         return '‎' + out + '‎' if lang == 'ar' else out
     parts = re.split(r'(<script\b.*?</script>|<style\b.*?</style>)', html, flags=re.S)
     return ''.join(p if p.startswith(('<script', '<style')) else DOLLAR.sub(one, p) for p in parts)
+
+
+# Gaza Quick Funding (Acil Müdahaleler) page and its "View contents" pages, from content/gaza-quick-funding.yml:
+# every number is written exactly as the Excel file shows it (no dots/commas swapped, no cents added).
+def gaza_rows(html, lang, G):
+    """Write unit cost, unit, recommended minimum and funding from of every row. Returns (html, rows written)."""
+    from html import escape
+    i, done = LANG_INDEX[lang], 0
+    pick = lambda r, k: (r.get(k) or [None, None, None])[i]
+    for r in G.get('rows', []):
+        m = re.search(r'(<tr id="%s">)(.*?)(</tr>)' % re.escape(r['code']), html, re.S)
+        if not m:
+            continue
+        tds = re.findall(r'(<td[^>]*>)(.*?)(</td>)', m.group(2), re.S)
+        if len(tds) != 4:
+            continue
+        cells = [list(t) for t in tds]
+        if pick(r, 'title'):
+            cells[0][1] = re.sub(r'(<strong class="qtitle">).*?(</strong>)', lambda k: k.group(1) + escape(pick(r, 'title')) + k.group(2), cells[0][1], count=1, flags=re.S)
+        cells[1][1] = re.sub(r'<strong>\$[\d.,]+</strong>', lambda k: f'<strong>${r["price"]}</strong>', cells[1][1], count=1)
+        if pick(r, 'unit'):
+            cells[1][1] = re.sub(r'(<span class="qunit">).*?(</span>)', lambda k: k.group(1) + escape(pick(r, 'unit')) + k.group(2), cells[1][1], count=1, flags=re.S)
+        old_unit = re.sub(r'^\s*[\d.,]+\s*', '', cells[2][1]).strip()
+        cells[2][1] = f'{r["min"]} ' + (escape(pick(r, 'min_unit')) if pick(r, 'min_unit') else old_unit)
+        cells[3][1] = re.sub(r'<strong>\$[\d.,]+</strong>', lambda k: f'<strong>${r["funding"]}</strong>', cells[3][1], count=1)
+        if r.get('thousand') and lang == 'tr':      # "1.000 Litre" is written "1,000" in the file
+            for c in cells[:3]:
+                c[1] = c[1].replace('1.000', '1,000')
+        inner = m.group(2)
+        for (o, old, c), new in zip(tds, cells):
+            inner = inner.replace(o + old + c, o + new[1] + c, 1)
+        html = html[:m.start(2)] + inner + html[m.end(2):]
+        done += 1
+    return html, done
+
+
+def gaza_kit(html, lang, kit):
+    """Rewrite the contents table, its total, the price at the top (and the intro / title when given). Returns (html, ok)."""
+    from html import escape
+    i = LANG_INDEX[lang]
+    if not re.search(r'<tbody>.*?</tbody>', html, re.S):
+        return html, False
+    rows = ''.join(f'<tr><td>{escape(n[i])}</td><td>{escape(sz[i])}</td><td>{escape(u[i])}</td><td>{q}</td>'
+                   f'<td class="num">${p}</td><td class="num">${t}</td></tr>' for n, sz, u, q, p, t in kit['items'])
+    html = re.sub(r'(<tbody>).*?(\s*</tbody>)', lambda m: m.group(1) + '\n' + rows + m.group(2), html, count=1, flags=re.S)
+    html = re.sub(r'(<tfoot>.*?<td class="num">)\$[\d.,]+(</td>)', lambda m: m.group(1) + '$' + kit['total'] + m.group(2), html, count=1, flags=re.S)
+    html = re.sub(r'(<div class="kit-price">.*?<strong>)\$[\d.,]+(</strong>)', lambda m: m.group(1) + '$' + kit['price'] + m.group(2), html, count=1, flags=re.S)
+    if (kit.get('lead') or [None] * 3)[i]:
+        html = re.sub(r'(<p class="lead">).*?(</p>)', lambda m: m.group(1) + escape(kit['lead'][i]) + m.group(2), html, count=1, flags=re.S)
+    if (kit.get('title') or [None] * 3)[i]:
+        old = re.search(r'<h1>(.*?)</h1>', html, re.S).group(1)
+        html = html.replace(old, escape(kit['title'][i]))
+    return html, True
 
 
 # Yemen Quick Funding page: extra rows and "View contents" pages from content/yemen-quick-funding.yml
@@ -383,6 +450,8 @@ def home_nav(lang, t, areas):
         src = re.sub(r'<div class="ocard orphan-card">(\s*<h3 class="bar-title">(.*?)</h3>)', card, src, flags=re.S)
         with open(f, 'w', encoding='utf-8') as fh:
             fh.write(src)
+    for k in ('quick-funding', 'orphan-sponsorship'):   # regions: same order as in the other menus
+        kids[k].sort(key=lambda c: region_pos(c['url'].rstrip('/').split('/')[-1].lstrip('#').split('#')[-1]))
     out = []
     for it in t.get('projects_nav') or []:
         k = kids.get(it['page']) or []
@@ -392,6 +461,7 @@ def home_nav(lang, t, areas):
 
 def main():
     S = read(os.path.join(CONTENT, 'settings.yml'))
+    REGION_ORDER[:] = S.get('region_order') or []
     langs = S.get('languages', ['tr', 'en', 'ar'])
     cats = S.get('categories', ['country', 'sectoral', 'needs', 'emergency', 'data'])
     T = {l: read(os.path.join(CONTENT, 'text', f'{l}.yml')) for l in langs}
@@ -423,6 +493,7 @@ def main():
     env.globals['S'] = S
     env.globals['cats'] = cats
     env.filters['period'] = fmt_period
+    env.filters['by_region'] = by_region
     env.filters['date'] = fmt_date
     env.filters['loc'] = lambda v, lang='en': str(v).replace(',', '.') if lang == 'tr' and str(v).replace(',', '').isdigit() else v
     env.filters['num'] = lambda n, lang='en': f'{n:,}'.replace(',', '.' if lang == 'tr' else ',')
@@ -441,6 +512,7 @@ def main():
     else:
         has_projects = False
     YQ = read(os.path.join(CONTENT, 'yemen-quick-funding.yml')) if os.path.exists(os.path.join(CONTENT, 'yemen-quick-funding.yml')) else {}
+    GQ = read(os.path.join(CONTENT, 'gaza-quick-funding.yml')) if os.path.exists(os.path.join(CONTENT, 'gaza-quick-funding.yml')) else {}
     if has_projects:
         if YQ:
             print(f'YEMEN: {yemen_kits(YQ, langs)} "View contents" pages made')
@@ -455,6 +527,7 @@ def main():
                 areas = [dict(url=u.replace('/areas//', '/areas/africa/'), title=n.strip()) for u, n in re.findall(
                     r'<a class="tile[^"]*" href="(/%s/areas/[^"]*)"[^>]*>(?:(?!</a>).)*?<span class="tile-name">([^<]+)</span>' % l,
                     open(ai, encoding='utf-8').read(), re.S)]
+                areas.sort(key=lambda a: region_pos(a['url'].rstrip('/').split('/')[-1]))   # top-bar menus: region order
             for f in glob.glob(os.path.join(OUT, l, '**', '*.html'), recursive=True):
                 html = open(f, encoding='utf-8').read()
                 m = re.search(r'<header class="hdr" id="top">.*?</header>', html, re.S)
@@ -538,7 +611,18 @@ def main():
         html = open(f, encoding='utf-8').read()
         rel = os.path.relpath(f, OUT).replace(os.sep, '/')
         mm = re.match(r'(tr|en|ar)/(quick-funding/gaza/|kits/gaz-)', rel)
-        if mm:
+        if mm and GQ:   # Gaza: every number exactly as in the Excel file (content/gaza-quick-funding.yml)
+            if mm.group(2) == 'quick-funding/gaza/':
+                html, n = gaza_rows(html, mm.group(1), GQ)
+                print(f'GAZA {rel}: {n} of {len(GQ.get("rows", []))} rows written from the file')
+                html, k = replace_hero_text(html, mm.group(1))
+                print(f'HERO {rel}: ' + ('replaced' if k else 'NOT FOUND'))
+            else:
+                slug = rel.split('/')[2]
+                if slug in GQ.get('kits', {}):
+                    html, ok = gaza_kit(html, mm.group(1), GQ['kits'][slug])
+                    print(f'KIT {rel}: ' + ('written from the file' if ok else 'NOT UPDATED (table not found)'))
+        elif mm:
             if mm.group(2) == 'quick-funding/gaza/':
                 html, n = override_prices(html, GAZA_FOOD)
                 print(f'PRICES {rel}: {n} of {len(GAZA_FOOD)} updated')
@@ -564,7 +648,8 @@ def main():
                 html, k = re.subn(r'(href="/%s/quick-funding/yemen/"[^>]*>\s*<span class="tile-name">[^<]*</span>\s*<span class="tile-text">)\d+' % ym.group(1),
                                   lambda mm: mm.group(1) + str(n), html, count=1)
                 print(f'YEMEN {rel}: tile count ' + (f'set to {n}' if k else 'NOT FOUND'))
-        html = price.sub(lambda mm: mm.group(0).replace(',', '.'), html)
+        if not (mm and GQ):   # Gaza pages keep the commas of the file
+            html = price.sub(lambda m2: m2.group(0).replace(',', '.'), html)
         html = dollar_right(html, rel.split('/')[0] if rel.split('/')[0] in langs else 'en')
         new = re.sub(r'(["\'(])(' + '|'.join(re.escape(u) for u in ver) + r')(?=["\')])', lambda mm: mm.group(1) + mm.group(2) + '?v=' + ver[mm.group(2)], html)
         with open(f, 'w', encoding='utf-8') as fh:
