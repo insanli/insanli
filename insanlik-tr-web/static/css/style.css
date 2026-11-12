@@ -902,3 +902,11 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .situ .rlist a.rjump:hover { text-decoration: underline; text-underline-offset: 3px; }
 .sec-nav.sec-nav-split { margin-top: 4px; }
 .sec-nav[hidden] { display: none; }
+/* start page: yellow slogan (same size as the association name above the title), then the white text */
+.landing-body .slogan { color: var(--gold); font-size: .8rem; font-weight: 800; margin: 1em 0 0; }
+[dir="rtl"] .landing-body .slogan { font-size: .95rem; }
+.landing-body .slogan + .lead { color: #fff; margin-top: .35em; }
+.landing-body .lead strong { font-weight: 800; }
+/* big boxes: the corner button also carries its words ("Projeleri İncele →") */
+.bigbtn.with-go { padding-top: 110px; padding-bottom: 94px; }
+.bigbtn.with-go .bigbtn-go { width: auto; gap: 10px; padding-inline: 22px; font-weight: 800; font-size: .95rem; }

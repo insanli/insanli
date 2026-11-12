@@ -9,11 +9,15 @@ rights: Tüm hakları saklıdır.
 landing:
   kicker: İnsanlık Eli Yardımlaşma ve Dayanışma Derneği
   title: İnsani yardımda bilgi ve iş birliği
-  text: Faaliyet gösterdiğimiz bölgelere ait raporlara ve iş birliğine hazır projelerimize buradan ulaşabilirsiniz.
+  slogan: Ortak Çözümler, Güçlü İş Birlikleri
+  text: Faaliyet gösterdiğimiz bölgelerdeki insani ihtiyaçlara ilişkin saha raporlarını ve iş birliğine açık projelerimizi buradan inceleyebilirsiniz.
+  text_bold: saha raporlarını
   reports: Raporlar
-  reports_text: Bölge raporları, ihtiyaç analizleri ve veriler
+  reports_text: Bölge raporları, ihtiyaç analizleri ve insani durum değerlendirmeleri.
+  reports_go: Raporları İncele
   projects: Projeler
-  projects_text: Finansmana hazır insani yardım projeleri
+  projects_text: Finansman ve iş birliğine açık insani yardım projeleri.
+  projects_go: Projeleri İncele
 nav:
   reports: Raporlar
   projects: Projeler

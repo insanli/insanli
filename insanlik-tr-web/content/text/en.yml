@@ -9,11 +9,15 @@ rights: All rights reserved.
 landing:
   kicker: İnsanlık Eli · Humanity Hand Aid & Solidarity Association
   title: Knowledge and partnership for humanitarian action
-  text: Explore our reports on the regions where we work and our projects ready for partnership.
+  slogan: Shared Solutions, Strong Partnerships
+  text: Here you can explore our field reports on humanitarian needs in the regions where we work and our projects open to partnership.
+  text_bold: field reports
   reports: Reports
-  reports_text: Regional reports, needs analyses and data
+  reports_text: Regional reports, needs analyses and humanitarian situation assessments.
+  reports_go: Explore Reports
   projects: Projects
-  projects_text: Humanitarian projects ready for funding
+  projects_text: Humanitarian aid projects open to funding and partnership.
+  projects_go: Explore Projects
 nav:
   reports: Reports
   projects: Projects

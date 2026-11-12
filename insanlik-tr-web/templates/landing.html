@@ -11,19 +11,21 @@
     <span class="kicker light">{{ t.landing.kicker }}</span>
     <h1>{{ t.landing.title }}</h1>
     <span class="bar gold" aria-hidden="true"></span>
-    <p class="lead">{{ t.landing.text }}</p>
+    {% if t.landing.slogan %}<p class="slogan">{{ t.landing.slogan }}</p>{% endif %}
+    {% set tb = t.landing.text_bold %}
+    <p class="lead">{% if tb and tb in t.landing.text %}{% set tp = t.landing.text.split(tb, 1) %}{{ tp[0] }}<strong>{{ tb }}</strong>{{ tp[1] }}{% else %}{{ t.landing.text }}{% endif %}</p>
     <div class="bigbtns" dir="ltr">
-      <a class="bigbtn" dir="{{ dir }}" href="/{{ lang }}/projects/" style="--bg:url('{{ S.projects_image }}')">
+      <a class="bigbtn{% if t.landing.projects_go %} with-go{% endif %}" dir="{{ dir }}" href="/{{ lang }}/projects/" style="--bg:url('{{ S.projects_image }}')">
         <span class="bigbtn-icon">{{ m.icon('grid') }}</span>
         <span class="bigbtn-title">{{ t.landing.projects }}</span>
         <span class="bigbtn-text">{{ t.landing.projects_text }}</span>
-        <span class="bigbtn-go">{{ m.icon('arrow', 'flip') }}</span>
+        <span class="bigbtn-go">{% if t.landing.projects_go %}<span class="bigbtn-go-t">{{ t.landing.projects_go }}</span>{% endif %}{{ m.icon('arrow', 'flip') }}</span>
       </a>
-      <a class="bigbtn" dir="{{ dir }}" href="/{{ lang }}/reports/" style="--bg:url('{{ S.reports_image }}')">
+      <a class="bigbtn{% if t.landing.reports_go %} with-go{% endif %}" dir="{{ dir }}" href="/{{ lang }}/reports/" style="--bg:url('{{ S.reports_image }}')">
         <span class="bigbtn-icon">{{ m.icon('file') }}</span>
         <span class="bigbtn-title">{{ t.landing.reports }}</span>
         <span class="bigbtn-text">{{ t.landing.reports_text }}</span>
-        <span class="bigbtn-go">{{ m.icon('arrow', 'flip') }}</span>
+        <span class="bigbtn-go">{% if t.landing.reports_go %}<span class="bigbtn-go-t">{{ t.landing.reports_go }}</span>{% endif %}{{ m.icon('arrow', 'flip') }}</span>
       </a>
     </div>
   </div>
