@@ -910,10 +910,10 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 /* big boxes: the corner button also carries its words ("Projeleri İncele →") */
 .bigbtn.with-go { padding-top: 110px; padding-bottom: 94px; }
 .bigbtn.with-go .bigbtn-go { width: auto; gap: 10px; padding-inline: 22px; font-weight: 800; font-size: .95rem; }
-/* start page, all three languages: title bold 45 px on one line ("iş birliği" stays together); the yellow lines
+/* start page, all three languages: title bold 48 px on one line ("iş birliği" stays together); the yellow lines
    (association name and slogan) bold 25 px; the white text 23 px. These are the Mac sizes (1440 px and wider);
    narrower Windows screens get the same proportions, phones keep their sizes. */
-.landing-body h1 { font-size: clamp(1.65rem, 3.125vw, 45px); font-weight: 900; max-width: none; }
+.landing-body h1 { font-size: clamp(1.65rem, 3.333vw, 48px); font-weight: 900; max-width: none; }
 .landing-body .kicker, .landing-body .slogan { font-size: clamp(1.1rem, 1.736vw, 25px); font-weight: 900; }
 [dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: clamp(1.25rem, 1.736vw, 25px); }
 .landing-body .lead { font-size: clamp(1.1rem, 1.597vw, 23px); }
@@ -941,12 +941,12 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 @media (min-width: 1281px) { .is-landing { --hdr: 87px; } }
 .landing { min-height: calc(100svh - var(--hdr)); }
 @media (min-width: 761px) {
-  .is-landing { --fit: 655; --u: min(1px, calc(100vw / 1440), calc((100svh - var(--hdr) - 8px) / var(--fit))); --f1: 1.1rem; --f2: 13px; }
-  html[lang="en"] .is-landing { --fit: 706; }
-  html[lang="ar"] .is-landing { --fit: 666; }
+  .is-landing { --fit: 658; --u: min(1px, calc(100vw / 1440), calc((100svh - var(--hdr) - 8px) / var(--fit))); --f1: 1.1rem; --f2: 13px; }
+  html[lang="en"] .is-landing { --fit: 713; }
+  html[lang="ar"] .is-landing { --fit: 670; }
   .landing-body { padding-block: calc(20 * var(--u)); }
   .landing-body .kicker { font-size: max(var(--f1), calc(25 * var(--u))); line-height: 1.3; margin-bottom: calc(6 * var(--u)); }
-  .landing-body h1 { font-size: max(1.65rem, calc(45 * var(--u))); }
+  .landing-body h1 { font-size: max(1.65rem, calc(48 * var(--u))); }
   .landing-body .bar.gold { margin-block: calc(12 * var(--u)); }
   .landing-body .slogan { font-size: max(var(--f1), calc(25 * var(--u))); line-height: 1.3; margin-top: calc(12 * var(--u)); }
   [dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: max(calc(var(--f1) + 2.4px), calc(25 * var(--u))); }
