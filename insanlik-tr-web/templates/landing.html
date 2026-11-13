@@ -9,7 +9,8 @@
 <section class="landing" style="--bg:url('{{ S.landing_image }}')">
   <div class="container landing-body">
     <span class="kicker light">{{ t.landing.kicker }}</span>
-    <h1>{{ t.landing.title }}</h1>
+    {#- "iş birliği" never splits over two lines (non-breaking space between the two words) -#}
+    <h1>{{ t.landing.title|replace('iş birliği', 'iş birliği') }}</h1>
     <span class="bar gold" aria-hidden="true"></span>
     {% if t.landing.slogan %}<p class="slogan">{{ t.landing.slogan }}</p>{% endif %}
     {% set tb = t.landing.text_bold %}

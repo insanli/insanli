@@ -910,13 +910,13 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 /* big boxes: the corner button also carries its words ("Projeleri İncele →") */
 .bigbtn.with-go { padding-top: 110px; padding-bottom: 94px; }
 .bigbtn.with-go .bigbtn-go { width: auto; gap: 10px; padding-inline: 22px; font-weight: 800; font-size: .95rem; }
-/* start page, all three languages: title bold 40 px; the yellow lines (association name and slogan) bold 29 px;
-   the white text 8 px bigger (17.6 -> 25.6 px). These are the Mac sizes (1440 px and wider); narrower Windows
-   screens get the same proportions, phones keep their sizes. */
-.landing-body h1 { font-size: clamp(1.65rem, 2.778vw, 40px); font-weight: 900; }
-.landing-body .kicker, .landing-body .slogan { font-size: clamp(1.1rem, 2.014vw, 29px); font-weight: 900; }
-[dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: clamp(1.25rem, 2.014vw, 29px); }
-.landing-body .lead { font-size: clamp(1.1rem, 1.778vw, 25.6px); }
+/* start page, all three languages: title bold 45 px on one line ("iş birliği" stays together); the yellow lines
+   (association name and slogan) bold 25 px; the white text 23 px. These are the Mac sizes (1440 px and wider);
+   narrower Windows screens get the same proportions, phones keep their sizes. */
+.landing-body h1 { font-size: clamp(1.65rem, 3.125vw, 45px); font-weight: 900; max-width: none; }
+.landing-body .kicker, .landing-body .slogan { font-size: clamp(1.1rem, 1.736vw, 25px); font-weight: 900; }
+[dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: clamp(1.25rem, 1.736vw, 25px); }
+.landing-body .lead { font-size: clamp(1.1rem, 1.597vw, 23px); }
 /* Same look on Windows as on a Mac: Windows display scaling (125-150 %) makes the page narrower than on a Mac
    (about 1280 px instead of 1440 px), so between 1000 and 1439 px the start page shrinks with the page width
    and keeps the Mac proportions (text sizes, big boxes and side margins). */
@@ -932,3 +932,36 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 @media (min-width: 1281px) and (max-width: 1365px) { .is-landing .shdr .snav ul { gap: 8px; } }
 @media (min-width: 1281px) { body:not(.is-landing) .shdr-in:has(.rep-drop) { max-width: 1400px; padding-inline: 24px; } }
 @media (min-width: 1281px) and (max-width: 1365px) { body:not(.is-landing) .shdr-in:has(.rep-drop) { padding-inline: 18px; } }
+/* start page fits on one screen, no scrolling (computers and tablets, all three languages). The start page is the
+   height of the window minus the top bar. When the window is not tall enough for the full Mac sizes (for example
+   Windows at 125-150 % display scaling, or a Mac with the Dock showing), every part of the start page shrinks by the
+   same factor, so the design stays the same, only smaller. --u is 1 px at full size; it gets smaller with the page
+   width (below 1440 px, as before) or with the free height (--fit = height of the full-size start page). */
+.is-landing { --hdr: 73px; }
+@media (min-width: 1281px) { .is-landing { --hdr: 87px; } }
+.landing { min-height: calc(100svh - var(--hdr)); }
+@media (min-width: 761px) {
+  .is-landing { --fit: 655; --u: min(1px, calc(100vw / 1440), calc((100svh - var(--hdr) - 8px) / var(--fit))); --f1: 1.1rem; --f2: 13px; }
+  html[lang="en"] .is-landing { --fit: 706; }
+  html[lang="ar"] .is-landing { --fit: 666; }
+  .landing-body { padding-block: calc(20 * var(--u)); }
+  .landing-body .kicker { font-size: max(var(--f1), calc(25 * var(--u))); line-height: 1.3; margin-bottom: calc(6 * var(--u)); }
+  .landing-body h1 { font-size: max(1.65rem, calc(45 * var(--u))); }
+  .landing-body .bar.gold { margin-block: calc(12 * var(--u)); }
+  .landing-body .slogan { font-size: max(var(--f1), calc(25 * var(--u))); line-height: 1.3; margin-top: calc(12 * var(--u)); }
+  [dir="rtl"] .landing-body .kicker, [dir="rtl"] .landing-body .slogan { font-size: max(calc(var(--f1) + 2.4px), calc(25 * var(--u))); }
+  .landing-body .lead { font-size: max(var(--f1), calc(23 * var(--u))); line-height: 1.5; margin: calc(6 * var(--u)) 0 0; }
+  .bigbtns { margin-top: calc(30 * var(--u)); gap: calc(22 * var(--u)); }
+  .bigbtn { min-height: 0; padding: calc(30 * var(--u)); }
+  .bigbtn.with-go { padding-top: calc(104 * var(--u)); padding-bottom: calc(78 * var(--u)); }
+  .bigbtn-icon { top: calc(26 * var(--u)); inset-inline-start: calc(28 * var(--u)); width: calc(64 * var(--u)); height: calc(64 * var(--u)); }
+  .bigbtn-icon .icon { width: calc(32 * var(--u)); height: calc(32 * var(--u)); }
+  .bigbtn-title { font-size: max(2.2rem, calc(57.6 * var(--u))); }
+  .bigbtn-text { font-size: max(var(--f2), calc(16.8 * var(--u))); }
+  .bigbtn-go { width: calc(64 * var(--u)); height: calc(64 * var(--u)); }
+  .bigbtn-go .icon { width: calc(26 * var(--u)); height: calc(26 * var(--u)); }
+  .bigbtn.with-go .bigbtn-go { width: auto; gap: calc(10 * var(--u)); padding-inline: calc(22 * var(--u)); font-size: max(calc(var(--f2) - 1px), calc(15.2 * var(--u))); }
+  .landing-foot { padding-bottom: calc(14 * var(--u)); font-size: max(calc(var(--f2) - 1px), calc(14.08 * var(--u))); }
+  /* computer screens: small windows may use slightly smaller text so the page still fits */
+  @media (min-width: 1000px) { .is-landing { --f1: 14px; --f2: 10px; } }
+}
