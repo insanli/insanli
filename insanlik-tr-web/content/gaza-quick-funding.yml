@@ -1,112 +1,137 @@
 # Gaza – Acil Müdahaleler (Quick Funding) page and its "View contents" pages.
-# Every number is written exactly as the Excel file "التدخلات السريعة - غزة" shows it:
-# a dot or a comma only where the file has one, cents only where the file shows cents.
+# Source: the November 2026 Gaza files ("Gazze Kasım 2026 Müdahale" in Turkish, "Gaza November 2026 Interventions" in Arabic):
+# names, units, technical details and unit costs; the contents pages with brand, packaging, quantity, prices and the
+# carton / transport / labour / 5 % administrative lines. Unit costs are written as the files show them (5.00, 9,240.00, 47.67).
+# min = recommended minimum (kept from the previous file); funding = unit cost × minimum (for the packages: the package price).
 # The build puts the $ sign on the right. Texts are ["Turkish", "English", "Arabic"] (null = keep the site text).
-#   price = unit cost     min = recommended minimum     funding = funding from
+#   per = the unit ("Öğün" -> "Öğün başına", "per Meal", "لكل وجبة")   note = technical detail under the name
 
 rows:
-- {code: "GAZ-I001", price: "5.50", min: "500", funding: "2,750"}
-- {code: "GAZ-I002", price: "245.00", min: "6", funding: "1,470"}
-- {code: "GAZ-I003", price: "165.00", min: "6", funding: "990"}
-- {code: "GAZ-I004", price: "30.00", min: "200", funding: "6,000"}
-- {code: "GAZ-I005", price: "2.20", min: "1,000", funding: "2,200"}
-- {code: "GAZ-I006", price: "47", min: "100", funding: "47"}
-- {code: "GAZ-I007", price: "60", min: "100", funding: "60"}
-- {code: "GAZ-I071", price: "10,164.00", min: "1", funding: "10,000", min_unit: [null, null, "دورة 7 أيام"]}
-- {code: "GAZ-I072", price: "43,560.00", min: "1", funding: "43,500", min_unit: [null, null, "دورة 30 يوم"]}
-- {code: "GAZ-I073", price: "6,930.00", min: "1", funding: "6,900", min_unit: [null, null, "دورة 7 أيام"]}
-- {code: "GAZ-I074", price: "29,700.00", min: "1", funding: "29,500", min_unit: [null, null, "دورة 30 يوم"]}
-- {code: "GAZ-I010", price: "37.00", min: "40", funding: "1,480", min_unit: [null, null, "ألف لتر"], thousand: true}
-- {code: "GAZ-I012", price: "9,500.00", min: "1", funding: "9,500"}
-- {code: "GAZ-I013", price: "2,200.00", min: "1", funding: "2,200"}
-- {code: "GAZ-I016", price: "2,650.00", min: "3", funding: "7,950"}
-- {code: "GAZ-I082", price: "34", min: "1", funding: "34", min_unit: ["Kole", "Parcel", "سلة"], title: [null, null, "سلة المنظفات والعناية الشخصية"]}
-- {code: "GAZ-I015", price: "33", min: "150", funding: "33"}
-- {code: "GAZ-I018", price: "16.50", min: "200", funding: "3,300"}
-- {code: "GAZ-I019", price: "16.50", min: "200", funding: "3,300"}
-- {code: "GAZ-I022", price: "350.00", min: "1", funding: "350"}
-- {code: "GAZ-I023", price: "550.00", min: "10", funding: "5,500"}
-- {code: "GAZ-I024", price: "350.00", min: "20", funding: "7,000", unit: ["Vaka başına", "per Case", null], min_unit: ["Vaka", "Case", null]}
-- {code: "GAZ-I026", price: "200.00", min: "20", funding: "4,000"}
-- {code: "GAZ-I027", price: "800.00", min: "5", funding: "4,000"}
-- {code: "GAZ-I028", price: "45.00", min: "50", funding: "2,250"}
-- {code: "GAZ-I029", price: "22.00", min: "150", funding: "3,300"}
-- {code: "GAZ-I030", price: "22.00", min: "150", funding: "3,300"}
-- {code: "GAZ-I031", price: "60.00", min: "50", funding: "3,000"}
-- {code: "GAZ-I032", price: "1,500.00", min: "100", funding: "150,000"}
-- {code: "GAZ-I034", price: "60.00", min: "50", funding: "3,000"}
-- {code: "GAZ-I035", price: "12.50", min: "200", funding: "2,500"}
-- {code: "GAZ-I081", price: "18.50", min: "200", funding: "3,700"}
-- {code: "GAZ-I051", price: "13.50", min: "200", funding: "2,700"}
-- {code: "GAZ-I052", price: "8.50", min: "200", funding: "1,700"}
-- {code: "GAZ-I053", price: "36.00", min: "150", funding: "5,400"}
-- {code: "GAZ-I054", price: "5.50", min: "150", funding: "825"}
-- {code: "GAZ-I055", price: "18.50", min: "200", funding: "3,700"}
-- {code: "GAZ-I056", price: "5.50", min: "500", funding: "2,750", title: [null, null, "شال أطفال صوفي"]}
-- {code: "GAZ-I080", price: "11.00", min: "150", funding: "1,650", title: ["Bir Kilogramlık Battaniye", "One-Kilogram Blanket", null]}
-- {code: "Gaz 81", price: "220.00", min: "20", funding: "4,400"}
+- {code: "GAZ-I001", price: "5.00", min: "500", funding: "2,500", title: ["Hazır Yemek Dağıtımı", "Ready-Meal Distribution", "توزيع وجبات جاهزة"], per: ["Öğün", "Meal", "وجبة"]}
+- {code: "GAZ-I002", price: "220.00", min: "6", funding: "1,320", title: ["Aşevi – Etli Sıcak Yemek Hazırlığı", "Community Kitchen – Hot Meals with Meat", "إعداد وجبات ساخنة باللحم في التكية"], per: ["Kazan", "Cooking Pot", "قدر"]}
+- {code: "GAZ-I003", price: "150.00", min: "6", funding: "900", title: ["Aşevi – Etsiz Sıcak Yemek Hazırlığı", "Community Kitchen – Hot Meals without Meat", "إعداد وجبات ساخنة دون لحم في التكية"], per: ["Kazan", "Cooking Pot", "قدر"]}
+- {code: "GAZ-I004", price: "25.00", min: "200", funding: "5,000", title: ["Un Desteği (25 kg)", "Flour Support (25 kg)", "توزيع الطحين (25 كغ)"], per: ["Çuval", "Sack", "كيس"]}
+- {code: "GAZ-I005", price: "2.00", min: "1,000", funding: "2,000", title: ["Ekmek Dağıtımı", "Bread Distribution", "توزيع الخبز"], per: ["Ekmek Paketi", "Bread Bundle", "ربطة خبز"]}
+- {code: "GAZ-I006", price: "47.67", min: "100", funding: "47.67", title: ["Taze Sebze Paketi", "Fresh Vegetable Basket", "سلة خضروات طازجة"], per: ["Paket", "Parcel", "طرد"]}
+- {code: "GAZ-I007", price: "62.00", min: "100", funding: "62", title: ["Gıda Kolisi", "Food Parcel", "سلة غذائية"], per: ["Koli", "Carton", "كرتونة"]}
+- {code: "GAZ-I071", price: "9,240.00", min: "1", funding: "9,240", title: ["Etli Sıcak Yemek Hizmeti – 7 Günlük Program", "Hot Meal Service with Meat – 7-Day Programme", "تقديم وجبات ساخنة باللحم – برنامج 7 أيام"], per: ["7 Günlük Program", "7-Day Programme", "برنامج 7 أيام"]}
+- {code: "GAZ-I072", price: "39,600.00", min: "1", funding: "39,600", title: ["Etli Sıcak Yemek Hizmeti – 30 Günlük Program", "Hot Meal Service with Meat – 30-Day Programme", "تقديم وجبات ساخنة باللحم – برنامج 30 يومًا"], per: ["30 Günlük Program", "30-Day Programme", "برنامج 30 يومًا"]}
+- {code: "GAZ-I073", price: "6,300.00", min: "1", funding: "6,300", title: ["Etsiz Sıcak Yemek Hizmeti – 7 Günlük Program", "Hot Meal Service without Meat – 7-Day Programme", "تقديم وجبات ساخنة دون لحم – برنامج 7 أيام"], per: ["7 Günlük Program", "7-Day Programme", "برنامج 7 أيام"]}
+- {code: "GAZ-I074", price: "27,000.00", min: "1", funding: "27,000", title: ["Etsiz Sıcak Yemek Hizmeti – 30 Günlük Program", "Hot Meal Service without Meat – 30-Day Programme", "تقديم وجبات ساخنة دون لحم – برنامج 30 يومًا"], per: ["30 Günlük Program", "30-Day Programme", "برنامج 30 يومًا"]}
+- {code: "GAZ-I010", price: "37.00", min: "40", funding: "1,480", title: ["İçme Suyu Temini ve Dağıtımı", "Drinking Water Supply and Distribution", "توفير وتوزيع مياه الشرب"], per: ["1.000 Litre", "1,000 Litres", "1,000 لتر"], min_unit: ["× 1.000 Litre", "× 1,000 Litres", "ألف لتر"]}
+- {code: "GAZ-I011", price: "35.74", min: "100", funding: "3,574", title: ["Hijyen ve Kişisel Bakım Kiti", "Hygiene and Personal Care Kit", "حقيبة نظافة وعناية شخصية"], per: ["Kit", "Kit", "حقيبة"]}
+- {code: "GAZ-I012", price: "9,300.00", min: "1", funding: "9,300", title: ["Su Kuyusu Açılması", "Water Well Drilling", "حفر بئر مياه"], per: ["Kuyu", "Well", "بئر"], note: ["50 m derinlik", "50 m deep", "عمق 50 مترًا"]}
+- {code: "GAZ-I013", price: "2,200.00", min: "1", funding: "2,200", title: ["Su Kuyusu Bakım ve Onarımı", "Water Well Maintenance and Repair", "صيانة وإصلاح بئر مياه"], per: ["Kuyu", "Well", "بئر"]}
+- {code: "GAZ-I016", price: "8,745.00", min: "3", funding: "26,235", title: ["Yerinden Edilenlerin Yaşam Alanları İçin Tuvalet Ünitesi", "Toilet Unit for Displacement Sites", "وحدة مراحيض لمناطق إقامة النازحين"], per: ["Ünite", "Unit", "وحدة"]}
+- {code: "GAZ-I082", price: "35.74", min: "1", funding: "35.74", min_unit: ["Kole", "Parcel", "سلة"], title: ["Temizlik ve Kişisel Hijyen Kiti", "Cleaning and Personal Hygiene Kit", "حقيبة النظافة والعناية الشخصية"]}
+- {code: "GAZ-I015", price: "33.00", min: "150", funding: "33", title: ["Bebek Bakım Kiti", "Baby Care Kit", "حقيبة رعاية الأطفال"], per: ["Paket", "Parcel", "طرد"]}
+- {code: "GAZ-I018", price: "16.50", min: "200", funding: "3,300", title: ["Bebek Maması", "Infant Formula", "حليب أطفال"], per: ["Kutu", "Tin", "علبة"], note: ["Marka: Latko", "Brand: Latko", "العلامة التجارية: Latko"]}
+- {code: "GAZ-I019", price: "16.50", min: "200", funding: "3,300", title: ["Bebek Bezi", "Baby Diapers", "حفاضات أطفال"], per: ["Paket", "Pack", "طرد"], note: ["Marka: LULLY", "Brand: LULLY", "العلامة التجارية: LULLY"]}
+- {code: "GAZ-I022", price: "350.00", min: "1", funding: "350", title: ["Sağlık Kuruluşları İçin Tıbbi Malzeme Çantası", "Medical Supplies Bag for Health Facilities", "حقيبة مستلزمات طبية للمرافق الصحية"], per: ["Çanta", "Bag", "حقيبة"]}
+- {code: "GAZ-I023", price: "500.00", min: "10", funding: "5,000", title: ["Cerrahi Müdahale Desteği", "Surgical Procedure Support", "دعم إجراء جراحي"], per: ["Vaka", "Case", "حالة"]}
+- {code: "GAZ-I024", price: "350.00", min: "20", funding: "7,000", title: ["Hasta Tedavi Desteği", "Patient Treatment Support", "دعم علاج المرضى"], per: ["Vaka", "Case", "حالة"]}
+- {code: "GAZ-I026", price: "200.00", min: "20", funding: "4,000", title: ["Katar Çadır", "Qatari Tent", "خيمة قطرية"], per: ["Çadır", "Tent", "خيمة"], note: ["4 × 6 m; Katar menşeli", "4 × 6 m; made in Qatar", "4 × 6 م؛ قطرية المنشأ"]}
+- {code: "GAZ-I027", price: "770.00", min: "5", funding: "3,850", title: ["Kubbe Tipi Barınma Çadırı", "Dome Shelter Tent", "خيمة إيواء قبة الشكل"], per: ["Çadır", "Tent", "خيمة"], note: ["Marka: Blue", "Brand: Blue", "العلامة التجارية: Blue"]}
+- {code: "GAZ-I028", price: "52.00", min: "50", funding: "2,600", title: ["Plastik Branda", "Plastic Tarpaulin", "شادر بلاستيكي"], per: ["Branda", "Tarpaulin", "شادر"], note: ["4 × 6 m", "4 × 6 m", "4 × 6 م"]}
+- {code: "GAZ-I029", price: "19.00", min: "150", funding: "2,850", title: ["Yatak Şiltesi", "Sleeping Mattress", "فرشة نوم"], per: ["Şilte", "Mattress", "فرشة"], note: ["1,8 × 0,7 m", "1.8 × 0.7 m", "1.8 × 0.7 م"]}
+- {code: "GAZ-I030", price: "22.00", min: "150", funding: "3,300", title: ["Kışlık Battaniye (2 kg)", "Winter Blanket (2 kg)", "حرام شتوي (2 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}
+- {code: "GAZ-I031", price: "55.00", min: "50", funding: "2,750", title: ["Temel Ev Eşyaları Paketi", "Essential Household Items Pack", "حزمة أدوات منزلية أساسية"], per: ["Paket", "Pack", "طرد"]}
+- {code: "GAZ-I032", price: "1,000.00", min: "100", funding: "100,000", title: ["Kısmen Hasarlı Konutların Onarımı", "Repair of Partially Damaged Homes", "ترميم منازل متضررة جزئيًا"], per: ["Konut", "Home", "منزل"]}
+- {code: "GAZ-I034", price: "50.00", min: "50", funding: "2,500", title: ["Nakit ve Alışveriş Kuponu Desteği", "Cash and Shopping Voucher Assistance", "مساعدات نقدية وقسائم شرائية"], per: ["Hane", "Household", "أسرة"]}
+- {code: "GAZ-I035", price: "13.50", min: "200", funding: "2,700", title: ["Kadın Namaz Takımı", "Women’s Prayer Set", "طقم صلاة نسائي"], per: ["Takım", "Set", "طقم"]}
+- {code: "GAZ-I081", price: "19.00", min: "200", funding: "3,800", title: ["Çocuk Eşofman Takımı", "Children’s Tracksuit Set", "طقم رياضي للأطفال"], per: ["Takım", "Set", "طقم"]}
+- {code: "GAZ-I051", price: "13.50", min: "200", funding: "2,700", title: ["Çocuk Kışlık Montu (0–6 Yaş)", "Children’s Winter Jacket (Ages 0–6)", "جاكيت شتوي للأطفال (0–6 سنوات)"], per: ["Mont", "Jacket", "جاكيت"]}
+- {code: "GAZ-I052", price: "19.00", min: "200", funding: "3,800", title: ["Çocuk Kışlık Montu (7–14 Yaş)", "Children’s Winter Jacket (Ages 7–14)", "جاكيت شتوي للأطفال (7–14 سنة)"], per: ["Mont", "Jacket", "جاكيت"]}
+- {code: "GAZ-I053", price: "36.00", min: "150", funding: "5,400", title: ["Erkek Çocuk Kışlık Montu", "Boys’ Winter Jacket", "جاكيت شتوي للأولاد"], per: ["Mont", "Jacket", "جاكيت"]}
+- {code: "GAZ-I054", price: "5.50", min: "150", funding: "825", title: ["Kışlık Bere", "Winter Beanie", "قبعة شتوية"], per: ["Bere", "Beanie", "قبعة"]}
+- {code: "GAZ-I055", price: "19.00", min: "200", funding: "3,800", title: ["Kışlık Ayakkabı", "Winter Shoes", "حذاء شتوي"], per: ["Çift", "Pair", "زوج"]}
+- {code: "GAZ-I056", price: "5.50", min: "500", funding: "2,750", title: ["Çocuk Yün Atkısı", "Children’s Wool Scarf", "شال صوفي للأطفال"], per: ["Atkı", "Scarf", "شال"]}
+- {code: "GAZ-I080", price: "11.00", min: "150", funding: "1,650", title: ["Battaniye (1 kg)", "Blanket (1 kg)", "حرام (1 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}
+- {code: "Gaz 81", price: "200.00", min: "20", funding: "4,000", title: ["Yerinden Edilen Ailelere Yönelik Çok Amaçlı Solar Aydınlatma Ünitesi", "Multi-Purpose Solar Lighting Unit for Displaced Families", "وحدة إنارة شمسية متعددة الاستخدام للأسر النازحة"], per: ["Adet", "Piece", "قطعة"]}
 - {code: "GAZ-I039", price: "1,500.00", min: "1", funding: "1,500"}
-- {code: "GAZ-I058", price: "35.00", min: "100", funding: "3,500"}
+- {code: "GAZ-I058", price: "35.00", min: "100", funding: "3,500", title: ["Okul Çantası ve Kırtasiye Seti", "School Bag and Stationery Set", "حقيبة مدرسية ومستلزمات قرطاسية"], per: ["Set", "Set", "طقم"]}
 
-# "View contents" pages: price = at the top of the page, total = last line of the table.
-# items: [name, size / weight, unit, quantity, unit price, total] — written as in the file.
+# "View contents" pages: table header, then per package: price at the top = total in the last line (as in the file).
+# items: [name, brand / details (null = none), packaging / size, quantity, unit price, line total]
+# costs: [name, basis, quantity, amount] – carton, transport, labour and the 5 % administrative costs, as in the file.
+kit_head:
+- ["Ürün", "Marka / Bilgi", "Ambalaj / Ölçü", "Miktar", "Birim Fiyat", "Toplam"]
+- ["Item", "Brand / Details", "Packaging / Size", "Qty.", "Unit Price", "Total"]
+- ["الصنف", "العلامة التجارية / التفاصيل", "التعبئة / القياس", "الكمية", "سعر الوحدة", "الإجمالي"]
 kits:
   gaz-i006:
-    price: "47"
-    total: "47"
+    price: "47.67"
+    total: "47.67"
+    title: ["Taze Sebze Paketi", "Fresh Vegetable Basket", "سلة خضروات طازجة"]
     lead: ["İhtiyaç sahibi bir aile için on bir çeşit taze sebze içeren koli.", "A basket containing eleven types of fresh vegetables for a vulnerable family.", "سلة تحتوي على أحد عشر صنفًا من الخضروات الطازجة لأسرة من الأسر الأكثر احتياجًا."]
     items:
-    - [["Havuç", "Carrot", "جزر"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "3.50", "3.50"]
-    - [["Limon", "Lemons", "ليمون"], ["1 DEMET", "1 BUNCH", "1 ربطة"], ["DEMET", "BUNCH", "ربطة"], "1", "3.50", "3.50"]
-    - [["Portakal", "Oranges", "برتقال"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "4.40", "4.40"]
-    - [["Elma", "Apples", "تفاح"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "5.40", "5.40"]
-    - [["Sarımsak", "Garlic", "ثوم"], ["1 DEMET", "1 BUNCH", "1 ربطة"], ["DEMET", "BUNCH", "ربطة"], "1", "2.00", "2.00"]
-    - [["Yeşil Biber", "Green Peppers", "فلفل أخضر"], ["250 G", "250 G", "250 غ"], ["G", "G", "غ"], "1", "2.40", "2.40"]
-    - [["Salatalık", "Cucumbers", "خيار"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "4.40", "4.40"]
-    - [["Patlıcan", "Eggplant", "باذنجان"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "4.40", "4.40"]
-    - [["Soğan", "Onions", "بصل"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "3.00", "3.00"]
-    - [["Domates", "Tomatoes", "بندورة"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "2", "5.50", "11.00"]
-    - [["Patates", "Potatoes", "بطاطا"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "3.00", "3.00"]
+    - [["Limon", "Lemons", "ليمون"], null, ["1 kg", "1 kg", "1 كغ"], "1", "3.30", "3.30"]
+    - [["Portakal", "Oranges", "برتقال"], null, ["1 kg", "1 kg", "1 كغ"], "1", "4.00", "4.00"]
+    - [["Havuç", "Carrots", "جزر"], null, ["1 kg", "1 kg", "1 كغ"], "1", "4.00", "4.00"]
+    - [["Elma", "Apples", "تفاح"], null, ["1 kg", "1 kg", "1 كغ"], "1", "4.30", "4.30"]
+    - [["Sarımsak", "Garlic", "ثوم"], null, ["1 demet", "1 bunch", "ربطة واحدة"], "1", "1.60", "1.60"]
+    - [["Yeşil Biber", "Green Peppers", "فلفل أخضر"], null, ["250 g", "250 g", "250 غ"], "1", "2.30", "2.30"]
+    - [["Salatalık", "Cucumbers", "خيار"], null, ["1 kg", "1 kg", "1 كغ"], "1", "4.00", "4.00"]
+    - [["Patlıcan", "Eggplant", "باذنجان"], null, ["1 kg", "1 kg", "1 كغ"], "1", "4.00", "4.00"]
+    - [["Soğan", "Onions", "بصل"], null, ["1 kg", "1 kg", "1 كغ"], "1", "2.60", "2.60"]
+    - [["Domates", "Tomatoes", "طماطم"], null, ["1 kg", "1 kg", "1 كغ"], "2", "5.00", "10.00"]
+    - [["Patates", "Potatoes", "بطاطا"], null, ["1 kg", "1 kg", "1 كغ"], "1", "3.30", "3.30"]
+    costs:
+    - [["Nakliye", "Transport", "نقل"], ["Her koli için", "per carton", "لكل كرتونة"], "1", "1.00"]
+    - [["İşçilik ve Paketleme", "Labour and packing", "عمالة وتعبئة"], ["Her koli için", "per carton", "لكل كرتونة"], "1", "1.00"]
+    - [["İdari Giderler (%5)", "Administrative costs (5%)", "مصاريف إدارية (5%)"], null, "", "2.27"]
   gaz-i007:
-    price: "60"
-    total: "60"
+    price: "62.00"
+    total: "62.00"
+    title: ["Gıda Kolisi", "Food Parcel", "سلة غذائية"]
     items:
-    - [["Luncheon Et (Mortadella)", "Luncheon Meat", "مرتديلا"], ["240 G", "240 G", "240 غ"], ["KUTU", "CAN", "علبة"], "1", "2.50", "2.55"]
-    - [["Konserve Mısır", "Canned Corn", "ذرة معلبة"], ["350 G", "350 G", "350 غ"], ["KUTU", "CAN", "علبة"], "1", "1.80", "1.80"]
-    - [["Parça Ton Balığı", "Tuna (Chunks)", "تونة معلبة قطع"], ["KUTU", "CAN", "علبة"], ["KUTU", "CAN", "علبة"], "2", "1.65", "3.30"]
-    - [["Makarna", "Regular Pasta", "معكرونة"], ["400 G", "400 G", "400 غ"], ["PAKET", "PACK", "كيس"], "2", "1.75", "3.50"]
-    - [["Mısır Pirinci", "Egyptian Rice", "أرز مصري"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "2", "1.20", "2.50"]
-    - [["Yeşil Mercimek", "Whole Lentils", "عدس حب"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "2.30", "2.30"]
-    - [["Zeytinyağı", "Olive Oil", "زيت زيتون"], ["1 LİTRE", "1 LITRE", "1 لتر"], ["LİTRE", "LITRE", "لتر"], "1", "11.00", "11.00"]
-    - [["Üçgen Peynir", "Triangle Cheese", "جبنة مثلثات"], ["KUTU", "BOX", "علبة"], ["KUTU", "BOX", "علبة"], "2", "1.10", "2.20"]
-    - [["Beyaz Peynir", "Feta Cheese", "جبنة بيضاء"], ["250 G", "250 G", "250 غ"], ["PAKET", "PACK", "عبوة"], "2", "1.10", "2.20"]
-    - [["Bakla Konservesi", "Fava Beans", "فول معلب"], ["400 G", "400 G", "400 غ"], ["KUTU", "CAN", "علبة"], "2", "1.10", "2.20"]
-    - [["Yağ", "Cooking Oil", "زيت الطبخ"], ["1 LİTRE", "1 LITRE", "1 لتر"], ["LİTRE", "LITRE", "لتر"], "2", "3.65", "7.30"]
-    - [["Şeker", "Sugar", "سكر"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "2", "2.25", "4.50"]
-    - [["Sürülebilir Çikolata", "Chocolate Spread", "شوكولاتة دهن"], ["400 G", "400 G", "400 غ"], ["PAKET", "PACK", "عبوة"], "1", "2.25", "4.50"]
-    - [["Basmati Pirinç", "Basmati Rice", "أرز بسمتي"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "2.75", "2.75"]
-    - [["Reçel", "Jam", "مربى"], ["400 G", "400 G", "400 غ"], ["KUTU", "CAN", "علبة"], "1", "2.60", "2.60"]
-    - [["Kırmızı Mercimek", "Red Lentils", "عدس مجروش"], ["1 KG", "1 KG", "1 كجم"], ["KG", "KG", "كجم"], "1", "1.10", "1.10"]
-    - [["Sadeyağ", "Ghee", "سمنة"], ["800 G", "800 G", "800 غ"], ["KG", "KG", "كجم"], "1", "3.70", "3.70"]
+    - [["Konserve Mortadella", "Canned Mortadella", "مرتديلا معلبة"], ["NN Tavuk Salam", "NN Chicken Mortadella", "NN مرتديلا دجاج"], ["240 g kutu", "240 g can", "علبة 240 غ"], "1", "2.30", "2.30"]
+    - [["Konserve Mısır", "Canned Sweet Corn", "ذرة حلوة معلبة"], ["Yesfana", "Yesfana", "يسفانا"], ["350 g kutu", "350 g can", "علبة 350 غ"], "1", "1.60", "1.60"]
+    - [["Parça Ton Balığı Konservesi", "Canned Tuna Chunks", "تونة قطع معلبة"], ["Tomer", "Tomer", "تومر"], ["160 g kutu", "160 g can", "علبة 160 غ"], "2", "1.50", "3.00"]
+    - [["Makarna", "Pasta", "مكرونة"], ["İtalyan", "Italian", "إيطالي"], ["400 g paket", "400 g pack", "عبوة 400 غ"], "2", "1.60", "3.20"]
+    - [["Mısır Pirinci", "Egyptian Rice", "أرز مصري"], ["Mısır Menşeli – Tartılarak", "Egyptian origin – sold by weight", "منشأ مصري – يباع بالوزن"], ["1 kg", "1 kg", "1 كغ"], "2", "1.10", "2.20"]
+    - [["Tane Mercimek", "Whole Lentils", "عدس حب"], ["Çuval – Tartılarak", "Sacks – sold by weight", "أكياس – يباع بالوزن"], ["1 kg", "1 kg", "1 كغ"], "1", "2.10", "2.10"]
+    - [["Zeytinyağı", "Olive Oil", "زيت زيتون"], ["El Şecere El Tayyibe", "Al-Shajara Al-Tayyiba", "الشجرة الطيبة"], ["1 litre", "1 litre", "1 لتر"], "1", "10.00", "10.00"]
+    - [["Üçgen Peynir", "Triangle Cheese", "جبنة مثلثات"], ["İtaliano", "Italiano", "İtaliano"], ["kutu 8 adet 120 g", "box of 8 pieces / 120 g", "علبة 8 قطع / 120 غ"], "2", "1.00", "2.00"]
+    - [["Beyaz Peynir", "White Cheese", "جبنة بيضاء"], ["Birgo", "Birgo", "بيرجو"], ["250 g", "250 g", "250 غ"], "2", "1.00", "2.00"]
+    - [["Konserve Bakla", "Canned Fava Beans", "فول معلب"], ["Hayat", "Hayat", "حياة"], ["400 g kutu", "400 g can", "علبة 400 غ"], "2", "1.00", "2.00"]
+    - [["Yemeklik Sıvı Yağ", "Vegetable Cooking Oil", "زيت نباتي للطبخ"], ["El Hayal / Rawaa", "Al-Khayal / Rawaa", "الخيال / رواء"], ["1 litre", "1 litre", "1 لتر"], "2", "3.30", "6.60"]
+    - [["Şeker", "Sugar", "سكر"], ["Abu Sanade", "Abu Sanada", "أبو سنادة"], ["1 kg", "1 kg", "1 كغ"], "2", "2.00", "4.00"]
+    - [["Sürülebilir Çikolata", "Chocolate Spread", "شوكولاتة للدهن"], ["Mody", "Mody", "مودي"], ["400 g", "400 g", "400 غ"], "1", "4.00", "4.00"]
+    - [["Basmati Pirinci", "Basmati Rice", "أرز بسمتي"], ["1121", "1121", "1121"], ["1 kg", "1 kg", "1 كغ"], "1", "2.50", "2.50"]
+    - [["Reçel", "Jam", "مربى"], ["El Mizan", "Al-Mizan", "الميزان"], ["400 g", "400 g", "400 غ"], "1", "2.30", "2.30"]
+    - [["Kırmızı Kırık Mercimek", "Red Split Lentils", "عدس أحمر مجروش"], ["Çuval – Tartılarak", "Sacks – sold by weight", "أكياس – يباع بالوزن"], ["1 kg", "1 kg", "1 كغ"], "1", "1.00", "1.00"]
+    - [["Sadeyağ", "Ghee", "سمن"], ["Cennet / Rawabi / Nakhlatayn", "Jannat / Rawabi / Nakhlatain", "جنة / روابي / نخلتين"], ["800 g", "800 g", "800 غ"], "1", "3.30", "3.30"]
+    costs:
+    - [["Karton Koli + Sticker", "Carton + sticker", "كرتونة + ملصق"], ["Her koli için", "per carton", "لكل كرتونة"], "", "3.00"]
+    - [["Nakliye", "Transport", "نقل"], ["Her koli için", "per carton", "لكل كرتونة"], "", "1.00"]
+    - [["İşçilik ve Paketleme", "Labour and packing", "عمالة وتعبئة"], ["Her koli için", "per carton", "لكل كرتونة"], "", "1.00"]
+    - [["İdari Giderler (%5)", "Administrative costs (5%)", "مصاريف إدارية (5%)"], null, "", "2.45"]
   gaz-i082:
-    price: "34"
-    total: "34.00"
+    price: "35.74"
+    total: "35.74"
+    title: ["Temizlik ve Kişisel Hijyen Kiti", "Cleaning and Personal Hygiene Kit", "حقيبة النظافة والعناية الشخصية"]
     lead: ["İhtiyaç sahibi bir hane için 10 temel üründen oluşan hijyen ve kişisel bakım çantası.", "A hygiene and personal care kit containing 10 essential items for a vulnerable household.", "سلة منظفات وعناية شخصية تحتوي على 10 أصناف أساسية لأسرة من الأسر الأكثر احتياجًا."]
-    title: [null, null, "سلة المنظفات والعناية الشخصية"]
     items:
-    - [["Roll-on Deodorant", "Roll-on Deodorant", "مزيل عرق"], ["150 ml", "150 ml", "150 مل"], ["ADET", "PIECE", "قطعة"], "1", "3.20", "3.20"]
-    - [["Tuvalet Kâğıdı", "Toilet Paper", "ورق الحمام"], ["150 g", "150 g", "150 غ"], ["ADET", "PIECE", "قطعة"], "1", "1.15", "1.15"]
-    - [["Islak Mendil", "Wet Wipes", "مناديل مبللة"], ["72 mendil", "72 wipes", "72 منديل"], ["ADET", "PIECE", "قطعة"], "1", "1.80", "1.80"]
-    - [["Şampuan", "Shampoo", "شامبو"], ["350 ml", "350 ml", "350 مل"], ["ADET", "PIECE", "قطعة"], "1", "4.40", "4.40"]
-    - [["El Sabunu", "Hand Soap", "صابون اليدين"], ["30 g", "30 g", "30 غ"], ["PAKET", "PACK", "عبوة"], "4", "0.68", "2.70"]
-    - [["Hijyenik Ped", "Sanitary Pads", "فوط صحية"], ["8’li paket", "Pack of 8", "عبوة 8 قطع"], ["PAKET", "PACK", "عبوة"], "3", "2.75", "8.25"]
-    - [["Diş Fırçası", "Toothbrush", "فرشاة أسنان"], ["ADET", "PIECE", "قطعة"], ["ADET", "PIECE", "قطعة"], "4", "0.50", "2.00"]
-    - [["Diş Macunu", "Toothpaste", "معجون أسنان"], ["146 g", "146 g", "146 غ"], ["ADET", "PIECE", "قطعة"], "1", "1.50", "1.50"]
-    - [["Bulaşık Deterjanı", "Dishwashing Liquid", "سائل جلي"], ["750 ml", "750 ml", "750 مل"], ["LİTRE", "LITRE", "لتر"], "1", "4.50", "4.50"]
-    - [["Çamaşır Deterjanı (1 Kg)", "Laundry Detergent", "مسحوق الغسيل"], ["1 kg", "1 kg", "1 كجم"], ["KG", "KG", "كجم"], "1", "4.50", "4.50"]
+    - [["Deodorant", "Deodorant", "مزيل عرق"], ["AXE", "AXE", "AXE"], ["150 ml", "150 ml", "150 مل"], "1", "2.80", "2.80"]
+    - [["Tuvalet Kâğıdı", "Toilet Paper", "ورق حمام"], ["Sıkıştırılmış Rulo", "Compressed roll", "لفة مضغوطة"], ["150 g", "150 g", "150 غ"], "1", "1.00", "1.00"]
+    - [["Islak Mendil", "Wet Wipes", "مناديل مبللة"], ["RONZA", "RONZA", "RONZA"], ["72 yaprak", "72 wipes", "72 منديل"], "1", "1.60", "1.60"]
+    - [["Şampuan", "Shampoo", "شامبو"], ["Head & Shoulders", "Head & Shoulders", "Head & Shoulders"], ["350 ml", "350 ml", "350 مل"], "1", "4.00", "4.00"]
+    - [["El Sabunu", "Hand Soap", "صابون يدين"], ["Al Salwa", "Al Salwa", "Al Salwa"], ["30 g", "30 g", "30 غ"], "4", "0.60", "2.40"]
+    - [["Hijyenik Ped", "Sanitary Pads", "فوط صحية"], ["Monti / General", "Monti / General", "Monti / General"], ["8 adet/paket", "8 pieces/pack", "8 قطع/عبوة"], "3", "2.50", "7.50"]
+    - [["Diş Fırçası", "Toothbrush", "فرشاة أسنان"], ["Joral", "Joral", "Joral"], ["adet", "piece", "قطعة"], "4", "0.41", "1.64"]
+    - [["Diş Macunu", "Toothpaste", "معجون أسنان"], ["Colgate", "Colgate", "Colgate"], ["146 g", "146 g", "146 غ"], "1", "1.70", "1.70"]
+    - [["Bulaşık Deterjanı", "Dishwashing Liquid", "سائل جلي"], ["Feniks / Pril", "Feniks / Pril", "Feniks / Pril"], ["750 ml", "750 ml", "750 مل"], "1", "3.70", "3.70"]
+    - [["Çamaşır Deterjanı", "Laundry Detergent", "مسحوق غسيل"], ["Fiiş", "Fiiş", "فيش"], ["1 kg", "1 kg", "1 كغ"], "1", "4.00", "4.00"]
+    costs:
+    - [["Karton Koli + Sticker", "Carton + sticker", "كرتونة + ملصق"], ["Her koli için", "per carton", "لكل كرتونة"], "", "2.00"]
+    - [["Paketleme ve İşçilik", "Packing and labour", "تعبئة وعمالة"], ["Her koli için", "per carton", "لكل كرتونة"], "", "1.00"]
+    - [["Nakliye", "Transport", "نقل"], ["Her koli için", "per carton", "لكل كرتونة"], "", "0.70"]
+    - [["İdari Giderler (%5)", "Administrative costs (5%)", "مصاريف إدارية (5%)"], null, "", "1.70"]
   gaz-i015:
-    price: "33"
-    total: "33"
+    price: "33.00"
+    total: "33.00"
+    title: ["Bebek Bakım Kiti", "Baby Care Kit", "حقيبة رعاية الأطفال"]
     items:
-    - [["Bebek Maması", "Baby Formula", "حليب أطفال"], ["KUTU", "TIN", "علبة"], ["KUTU", "TIN", "علبة"], "1", "16.50", "16.50"]
-    - [["Bebek Bezi", "Diapers", "حفاظات"], ["PAKET", "PACK", "باكيت"], ["PAKET", "PACK", "باكيت"], "1", "16.50", "16.50"]
+    - [["Bebek Maması", "Baby Formula", "حليب أطفال"], ["LATKO", "LATKO", "LATKO"], ["400 g kutu", "400 g tin", "علبة 400 غ"], "1", "16.50", "16.50"]
+    - [["Bebek Bezi", "Baby Diapers", "حفاضات أطفال"], ["LULLY", "LULLY", "LULLY"], ["42 adet/paket", "42 pieces/pack", "42 قطعة/عبوة"], "1", "16.50", "16.50"]

@@ -224,11 +224,16 @@ def gaza_rows(html, lang, G):
         cells = [list(t) for t in tds]
         if pick(r, 'title'):
             cells[0][1] = re.sub(r'(<strong class="qtitle">).*?(</strong>)', lambda k: k.group(1) + escape(pick(r, 'title')) + k.group(2), cells[0][1], count=1, flags=re.S)
+        if pick(r, 'note'):   # technical detail under the name (size, brand, depth ...)
+            cells[0][1] = re.sub(r'(<strong class="qtitle">.*?</strong>)', lambda k: k.group(1) + f'<span class="qnote">{escape(pick(r, "note"))}</span>', cells[0][1], count=1, flags=re.S)
         cells[1][1] = re.sub(r'<strong>\$[\d.,]+</strong>', lambda k: f'<strong>${r["price"]}</strong>', cells[1][1], count=1)
-        if pick(r, 'unit'):
-            cells[1][1] = re.sub(r'(<span class="qunit">).*?(</span>)', lambda k: k.group(1) + escape(pick(r, 'unit')) + k.group(2), cells[1][1], count=1, flags=re.S)
+        per = pick(r, 'per')   # the unit of the file: "Öğün" -> "Öğün başına" / "per Meal" / "لكل وجبة"
+        unit = pick(r, 'unit') or (per and {'tr': f'{per} başına', 'en': f'per {per}', 'ar': f'لكل {per}'}[lang])
+        if unit:
+            cells[1][1] = re.sub(r'(<span class="qunit">).*?(</span>)', lambda k: k.group(1) + escape(unit) + k.group(2), cells[1][1], count=1, flags=re.S)
         old_unit = re.sub(r'^\s*[\d.,]+\s*', '', cells[2][1]).strip()
-        cells[2][1] = f'{r["min"]} ' + (escape(pick(r, 'min_unit')) if pick(r, 'min_unit') else old_unit)
+        min_unit = pick(r, 'min_unit') or per
+        cells[2][1] = f'{r["min"]} ' + (escape(min_unit) if min_unit else old_unit)
         cells[3][1] = re.sub(r'<strong>\$[\d.,]+</strong>', lambda k: f'<strong>${r["funding"]}</strong>', cells[3][1], count=1)
         if r.get('thousand') and lang == 'tr':      # "1.000 Litre" is written "1,000" in the file
             for c in cells[:3]:
@@ -241,14 +246,23 @@ def gaza_rows(html, lang, G):
     return html, done
 
 
-def gaza_kit(html, lang, kit):
-    """Rewrite the contents table, its total, the price at the top (and the intro / title when given). Returns (html, ok)."""
+def gaza_kit(html, lang, kit, head=None):
+    """Rewrite the contents table, its total, the price at the top (and the intro / title when given). Returns (html, ok).
+    With a table header (head): columns item | brand / details | packaging / size | quantity | unit price | total, then the
+    carton / transport / labour / administrative lines of the file (kit['costs'])."""
     from html import escape
     i = LANG_INDEX[lang]
     if not re.search(r'<tbody>.*?</tbody>', html, re.S):
         return html, False
-    rows = ''.join(f'<tr><td>{escape(n[i])}</td><td>{escape(sz[i])}</td><td>{escape(u[i])}</td><td>{q}</td>'
-                   f'<td class="num">${p}</td><td class="num">${t}</td></tr>' for n, sz, u, q, p, t in kit['items'])
+    if head:
+        html = re.sub(r'<thead>.*?</thead>', lambda m: '<thead><tr>' + ''.join(f'<th>{escape(h)}</th>' for h in head[i]) + '</tr></thead>', html, count=1, flags=re.S)
+        rows = ''.join(f'<tr><td>{escape(n[i])}</td><td>{escape(b[i]) if b else "–"}</td><td>{escape(sz[i])}</td><td>{q}</td>'
+                       f'<td class="num">${p}</td><td class="num">${t}</td></tr>' for n, b, sz, q, p, t in kit['items'])
+        rows += ''.join(f'<tr class="kit-cost{" first" if k == 0 else ""}"><td>{escape(n[i])}</td><td></td><td>{escape(b[i]) if b else ""}</td>'
+                        f'<td>{q}</td><td></td><td class="num">${t}</td></tr>' for k, (n, b, q, t) in enumerate(kit.get('costs', [])))
+    else:
+        rows = ''.join(f'<tr><td>{escape(n[i])}</td><td>{escape(sz[i])}</td><td>{escape(u[i])}</td><td>{q}</td>'
+                       f'<td class="num">${p}</td><td class="num">${t}</td></tr>' for n, sz, u, q, p, t in kit['items'])
     html = re.sub(r'(<tbody>).*?(\s*</tbody>)', lambda m: m.group(1) + '\n' + rows + m.group(2), html, count=1, flags=re.S)
     html = re.sub(r'(<tfoot>.*?<td class="num">)\$[\d.,]+(</td>)', lambda m: m.group(1) + '$' + kit['total'] + m.group(2), html, count=1, flags=re.S)
     html = re.sub(r'(<div class="kit-price">.*?<strong>)\$[\d.,]+(</strong>)', lambda m: m.group(1) + '$' + kit['price'] + m.group(2), html, count=1, flags=re.S)
@@ -620,7 +634,7 @@ def main():
             else:
                 slug = rel.split('/')[2]
                 if slug in GQ.get('kits', {}):
-                    html, ok = gaza_kit(html, mm.group(1), GQ['kits'][slug])
+                    html, ok = gaza_kit(html, mm.group(1), GQ['kits'][slug], GQ.get('kit_head'))
                     print(f'KIT {rel}: ' + ('written from the file' if ok else 'NOT UPDATED (table not found)'))
         elif mm:
             if mm.group(2) == 'quick-funding/gaza/':

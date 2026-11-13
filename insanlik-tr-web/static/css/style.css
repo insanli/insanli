@@ -965,3 +965,7 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
   /* computer screens: small windows may use slightly smaller text so the page still fits */
   @media (min-width: 1000px) { .is-landing { --f1: 14px; --f2: 10px; } }
 }
+/* Gaza package contents: the carton, transport, labour and administrative lines under the products */
+.tbl tbody tr.kit-cost td { background: #fff; color: var(--muted); font-size: .9rem; }
+.tbl tbody tr.kit-cost.first td { border-top: 2px solid var(--line); }
+.tbl tbody tr.kit-cost td.num { color: var(--ink); }
