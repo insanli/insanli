@@ -3,53 +3,55 @@
 # names, units, technical details and unit costs; the contents pages with brand, packaging, quantity, prices and the
 # carton / transport / labour / 5 % administrative lines. Unit costs are written as the files show them (5.00, 9,240.00, 47.67).
 # min = recommended minimum (kept from the previous file); funding = unit cost × minimum (for the packages: the package price).
+# All rows: unit cost and funding are written exactly as requested on 16 Nov 2026 – no thousands separator, no ".00"
+# (5, 2500, 39600), cents as typed in the request (47,67 · 35,74 · 16,50 · 13,5 and 13.5 · 5.50); GAZ-I006 funding 4767.
 # The build puts the $ sign on the right. Texts are ["Turkish", "English", "Arabic"] (null = keep the site text).
 #   per = the unit ("Öğün" -> "Öğün başına", "per Meal", "لكل وجبة")   note = technical detail under the name
 
 rows:
-- {code: "GAZ-I001", price: "5.00", min: "500", funding: "2,500", title: ["Hazır Yemek Dağıtımı", "Ready-Meal Distribution", "توزيع وجبات جاهزة"], per: ["Öğün", "Meal", "وجبة"]}
-- {code: "GAZ-I002", price: "220.00", min: "6", funding: "1,320", title: ["Aşevi – Etli Sıcak Yemek Hazırlığı", "Community Kitchen – Hot Meals with Meat", "إعداد وجبات ساخنة باللحم في التكية"], per: ["Kazan", "Cooking Pot", "قدر"]}
-- {code: "GAZ-I003", price: "150.00", min: "6", funding: "900", title: ["Aşevi – Etsiz Sıcak Yemek Hazırlığı", "Community Kitchen – Hot Meals without Meat", "إعداد وجبات ساخنة دون لحم في التكية"], per: ["Kazan", "Cooking Pot", "قدر"]}
-- {code: "GAZ-I004", price: "25.00", min: "200", funding: "5,000", title: ["Un Desteği (25 kg)", "Flour Support (25 kg)", "توزيع الطحين (25 كغ)"], per: ["Çuval", "Sack", "كيس"]}
-- {code: "GAZ-I005", price: "2.00", min: "1,000", funding: "2,000", title: ["Ekmek Dağıtımı", "Bread Distribution", "توزيع الخبز"], per: ["Ekmek Paketi", "Bread Bundle", "ربطة خبز"]}
-- {code: "GAZ-I006", price: "47.67", min: "100", funding: "47.67", title: ["Taze Sebze Paketi", "Fresh Vegetable Basket", "سلة خضروات طازجة"], per: ["Paket", "Parcel", "طرد"]}
-- {code: "GAZ-I007", price: "62.00", min: "100", funding: "62", title: ["Gıda Kolisi", "Food Parcel", "سلة غذائية"], per: ["Koli", "Carton", "كرتونة"]}
-- {code: "GAZ-I071", price: "9,240.00", min: "1", funding: "9,240", title: ["Etli Sıcak Yemek Hizmeti – 7 Günlük Program", "Hot Meal Service with Meat – 7-Day Programme", "تقديم وجبات ساخنة باللحم – برنامج 7 أيام"], per: ["7 Günlük Program", "7-Day Programme", "برنامج 7 أيام"]}
-- {code: "GAZ-I072", price: "39,600.00", min: "1", funding: "39,600", title: ["Etli Sıcak Yemek Hizmeti – 30 Günlük Program", "Hot Meal Service with Meat – 30-Day Programme", "تقديم وجبات ساخنة باللحم – برنامج 30 يومًا"], per: ["30 Günlük Program", "30-Day Programme", "برنامج 30 يومًا"]}
-- {code: "GAZ-I073", price: "6,300.00", min: "1", funding: "6,300", title: ["Etsiz Sıcak Yemek Hizmeti – 7 Günlük Program", "Hot Meal Service without Meat – 7-Day Programme", "تقديم وجبات ساخنة دون لحم – برنامج 7 أيام"], per: ["7 Günlük Program", "7-Day Programme", "برنامج 7 أيام"]}
-- {code: "GAZ-I074", price: "27,000.00", min: "1", funding: "27,000", title: ["Etsiz Sıcak Yemek Hizmeti – 30 Günlük Program", "Hot Meal Service without Meat – 30-Day Programme", "تقديم وجبات ساخنة دون لحم – برنامج 30 يومًا"], per: ["30 Günlük Program", "30-Day Programme", "برنامج 30 يومًا"]}
-- {code: "GAZ-I010", price: "37.00", min: "40", funding: "1,480", title: ["İçme Suyu Temini ve Dağıtımı", "Drinking Water Supply and Distribution", "توفير وتوزيع مياه الشرب"], per: ["1.000 Litre", "1,000 Litres", "1,000 لتر"], min_unit: ["× 1.000 Litre", "× 1,000 Litres", "ألف لتر"]}
-- {code: "GAZ-I011", price: "35.74", min: "100", funding: "3,574", title: ["Hijyen ve Kişisel Bakım Kiti", "Hygiene and Personal Care Kit", "حقيبة نظافة وعناية شخصية"], per: ["Kit", "Kit", "حقيبة"]}
-- {code: "GAZ-I012", price: "9,300.00", min: "1", funding: "9,300", title: ["Su Kuyusu Açılması", "Water Well Drilling", "حفر بئر مياه"], per: ["Kuyu", "Well", "بئر"], note: ["50 m derinlik", "50 m deep", "عمق 50 مترًا"]}
-- {code: "GAZ-I013", price: "2,200.00", min: "1", funding: "2,200", title: ["Su Kuyusu Bakım ve Onarımı", "Water Well Maintenance and Repair", "صيانة وإصلاح بئر مياه"], per: ["Kuyu", "Well", "بئر"]}
-- {code: "GAZ-I016", price: "8,745.00", min: "3", funding: "26,235", title: ["Yerinden Edilenlerin Yaşam Alanları İçin Tuvalet Ünitesi", "Toilet Unit for Displacement Sites", "وحدة مراحيض لمناطق إقامة النازحين"], per: ["Ünite", "Unit", "وحدة"]}
-- {code: "GAZ-I082", price: "35.74", min: "1", funding: "35.74", min_unit: ["Kole", "Parcel", "سلة"], title: ["Temizlik ve Kişisel Hijyen Kiti", "Cleaning and Personal Hygiene Kit", "حقيبة النظافة والعناية الشخصية"]}
-- {code: "GAZ-I015", price: "33.00", min: "150", funding: "33", title: ["Bebek Bakım Kiti", "Baby Care Kit", "حقيبة رعاية الأطفال"], per: ["Paket", "Parcel", "طرد"]}
-- {code: "GAZ-I018", price: "16.50", min: "200", funding: "3,300", title: ["Bebek Maması", "Infant Formula", "حليب أطفال"], per: ["Kutu", "Tin", "علبة"], note: ["Marka: Latko", "Brand: Latko", "العلامة التجارية: Latko"]}
-- {code: "GAZ-I019", price: "16.50", min: "200", funding: "3,300", title: ["Bebek Bezi", "Baby Diapers", "حفاضات أطفال"], per: ["Paket", "Pack", "طرد"], note: ["Marka: LULLY", "Brand: LULLY", "العلامة التجارية: LULLY"]}
-- {code: "GAZ-I022", price: "350.00", min: "1", funding: "350", title: ["Sağlık Kuruluşları İçin Tıbbi Malzeme Çantası", "Medical Supplies Bag for Health Facilities", "حقيبة مستلزمات طبية للمرافق الصحية"], per: ["Çanta", "Bag", "حقيبة"]}
-- {code: "GAZ-I023", price: "500.00", min: "10", funding: "5,000", title: ["Cerrahi Müdahale Desteği", "Surgical Procedure Support", "دعم إجراء جراحي"], per: ["Vaka", "Case", "حالة"]}
-- {code: "GAZ-I024", price: "350.00", min: "20", funding: "7,000", title: ["Hasta Tedavi Desteği", "Patient Treatment Support", "دعم علاج المرضى"], per: ["Vaka", "Case", "حالة"]}
-- {code: "GAZ-I026", price: "200.00", min: "20", funding: "4,000", title: ["Katar Çadır", "Qatari Tent", "خيمة قطرية"], per: ["Çadır", "Tent", "خيمة"], note: ["4 × 6 m; Katar menşeli", "4 × 6 m; made in Qatar", "4 × 6 م؛ قطرية المنشأ"]}
-- {code: "GAZ-I027", price: "770.00", min: "5", funding: "3,850", title: ["Kubbe Tipi Barınma Çadırı", "Dome Shelter Tent", "خيمة إيواء قبة الشكل"], per: ["Çadır", "Tent", "خيمة"], note: ["Marka: Blue", "Brand: Blue", "العلامة التجارية: Blue"]}
-- {code: "GAZ-I028", price: "52.00", min: "50", funding: "2,600", title: ["Plastik Branda", "Plastic Tarpaulin", "شادر بلاستيكي"], per: ["Branda", "Tarpaulin", "شادر"], note: ["4 × 6 m", "4 × 6 m", "4 × 6 م"]}
-- {code: "GAZ-I029", price: "19.00", min: "150", funding: "2,850", title: ["Yatak Şiltesi", "Sleeping Mattress", "فرشة نوم"], per: ["Şilte", "Mattress", "فرشة"], note: ["1,8 × 0,7 m", "1.8 × 0.7 m", "1.8 × 0.7 م"]}
-- {code: "GAZ-I030", price: "22.00", min: "150", funding: "3,300", title: ["Kışlık Battaniye (2 kg)", "Winter Blanket (2 kg)", "حرام شتوي (2 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}
-- {code: "GAZ-I031", price: "55.00", min: "50", funding: "2,750", title: ["Temel Ev Eşyaları Paketi", "Essential Household Items Pack", "حزمة أدوات منزلية أساسية"], per: ["Paket", "Pack", "طرد"]}
-- {code: "GAZ-I032", price: "1,000.00", min: "100", funding: "100,000", title: ["Kısmen Hasarlı Konutların Onarımı", "Repair of Partially Damaged Homes", "ترميم منازل متضررة جزئيًا"], per: ["Konut", "Home", "منزل"]}
-- {code: "GAZ-I034", price: "50.00", min: "50", funding: "2,500", title: ["Nakit ve Alışveriş Kuponu Desteği", "Cash and Shopping Voucher Assistance", "مساعدات نقدية وقسائم شرائية"], per: ["Hane", "Household", "أسرة"]}
-- {code: "GAZ-I035", price: "13.50", min: "200", funding: "2,700", title: ["Kadın Namaz Takımı", "Women’s Prayer Set", "طقم صلاة نسائي"], per: ["Takım", "Set", "طقم"]}
-- {code: "GAZ-I081", price: "19.00", min: "200", funding: "3,800", title: ["Çocuk Eşofman Takımı", "Children’s Tracksuit Set", "طقم رياضي للأطفال"], per: ["Takım", "Set", "طقم"]}
-- {code: "GAZ-I051", price: "13.50", min: "200", funding: "2,700", title: ["Çocuk Kışlık Montu (0–6 Yaş)", "Children’s Winter Jacket (Ages 0–6)", "جاكيت شتوي للأطفال (0–6 سنوات)"], per: ["Mont", "Jacket", "جاكيت"]}
-- {code: "GAZ-I052", price: "19.00", min: "200", funding: "3,800", title: ["Çocuk Kışlık Montu (7–14 Yaş)", "Children’s Winter Jacket (Ages 7–14)", "جاكيت شتوي للأطفال (7–14 سنة)"], per: ["Mont", "Jacket", "جاكيت"]}
-- {code: "GAZ-I053", price: "36.00", min: "150", funding: "5,400", title: ["Erkek Çocuk Kışlık Montu", "Boys’ Winter Jacket", "جاكيت شتوي للأولاد"], per: ["Mont", "Jacket", "جاكيت"]}
+- {code: "GAZ-I001", price: "5", min: "500", funding: "2500", title: ["Hazır Yemek Dağıtımı", "Ready-Meal Distribution", "توزيع وجبات جاهزة"], per: ["Öğün", "Meal", "وجبة"]}
+- {code: "GAZ-I002", price: "220", min: "6", funding: "1320", title: ["Aşevi – Etli Sıcak Yemek Hazırlığı", "Community Kitchen – Hot Meals with Meat", "إعداد وجبات ساخنة باللحم في التكية"], per: ["Kazan", "Cooking Pot", "قدر"]}
+- {code: "GAZ-I003", price: "150", min: "6", funding: "900", title: ["Aşevi – Etsiz Sıcak Yemek Hazırlığı", "Community Kitchen – Hot Meals without Meat", "إعداد وجبات ساخنة دون لحم في التكية"], per: ["Kazan", "Cooking Pot", "قدر"]}
+- {code: "GAZ-I004", price: "25", min: "200", funding: "5000", title: ["Un Desteği (25 kg)", "Flour Support (25 kg)", "توزيع الطحين (25 كغ)"], per: ["Çuval", "Sack", "كيس"]}
+- {code: "GAZ-I005", price: "2", min: "1,000", funding: "2000", title: ["Ekmek Dağıtımı", "Bread Distribution", "توزيع الخبز"], per: ["Ekmek Paketi", "Bread Bundle", "ربطة خبز"]}
+- {code: "GAZ-I006", price: "47,67", min: "100", funding: "4767", title: ["Taze Sebze Paketi", "Fresh Vegetable Basket", "سلة خضروات طازجة"], per: ["Paket", "Parcel", "طرد"]}
+- {code: "GAZ-I007", price: "62", min: "100", funding: "62", title: ["Gıda Kolisi", "Food Parcel", "سلة غذائية"], per: ["Koli", "Carton", "كرتونة"]}
+- {code: "GAZ-I071", price: "9240", min: "1", funding: "9240", title: ["Etli Sıcak Yemek Hizmeti – 7 Günlük Program", "Hot Meal Service with Meat – 7-Day Programme", "تقديم وجبات ساخنة باللحم – برنامج 7 أيام"], per: ["7 Günlük Program", "7-Day Programme", "برنامج 7 أيام"]}
+- {code: "GAZ-I072", price: "39600", min: "1", funding: "39600", title: ["Etli Sıcak Yemek Hizmeti – 30 Günlük Program", "Hot Meal Service with Meat – 30-Day Programme", "تقديم وجبات ساخنة باللحم – برنامج 30 يومًا"], per: ["30 Günlük Program", "30-Day Programme", "برنامج 30 يومًا"]}
+- {code: "GAZ-I073", price: "6300", min: "1", funding: "6300", title: ["Etsiz Sıcak Yemek Hizmeti – 7 Günlük Program", "Hot Meal Service without Meat – 7-Day Programme", "تقديم وجبات ساخنة دون لحم – برنامج 7 أيام"], per: ["7 Günlük Program", "7-Day Programme", "برنامج 7 أيام"]}
+- {code: "GAZ-I074", price: "27000", min: "1", funding: "27000", title: ["Etsiz Sıcak Yemek Hizmeti – 30 Günlük Program", "Hot Meal Service without Meat – 30-Day Programme", "تقديم وجبات ساخنة دون لحم – برنامج 30 يومًا"], per: ["30 Günlük Program", "30-Day Programme", "برنامج 30 يومًا"]}
+- {code: "GAZ-I010", price: "37", min: "40", funding: "1480", title: ["İçme Suyu Temini ve Dağıtımı", "Drinking Water Supply and Distribution", "توفير وتوزيع مياه الشرب"], per: ["1.000 Litre", "1,000 Litres", "1,000 لتر"], min_unit: ["× 1.000 Litre", "× 1,000 Litres", "ألف لتر"]}
+- {code: "GAZ-I011", price: "35,74", min: "100", funding: "3574", title: ["Hijyen ve Kişisel Bakım Kiti", "Hygiene and Personal Care Kit", "حقيبة نظافة وعناية شخصية"], per: ["Kit", "Kit", "حقيبة"]}
+- {code: "GAZ-I012", price: "9300", min: "1", funding: "9300", title: ["Su Kuyusu Açılması", "Water Well Drilling", "حفر بئر مياه"], per: ["Kuyu", "Well", "بئر"], note: ["50 m derinlik", "50 m deep", "عمق 50 مترًا"]}
+- {code: "GAZ-I013", price: "2200", min: "1", funding: "2200", title: ["Su Kuyusu Bakım ve Onarımı", "Water Well Maintenance and Repair", "صيانة وإصلاح بئر مياه"], per: ["Kuyu", "Well", "بئر"]}
+- {code: "GAZ-I016", price: "8745", min: "3", funding: "26235", title: ["Yerinden Edilenlerin Yaşam Alanları İçin Tuvalet Ünitesi", "Toilet Unit for Displacement Sites", "وحدة مراحيض لمناطق إقامة النازحين"], per: ["Ünite", "Unit", "وحدة"]}
+- {code: "GAZ-I082", price: "35,74", min: "1", funding: "35,74", min_unit: ["Kole", "Parcel", "سلة"], title: ["Temizlik ve Kişisel Hijyen Kiti", "Cleaning and Personal Hygiene Kit", "حقيبة النظافة والعناية الشخصية"]}
+- {code: "GAZ-I015", price: "33", min: "150", funding: "33", title: ["Bebek Bakım Kiti", "Baby Care Kit", "حقيبة رعاية الأطفال"], per: ["Paket", "Parcel", "طرد"]}
+- {code: "GAZ-I018", price: "16,50", min: "200", funding: "3300", title: ["Bebek Maması", "Infant Formula", "حليب أطفال"], per: ["Kutu", "Tin", "علبة"], note: ["Marka: Latko", "Brand: Latko", "العلامة التجارية: Latko"]}
+- {code: "GAZ-I019", price: "16,50", min: "200", funding: "3300", title: ["Bebek Bezi", "Baby Diapers", "حفاضات أطفال"], per: ["Paket", "Pack", "طرد"], note: ["Marka: LULLY", "Brand: LULLY", "العلامة التجارية: LULLY"]}
+- {code: "GAZ-I022", price: "350", min: "1", funding: "350", title: ["Sağlık Kuruluşları İçin Tıbbi Malzeme Çantası", "Medical Supplies Bag for Health Facilities", "حقيبة مستلزمات طبية للمرافق الصحية"], per: ["Çanta", "Bag", "حقيبة"]}
+- {code: "GAZ-I023", price: "500", min: "10", funding: "5000", title: ["Cerrahi Müdahale Desteği", "Surgical Procedure Support", "دعم إجراء جراحي"], per: ["Vaka", "Case", "حالة"]}
+- {code: "GAZ-I024", price: "350", min: "20", funding: "7000", title: ["Hasta Tedavi Desteği", "Patient Treatment Support", "دعم علاج المرضى"], per: ["Vaka", "Case", "حالة"]}
+- {code: "GAZ-I026", price: "200", min: "20", funding: "4000", title: ["Katar Çadır", "Qatari Tent", "خيمة قطرية"], per: ["Çadır", "Tent", "خيمة"], note: ["4 × 6 m; Katar menşeli", "4 × 6 m; made in Qatar", "4 × 6 م؛ قطرية المنشأ"]}
+- {code: "GAZ-I027", price: "770", min: "5", funding: "3850", title: ["Kubbe Tipi Barınma Çadırı", "Dome Shelter Tent", "خيمة إيواء قبة الشكل"], per: ["Çadır", "Tent", "خيمة"], note: ["Marka: Blue", "Brand: Blue", "العلامة التجارية: Blue"]}
+- {code: "GAZ-I028", price: "52", min: "50", funding: "2600", title: ["Plastik Branda", "Plastic Tarpaulin", "شادر بلاستيكي"], per: ["Branda", "Tarpaulin", "شادر"], note: ["4 × 6 m", "4 × 6 m", "4 × 6 م"]}
+- {code: "GAZ-I029", price: "19", min: "150", funding: "2850", title: ["Yatak Şiltesi", "Sleeping Mattress", "فرشة نوم"], per: ["Şilte", "Mattress", "فرشة"], note: ["1,8 × 0,7 m", "1.8 × 0.7 m", "1.8 × 0.7 م"]}
+- {code: "GAZ-I030", price: "22", min: "150", funding: "3300", title: ["Kışlık Battaniye (2 kg)", "Winter Blanket (2 kg)", "حرام شتوي (2 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}
+- {code: "GAZ-I031", price: "55", min: "50", funding: "2750", title: ["Temel Ev Eşyaları Paketi", "Essential Household Items Pack", "حزمة أدوات منزلية أساسية"], per: ["Paket", "Pack", "طرد"]}
+- {code: "GAZ-I032", price: "1000", min: "100", funding: "100000", title: ["Kısmen Hasarlı Konutların Onarımı", "Repair of Partially Damaged Homes", "ترميم منازل متضررة جزئيًا"], per: ["Konut", "Home", "منزل"]}
+- {code: "GAZ-I034", price: "50", min: "50", funding: "2500", title: ["Nakit ve Alışveriş Kuponu Desteği", "Cash and Shopping Voucher Assistance", "مساعدات نقدية وقسائم شرائية"], per: ["Hane", "Household", "أسرة"]}
+- {code: "GAZ-I035", price: "13,5", min: "200", funding: "2700", title: ["Kadın Namaz Takımı", "Women’s Prayer Set", "طقم صلاة نسائي"], per: ["Takım", "Set", "طقم"]}
+- {code: "GAZ-I081", price: "19", min: "200", funding: "3800", title: ["Çocuk Eşofman Takımı", "Children’s Tracksuit Set", "طقم رياضي للأطفال"], per: ["Takım", "Set", "طقم"]}
+- {code: "GAZ-I051", price: "13.5", min: "200", funding: "2700", title: ["Çocuk Kışlık Montu (0–6 Yaş)", "Children’s Winter Jacket (Ages 0–6)", "جاكيت شتوي للأطفال (0–6 سنوات)"], per: ["Mont", "Jacket", "جاكيت"]}
+- {code: "GAZ-I052", price: "19", min: "200", funding: "3800", title: ["Çocuk Kışlık Montu (7–14 Yaş)", "Children’s Winter Jacket (Ages 7–14)", "جاكيت شتوي للأطفال (7–14 سنة)"], per: ["Mont", "Jacket", "جاكيت"]}
+- {code: "GAZ-I053", price: "36", min: "150", funding: "5400", title: ["Erkek Çocuk Kışlık Montu", "Boys’ Winter Jacket", "جاكيت شتوي للأولاد"], per: ["Mont", "Jacket", "جاكيت"]}
 - {code: "GAZ-I054", price: "5.50", min: "150", funding: "825", title: ["Kışlık Bere", "Winter Beanie", "قبعة شتوية"], per: ["Bere", "Beanie", "قبعة"]}
-- {code: "GAZ-I055", price: "19.00", min: "200", funding: "3,800", title: ["Kışlık Ayakkabı", "Winter Shoes", "حذاء شتوي"], per: ["Çift", "Pair", "زوج"]}
-- {code: "GAZ-I056", price: "5.50", min: "500", funding: "2,750", title: ["Çocuk Yün Atkısı", "Children’s Wool Scarf", "شال صوفي للأطفال"], per: ["Atkı", "Scarf", "شال"]}
-- {code: "GAZ-I080", price: "11.00", min: "150", funding: "1,650", title: ["Battaniye (1 kg)", "Blanket (1 kg)", "حرام (1 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}
-- {code: "Gaz 81", price: "200.00", min: "20", funding: "4,000", title: ["Yerinden Edilen Ailelere Yönelik Çok Amaçlı Solar Aydınlatma Ünitesi", "Multi-Purpose Solar Lighting Unit for Displaced Families", "وحدة إنارة شمسية متعددة الاستخدام للأسر النازحة"], per: ["Adet", "Piece", "قطعة"]}
-- {code: "GAZ-I039", price: "1,500.00", min: "1", funding: "1,500"}
-- {code: "GAZ-I058", price: "35.00", min: "100", funding: "3,500", title: ["Okul Çantası ve Kırtasiye Seti", "School Bag and Stationery Set", "حقيبة مدرسية ومستلزمات قرطاسية"], per: ["Set", "Set", "طقم"]}
+- {code: "GAZ-I055", price: "19", min: "200", funding: "3800", title: ["Kışlık Ayakkabı", "Winter Shoes", "حذاء شتوي"], per: ["Çift", "Pair", "زوج"]}
+- {code: "GAZ-I056", price: "5.50", min: "500", funding: "2750", title: ["Çocuk Yün Atkısı", "Children’s Wool Scarf", "شال صوفي للأطفال"], per: ["Atkı", "Scarf", "شال"]}
+- {code: "GAZ-I080", price: "11", min: "150", funding: "1650", title: ["Battaniye (1 kg)", "Blanket (1 kg)", "حرام (1 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}
+- {code: "Gaz 81", price: "200", min: "20", funding: "4000", title: ["Yerinden Edilen Ailelere Yönelik Çok Amaçlı Solar Aydınlatma Ünitesi", "Multi-Purpose Solar Lighting Unit for Displaced Families", "وحدة إنارة شمسية متعددة الاستخدام للأسر النازحة"], per: ["Adet", "Piece", "قطعة"]}
+- {code: "GAZ-I039", price: "1500", min: "1", funding: "1500"}
+- {code: "GAZ-I058", price: "35", min: "100", funding: "3500", title: ["Okul Çantası ve Kırtasiye Seti", "School Bag and Stationery Set", "حقيبة مدرسية ومستلزمات قرطاسية"], per: ["Set", "Set", "طقم"]}
 
 # "View contents" pages: table header, then per package: price at the top = total in the last line (as in the file).
 # items: [name, brand / details (null = none), packaging / size, quantity, unit price, line total]
