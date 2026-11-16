@@ -427,6 +427,33 @@ def cards_with_facts(html, lang, facts):
     return out, n[0]
 
 
+def project_country_tiles(html, lang, out):
+    """Projects page: all projects no longer show at once. Every country gets a row with the same tiles as on its own page
+    (36 Projects / 43 Quick Interventions / Humanitarian Situation Update) under the country name; the Projects tile opens
+    all projects of that country (.../projects/?country=gaza). The full list with its filters is shown only when a country
+    or sector is chosen. A country whose page has no tiles gets no row. Returns (html, number of rows)."""
+    sel = re.search(r'<select data-filter="country">(.*?)</select>', html, re.S)
+    names = dict(re.findall(r'<option value="([^"]+)">([^<]+)</option>', sel.group(1))) if sel else {}
+    slugs = [os.path.basename(os.path.dirname(f)) for f in glob.glob(os.path.join(out, lang, 'areas', '*', 'index.html'))]
+    rows = []
+    for slug in sorted(slugs, key=region_pos):
+        page = open(os.path.join(out, lang, 'areas', slug, 'index.html'), encoding='utf-8').read()
+        m = re.search(r'<div class="opps">.*?</div>', page, re.S)
+        h1 = re.search(r'<h1>(.*?)</h1>', page, re.S)
+        name = (names.get(slug) or (h1.group(1) if h1 else '')).strip()
+        if not m or not name:
+            continue
+        tiles = m.group(0).replace('href="#', f'href="/{lang}/areas/{slug}/#')   # "Learn more" opens that part of the country page
+        rows.append(f'<div class="country-row"><h2 class="bar-title">{name}</h2>{tiles}</div>')
+    lst = re.search(r'<section class="sec">(?=\s*<div class="container">\s*<div class="filters")', html)
+    if not rows or not lst:
+        return html, 0
+    block = ('<script>if(/[?&](country|sector)=[^&]/.test(location.search))document.documentElement.classList.add("plist-on")</script>\n'
+             '<section class="sec country-tiles"><div class="container">' + ''.join(rows) + '</div></section>\n'
+             '<section class="sec plist-sec">')
+    return html[:lst.start()] + block + html[lst.end():], len(rows)
+
+
 def home_nav(lang, t, areas):
     """Start page top bar: the same headings as the Projects top bar; each one opens the main contents of its page.
     Read from the project pages already written to _site (so titles and links are always the current ones)."""
@@ -564,6 +591,8 @@ def main():
                     html = re.sub(r'(<select data-filter="sector">.*?)(</select>)', lambda mm: mm.group(1) + f'<option value="women-children">{label}</option>' + mm.group(2), html, count=1, flags=re.S)
                     for code in WC.get('projects', []):
                         html = html.replace(f'<a class="pcard" href="/{l}/projects/{code}/"', f'<a class="pcard" data-groups="women-children" href="/{l}/projects/{code}/"')
+                    html, n_tiles = project_country_tiles(html, l, OUT)
+                    print(f'PROJECTS {l}: {n_tiles} country rows of tiles on the Projects page')
                 html, k = cards_with_facts(html, l, facts)
                 cards_done += k
                 with open(f, 'w', encoding='utf-8') as fh:

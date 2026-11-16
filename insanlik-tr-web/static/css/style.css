@@ -969,3 +969,10 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .tbl tbody tr.kit-cost td { background: #fff; color: var(--muted); font-size: .9rem; }
 .tbl tbody tr.kit-cost.first td { border-top: 2px solid var(--line); }
 .tbl tbody tr.kit-cost td.num { color: var(--ink); }
+/* Projects page: all projects no longer show at once. Every country has a row with the same tiles as on its own page
+   (Projects / Quick Interventions / Humanitarian Situation Update) under the country name. The full list with its
+   filters shows only when a country or sector is chosen (…/projects/?country=gaza). */
+.country-row + .country-row { margin-top: 44px; }
+.country-row .bar-title { font-size: 1.3rem; margin: 0 0 16px; }
+html:not(.plist-on) .plist-sec { display: none; }
+html.plist-on .country-tiles { display: none; }
