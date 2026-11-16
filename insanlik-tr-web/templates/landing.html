@@ -2,8 +2,8 @@
 {% import '_m.html' as m %}
 {% block body_class %}is-landing{% endblock %}
 {% block header %}{% import '_header.html' as h %}
-{#- top bar on the start page: the same headings as the Projects top bar; clicking one opens the main contents of its page -#}
-{{ h.site_header(lang, langs, alt, T, S, home_nav or [], t.menu) }}{% endblock %}
+{#- top bar on the start page: only the logo and the language button (no headings) -#}
+{{ h.site_header(lang, langs, alt, T, S, [], t.menu) }}{% endblock %}
 {% block footer %}{% endblock %}
 {% block content %}
 <section class="landing" style="--bg:url('{{ S.landing_image }}')">
