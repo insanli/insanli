@@ -43,28 +43,48 @@
   d.addEventListener('click', function (e) { if (!e.target.closest('.rep-drop')) repClose(null); });
   d.addEventListener('keydown', function (e) { if (e.key === 'Escape') repClose(null); });
 
-  // project list filters (sector + country), also reads ?country= / ?sector= from the address
+  // project list filters (sector + country), also reads ?country= / ?sector= from the address.
+  // The projects are not listed at once: under the boxes every country shows its tiles (36 Projects / Quick Interventions /
+  // Situation Update); choosing a sector or a country narrows these rows, and the Projects tile then opens the projects.
+  // A link that names a country or sector (…?country=gaza) lists the projects straight away.
   var box = d.querySelector('.filters[data-filter-for]');
   if (box) {
     var list = d.querySelector(box.getAttribute('data-filter-for'));
     var sels = box.querySelectorAll('select[data-filter]');
     var counter = box.querySelector('[data-count]');
     var empty = d.querySelector('.empty');
+    var tiles = d.getElementById('ptiles');
     var params = new URLSearchParams(location.search);
     sels.forEach(function (s) { var v = params.get(s.getAttribute('data-filter')); if (v) s.value = v; });
+    var asTiles = !!tiles && (params.get('view') === 'tiles' || !(params.get('country') || params.get('sector')));
     var apply = function () {
       var f = {}; sels.forEach(function (s) { f[s.getAttribute('data-filter')] = s.value; });
-      var n = 0;
+      var n = 0, per = {}, shown = 0;
       list.querySelectorAll('.pcard').forEach(function (c) {
         var ok = (!f.sector || c.getAttribute('data-sector') === f.sector || (' ' + (c.getAttribute('data-groups') || '') + ' ').indexOf(' ' + f.sector + ' ') > -1) && (!f.country || c.getAttribute('data-country') === f.country);
-        c.classList.toggle('is-hidden', !ok); if (ok) n++;
+        c.classList.toggle('is-hidden', !ok);
+        if (ok) { n++; var k = c.getAttribute('data-country'); per[k] = (per[k] || 0) + 1; }
       });
+      if (tiles) {
+        d.documentElement.classList.toggle('plist-on', !asTiles);   // plist-on = the list of projects, otherwise the country tiles
+        if (asTiles) tiles.querySelectorAll('.country-row').forEach(function (r) {
+          var c = r.getAttribute('data-country'), k = per[c] || 0;
+          var on = f.country ? c === f.country : (k > 0 || !f.sector);   // chosen country; or every country that has such projects
+          r.hidden = !on; if (on) shown++;
+          var a = r.querySelector('a.opp[href*="country="]'), num = a && a.querySelector('strong');
+          if (!a) return;
+          if (num) num.textContent = k;   // number of matching projects of this country
+          var lq = new URLSearchParams(); if (f.sector) lq.set('sector', f.sector); lq.set('country', c);
+          a.setAttribute('href', location.pathname + '?' + lq);
+        });
+      }
       if (counter) counter.textContent = n;
-      if (empty) empty.hidden = n > 0;
+      if (empty) empty.hidden = asTiles ? shown > 0 : n > 0;
       var q = new URLSearchParams(); Object.keys(f).forEach(function (k) { if (f[k]) q.set(k, f[k]); });
+      if (asTiles && q.toString()) q.set('view', 'tiles');
       history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : ''));
     };
-    sels.forEach(function (s) { s.addEventListener('change', apply); });
+    sels.forEach(function (s) { s.addEventListener('change', function () { asTiles = !!tiles; apply(); }); });
     apply();
   }
 

@@ -1,7 +1,14 @@
 {% import '_header.html' as h %}
 {% set items = [] %}
+{% if nav %}
+{#- every heading opens its contents (regions, fields of work, programmes, countries) - on wide and on narrower screens -#}
+{% for it in nav %}
+{% set _ = items.append(dict(title=it.title, url=it.url, children=it.children, drop=it.drop, all=it.all, current=(section == it.page))) %}
+{% endfor %}
+{% else %}
 {% for it in t.projects_nav %}
 {% set kids = ([dict(title=t.all_areas, url='/' ~ lang ~ '/areas/')] + areas) if it.page == 'areas' and areas else [] %}
 {% set _ = items.append(dict(title=it.title, url='/' ~ lang ~ '/' ~ it.page ~ '/', children=kids, current=(section == it.page))) %}
 {% endfor %}
-{{ h.site_header(lang, langs, alt, T, S, items, t.nav.projects) }}
+{% endif %}
+{{ h.site_header(lang, langs, alt, T, S, items, t.nav.projects, 'shdr-proj') }}

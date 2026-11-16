@@ -1,7 +1,7 @@
 {% import '_m.html' as m %}
 {% macro rep_panel(it) %}<div class="snav-drop snav-list rep-panel">{% for c in it.children %}<a href="{{ c.url }}"><span class="rp-t">{{ c.title }}</span>{% if c.sub %}<span class="rp-s">{{ c.sub }}</span>{% endif %}</a>{% endfor %}<a class="rp-all" href="{{ it.url }}">{{ it.all }}</a></div>{% endmacro %}
-{% macro site_header(lang, langs, alt, T, S, items, label) %}
-<header class="hdr shdr{% if not items %} no-nav{% endif %}" id="top">
+{% macro site_header(lang, langs, alt, T, S, items, label, cls='') %}
+<header class="hdr shdr{% if not items %} no-nav{% endif %}{% if cls %} {{ cls }}{% endif %}" id="top">
   <div class="shdr-in">
     <a class="logo" href="/{{ lang }}/"><img src="/img/brand/logo-{{ 'en' if lang == 'ar' else lang }}.png" alt="{{ S.full_name }}" width="652" height="247"></a>
     {% if items %}

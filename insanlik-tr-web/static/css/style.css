@@ -930,8 +930,8 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .shdr-in { max-width: 1240px; padding-inline: 20px; }
 @media (min-width: 1000px) and (max-width: 1439px) { .is-landing .shdr-in { max-width: 86.11vw; } }
 @media (min-width: 1281px) and (max-width: 1365px) { .is-landing .shdr .snav ul { gap: 8px; } }
-@media (min-width: 1281px) { body:not(.is-landing) .shdr-in:has(.rep-drop) { max-width: 1400px; padding-inline: 24px; } }
-@media (min-width: 1281px) and (max-width: 1365px) { body:not(.is-landing) .shdr-in:has(.rep-drop) { padding-inline: 18px; } }
+@media (min-width: 1281px) { body:not(.is-landing) .shdr:not(.shdr-proj) .shdr-in:has(.rep-drop) { max-width: 1400px; padding-inline: 24px; } }
+@media (min-width: 1281px) and (max-width: 1365px) { body:not(.is-landing) .shdr:not(.shdr-proj) .shdr-in:has(.rep-drop) { padding-inline: 18px; } }
 /* start page fits on one screen, no scrolling (computers and tablets, all three languages). The start page is the
    height of the window minus the top bar. When the window is not tall enough for the full Mac sizes (for example
    Windows at 125-150 % display scaling, or a Mac with the Dock showing), every part of the start page shrinks by the
@@ -969,10 +969,15 @@ a.tag-line:hover { background: #fff; color: var(--brand); }
 .tbl tbody tr.kit-cost td { background: #fff; color: var(--muted); font-size: .9rem; }
 .tbl tbody tr.kit-cost.first td { border-top: 2px solid var(--line); }
 .tbl tbody tr.kit-cost td.num { color: var(--ink); }
-/* Projects page: all projects no longer show at once. Every country has a row with the same tiles as on its own page
-   (Projects / Quick Interventions / Humanitarian Situation Update) under the country name. The full list with its
-   filters shows only when a country or sector is chosen (…/projects/?country=gaza). */
-.country-row + .country-row { margin-top: 44px; }
+/* Projects page: the projects are not listed at once. Under the Sector / Country boxes each country has a row with the
+   same tiles as on its own page (Projects / Quick Interventions / Humanitarian Situation Update) under the country name;
+   the boxes narrow the rows and the Projects tile opens the projects (then the list shows: html.plist-on). */
+.country-tiles { display: grid; gap: 44px; }
 .country-row .bar-title { font-size: 1.3rem; margin: 0 0 16px; }
-html:not(.plist-on) .plist-sec { display: none; }
-html.plist-on .country-tiles { display: none; }
+.country-row[hidden] { display: none; }
+html.plist-on #ptiles { display: none; }
+html:not(.plist-on) #ptiles ~ #plist { display: none; }
+/* Projects top bar: every heading opens its contents (regions, fields of work, programmes, countries) on wide (Mac)
+   and on narrower (Windows) screens alike; the bar stays lined up with the page text */
+@media (min-width: 1281px) { .shdr-proj .snav ul { gap: 16px; } }
+@media (min-width: 1281px) and (max-width: 1365px) { .shdr-proj .snav ul { gap: 8px; } }

@@ -428,10 +428,11 @@ def cards_with_facts(html, lang, facts):
 
 
 def project_country_tiles(html, lang, out):
-    """Projects page: all projects no longer show at once. Every country gets a row with the same tiles as on its own page
-    (36 Projects / 43 Quick Interventions / Humanitarian Situation Update) under the country name; the Projects tile opens
-    all projects of that country (.../projects/?country=gaza). The full list with its filters is shown only when a country
-    or sector is chosen. A country whose page has no tiles gets no row. Returns (html, number of rows)."""
+    """Projects page: the projects are not listed at once. Under the Sector / Country boxes every country has a row with
+    the same tiles as on its own page (36 Projects / 43 Quick Interventions / Humanitarian Situation Update) under the
+    country name; the Projects tile opens the projects of that country. Choosing a sector or a country in the boxes
+    narrows the rows (main.js also puts the number of matching projects on the Projects tile). A link that names a country
+    or a sector (.../projects/?country=gaza) lists the projects straight away. Returns (html, number of rows)."""
     sel = re.search(r'<select data-filter="country">(.*?)</select>', html, re.S)
     names = dict(re.findall(r'<option value="([^"]+)">([^<]+)</option>', sel.group(1))) if sel else {}
     slugs = [os.path.basename(os.path.dirname(f)) for f in glob.glob(os.path.join(out, lang, 'areas', '*', 'index.html'))]
@@ -444,14 +445,18 @@ def project_country_tiles(html, lang, out):
         if not m or not name:
             continue
         tiles = m.group(0).replace('href="#', f'href="/{lang}/areas/{slug}/#')   # "Learn more" opens that part of the country page
-        rows.append(f'<div class="country-row"><h2 class="bar-title">{name}</h2>{tiles}</div>')
-    lst = re.search(r'<section class="sec">(?=\s*<div class="container">\s*<div class="filters")', html)
-    if not rows or not lst:
+        rows.append(f'<div class="country-row" data-country="{slug}"><h2 class="bar-title">{name}</h2>{tiles}</div>')
+    grid = re.search(r'<div class="grid g3" id="plist">', html)
+    if not rows or not grid:
         return html, 0
-    block = ('<script>if(/[?&](country|sector)=[^&]/.test(location.search))document.documentElement.classList.add("plist-on")</script>\n'
-             '<section class="sec country-tiles"><div class="container">' + ''.join(rows) + '</div></section>\n'
-             '<section class="sec plist-sec">')
-    return html[:lst.start()] + block + html[lst.end():], len(rows)
+    block = ('<script>if(/[?&](country|sector)=[^&]/.test(location.search)&&!/[?&]view=tiles/.test(location.search))'
+             'document.documentElement.classList.add("plist-on")</script>'
+             '<noscript><style>#ptiles{display:none}#ptiles~#plist{display:grid}</style></noscript>\n'
+             '<div class="country-tiles" id="ptiles">' + ''.join(rows) + '</div>\n')
+    return html[:grid.start()] + block + html[grid.start():], len(rows)
+
+
+HDR_MARK = '<!--projects-top-bar-->'
 
 
 def home_nav(lang, t, areas):
@@ -496,7 +501,7 @@ def home_nav(lang, t, areas):
     out = []
     for it in t.get('projects_nav') or []:
         k = kids.get(it['page']) or []
-        out.append(dict(title=it['title'], url=f"/{lang}/{it['page']}/", children=k, drop=bool(k), all=t.get('all')))
+        out.append(dict(title=it['title'], url=f"/{lang}/{it['page']}/", page=it['page'], children=k, drop=bool(k), all=t.get('all')))
     return out
 
 
@@ -562,6 +567,7 @@ def main():
         for l in langs:
             facts = project_facts(l)
             cards_done = 0
+            pending = []
             areas = []
             ai = os.path.join(OUT, l, 'areas', 'index.html')
             if os.path.exists(ai):
@@ -578,8 +584,8 @@ def main():
                 alt = {lg: alt.get(lg, f'/{lg}/projects/') for lg in langs}
                 section = os.path.relpath(f, os.path.join(OUT, l)).split(os.sep)[0]
                 section = {'kits': 'quick-funding', 'about': '', 'achievements': ''}.get(section, section)
-                new = hdr_tpl.render(lang=l, t=T[l], T=T, langs=langs, alt=alt, section=section, areas=areas)
-                html = html[:m.start()] + new + html[m.end():]
+                html = html[:m.start()] + HDR_MARK + html[m.end():]   # the top bar itself is written below, once its menus are known
+                pending.append((f, alt, section))
                 html = html.replace('/img/brand/logo-ar.png', '/img/brand/logo-en.png')
                 html = html.replace(f'href="/{l}/areas//"', f'href="/{l}/areas/africa/"')  # Africa tile link
                 # same photo banner as the Reports pages
@@ -592,13 +598,20 @@ def main():
                     for code in WC.get('projects', []):
                         html = html.replace(f'<a class="pcard" href="/{l}/projects/{code}/"', f'<a class="pcard" data-groups="women-children" href="/{l}/projects/{code}/"')
                     html, n_tiles = project_country_tiles(html, l, OUT)
-                    print(f'PROJECTS {l}: {n_tiles} country rows of tiles on the Projects page')
+                    print(f'PROJECTS {l}: {n_tiles} country rows of tiles on the Projects page, under the Sector / Country boxes')
                 html, k = cards_with_facts(html, l, facts)
                 cards_done += k
                 with open(f, 'w', encoding='utf-8') as fh:
                     fh.write(html)
             print(f'CARDS {l}: {cards_done} project cards now show beneficiaries + duration ({len(facts)} project pages read)')
             HN[l] = home_nav(l, T[l], areas)
+            # Projects top bar: every heading opens its contents (regions, fields of work, programmes, countries),
+            # the same on wide (Mac) and narrower (Windows) screens
+            for f, alt, section in pending:
+                html = open(f, encoding='utf-8').read()
+                new = hdr_tpl.render(lang=l, t=T[l], T=T, langs=langs, alt=alt, section=section, areas=areas, nav=HN[l])
+                with open(f, 'w', encoding='utf-8') as fh:
+                    fh.write(html.replace(HDR_MARK, new, 1))
 
     pages, refs = [], {}
     for l in langs:
