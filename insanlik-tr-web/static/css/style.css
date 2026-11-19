@@ -981,3 +981,59 @@ html:not(.plist-on) #ptiles ~ #plist { display: none; }
    and on narrower (Windows) screens alike; the bar stays lined up with the page text */
 @media (min-width: 1281px) { .shdr-proj .snav ul { gap: 16px; } }
 @media (min-width: 1281px) and (max-width: 1365px) { .shdr-proj .snav ul { gap: 8px; } }
+/* report cover (first page of the report file): issuer with its logos, dates, title, subtitle */
+.rcover { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--brand); margin-bottom: 26px; }
+.rcover-head { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 16px 22px; border-bottom: 1px solid var(--ink); margin: 0 14px; }
+.rcover-emblem { width: 128px; height: auto; flex: none; }
+.rcover-logo { width: 78px; height: auto; flex: none; }
+.rcover-org { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; color: var(--ink); font-weight: 700; font-size: .92rem; line-height: 1.3; }
+.rcover-org span:first-child { font-size: 1.05rem; font-weight: 800; }
+.rcover-body { text-align: center; padding: 18px 22px 24px; }
+.rcover-meta { margin: 0 0 2px; font-size: .82rem; font-weight: 700; color: #b42318; }
+.rcover-meta + .rcover-meta { color: var(--ink); }
+.rcover-title { margin: 14px 0 8px; color: var(--brand); font-weight: 800; font-size: 1.3rem; line-height: 1.35; }
+.rcover-title span { display: block; font-size: .95em; }
+.rcover-sub { margin: 2px 0; font-style: italic; color: var(--ink); font-size: 1.02rem; }
+[dir="rtl"] .rcover-sub { font-style: normal; }
+@media (max-width: 600px) {
+  .rcover-head { flex-wrap: wrap; justify-content: center; padding: 14px 8px; gap: 10px 26px; }
+  .rcover-org { order: 3; flex-basis: 100%; }
+  .rcover-emblem { width: 104px; } .rcover-logo { width: 64px; }
+  .rcover-title { font-size: 1.12rem; }
+}
+/* contents list with the report's own numbering (1., 2.1 …) */
+.toc.plain a::before { content: none; }
+.toc.plain .toc-sub a { padding-inline-start: 14px; }
+.toc.plain .toc-sub li.l2 a { padding-inline-start: 26px; }
+/* bar chart in a report (one series: the title names it, every bar carries its value, the table above is the data) */
+.rbars { margin: 24px 0 0; padding: 18px 18px 14px; background: #fff; border: 1px solid var(--line); }
+.rbars figcaption { margin-bottom: 18px; text-align: center; font-weight: 800; color: var(--ink); font-size: var(--hs3, 11pt); }
+.rbars-plot { --h: 240px; position: relative; padding-inline-start: 54px; }
+.rbars-axis { position: absolute; inset-inline: 0; top: 0; height: var(--h); pointer-events: none; }
+.rbars-axis span { position: absolute; inset-inline-start: 0; bottom: var(--y); width: 46px; transform: translateY(50%); text-align: end; font-size: .7rem; line-height: 1; color: var(--muted); font-variant-numeric: tabular-nums; }
+.rbars-plot { container-type: inline-size; }
+.rbars-axis span::after { content: ''; position: absolute; top: 50%; inset-inline-start: 54px; width: 100cqw; border-top: 1px solid var(--line); }   /* 100cqw = width of the bars area */
+.rbars-axis span:first-child::after { border-top-color: #b8bfca; }
+.rbars-list { position: relative; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+.rbars-list li { display: flex; flex-direction: column; align-items: center; min-width: 0; margin: 0; }
+.rbars-bar { position: relative; width: 100%; height: var(--h); }
+.rbars-fill { position: absolute; left: 50%; bottom: 0; width: min(34px, 58%); height: var(--p); min-height: 2px; transform: translateX(-50%); background: var(--brand); border-radius: 4px 4px 0 0; transition: background .15s; }
+.rbars-val { position: absolute; left: 50%; bottom: calc(var(--p) + 5px); transform: translateX(-50%); font-size: .74rem; font-weight: 700; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.rbars-lab { margin-top: 8px; padding-inline: 2px; font-size: .74rem; font-weight: 600; line-height: 1.25; color: var(--muted); text-align: center; overflow-wrap: anywhere; }
+.rbars-list li:hover .rbars-fill { background: var(--dark); }
+.rbars-list li:hover .rbars-lab { color: var(--ink); }
+@media (max-width: 700px) {
+  .rbars { padding: 16px 12px 12px; }
+  .rbars-plot { padding: 0; }
+  .rbars-axis { display: none; }
+  .rbars-list { grid-template-columns: 1fr; gap: 7px; }
+  .rbars-list li { display: grid; grid-template-columns: 7.2em minmax(0, 1fr); align-items: center; gap: 8px; }
+  .rbars-lab { order: -1; margin: 0; padding: 0; text-align: start; }
+  .rbars-bar { height: 18px; }
+  .rbars-fill { left: auto; inset-inline-start: 0; top: 0; bottom: auto; width: calc(var(--p) * .78); height: 100%; min-height: 0; min-width: 2px; transform: none; border-radius: 0; border-start-end-radius: 4px; border-end-end-radius: 4px; }
+  .rbars-val { left: auto; inset-inline-start: calc(var(--p) * .78 + 6px); bottom: auto; top: 50%; transform: translateY(-50%); }
+}
+/* end of a report and its contact lines */
+.rend { margin: 34px 0 0; text-align: center; font-weight: 800; color: var(--ink); letter-spacing: .04em; }
+.rcontact { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 22px; margin: 12px 0 0; padding-top: 12px; border-top: 2px solid var(--brand); font-size: .9rem; color: var(--muted); }
+.rcontact a { color: var(--brand); }

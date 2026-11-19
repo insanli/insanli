@@ -1,0 +1,1860 @@
+# Yemen — Consolidated report on forced displacement caused by war, as of 12 November 2026 (issued 16 November 2026).
+# Source: Executive Unit for IDPs Camp Management (Ex.U.IDPs), Prime Ministry, Republic of Yemen.
+# Turkish from "Savaş Nedeniyle Yerinden Edilenlere İlişkin Kapsamlı Rapor" (docx), English and Arabic from the two PDF files.
+# Replaces the older Yemen report (yemen-2026-09). Texts and numbers are written as in each file.
+# logos: the emblem of Yemen and the Ex.U.IDPs logo shown at the top of the report (taken from the files).
+# cover: issuer lines, dates, title and subtitle of the file. chart: households by governorate (as in the files).
+# toc_plain: the contents list uses the report's own numbering (1., 2.1 …) instead of counting the parts.
+category: country
+country: yemen
+period: 2026-11
+updated: '2026-11-16'
+image: /img/countries/yemen.jpg
+pdf: ""
+sources: []
+order: 4
+logos:
+- /img/reports/yemen-emblem.jpg
+- /img/reports/yemen-exuidps.jpg
+tr:
+  country_name: Yemen
+  title: Yemen — Savaş Nedeniyle Yerinden Edilenlere İlişkin Kapsamlı Rapor
+  period_label: 12 Kasım 2026 itibarıyla
+  sources:
+  - Yemen Başbakanlığı – Yürütme Birimi (EX.U.IDPs)
+  summary: Bu rapor, 12 Kasım 2026 tarihi itibarıyla Yemen'in on ilinde kayıt altına alınan zorunlu yerinden edilme verilerini kapsamaktadır. Raporda ele alınan iller; El-Hudeyde, Taiz, Lahic, Aden, Ebyen, Şebve, Hadramut, El-Mehra, Marib ve Ed-Dali'dir.
+  figures:
+  - value: "50.001"
+    label: Yerinden edilmiş aile
+  - value: "338.748"
+    label: Yerinden edilmiş kişi
+  - value: "10"
+    label: İl
+  head_sizes:
+  - 13
+  - 12
+  - 11
+  toc_deep: true
+  toc_plain: true
+  static_header: true
+  compact: true
+  cover:
+    org:
+    - Yemen Cumhuriyeti
+    - Başbakanlık
+    - Yerinden Edilmiş Kişilerin Kamplarının Yönetiminden Sorumlu Yürütme Birimi
+    - EX.U.IDPs
+    meta:
+    - "Verilerin güncellendiği tarih: 12 Kasım 2026"
+    - "Raporun yayımlandığı tarih: 16 Kasım 2026"
+    title: Savaş Nedeniyle Yerinden Edilenlere İlişkin Kapsamlı Rapor
+    sub:
+    - Yerinden Edilmenin Seyri, İnsani Durum, Yardım Çalışmaları ve Acil İhtiyaçlar
+  sections:
+  - title: Proje Özeti
+    blocks:
+    - p: Bu rapor, 12 Kasım 2026 tarihi itibarıyla Yemen'in on ilinde kayıt altına alınan zorunlu yerinden edilme verilerini kapsamaktadır. Raporda ele alınan iller; El-Hudeyde, Taiz, Lahic, Aden, Ebyen, Şebve, Hadramut, El-Mehra, Marib ve Ed-Dali'dir.
+    - p: Söz konusu illerde toplam 50.001 yerinden edilmiş aile kayıt altına alınmış olup bu ailelerin toplam nüfusu 338.748 kişidir. Yerinden edilmenin en yoğun yaşandığı il, 23.007 aile ve 156.898 kişiyle Taiz'dir. Taiz'i, 15.160 aile ve 117.271 kişiyle Lahic takip etmektedir. Diğer illerde ise Ebyen'de 4.540 aile (22.030 kişi), Aden'de 3.741 aile (17.782 kişi) yerinden edilmiş durumdadır. Taiz ve Lahic illerindeki yerinden edilmiş aileler, toplam aile sayısının yaklaşık %70,4'ünü; yerinden edilmiş kişiler ise toplam nüfusun %75,9'unu oluşturmaktadır. Bu veriler, insani yardım kaynaklarının ihtiyaçların yoğunlaştığı bölgelere öncelik verilerek planlanmasının önemini ortaya koymaktadır. Bununla birlikte, diğer illerdeki ihtiyaçların da göz ardı edilmemesi ve yardım çalışmalarının ülke genelinde dengeli biçimde sürdürülmesi gerekmektedir.
+    - p: Bu çerçevede Yürütme Birimi; yerel yönetimleri, Birleşmiş Milletler kuruluşlarını, insani yardım koordinasyon mekanizmalarını, ulusal ve uluslararası yardım kuruluşlarını, bağışçıları ve uygulama ortaklarını, yerinden edilmiş ailelerin ihtiyaçlarının karşılanması için gerekli mali kaynakları ve insani yardım kapasitesini harekete geçirmeye çağırmaktadır.
+    - h: 12 Kasım 2026 İtibarıyla Yerinden Edilme Verileri
+      level: 1
+      id: s1-1
+    - table:
+        head:
+        - İl
+        - Yerinden Edilmiş Aile Sayısı
+        - Yerinden Edilmiş Kişi Sayısı
+        - Yerinden Edilmiş Ailelerin Bulunduğu İlçe Sayısı
+        rows:
+        - - El-Hudeyde
+          - "1.471"
+          - "10.297"
+          - "2"
+        - - Taiz
+          - "23.007"
+          - "156.898"
+          - "16"
+        - - Lahic
+          - "15.160"
+          - "117.271"
+          - "10"
+        - - Ebyen
+          - "4.540"
+          - "22.030"
+          - "5"
+        - - Aden
+          - "3.741"
+          - "17.782"
+          - "8"
+        - - Şebve
+          - "173"
+          - "1.066"
+          - "6"
+        - - Hadramut
+          - "214"
+          - "1.498"
+          - "3"
+        - - El-Mehra
+          - "142"
+          - "994"
+          - "2"
+        - - Marib
+          - "882"
+          - "6.174"
+          - "3"
+        - - Ed-Dali
+          - "671"
+          - "4.738"
+          - "4"
+        foot:
+        - TOPLAM
+        - "50.001"
+        - "338.748"
+        - —
+        num_cols:
+        - 1
+        - 2
+        - 3
+    - lab: 12 Kasım 2026 itibarıyla illere göre kayıtlı yerinden edilmiş aile ve kişi sayıları.
+    - chart:
+        title: 12 Kasım 2026 İtibarıyla İllere Göre Yerinden Edilmiş Aile Sayısı
+        max: 25000
+        ticks:
+        - "0"
+        - "5.000"
+        - "10.000"
+        - "15.000"
+        - "20.000"
+        - "25.000"
+        items:
+        - - El-Hudeyde
+          - 1471
+          - "1.471"
+        - - Taiz
+          - 23007
+          - "23.007"
+        - - Lahic
+          - 15160
+          - "15.160"
+        - - Ebyen
+          - 4540
+          - "4.540"
+        - - Aden
+          - 3741
+          - "3.741"
+        - - Şebve
+          - 173
+          - "173"
+        - - Hadramut
+          - 214
+          - "214"
+        - - El-Mehra
+          - 142
+          - "142"
+        - - Marib
+          - 882
+          - "882"
+        - - Ed-Dali
+          - 671
+          - "671"
+  - title: "1. Giriş: Savaş Nedeniyle Zorunlu Yerinden Edilme"
+    blocks:
+    - p: Bu rapor, Yemen'de devam eden çatışmalar nedeniyle on ilde yaşanan zorunlu yerinden edilme hareketlerini ve bunun yol açtığı insani sorunları ele almaktadır. Çatışmalar nedeniyle çok sayıda aile, yaşadığı bölgeyi ve evini terk etmek zorunda kalmış; konutlarını, kişisel eşyalarını, geçim kaynaklarını, hayvanlarını ve düzenli gelirlerini kaybetmiştir. Bu kayıplar, ailelerin yaşam koşullarını daha da ağırlaştırmış ve temel ihtiyaçlarını kendi imkânlarıyla karşılamalarını güçleştirmiştir.
+    - p: Yerinden edilmenin yol açtığı insani ihtiyaçlar yalnızca barınmayla sınırlı değildir. Yaşadıkları yerleri terk etmek zorunda kalan aileler, çoğu zaman yeterli gıdaya, temiz içme suyuna, temel sağlık hizmetlerine ve hijyen koşullarına erişememektedir. Bunun yanı sıra koruma hizmetlerine, temel ihtiyaç malzemelerine ve geçimlerini sürdürebilmeleri için nakdî desteğe de ihtiyaç duymaktadırlar.
+    - p: Yürütme Birimi, bu koşullar altında yürütülecek insani yardım çalışmalarının hızlı, koordineli ve sahadaki gerçek ihtiyaçlara dayalı olması gerektiğini vurgulamaktadır. Bu çalışmaların temel amacı; can kayıplarını önlemek, insanların onurunu korumak, karşı karşıya oldukları riskleri azaltmak, ailelerin yaşam koşullarının daha fazla kötüleşmesini engellemek ve yerinden edilmiş nüfusa ev sahipliği yapan toplulukların üzerindeki yükü hafifletmektir.
+  - title: 2. Raporun Kapsamı ve Coğrafi Dağılımı
+    blocks:
+    - p: Bu rapor, Yemen'in on ilindeki yerinden edilme durumunu kapsamaktadır. Yerinden edilmiş ailelerin ve bu ailelerde yaşayan kişilerin illere ve ilçelere göre dağılımı incelenmektedir.
+    - p: Aşağıdaki tabloda, rapor kapsamındaki iller, kayıtlı yerinden edilmiş aile ve kişi sayıları ile bu ailelerin bulunduğu ilçelerin sayısı gösterilmektedir.
+    - h: 2.1. İllere Göre Genel Durum
+      level: 1
+      id: s3-1
+    - table:
+        head:
+        - İl
+        - Yerinden Edilmiş Aile Sayısı
+        - Yerinden Edilmiş Kişi Sayısı
+        - Dağılımın Görüldüğü İlçeler
+        rows:
+        - - El-Hudeyde
+          - "1.471"
+          - "10.297"
+          - Hays, Havha
+        - - Taiz
+          - "23.007"
+          - "156.898"
+          - Şemayetin, Muzaffer, Muafir, Cebel Habşi, Mesrah, Kahire, Salih, Mevasıt, Sılu, Meşraa ve Hıdnan, Sabir Mevâdim, Muha, Vaziye, Mevza, Makbine, Zubab
+        - - Lahic
+          - "15.160"
+          - "117.271"
+          - Müseymir, Tüben, Mudâribe ve Ras el-Ara, Huta, Tur el-Baha, Hubeylin, Hadd, Mukâtıra, Hâlimeyn, Kubeyta
+        - - Ebyen
+          - "4.540"
+          - "22.030"
+          - Hançer, Zencibar, Lûder, Mudiyye, Ahver
+        - - Aden
+          - "3.741"
+          - "17.782"
+          - Bureyka, Dar Saad, Mansura, Şeyh Osman, Hur Mekser, Sîre, Tevahi, Mualla
+        - - Şebve
+          - "173"
+          - "1.066"
+          - Beyhan, Atak, Ayn, Usaylan, Meyfaa, Merha es-Sufla
+        - - Hadramut
+          - "214"
+          - "1.498"
+          - Mukalla, Reyde ve Kusayir, Gayl Bâvezir
+        - - El-Mehra
+          - "142"
+          - "994"
+          - Gayda, Şahn
+        - - Marib
+          - "882"
+          - "6.174"
+          - Marib Şehri, Marib Vadisi, Harib
+        - - Ed-Dali
+          - "671"
+          - "4.738"
+          - Kataba, Husayn, Ed-Dali, Ezârik
+        num_cols:
+        - 1
+        - 2
+  - title: 3. İllere ve İlçelere Göre Yerinden Edilme Verileri
+    blocks:
+    - h: 3.1. El-Hudeyde İli
+      level: 1
+      id: s4-1
+    - p: Hüdeyde ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 1.471 aileden oluşan 10.297 kişi, Hays ve Havha olmak üzere iki ilçede yaşamaktadır. Ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda gösterilmektedir. Bu veriler, Yürütme Birimi tarafından 8 Eylül 2026 tarihinde derlenmiştir.
+    - table:
+        head: &id001
+        - Ev Sahipliği Yapan İlçe
+        - Yerinden Edilmiş Aile Sayısı
+        - Yerinden Edilmiş Kişi Sayısı
+        rows:
+        - - Hays
+          - "1.039"
+          - "7.273"
+        - - Havha
+          - "432"
+          - "3.024"
+        foot:
+        - TOPLAM
+        - "1.471"
+        - "10.297"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.2. Taiz İli
+      level: 1
+      id: s4-2
+    - p: Taiz ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 23.007 aileden oluşan 156.898 kişi, 16 ilçeye dağılmış durumdadır. Bu ilçeler; Eş-Şemayetin, El-Muzaffer, El-Muafir, Cebel Habşi, El-Misrah, El-Kahire, Sale, El-Mevasıt, Es-Salu, Meşraa ve Hıdnan, Sabir Mevâdim, El-Muha, El-Vazi'iyye, Mevza, Makbine ve Zubab'dır.
+    - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda sunulmaktadır. Taiz ilinde, daha önce Cebel Habşi, Mesrah, Muafir ve Makbine ilçelerinde bulunan çok sayıda yerinden edilmiş aile, Muzaffer ve Kahire ilçelerine göç etmiştir. Saha ekiplerimiz, bu ailelerin hareketliliğini takip etmekte ve sayılarını tespit etmeye yönelik çalışmalarını sürdürmektedir. Yürütme Birimi, söz konusu iki ilçedeki yerinden edilmiş aile sayısının 13.000'i aşacağını öngörmektedir.
+    - table:
+        head: *id001
+        rows:
+        - - Eş-Şemayetin
+          - "2.533"
+          - "17.736"
+        - - El-Muzaffer
+          - "7.243"
+          - "48.780"
+        - - El-Muafir
+          - "4.390"
+          - "30.746"
+        - - Cebel Habşi
+          - "2.173"
+          - "15.213"
+        - - El-Misrah
+          - "1.098"
+          - "7.687"
+        - - El-Kahire
+          - "1.582"
+          - "10.257"
+        - - Sale
+          - "510"
+          - "3.237"
+        - - El-Mevasıt
+          - "211"
+          - "1.481"
+        - - Es-Salu
+          - "2"
+          - "14"
+        - - Meşraa ve Hıdnan
+          - "702"
+          - "4.283"
+        - - Sabir Mevâdim
+          - "828"
+          - "5.319"
+        - - El-Muha
+          - "446"
+          - "3.122"
+        - - El-Vazi'iyye
+          - "668"
+          - "4.676"
+        - - Mevza
+          - "357"
+          - "2.499"
+        - - Makbine
+          - "230"
+          - "1.610"
+        - - Zubab
+          - "34"
+          - "238"
+        foot:
+        - TOPLAM
+        - "23.007"
+        - "156.898"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.3. Aden İli
+      level: 1
+      id: s4-3
+    - p: "28 Eylül 2026 itibarıyla Aden ilinde 3.741 yerinden edilmiş aile kayıt altına alınmıştır. Bu ailelerin toplam nüfusu 17.782 kişidir. Aileler, Aden'in sekiz ilçesine dağılmış durumdadır: El-Bureyka, Dar Sa'ad, Şeyh Osman, El-Mansura, Hur Mekser, Krater, El-Mualla ve Et-Tevahi."
+    - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda gösterilmektedir.
+    - table:
+        head: *id001
+        rows:
+        - - El-Bureyka
+          - "1.697"
+          - "8.056"
+        - - Dar Saad
+          - "1.027"
+          - "4.977"
+        - - Şeyh Osman
+          - "476"
+          - "2.357"
+        - - El-Mansura
+          - "312"
+          - "1.393"
+        - - Krater
+          - "106"
+          - "430"
+        - - Hur Mekser
+          - "80"
+          - "401"
+        - - El-Mualla
+          - "35"
+          - "134"
+        - - Et-Tevahi
+          - "8"
+          - "34"
+        foot:
+        - TOPLAM
+        - "3.741"
+        - "17.782"
+        num_cols:
+        - 1
+        - 2
+    - p: Aden ilinde saha ekibimiz, yerinden edilmiş ailelere ulaşma, bu ailelerin mevcut koşullarını takip etme ve yardım çalışmalarını koordine etme konusunda çeşitli engellerle karşılaşmıştır. Erişimi kısıtlayan bu koşullar nedeniyle Yürütme Birimi saha faaliyetlerini durdurmak zorunda kalmıştır. Ayrıca, daha önce tespit edilen çok sayıda aile, karşılaştıkları bu kısıtlamalar nedeniyle Lahic ve Ebyen illerine göç etmiştir.
+    - h: 3.4. Ebyen İli
+      level: 1
+      id: s4-4
+    - p: Ebyen ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 4.540 aileden oluşan 22.030 kişi, Hanfer, Zencibar, Lüder, Mudiyye ve Ahver olmak üzere beş ilçede yaşamaktadır.
+    - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda sunulmaktadır.
+    - table:
+        head: *id001
+        rows:
+        - - Hanfer
+          - "3.312"
+          - "16.150"
+        - - Zencibar
+          - "1.103"
+          - "5.200"
+        - - Lüder
+          - "56"
+          - "258"
+        - - Mudiyye
+          - "43"
+          - "299"
+        - - Ahver
+          - "26"
+          - "123"
+        foot:
+        - TOPLAM
+        - "4.540"
+        - "22.030"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.5. Lahic İli
+      level: 1
+      id: s4-5
+    - p: Lahic ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 15.160 aileden oluşan 117.271 kişi, on ilçeye dağılmış durumdadır. Bu ilçeler; El-Müseymir, Tüben, El-Mudâribe ve Ras el-Ara, Huta, Tur el-Baha, Hubeylin, El-Had, El-Mukâtıra, Hâlimeyn ve El-Kubeyta'dır.
+    - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda gösterilmektedir.
+    - table:
+        head: *id001
+        rows:
+        - - El-Müseymir
+          - "332"
+          - "2.324"
+        - - Tüben
+          - "10.037"
+          - "70.259"
+        - - El-Mudâribe ve Ras el-Ara
+          - "2.768"
+          - "30.527"
+        - - Huta
+          - "443"
+          - "3.101"
+        - - Tur el-Baha
+          - "751"
+          - "5.257"
+        - - Hubeylin
+          - "78"
+          - "546"
+        - - El-Had
+          - "510"
+          - "3.570"
+        - - El-Mukâtıra
+          - "19"
+          - "133"
+        - - Hâlimeyn
+          - "6"
+          - "42"
+        - - El-Kubeyta
+          - "216"
+          - "1.512"
+        foot:
+        - TOPLAM
+        - "15.160"
+        - "117.271"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.6. Şebve İli
+      level: 1
+      id: s4-6
+    - p: Şebve ilinde toplam 173 yerinden edilmiş aile (1.066 kişi) kayıt altına alınmıştır. Bu aileler Beyhan, Atak, Ayn, Usaylan, Meyfaa ve Merha es-Sufla olmak üzere altı ilçede yaşamaktadır.
+    - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda gösterilmektedir.
+    - table:
+        head: &id002
+        - İlçe
+        - Yerinden Edilmiş Aile Sayısı
+        - Yerinden Edilmiş Kişi Sayısı
+        rows:
+        - - Beyhan
+          - "45"
+          - "315"
+        - - Atak
+          - "35"
+          - "215"
+        - - Ayn
+          - "59"
+          - "312"
+        - - Usaylan
+          - "11"
+          - "75"
+        - - Meyfaa
+          - "10"
+          - "62"
+        - - Merha es-Sufla
+          - "13"
+          - "87"
+        foot:
+        - TOPLAM
+        - "173"
+        - "1.066"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.7. Hadramut İli
+      level: 1
+      id: s4-7
+    - p: Hadramut ilinde toplam 214 yerinden edilmiş aile (1.498 kişi) kayıt altına alınmıştır. Mevcut verilere göre bu aileler Mukalla, Reyde ve Kusayir ile Gayl Bâvezir olmak üzere üç ilçede bulunmaktadır.
+    - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda sunulmaktadır.
+    - table:
+        head: *id002
+        rows:
+        - - El-Mukalla
+          - "176"
+          - "1.232"
+        - - Er-Reyde ve Kusayir
+          - "36"
+          - "252"
+        - - Gayl Bâvezir
+          - "2"
+          - "14"
+        foot:
+        - TOPLAM
+        - "214"
+        - "1.498"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.8. El-Mehra İli
+      level: 1
+      id: s4-8
+    - p: El-Mehra ilinde toplam 142 yerinden edilmiş aile (994 kişi) kayıt altına alınmıştır. Aileler El-Gayda ve Şahn olmak üzere iki ilçede yaşamaktadır.
+    - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda gösterilmektedir.
+    - table:
+        head: *id002
+        rows:
+        - - El-Gayda
+          - "134"
+          - "938"
+        - - Şahn
+          - "8"
+          - "56"
+        foot:
+        - TOPLAM
+        - "142"
+        - "994"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.9. Marib İli
+      level: 1
+      id: s4-9
+    - p: Marib ilinde toplam 882 yerinden edilmiş aile (6.174 kişi) kayıt altına alınmıştır. Mevcut verilere göre aileler Marib Şehri, El-Marib Vadisi ve Harib olmak üzere üç ilçede bulunmaktadır.
+    - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda sunulmaktadır.
+    - table:
+        head: *id002
+        rows:
+        - - Marib Şehri
+          - "548"
+          - "3.836"
+        - - El-Marib Vadisi
+          - "271"
+          - "1.897"
+        - - Harib
+          - "63"
+          - "441"
+        foot:
+        - TOPLAM
+        - "882"
+        - "6.174"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.10. Ed-Dali İli
+      level: 1
+      id: s4-10
+    - p: Ed-Dali ilinde toplam 671 yerinden edilmiş aile (4.738 kişi) kayıt altına alınmıştır. Bu aileler Kataba, Husayn, Ed-Dali ve Ezârik olmak üzere dört ilçede yaşamaktadır.
+    - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda gösterilmektedir.
+    - table:
+        head: *id002
+        rows:
+        - - Ed-Dali
+          - "376"
+          - "2.587"
+        - - Ezârik
+          - "252"
+          - "1.870"
+        - - Kataba
+          - "35"
+          - "245"
+        - - Husayn
+          - "8"
+          - "36"
+        foot:
+        - TOPLAM
+        - "671"
+        - "4.738"
+        num_cols:
+        - 1
+        - 2
+  - title: 4. Yerinden Edilmiş Ailelerin İnsani Durumu
+    blocks:
+    - p: İllerden gelen saha bilgileri, yerinden edilmiş ailelerin ağır yaşam koşullarıyla karşı karşıya olduğunu ve farklı alanlarda acil ihtiyaçlarının bulunduğunu göstermektedir. Bu güncelleme, rapor kapsamındaki on ilde kayıt altına alınan yerinden edilmiş nüfusun ulaştığı boyutu ortaya koymaktadır.
+    - h: 4.1. Barınma İhtiyacı
+      level: 1
+      id: s5-1
+    - p: Barınma, insani yardım müdahalesinde öncelikli ihtiyaçların başında gelmektedir. Aden'de yerinden edilmiş bazı aileler başka ailelerin yanında barınırken, bazıları ise herhangi bir barınma imkânından yoksun şekilde açık alanlarda yaşamını sürdürmektedir. Raporun hazırlandığı tarih itibarıyla bu durum devam etmektedir.
+    - p: Yerinden edilmiş nüfusun ulaştığı büyüklük dikkate alındığında, ailelerin barınma koşullarının yerinde tespit edilmesi, en fazla desteğe ihtiyaç duyanların belirlenmesi ve kendilerine ev sahipliği yapan toplulukların desteklenmesi önem taşımaktadır.
+    - h: 4.2. Gıda ve Temel İhtiyaçlar
+      level: 1
+      id: s5-2
+    - p: İllerden gelen raporların tamamında gıda ve barınma, acil karşılanması gereken temel ihtiyaçlar arasında gösterilmektedir. Gıda yardımı ve temel ihtiyaç malzemelerinin temini, yerinden edilmiş ailelerin öncelikli ihtiyaçları arasındadır.
+    - h: 4.3. Su, Sanitasyon ve Hijyen
+      level: 1
+      id: s5-3
+    - p: Güvenli içme suyuna erişim, sanitasyon hizmetleri, hijyen malzemeleri, acil tuvalet imkânları ve atık yönetimi, özellikle yeni kurulan yerinden edilme alanlarında acil ihtiyaç olarak öne çıkmaktadır.
+    - h: 4.4. Sağlık ve Koruma
+      level: 1
+      id: s5-4
+    - p: Yerinden edilmiş aileler, sağlık hizmetlerine ve koruma mekanizmalarına erişimde ciddi kısıtlamalarla karşılaşmaktadır. Özellikle çocukların, kadınların, yaşlıların, engelli bireylerin, kronik hastalığı bulunanların ve diğer kırılgan durumdaki ailelerin ihtiyaçlarına öncelik verilmelidir.
+    - p: İllerden gelen raporlarda; sağlık ve koruma ihtiyaçlarının tespit edilmesi, ihtiyaç sahiplerinin ilgili hizmetlere yönlendirilmesi, ilaç ve ilk yardım desteğinin sağlanması, gerekli durumlarda psikososyal destek sunulması ve koruma hizmetlerinin güçlendirilmesi gerektiği vurgulanmaktadır.
+    - h: 4.5. Geçim Kaynakları ve Ekonomik Kırılganlık
+      level: 1
+      id: s5-5
+    - p: Gelir kaynaklarının, kişisel mülklerin, hayvan varlıklarının ve geçim için kullanılan diğer imkânların kaybedilmesi veya zarar görmesi, yerinden edilmiş ailelerin ekonomik açıdan daha da zor durumda kalmasına neden olmuştur.
+    - p: Bu nedenle birçok ailenin öncelikle hayatlarını sürdürebilmeleri için acil insani yardıma, bunun yanı sıra yerinden edilmenin ekonomik sonuçlarını hafifletecek ve ağır koşullar altında yaşam mücadelesi veren ev sahibi topluluklara bağımlılığı azaltacak desteklere ihtiyacı bulunmaktadır.
+  - title: 5. Yürütme Birimi Tarafından Yürütülen Çalışmalar
+    blocks:
+    - ul:
+      - İl düzeyindeki şubelerde operasyon merkezleri, ilçelerde ise saha ekipleri oluşturularak yerinden edilme hareketlerindeki gelişmelerin düzenli takibi sağlanmıştır.
+      - Yeni yerinden edilmiş aileler karşılanmış, bölgeye yeni gelenlerin ve yerinden edilme alanlarında bulunan ailelerin tespiti için saha ziyaretleri gerçekleştirilerek kayıt işlemleri yapılmıştır.
+      - Ailelerin sayıları ve bulundukları yerler ön değerlendirmeye tabi tutulmuş; yerinden edilme koşulları ve ilk aşamadaki ihtiyaçları hakkında bilgi toplanmıştır.
+      - İlk aşamadaki ihtiyaçlar takip edilip değerlendirilmiş, yerinden edilme kayıtları düzenli olarak güncellenmiş ve yerinden edilmiş ailelere ilişkin listeler hazırlanarak ilgili kurumlara sunulmuştur.
+      - İhtiyaçların doğrulanması, ilgili hizmetlere yönlendirme yapılması ve yardım çalışmalarının hızlandırılması amacıyla Yürütme Birimi yönetimine, yerel yönetimlere, ilgili kurumlara ve insani yardım ortaklarına raporlar iletilmiştir.
+      - Yardım kapsamına alınan ve henüz destek ulaştırılamayan ailelerin durumları takip edilmiş, sahadaki müdahaleler izlenmiş ve karşılanmamış ihtiyaçlar düzenli olarak güncellenerek yardımların doğru kişilere ulaştırılması ve mükerrer yardımların önlenmesi hedeflenmiştir.
+      - Özellikle Taiz ve El-Hudeyde illerinin bazı ilçelerinde son gelişmelerin ardından yaşanan yeni yerinden edilme hareketleri yakından takip edilmiş; saha çalışmaları ve raporlama faaliyetleri sürdürülerek ailelerin göç ettikleri bölgeler tespit edilmeye çalışılmıştır.
+    - p: Bunlara ek olarak Yürütme Birimi, merkez ofisinde yerinden edilmeden etkilenen illerdeki gelişmeleri ve insani yardım müdahalelerini takip etmek üzere ayrı bir izleme ekibi oluşturmuştur. Bu ekip tarafından hazırlanan raporlar, Birleşmiş Milletler bünyesindeki insani yardım sektörel koordinasyon grupları ile yerel ve uluslararası yardım kuruluşlarına iletilmiştir.
+  - title: 6. Öncelikli İhtiyaçlar ve Acil Müdahale Adımları
+    blocks:
+    - p: Öncelikli hedef, yeni yerinden edilmiş ailelerin temel yaşam ihtiyaçlarını karşılayacak acil insani yardımlara erişimini sağlamaktır. Bu süreçte kayıtların doğru tutulması, bilgilerin doğrulanması ve yardım kuruluşları arasındaki koordinasyonun sağlanması da büyük önem taşımaktadır.
+    - p: "Temel ihtiyaçların açıkça görüldüğü durumlarda, acil yardım çalışmaları ile ihtiyaç tespitleri birbirini beklemeden eş zamanlı yürütülmelidir. Bu doğrultuda aşağıdaki adımların öncelikle hayata geçirilmesi önerilmektedir:"
+    - ol:
+      - Henüz herhangi bir insani yardım almamış yerinden edilmiş ailelere öncelik verilmesi; özellikle yakın zamanda yerinden edilmiş ve yaşam koşulları en ağır olan ailelere acilen ulaşılması.
+      - Acil barınma desteği ve barınma malzemelerinin sağlanması. Açık alanlarda yaşayan, kendilerine ait bir barınma imkânı bulunmayan veya başka ailelerin yanında kalmak zorunda olan ailelere öncelik verilmesi.
+      - Gıda yardımına veya düzenli bir gelir kaynağına erişimi olmayan ailelere yönelik gıda ve acil nakdî yardım desteğinin artırılması.
+      - Yerinden edilmiş ailelerin bulunduğu kabul noktalarında ve geçici yerleşim alanlarında temiz içme suyu, acil tuvalet imkânları, hijyen malzemeleri, atık su ve atık yönetimi hizmetlerinin sağlanması.
+      - Yeni yerinden edilmiş ve gerekli şartları taşıyan ailelere yönelik Hızlı Müdahale Mekanizması'nın devreye alınması veya mevcut desteğin genişletilmesi; aynı ailelere birden fazla kez yardım ulaştırılmasını önlemek amacıyla yararlanıcı kayıtlarının karşılaştırılması.
+      - Özellikle yeni oluşan yerleşim alanlarında barınma, gıda, su, sağlık ve koruma gibi temel ihtiyaçları kapsayan hızlı değerlendirmeler yapılması ve acil yardımların bu değerlendirmelerle eş zamanlı olarak ulaştırılması.
+      - Temel sağlık hizmetlerinin sunulması, ilaç ve ilk yardım desteğinin sağlanması ve ihtiyaç duyan kişilerin uygun sağlık kuruluşlarına yönlendirilmesi için sağlık alanında faaliyet gösteren yardım kuruluşlarının harekete geçirilmesi.
+      - Çocuklar, kadınlar, yaşlılar, engelli bireyler, kronik hastalığı bulunanlar ve diğer hassas grupların belirlenmesi; ihtiyaç duyan kişilerin ilgili koruma hizmetlerine yönlendirilmesi için koruma alanında çalışan kuruluşlarla iş birliğinin güçlendirilmesi.
+      - Gelir kaynaklarını ve üretim araçlarını kaybeden ailelere ev eşyaları ve diğer temel ihtiyaç malzemelerinin sağlanması; imkânlar dâhilinde geçim kaynaklarını yeniden oluşturmalarına yönelik destek verilmesi.
+      - Yerinden edilme hareketlerinin ve yardım çalışmalarının günlük veya haftalık olarak takip edilmesi. Planlanan yardımlar ile fiilen ulaştırılan yardımların ayrı ayrı kaydedilmesi, mükerrer kayıtların ayıklanması ve ulaşılan tekil aile sayısının belirlenmesi.
+      - Çatışmalardan etkilenen bölgelerden yeni yerinden edilme dalgalarının yaşanması ihtimaline karşı gerekli hazırlıkların yapılması ve mevcut müdahale kapasitesinin güçlendirilmesi.
+  - title: 7. Yerel ve Uluslararası Kuruluşlara Çağrı ve Öneriler
+    blocks:
+    - p: Ülke İçinde Yerinden Edilmiş Kişilerin Kamplarının Yönetiminden Sorumlu Yürütme Birimi; yerel yönetimleri, Birleşmiş Milletler kuruluşlarını, insani yardım koordinasyon gruplarını, ulusal ve uluslararası yardım kuruluşlarını, bağışçıları ve uygulayıcı ortakları, bu raporda kayıt altına alınan yerinden edilmiş ailelerin ihtiyaçlarının karşılanması için gerekli kaynakları ve saha kapasitesini acilen harekete geçirmeye çağırmaktadır.
+    - p: "Son dönemde artan çatışmalar ve askerî operasyonlar nedeniyle çok sayıda aile evlerini ve geçim kaynaklarını terk etmek zorunda kalmıştır. Yeni yerleştikleri bölgelere ulaşan ailelerin bir kısmı barınma imkânından, yeterli gıdadan, temiz sudan ve temel hizmetlerden yoksun durumdadır. Yardımların gecikmesi, bu ailelerin karşı karşıya olduğu insani ve koruma risklerini artıracak, ekonomik koşullarını daha da ağırlaştıracak ve yerinden edilmiş ailelere ev sahipliği yapan toplulukların yükünü artıracaktır. Bu nedenle ilgili kurum ve kuruluşların aşağıdaki adımları öncelikli olarak ele alması gerekmektedir:"
+    - ol:
+      - Kayıt altına alınan yerinden edilme vakalarının acil insani yardım kapsamında değerlendirilmesi ve mevcut acil müdahale mekanizmalarının gecikmeden devreye sokulması.
+      - Henüz herhangi bir yardım almamış ailelerin belirlenmesi, bilgilerinin doğrulanması ve ihtiyaçlarına uygun yardım kuruluşlarına veya ilgili yardım sektörlerine yönlendirilmesi.
+      - Acil barınma, gıda, temiz su, sanitasyon, sağlık, koruma, nakdî yardım ve temel ihtiyaç malzemelerinin karşılanması için gerekli kaynakların seferber edilmesi.
+      - Acil yardım ve hızlı müdahale çalışmalarının desteklenmesi; ihtiyaç duyulan alanlarda ayrıntılı değerlendirmelerin de eş zamanlı olarak yürütülmesi.
+      - Rapor kapsamındaki illerde görev yapan Yürütme Birimi ofisleri ile insani yardım kuruluşları arasındaki koordinasyonun güçlendirilmesi. Ailelerin ilk yer değiştirme hareketlerinin yanı sıra daha sonra yaşanan yeni yer değiştirmelerin de takip edilmesi; mükerrer yardımların ve ihtiyaç sahibi ailelerin yardım dışında kalmasının önlenmesi.
+      - Yardım çalışmalarının daha geniş bir alana ulaşabilmesi ve karşılanmamış ihtiyaçların giderilebilmesi için yeterli finansman ve operasyonel desteğin sağlanması.
+      - Çocuklara, kadınlara, yaşlılara, engelli bireylere, kronik hastalığı bulunanlara ve insani yardım ya da koruma açısından daha yüksek risk altında olan ailelere öncelik verilmesi.
+      - Değerlendirme süreçlerinin uzaması, finansman yetersizliği veya koordinasyon sorunları nedeniyle yeni yerinden edilmiş hiçbir ailenin temel insani yardımlardan mahrum kalmamasının sağlanması.
+      - Kayıtların düzenli olarak güncellenmesi ve bilgilerin şeffaf biçimde paylaşılması. Böylece insani yardım kuruluşlarının henüz karşılanmamış ihtiyaçları doğru belirlemesi ve yardımları en fazla ihtiyaç duyan ailelere ulaştırması.
+  - title: 8. Sonuç
+    blocks:
+    - p: Rapor kapsamında derlenen veriler, Yemen'in on ilinde yaşanan yerinden edilmenin boyutunu ortaya koymaktadır. Kayıtlara göre toplam 50.001 aileden oluşan 338.748 kişi yerinden edilmiştir. Bu sayı, ihtiyaç tespiti, kayıtların doğrulanması ve yardım planlamasının geniş bir nüfusu kapsaması gerektiğini göstermektedir. Aynı zamanda barınma imkânları, temel hizmetler ve yerinden edilmiş ailelere ev sahipliği yapan topluluklar üzerindeki baskının boyutuna da işaret etmektedir.
+    - p: Yerinden edilmiş kişilerin en büyük bölümü Taiz ve Lahic illerinde bulunmaktadır. Bu iki ilde toplam 274.169 kişi kayıt altına alınmıştır. Bu sayı, raporda belirtilen genel toplamın yaklaşık %80,9'una karşılık gelmektedir. Söz konusu yoğunlaşma, özellikle bu iki ilde insani yardım kuruluşlarının saha çalışmalarını ve müdahale kapasitesini artırmasını gerekli kılmaktadır. Bununla birlikte, diğer illerdeki ihtiyaçlar da göz ardı edilmemeli; yardımların dağıtımında yalnızca yerinden edilmiş kişi sayısı değil, ailelerin içinde bulunduğu koşullar ve ihtiyaçların aciliyeti de dikkate alınmalıdır.
+    - p: Bu çerçevede Yürütme Birimi; ilgili kurumları, insani yardım kuruluşlarını ve bağışçıları, barınma, gıda, su, sanitasyon, sağlık, koruma, nakdî yardım ve temel ihtiyaç malzemelerini kapsayan koordineli bir yardım çalışması için acil ve yeterli kaynak sağlamaya çağırmaktadır.
+    - p: Yardımların ihtiyaç sahiplerine zamanında ve doğru biçimde ulaştırılabilmesi için kayıtların düzenli olarak güncellenmesi, ailelerin sonraki yer değiştirme hareketlerinin takip edilmesi, mükerrer kayıtların ayıklanması ve henüz karşılanmamış ihtiyaçların belirlenmesi gerekmektedir. Bu çalışmalar, yardımların en fazla ihtiyaç duyan ailelere ulaşmasına, yerinden edilmiş kişilerin onurunun korunmasına ve ev sahibi toplulukların üzerindeki yükün hafifletilmesine katkı sağlayacaktır.
+    - end: RAPORUN SONU
+    - contact:
+      - "Genel Merkez: Aden – Mansura, Rimi"
+      - "E-posta: info@exuye.org"
+      - "Telefon: 02356000"
+en:
+  country_name: Yemen
+  title: Yemen — Consolidated Report on Forced Displacement Caused by War
+  period_label: As of 12 November 2026
+  sources:
+  - Prime Ministry of Yemen – Executive Unit (Ex.U.IDPs)
+  summary: This report presents the recorded displacement figures for ten governorates—Al Hodeidah, Taiz, Lahj, Aden, Abyan, Shabwah, Hadramawt, Al Mahrah, Marib and Ad Dali'—as of the update prepared on 12 November 2026.
+  figures:
+  - value: "50,001"
+    label: Displaced households
+  - value: "338,748"
+    label: IDPs
+  - value: "10"
+    label: Governorates
+  head_sizes:
+  - 13
+  - 12
+  - 11
+  toc_deep: true
+  toc_plain: true
+  static_header: true
+  compact: true
+  cover:
+    org:
+    - Republic of Yemen
+    - Prime Ministry
+    - Executive Unit for IDPs Camp Management
+    - Ex.U.IDPs
+    meta:
+    - Report updated as of 12 November 2026
+    - Report issued on 16 November 2026
+    title: Consolidated Report on Forced Displacement Caused by War
+    title2: As of 12 November 2026
+    sub:
+    - Displacement Trends and the Humanitarian Situation
+    - Response and Urgent Needs
+  sections:
+  - title: Executive Summary
+    blocks:
+    - p: This report presents the recorded displacement figures for ten governorates—Al Hodeidah, Taiz, Lahj, Aden, Abyan, Shabwah, Hadramawt, Al Mahrah, Marib and Ad Dali'—as of the update prepared on 12 November 2026.
+    - p: A total of 50,001 displaced households, comprising 338,748 IDPs, have been recorded across the ten governorates. Taiz has the highest number of registered households, with 23,007 households comprising 156,898 IDPs, followed by Lahj with 15,160 households comprising 117,271 IDPs, Abyan with 4,540 households comprising 22,030 IDPs, and Aden with 3,741 households comprising 17,782 IDPs,. Together, Taiz and Lahj account for approximately 70.4% of all households and 75.9% of all IDPs. This underscores the importance of allocating resources according to the scale of displacement and actual needs, while ensuring coverage of the other governorates.
+    - p: Accordingly, the Executive Unit urgently appeals to local authorities, United Nations agencies, humanitarian clusters, national and international humanitarian organisations, donors and implementing partners to mobilise resources and capacities to support displaced households.
+    - h: Key Consolidated Figures as of 12 November 2026
+      level: 1
+      id: s1-1
+    - table:
+        head:
+        - Governorate
+        - Displaced households
+        - "# IDPs"
+        - Host districts
+        rows:
+        - - Al Hodeidah
+          - "1,471"
+          - "10,297"
+          - 2 districts
+        - - Taiz
+          - "23,007"
+          - "156,898"
+          - 16 districts
+        - - Lahj
+          - "15,160"
+          - "117,271"
+          - 10 districts
+        - - Abyan
+          - "4,540"
+          - "22,030"
+          - 5 districts
+        - - Aden
+          - "3,741"
+          - "17,782"
+          - 8 districts
+        - - Shabwah
+          - "173"
+          - "1,066"
+          - 6 districts
+        - - Hadramawt
+          - "214"
+          - "1,498"
+          - 3 districts
+        - - Al Mahrah
+          - "142"
+          - "994"
+          - 2 districts
+        - - Marib
+          - "882"
+          - "6,174"
+          - 3 districts
+        - - Ad Dali'
+          - "671"
+          - "4,738"
+          - 4 districts
+        foot:
+        - Total
+        - "50,001"
+        - "338,748"
+        - ""
+        num_cols:
+        - 1
+        - 2
+    - chart:
+        title: Displaced Households by Governorate as of 12 November 2026
+        max: 25000
+        ticks:
+        - "0"
+        - "5,000"
+        - "10,000"
+        - "15,000"
+        - "20,000"
+        - "25,000"
+        items:
+        - - Al Hodeidah
+          - 1471
+          - "1,471"
+        - - Taiz
+          - 23007
+          - "23,007"
+        - - Lahj
+          - 15160
+          - "15,160"
+        - - Abyan
+          - 4540
+          - "4,540"
+        - - Aden
+          - 3741
+          - "3,741"
+        - - Shabwah
+          - 173
+          - "173"
+        - - Hadramawt
+          - 214
+          - "214"
+        - - Al Mahrah
+          - 142
+          - "142"
+        - - Marib
+          - 882
+          - "882"
+        - - Ad Dali'
+          - 671
+          - "671"
+  - title: "1. Introduction: Forced Displacement Caused by War"
+    blocks:
+    - p: This report documents conflict-related forced displacement across ten governorates. The ongoing conflict has caused displacement, forcing households to abandon suddenly, or lose, their homes, property, livelihoods, livestock, sources of income and basic necessities. This has increased household vulnerability and reduced their ability to meet their basic needs without humanitarian assistance.
+    - p: The humanitarian consequences extend beyond shelter alone. Displaced households may arrive without food, safe water, sanitation facilities, health services, protection support, non-food items or cash resources. The Executive Unit considers a rapid, coordinated and needs-based humanitarian response essential to protecting lives and dignity, reducing protection risks, and preventing further deterioration in household conditions and additional pressure on host communities.
+  - title: 2. Scope and Geographical Coverage
+    blocks:
+    - p: The report covers ten governorates and presents the distribution of households and IDPs by governorate and district. The table below shows the governorates, dsplaced HHs, IDPs, as well as the geographical distribution in each Governorate.
+    - h: 2.1 Governorate-Level Overview
+      level: 1
+      id: s3-1
+    - table:
+        head:
+        - Governorate
+        - Displaced households
+        - IDPs
+        - Geographical distribution
+        rows:
+        - - Al Hodeidah
+          - "1,471"
+          - "10,297"
+          - Hays, Al Khawkhah
+        - - Taiz
+          - "23,007"
+          - "156,898"
+          - Ash Shamayatayn, Al Mudhaffar, Al Ma'afer, Jabal Habashi, Al Misrakh, Al Qahirah, Salh, Al Mawasit, As Silw, Mashra'a Wa Hadnan, Sabir Al Mawadim, Al Makha, Al Wazi'iyah, Mawza, Maqbanah, Dhubab
+        - - Lahj
+          - "15,160"
+          - "117,271"
+          - Al Musaymir, Tuban, Al Madaribah Wa Ras Al Arah, Al Hawtah, Tur Al Bahah, Al Habilayn, Al Hadd, Al Maqatirah, Halimayn, Al Qabbaytah
+        - - Abyan
+          - "4,540"
+          - "22,030"
+          - Khanfir, Zinjibar, Lawdar, Mudiyah, Ahwar
+        - - Aden
+          - "3,741"
+          - "17,782"
+          - Al Burayqah, Dar Sa'd, Al Mansurah, Ash Shaykh Uthman, Khur Maksar, Sirah, At Tawahi, Al-Mualla
+        - - Shabwah
+          - "173"
+          - "1,066"
+          - Bayhan, Ataq, Ayn, Usaylan, Mayfa'ah, Markhah As Sufla
+        - - Hadramawt
+          - "214"
+          - "1,498"
+          - Al Mukalla, Ar Raydah Wa Qusayar, Ghayl Ba Wazir
+        - - Al Mahrah
+          - "142"
+          - "994"
+          - Al Ghaydah, Shahn
+        - - Marib
+          - "882"
+          - "6,174"
+          - Marib City, Marib Al Wadi, Harib
+        - - Ad Dali'
+          - "671"
+          - "4738"
+          - Qa'tabah, Al Husayn, Ad Dali', Al Azariq
+        num_cols:
+        - 1
+        - 2
+  - title: 3. Displaced Persons by Governorate and District
+    blocks:
+    - h: 3.1 Al Hodeidah Governorate
+      level: 1
+      id: s4-1
+    - p: "Recorded displacement in Al Hodeidah Governorate totals 1,471 households comprising 10,297 IDPs, distributed across 2 districts: Hays and Al Khawkhah. The following table provides the detailed distribution of households and IDPs. These figures were obtained by the Executive Unit on 8 September 2026."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - "# IDPs"
+        rows:
+        - - Hays
+          - "1,039"
+          - "7,273"
+        - - Al Khawkhah
+          - "432"
+          - "3,024"
+        foot:
+        - Total
+        - "1,471"
+        - "10,297"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.2 Taiz Governorate
+      level: 1
+      id: s4-2
+    - p: "Recorded displacement in Taiz Governorate totals 23,007 households comprising 156,898 IDPs, distributed across 16 districts: Ash Shamayatayn, Al Mudhaffar, Al Ma'afer, Jabal Habashi, Al Misrakh, Al Qahirah, Salh, Al Mawasit, As Silw, Mashra'a Wa Hadnan, Sabir Al Mawadim, Al Makha, Al Wazi'iyah, Mawza, Maqbanah and Dhubab. The following table provides the detailed distribution of displaced households and IDPs. In Taiz Governorate, many displaced persons previously located in Jabal Habashi, Al Misrakh, Al Ma'afer and Maqbanah districts have moved to Al Mudhaffar and Al Qahirah districts. Our field teams continue to track their movements and record their numbers. The Executive Unit expects the number of displaced households in these two districts to exceed 13,000."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - "# IDPs"
+        rows:
+        - - Ash Shamayatayn
+          - "2,533"
+          - "17,736"
+        - - Al Mudhaffar
+          - "7,243"
+          - "48,780"
+        - - Al Ma'afer
+          - "4,390"
+          - "30,746"
+        - - Jabal Habashi
+          - "2,173"
+          - "15,213"
+        - - Al Misrakh
+          - "1,098"
+          - "7,687"
+        - - Al Qahirah
+          - "1,582"
+          - "10,257"
+        - - Salh
+          - "510"
+          - "3,237"
+        - - Al Mawasit
+          - "211"
+          - "1,481"
+        - - As Silw
+          - "2"
+          - "14"
+        - - Mashra'a Wa Hadnan
+          - "702"
+          - "4,283"
+        - - Sabir Al Mawadim
+          - "828"
+          - "5,319"
+        - - Al Makha
+          - "446"
+          - "3,122"
+        - - Al Wazi'iyah
+          - "668"
+          - "4,676"
+        - - Mawza
+          - "357"
+          - "2,499"
+        - - Maqbanah
+          - "230"
+          - "1,610"
+        - - Dhubab
+          - "34"
+          - "238"
+        foot:
+        - Total
+        - "23,007"
+        - "156,898"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.3 Aden Governorate
+      level: 1
+      id: s4-3
+    - p: As of 28 September 2026, the displacement report for Aden Governorate records 3,741 displaced households, comprising an estimated 17,782 individuals, distributed across the governorate’s eight districts (Al-Buraiqeh, Dar Saad, Sheikh Othman, Al-Mansoura, Khormaksar, Crater, Al-Mualla, and Al-Tawahi). The consolidated table below presents data on the host areas.
+    - table:
+        head:
+        - Host District
+        - Number of Displaced Households
+        - Number of IDPs
+        rows:
+        - - Al-Buraiqeh
+          - "1,697"
+          - "8,056"
+        - - Dar Saad
+          - "1,027"
+          - "4,977"
+        - - Sheikh Othman
+          - "476"
+          - "2,357"
+        - - Al-Mansoura
+          - "312"
+          - "1,393"
+        - - Crater
+          - "106"
+          - "430"
+        - - Khormaksar
+          - "80"
+          - "401"
+        - - Al-Mualla
+          - "35"
+          - "134"
+        - - Al-Tawahi
+          - "8"
+          - "34"
+        foot:
+        - Total
+        - "3,741"
+        - "17,782"
+        num_cols:
+        - 1
+        - 2
+    - p: In Aden Governorate, our field team encountered challenges and restrictions that impeded its access to displaced households and its ability to monitor their living conditions and coordinate the response. These constraints and obstacles forced the Executive Unit team to halt its operations. Furthermore, many displaced households previously recorded and monitored by the team had left Aden and relocated to the governorates of Lahj and Abyan as a result of these same constraints and obstacles.
+    - h: 3.4 Abyan Governorate
+      level: 1
+      id: s4-4
+    - p: "Recorded displacement in Abyan Governorate totals 4,540 households comprising 22,030 IDPs, distributed across 5 districts: Khanfir, Zinjibar, Lawdar, Mudiyah and Ahwar. The following table provides the detailed distribution of displaced households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - IDPs
+        rows:
+        - - Khanfir
+          - "3,312"
+          - "16,150"
+        - - Zinjibar
+          - "1,103"
+          - "5,200"
+        - - Lawdar
+          - "56"
+          - "258"
+        - - Mudiyah
+          - "43"
+          - "299"
+        - - Ahwar
+          - "26"
+          - "123"
+        foot:
+        - Total
+        - "4,540"
+        - "22,030"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.5 Lahj Governorate
+      level: 1
+      id: s4-5
+    - p: "Recorded displacement in Lahj Governorate totals 15,160 households comprising 117,271 IDPs, distributed across 10 districts: Al Musaymir, Tuban, Al Madaribah Wa Ras Al Arah, Al Hawtah, Tur Al Bahah, Al Habilayn, Al Hadd, Al Maqatirah, Halimayn and Al Qabbaytah. The following table provides the detailed distribution of households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - IDPs
+        rows:
+        - - Al Musaymir
+          - "332"
+          - "2,324"
+        - - Tuban
+          - "10,037"
+          - "70,259"
+        - - Al Madaribah Wa Ras Al Arah
+          - "2,768"
+          - "30,527"
+        - - Al Hawtah
+          - "443"
+          - "3,101"
+        - - Tur Al Bahah
+          - "751"
+          - "5,257"
+        - - Al Habilayn
+          - "78"
+          - "546"
+        - - Al Hadd
+          - "510"
+          - "3,570"
+        - - Al Maqatirah
+          - "19"
+          - "133"
+        - - Halimayn
+          - "6"
+          - "42"
+        - - Al Qabbaytah
+          - "216"
+          - "1,512"
+        foot:
+        - Total
+        - "15,160"
+        - "117,271"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.6 Shabwah Governorate
+      level: 1
+      id: s4-6
+    - p: "Recorded displacement in Shabwah Governorate totals 173 households comprising 1,066 IDPs, distributed across 6 districts: Bayhan, Ataq, Ayn, Usaylan, Mayfa'ah and Markhah As Sufla. The following table provides the detailed distribution of displaced households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - IDPs
+        rows:
+        - - Bayhan
+          - "45"
+          - "315"
+        - - Ataq
+          - "35"
+          - "215"
+        - - Ayn
+          - "59"
+          - "312"
+        - - Usaylan
+          - "11"
+          - "75"
+        - - Mayfa'ah
+          - "10"
+          - "62"
+        - - Markhah As Sufla
+          - "13"
+          - "87"
+        foot:
+        - Total
+        - "173"
+        - "1,066"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.7 Hadramawt Governorate
+      level: 1
+      id: s4-7
+    - p: "Recorded displacement in Hadramawt Governorate totals 214 households comprising 1,498 IDPs, distributed across 3 districts according to the available data: Al Mukalla, Ar Raydah Wa Qusayar and Ghayl Ba Wazir. The following table provides the detailed distribution of displaced households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - IDPs
+        rows:
+        - - Al Mukalla
+          - "176"
+          - "1,232"
+        - - Ar Raydah Wa Qusayar
+          - "36"
+          - "252"
+        - - Ghayl Ba Wazir
+          - "2"
+          - "14"
+        foot:
+        - Total
+        - "214"
+        - "1,498"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.8 Al Mahrah Governorate
+      level: 1
+      id: s4-8
+    - p: "Recorded displacement in Al Mahrah Governorate totals 142 households comprising 994 IDPs, distributed across two districts: Al Ghaydah and Shahn. The following table provides the detailed distribution of displaced households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - IDPs
+        rows:
+        - - Al Ghaydah
+          - "134"
+          - "938"
+        - - Shahn
+          - "8"
+          - "56"
+        foot:
+        - Total
+        - "142"
+        - "994"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.9 Marib Governorate
+      level: 1
+      id: s4-9
+    - p: "Recorded displacement in Marib Governorate totals 882 households comprising 6,174 IDPs, distributed across 3 districts according to the available data: Marib City, Marib Al Wadi and Harib. The following table provides the detailed distribution of displaced households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - IDPs
+        rows:
+        - - Marib City
+          - "548"
+          - "3,836"
+        - - Marib Al Wadi
+          - "271"
+          - "1,897"
+        - - Harib
+          - "63"
+          - "441"
+        foot:
+        - Total
+        - "882"
+        - "6,174"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.10 Ad Dali' Governorate
+      level: 1
+      id: s4-10
+    - p: "Recorded displacement in Ad Dali' Governorate totals 671 households comprising 4,738 IDPs, distributed across 4 districts: Qa'tabah, Al Husayn, Ad Dali' and Al Azariq. The following table provides the detailed distribution of displaced households and IDPs."
+    - table:
+        head:
+        - Host district
+        - Households
+        - IDPs
+        rows:
+        - - Ad Dali'
+          - "376"
+          - "2,587"
+        - - Al Azariq
+          - "252"
+          - "1,870"
+        - - Qa'tabah
+          - "35"
+          - "245"
+        - - Al Husayn
+          - "8"
+          - "36"
+        foot:
+        - Total
+        - "671"
+        - "4,738"
+        num_cols:
+        - 1
+        - 2
+  - title: 4. Humanitarian Situation of Displaced Households
+    blocks:
+    - p: Qualitative information received from the governorates indicates difficult displacement conditions and multisectoral needs. This update demonstrates the scale of the registered displaced population across the ten governorates.
+    - h: 4.1 Shelter and Accommodation
+      level: 1
+      id: s5-1
+    - p: Shelter and accommodation are a core response priority. Some displaced households in Aden rely on accommodation provided by other families, while others remain in the open without shelter at the time of writing. The current scale of displacement requires verification of housing conditions, identification of the households most in need, and support for host communities.
+    - h: 4.2 Food and Basic Needs
+      level: 1
+      id: s5-2
+    - p: All reports indicate that food and shelter are urgent needs, while food items and essential supplies are identified as priority needs for displaced households.
+    - h: 4.3 Water, Sanitation and Hygiene
+      level: 1
+      id: s5-3
+    - p: Safe drinking water, sanitation, hygiene supplies, emergency latrines and waste management are identified as urgent needs, particularly in newly established displacement sites and gatherings.
+    - h: 4.4 Health and Protection
+      level: 1
+      id: s5-4
+    - p: Displaced households face limited access to health and protection services. Priority attention is required for children, women, older persons, persons with disabilities, households with members living with chronic illnesses, and other highly vulnerable households. Reports received from the governorates call for health and protection assessments, referrals, the provision of medicines and first aid, psychosocial support where needed, and a stronger protection response.
+    - h: 4.5 Livelihoods and Economic Vulnerability
+      level: 1
+      id: s5-5
+    - p: The loss of, or damage to, sources of income, property, livestock and other livelihood assets has increased the economic vulnerability of displaced households. Many households therefore require immediate life-saving assistance, together with support to reduce the adverse economic effects of displacement and reliance on host communities that are already under severe pressure.
+  - title: 5. Actions Taken by the Executive Unit
+    blocks:
+    - ul:
+      - Establishing an operations room in the governorate branch and field teams at district level to monitor displacement developments.
+      - Receiving newly displaced persons and registering households through field visits to areas of arrival and displacement gatherings.
+      - Conducting initial verification of household numbers and locations, and collecting information on displacement conditions and immediate needs.
+      - Monitoring and assessing immediate needs, continuously updating displacement data, and preparing and submitting lists of displaced persons.
+      - Submitting reports to the leadership of the Executive Unit, local authorities, relevant stakeholders and humanitarian partners to expedite verification, referrals and response.
+      - Following up on response coverage and households not reached, monitoring interventions, and updating the remaining gaps to improve targeting and reduce duplication.
+      - Continuing field monitoring and reporting, and following up on the circumstances of displaced persons and the areas to which they have moved following recent events in certain districts of Taiz and Al Hodeidah.
+    - p: In addition, the Executive Unit established a response monitoring team at its head office to follow displacement developments in the affected governorates and issued reports to United Nations clusters and local and international organisations.
+  - title: 6. Proposed Priorities and Urgent Actions
+    blocks:
+    - p: The immediate objective should be to ensure that newly displaced households are not left without minimum life-saving assistance, while maintaining accurate registration, verification and coordination. Urgent response and sectoral assessments should proceed in parallel, rather than sequentially, wherever evident humanitarian needs already exist.
+    - ol:
+      - Prioritise all displaced households that have not received humanitarian assistance, with immediate attention to the most recently displaced and most vulnerable households.
+      - Provide emergency shelter and shelter materials, prioritising households living in the open without accommodation of their own, and households currently dependent on host families.
+      - Expand urgent food and cash assistance for households without food support or income.
+      - Provide safe drinking water, emergency latrines, hygiene supplies, sanitation services and waste management at reception sites and displacement gatherings.
+      - Activate or expand Rapid Response Mechanism support for eligible newly displaced households, and cross-check beneficiary lists to prevent duplication.
+      - Conduct rapid multisectoral assessments while delivering urgent assistance, particularly in newly established reception areas.
+      - Mobilise health partners to provide essential health services, medicines, first aid and referrals.
+      - Mobilise protection partners to identify and refer cases involving children, women, older persons, persons with disabilities, persons living with chronic illnesses and other groups at heightened risk.
+      - Support the provision of non-food items and basic household necessities and, where possible, livelihood-related needs for households that have lost their income and productive assets.
+      - Strengthen daily/weekly tracking of displacement and response, clearly distinguishing between planned and implemented interventions, and recording unique household counts after removing duplicates.
+      - Strengthen preparedness for potential additional waves of displacement from conflict-affected areas.
+  - title: 7. Recommendations and Humanitarian Appeal to Local and International Organisations
+    blocks:
+    - p: The Executive Unit for IDPs Camp Management urgently appeals to local authorities, United Nations agencies, humanitarian clusters, national and international humanitarian organisations, donors and implementing partners to mobilise immediate resources and operational capacities for the displaced households documented in this report.
+    - p: Current displacement is placing newly displaced households in highly vulnerable situations. Families have been forced to leave their homes and livelihoods because of conflict and military escalation and, in several locations, have arrived without shelter, food, sufficient water or access to basic services. Delays in assistance will increase exposure to protection risks, deepen economic vulnerability and place further pressure on host communities.
+    - ol:
+      - Treat the documented displacement cases as an urgent humanitarian response priority and activate available emergency mechanisms without unnecessary delay.
+      - Ensure that households with no recorded assistance are identified, verified and immediately referred to the appropriate sector or response partner.
+      - Mobilise resources for emergency shelter, food, water, sanitation, health, protection, cash assistance, non-food items and other essential household needs.
+      - Support rapid response and emergency interventions while conducting specialised sectoral assessments in parallel.
+      - Strengthen coordination between Executive Unit offices in the governorates covered by this report and humanitarian partners to track primary and secondary displacement and prevent duplication or exclusion.
+      - Provide sufficient funding and operational support to expand response coverage and address the remaining gaps.
+      - Prioritise children, women, older persons, persons with disabilities, households with members living with chronic illnesses, and other households facing heightened protection or humanitarian risks.
+      - Ensure that no newly displaced household remains without minimum humanitarian assistance because of delayed assessments, insufficient funding or coordination constraints.
+      - Maintain continuous data updates and transparent reporting to enable humanitarian partners to direct assistance to households and locations with the greatest unmet needs.
+  - title: 8. Conclusion
+    blocks:
+    - p: The consolidated figures reveal substantial displacement across the ten governorates, totalling 50,001 displaced households comprising 338,748 IDPs. This figure reflects the scale of the population that should be covered by verification, needs assessments and response planning, and the associated pressure on shelter, basic services and the capacities of host communities.
+    - p: Taiz and Lahj host the largest number of registered displaced persons, with 274,169 IDPs, or approximately 75.9% of the total. This concentration requires partners to expand their operational capacity in both governorates, while directing interventions in the remaining governorates according to the severity of needs and protection risks, rather than using population figures as the sole criterion for allocating assistance.
+    - p: Accordingly, the Executive Unit calls upon the relevant stakeholders, humanitarian partners and donors to mobilise urgent and sufficient funding for a coordinated response covering shelter, food, water, sanitation, health, protection, cash assistance and essential items. This should be accompanied by updated records, tracking of secondary displacement, removal of duplicates and verification of actual gaps, to ensure that assistance reaches the households most in need, preserves the dignity of displaced persons and eases the burden on host communities.
+    - end: End of Report
+    - contact:
+      - "Head Office: Aden – Al Mansurah – Remi"
+      - "Contact: 02356000"
+      - "Email: info@exuye.org"
+ar:
+  country_name: اليمن
+  title: اليمن — التقرير الموحد حول النزوح القسري الناجم عن الحرب
+  period_label: حتى 12 نوفمبر 2026
+  sources:
+  - رئاسة الوزراء اليمنية – الوحدة التنفيذية لإدارة مخيمات النازحين
+  summary: يعرض هذا التقرير حصيلة النزوح المسجلة في عشر محافظات هي الحديدة وتعز ولحج وعدن وأبين وشبوة وحضرموت والمهرة ومأرب والضالع، حتى تاريخ إعداد التحديث في 12 نوفمبر 2026.
+  figures:
+  - value: "50,001"
+    label: أسرة نازحة
+  - value: "338,748"
+    label: فردًا نازحًا
+  - value: "10"
+    label: محافظات
+  head_sizes:
+  - 13
+  - 12
+  - 11
+  toc_deep: true
+  toc_plain: true
+  static_header: true
+  compact: true
+  cover:
+    org:
+    - الجمهورية اليمنية
+    - رئاسة الوزراء
+    - الوحدة التنفيذية لإدارة مخيمات النازحين
+    meta:
+    - تقرير محدث حتى 12 نوفمبر 2026
+    - تاريخ إصدار التقرير 16 نوفمبر 2026
+    title: التقرير الموحد حول النزوح القسري الناجم عن الحرب
+    title2: حتى 12 نوفمبر 2026
+    sub:
+    - اتجاهات النزوح والوضع الإنساني
+    - والاستجابة والاحتياجات العاجلة
+  sections:
+  - title: الملخص التنفيذي
+    blocks:
+    - p: يعرض هذا التقرير حصيلة النزوح المسجلة في عشر محافظات هي الحديدة وتعز ولحج وعدن وأبين وشبوة وحضرموت والمهرة ومأرب والضالع، حتى تاريخ إعداد التحديث في 12 نوفمبر 2026.
+    - p: بلغ الإجمالي الأسرة النازحة 50,001 تضم 338,748 فردًا في المحافظات العشر. وتتصدر تعز أعداد الأسر المسجلة بواقع 23,007 أسر تضم 156,898 فردًا، تليها لحج بواقع 15,160 أسرة تضم 117,271 فردًا، ثم ابين بواقع 4,540 أسرة تضم 22,030 فردًا، وعدن بواقع 3,741 أسرة تضم 17,782 فردًا. وتمثل تعز ولحج معًا نحو 70.4% من إجمالي الأسر و75.9% من إجمالي الأفراد، بما يبرز أهمية توجيه الموارد وفق حجم النزوح والاحتياجات الفعلية، مع ضمان تغطية المحافظات الأخرى.
+    - p: وعليه، تناشد الوحدة التنفيذية بشكل عاجل السلطات المحلية ووكالات الأمم المتحدة والمجموعات القطاعية الإنسانية والمنظمات الإنسانية الوطنية والدولية والجهات المانحة وشركاء التنفيذ لحشد الموارد والقدرات لدعم الاسر النازحة.
+    - h: الأرقام الموحدة الرئيسية حتى 12 نوفمبر 2026
+      level: 1
+      id: s1-1
+    - table:
+        head:
+        - المحافظة
+        - عدد الأسر النازحة
+        - عدد الأفراد
+        - المديريات المستضيفة
+        rows:
+        - - الحديدة
+          - "1,471"
+          - "10,297"
+          - 2 مديريات
+        - - تعز
+          - "23,007"
+          - "156,898"
+          - 16 مديريات
+        - - لحج
+          - "15,160"
+          - "117,271"
+          - 10 مديريات
+        - - أبين
+          - "4,540"
+          - "22,030"
+          - 5 مديريات
+        - - عدن
+          - "3,741"
+          - "17,782"
+          - 8 مديريات
+        - - شبوة
+          - "173"
+          - "1,066"
+          - 6 مديريات
+        - - حضرموت
+          - "214"
+          - "1,498"
+          - 3 مديريات
+        - - المهرة
+          - "142"
+          - "994"
+          - 2 مديريات
+        - - مأرب
+          - "882"
+          - "6,174"
+          - 3 مديريات
+        - - الضالع
+          - "671"
+          - "4,738"
+          - 4 مديريات
+        foot:
+        - المجموع
+        - "50,001"
+        - "338,748"
+        - ""
+        num_cols:
+        - 1
+        - 2
+    - chart:
+        title: عدد الأسر النازحة حسب المحافظة حتى 12 نوفمبر 2026
+        max: 25000
+        ticks:
+        - "0"
+        - "5,000"
+        - "10,000"
+        - "15,000"
+        - "20,000"
+        - "25,000"
+        items:
+        - - الحديدة
+          - 1471
+          - "1,471"
+        - - تعز
+          - 23007
+          - "23,007"
+        - - لحج
+          - 15160
+          - "15,160"
+        - - أبين
+          - 4540
+          - "4,540"
+        - - عدن
+          - 3741
+          - "3,741"
+        - - شبوة
+          - 173
+          - "173"
+        - - حضرموت
+          - 214
+          - "214"
+        - - المهرة
+          - 142
+          - "142"
+        - - مأرب
+          - 882
+          - "882"
+        - - الضالع
+          - 671
+          - "671"
+  - title: "1. مقدمة: النزوح القسري الناجم عن الحرب"
+    blocks:
+    - p: يرصد هذا التقرير النزوح القسري المرتبط بالنزاع في عشر محافظات فلقد تسبب النزاع القائم بالنزوح وهو ما دفع الاسر الى الترك المفاجئ أو فقدان المنازل والممتلكات وسبل العيش والثروة الحيوانية ومصادر الدخل والضروريات الأساسية. وقد أدى ذلك إلى زيادة هشاشة الأسر وتقليص قدرتها على تلبية احتياجاتها الأساسية دون مساعدة إنسانية.
+    - p: وتتجاوز الآثار الإنسانية مسألة المأوى وحدها؛ فقد تصل الأسر النازحة دون غذاء أو مياه آمنة أو خدمات صرف صحي أو خدمات صحية أو دعم حماية أو مواد غير غذائية أو موارد نقدية. وترى الوحدة التنفيذية أن التدخل الإنساني السريع والمنسّق والقائم على الاحتياجات أمر أساسي لحماية الأرواح والكرامة، والحد من مخاطر الحماية، ومنع المزيد من تدهور أوضاع الأسر والضغط على المجتمعات المضيفة.
+  - title: 2. النطاق والتغطية الجغرافية
+    blocks:
+    - p: يغطي التقرير عشر محافظات، ويعرض توزيع الأسر والأفراد على المحافظات والمديريات. يوضح الجدول أدناه المحافظات، وأعداد الأسر النازحة والنازحين داخليًا، وتوزيعهم الجغرافي داخل كل محافظة.
+    - h: 2.1 نظرة عامة على مستوى المحافظة
+      level: 1
+      id: s3-1
+    - table:
+        head:
+        - المحافظة
+        - عدد الأسر النازحة
+        - عدد الأفراد
+        - نطاق التوزيع
+        rows:
+        - - الحديدة
+          - "1,471"
+          - "10,297"
+          - حيس، الخوخة
+        - - تعز
+          - "23,007"
+          - "156,898"
+          - الشمايتين، المظفر، المعافر، جبل حبشي، المسراخ، القاهرة، صالة، المواسط، الصلو، مشرعة وحدنان، صبر الموادم، المخا، الوازعية، موزع، مقبنة، ذباب
+        - - لحج
+          - "15,160"
+          - "117,271"
+          - المسيمير، تبن، المضاربة ورأس العارة، الحوطة، طور الباحة، الحبيلين، الحد، المقاطرة، حالمين، القبيطة
+        - - أبين
+          - "4,540"
+          - "22,030"
+          - خنفر، زنجبار، لودر، مودية، أحور
+        - - عدن
+          - "3,741"
+          - "17,782"
+          - البريقة، دار سعد، المنصورة، الشيخ عثمان، خور مكسر، صيرة، التواهي والمعلا
+        - - شبوة
+          - "173"
+          - "1,066"
+          - بيحان، عتق، عين، عسيلان، ميفعة، مرخة السفلى
+        - - حضرموت
+          - "214"
+          - "1,498"
+          - المكلا، الريدة وقصيعر، غيل باوزير
+        - - المهرة
+          - "142"
+          - "994"
+          - الغيضة، شحن
+        - - مأرب
+          - "882"
+          - "6,174"
+          - مدينة مأرب، مأرب الوادي، حريب
+        - - الضالع
+          - "671"
+          - "4738"
+          - قعطبة، الحصين، الضالع، الأزارق
+        num_cols:
+        - 1
+        - 2
+  - title: 3. النازحون حسب المحافظة والمديرية
+    blocks:
+    - h: 3.1 محافظة الحديدة
+      level: 1
+      id: s4-1
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة الحديدة 1,471 أسرة تضم 10,297 فردًا، موزعة على 2 مديريات وهي حيس، الخوخة. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد. وهذه الأرقام التي حصلت عليها الوحدة التنفيذية في 8 سبتمبر 2026.
+    - table:
+        head: &id003
+        - المديرية المستضيفة
+        - عدد الأسر النازحة
+        - عدد الأفراد
+        rows:
+        - - حيس
+          - "1,039"
+          - "7,273"
+        - - الخوخة
+          - "432"
+          - "3,024"
+        foot:
+        - الإجمالي
+        - "1,471"
+        - "10,297"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.2 محافظة تعز
+      level: 1
+      id: s4-2
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة تعز 23,007 أسرة تضم 156,898 فردًا، موزعة على 16 مديرية وهي الشمايتين، المظفر، المعافر، جبل حبشي، المسراخ، القاهرة، صالة، المواسط، الصلو ومشرعة وحدنان، صبر الموادم، المخا، الوازعية، موزع، مقبنة، ذباب. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين. في محافظة تعز انتقل الكثير من النازحين الذين كانوا في مديريات جبل حبشي والمسراخ والمعافر ومقبنه الى مديريتي المظفر والقاهرة ومازالت فرقنا الميدانية تتبع حركة هؤلاء النازحين ورصد اعدادهم. وتتوقع الوحدة التنفيذية ان يصل اعداد الاسر النازحة في هاتان المديريتان الى اكثر من 13000 اسرة.
+    - table:
+        head: *id003
+        rows:
+        - - الشمايتين
+          - "2,533"
+          - "17,736"
+        - - المظفر
+          - "7,243"
+          - "48,780"
+        - - المعافر
+          - "4,390"
+          - "30,746"
+        - - جبل حبشي
+          - "2,173"
+          - "15,213"
+        - - المسراخ
+          - "1,098"
+          - "7,687"
+        - - القاهرة
+          - "1,582"
+          - "10,257"
+        - - صالة
+          - "510"
+          - "3,237"
+        - - المواسط
+          - "211"
+          - "1,481"
+        - - الصلو
+          - "2"
+          - "14"
+        - - مشرعة وحدنان
+          - "702"
+          - "4,283"
+        - - صبر الموادم
+          - "828"
+          - "5,319"
+        - - المخا
+          - "446"
+          - "3,122"
+        - - الوازعية
+          - "668"
+          - "4,676"
+        - - موزع
+          - "357"
+          - "2,499"
+        - - مقبنة
+          - "230"
+          - "1,610"
+        - - ذباب
+          - "34"
+          - "238"
+        foot:
+        - الإجمالي
+        - "23,007"
+        - "156,898"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.3 محافظة عدن
+      level: 1
+      id: s4-3
+    - p: حتى 28 سبتمبر 2026 يسجل تقرير النزوح في محافظة عدن استضافة 3741 أسرة نازحة، يُقدّر عدد أفرادها بنحو 17782 فردًا، موزعة على مديريات المحافظة الثماني (البريقة، دار سعد، الشيخ عثمان، المنصورة، خور مكسر، كريتر، المعلا، التواهي). ويعرض الجدول الموحد أدناه بيانات المناطق المستضيفة.
+    - table:
+        head:
+        - المديرية المستضيفة
+        - عدد الأسر النازحة
+        - عدد النازحين
+        rows:
+        - - البريقة
+          - "1697"
+          - "8056"
+        - - دار سعد
+          - "1027"
+          - "4977"
+        - - الشيخ عثمان
+          - "476"
+          - "2357"
+        - - المنصورة
+          - "312"
+          - "1393"
+        - - كريتر
+          - "106"
+          - "430"
+        - - خور مكسر
+          - "80"
+          - "401"
+        - - المعلا
+          - "35"
+          - "134"
+        - - التواهي
+          - "8"
+          - "34"
+        foot:
+        - الإجمالي
+        - "3741"
+        - "17782"
+        num_cols:
+        - 1
+        - 2
+    - p: في محافظة عدن، واجه فريقنا الميداني تحديات وقيودًا تعيق وصوله إلى الأسر النازحة، فضلًا عن عدم قدرته على رصد أوضاعها وتنسيق الاستجابة. وبسبب هذه القيود والعوائق اضطر فريق الوحدة التنفيذية الى التوقف عن العمل كما انه وبسبب هذه العوائق والقيود فقد غادرت كثير من الأسر التي تم رصدها في السابق الى محافظتي لحج وأبين.
+    - h: 3.4 محافظة أبين
+      level: 1
+      id: s4-4
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة أبين 4,540 أسرة تضم 22,030 فردًا، موزعة على 5 مديريات، وهي خنفر، زنجبار، لودر، مودية، أحور. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
+    - table:
+        head: *id003
+        rows:
+        - - خنفر
+          - "3,312"
+          - "16,150"
+        - - زنجبار
+          - "1,103"
+          - "5,200"
+        - - لودر
+          - "56"
+          - "258"
+        - - مودية
+          - "43"
+          - "299"
+        - - أحور
+          - "26"
+          - "123"
+        foot:
+        - الإجمالي
+        - "4,540"
+        - "22,030"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.5 محافظة لحج
+      level: 1
+      id: s4-5
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة لحج 15,160 أسرة تضم 117,271 فردًا، موزعة على 10 مديريات وهي المسيمير، تبن، المضاربة ورأس العارة، الحوطة، طور الباحة، الحبيلين، الحد، المقاطرة، حالمين، القبيطة. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد.
+    - table:
+        head: *id003
+        rows:
+        - - المسيمير
+          - "332"
+          - "2,324"
+        - - تبن
+          - "10,037"
+          - "70,259"
+        - - المضاربة ورأس العارة
+          - "2,768"
+          - "30,527"
+        - - الحوطة
+          - "443"
+          - "3,101"
+        - - طور الباحة
+          - "751"
+          - "5,257"
+        - - الحبيلين
+          - "78"
+          - "546"
+        - - الحد
+          - "510"
+          - "3,570"
+        - - المقاطرة
+          - "19"
+          - "133"
+        - - حالمين
+          - "6"
+          - "42"
+        - - القبيطة
+          - "216"
+          - "1,512"
+        foot:
+        - الإجمالي
+        - "15,160"
+        - "117,271"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.6 محافظة شبوة
+      level: 1
+      id: s4-6
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة شبوة 173 أسرة تضم 1,066 فردًا، موزعة على 6 مديريات، وهي بيحان، عتق، عين، عسيلان، ميفعة، مرخة السفلى. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
+    - table:
+        head: *id003
+        rows:
+        - - بيحان
+          - "45"
+          - "315"
+        - - عتق
+          - "35"
+          - "215"
+        - - عين
+          - "59"
+          - "312"
+        - - عسيلان
+          - "11"
+          - "75"
+        - - ميفعة
+          - "10"
+          - "62"
+        - - مرخة السفلى
+          - "13"
+          - "87"
+        foot:
+        - الإجمالي
+        - "173"
+        - "1,066"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.7 محافظة حضرموت
+      level: 1
+      id: s4-7
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة حضرموت 214 أسرة تضم 1,498 فردًا، موزعة على 3 مديريات وفق البيانات المتاحة، وهي المكلا، الريدة وقصيعر، غيل باوزير. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحون.
+    - table:
+        head: *id003
+        rows:
+        - - المكلا
+          - "176"
+          - "1,232"
+        - - الريدة وقصيعر
+          - "36"
+          - "252"
+        - - غيل باوزير
+          - "2"
+          - "14"
+        foot:
+        - الإجمالي
+        - "214"
+        - "1,498"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.8 محافظة المهرة
+      level: 1
+      id: s4-8
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة المهرة 142 أسرة تضم 994 فردًا، موزعة على مديريتين وهي الغيضة، شحن. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
+    - table:
+        head: *id003
+        rows:
+        - - الغيضة
+          - "134"
+          - "938"
+        - - شحن
+          - "8"
+          - "56"
+        foot:
+        - الإجمالي
+        - "142"
+        - "994"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.9 محافظة مأرب
+      level: 1
+      id: s4-9
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة مأرب 882 أسرة تضم 6,174 فردًا، موزعة على 3 مديريات وفق البيانات المتاحة، وهي مدينة مأرب، مأرب الوادي، حريب. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
+    - table:
+        head: *id003
+        rows:
+        - - مدينة مأرب
+          - "548"
+          - "3,836"
+        - - مأرب الوادي
+          - "271"
+          - "1,897"
+        - - حريب
+          - "63"
+          - "441"
+        foot:
+        - الإجمالي
+        - "882"
+        - "6,174"
+        num_cols:
+        - 1
+        - 2
+    - h: 3.10 محافظة الضالع
+      level: 1
+      id: s4-10
+    - p: تبلغ حصيلة النزوح المسجلة في محافظة الضالع 671 أسرة تضم 4,738 فردًا، موزعة على 4 مديريات وهي قعطبة، الحصين، الضالع، الأزارق. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
+    - table:
+        head:
+        - المديرية المستضيفة
+        - أسر
+        - أفراد
+        rows:
+        - - الضالع
+          - "376"
+          - "2,587"
+        - - الأزارق
+          - "252"
+          - "1,870"
+        - - قعطبة
+          - "35"
+          - "245"
+        - - الحصين
+          - "8"
+          - "36"
+        foot:
+        - الإجمالي
+        - "671"
+        - "4,738"
+        num_cols:
+        - 1
+        - 2
+  - title: 4. الوضع الإنساني للأسر النازحة
+    blocks:
+    - p: تشير المعلومات النوعية الواردة من المحافظات إلى ظروف نزوح صعبة واحتياجات متعددة القطاعات ويبين هذا التحديث اتساع حجم النازحين المسجلين في العشر المحافظات.
+    - h: 4.1 المأوى والإيواء
+      level: 1
+      id: s5-1
+    - p: يمثل المأوى والإيواء أولوية أساسية في الاستجابة. وتعتمد أسر نازحة في عدن على استضافة أسر أخرى بينما هناك اسر في العراء ولا يوجد لها مأوى حتى كتابة هذا التقرير؛ ويستدعي الحجم الهائل للنازحين حاليًا التحقق من أوضاع السكن وتحديد الأسر الأكثر احتياجًا ودعم المجتمعات المضيفة.
+    - h: 4.2 الغذاء والاحتياجات الأساسية
+      level: 1
+      id: s5-2
+    - p: تُشير جميع التقارير إلى أن الغذاء والمأوى يمثلان احتياجات عاجلة، في حين تُصنَّف المواد الغذائية والإمدادات الأساسية ضمن الاحتياجات ذات الأولوية للأسر النازحة.
+    - h: 4.3 المياه والصرف الصحي والنظافة
+      level: 1
+      id: s5-3
+    - p: تُحدَّد مياه الشرب الآمنة والصرف الصحي ومستلزمات النظافة والمراحيض الطارئة وإدارة النفايات باعتبارها احتياجات عاجلة، ولا سيما في مواقع وتجمعات النزوح المنشأة حديثًا.
+    - h: 4.4 الصحة والحماية
+      level: 1
+      id: s5-4
+    - p: تواجه الأسر النازحة محدودية في الوصول إلى الخدمات الصحية وخدمات الحماية. ويلزم إيلاء اهتمام ذي أولوية للأطفال والنساء وكبار السن وذوي الإعاقة والأسر المصابة بأمراض مزمنة وغيرها من الأسر شديدة الضعف. وتدعو التقارير المستلمة من المحافظات إلى إجراء تقييمات صحية وحمائية، والإحالة، وتوفير الأدوية والإسعافات الأولية، والدعم النفسي الاجتماعي عند الحاجة، وتعزيز الاستجابة الحمائية.
+    - h: 4.5 سبل العيش والهشاشة الاقتصادية
+      level: 1
+      id: s5-5
+    - p: أدى فقدان أو تضرر مصادر الدخل والممتلكات والثروة الحيوانية وغيرها من أصول سبل العيش إلى زيادة الهشاشة الاقتصادية للأسر النازحة. لذا تحتاج العديد من الأسر إلى مساعدة فورية منقذة للحياة، إضافة إلى دعم يمكن أن يحد من الآثار الاقتصادية السلبية للنزوح ومن الاعتماد على مجتمعات مضيفة تعاني أصلًا من ضغوط شديدة.
+  - title: 5. الإجراءات التي اتخذتها الوحدة التنفيذية
+    blocks:
+    - ul:
+      - إنشاء غرفة عمليات في فرع المحافظة وفرق ميدانية على مستوى المديريات لمتابعة مستجدات النزوح.
+      - استقبال النازحين الجدد وتسجيل الأسر من خلال زيارات ميدانية لمناطق الوصول وتجمعات النزوح.
+      - إجراء تحقق أولي من أعداد الأسر ومواقعها، وجمع معلومات عن ظروف النزوح والاحتياجات الأولية.
+      - متابعة وتقييم الاحتياجات الأولية، وتحديث بيانات النزوح باستمرار، وإعداد وتقديم قوائم بالنازحين.
+      - رفع التقارير إلى قيادة الوحدة التنفيذية والسلطات المحلية والجهات المعنية والشركاء الإنسانيين للتعجيل بالتحقق والإحالة والاستجابة.
+      - متابعة حالة الاستجابة والحالات غير المشمولة، ورصد التدخلات، وتحديث الفجوات المتبقية لتحسين الاستهداف والحد من الازدواجية.
+      - مواصلة المتابعة الميدانية ورفع التقارير ومتابعة أوضاع النازحين والى اي مناطق نزحوا بعد الاحداث الأخيرة في بعض مديريات تعز والحديدة.
+    - p: علاوة على ذلك، أنشأت الوحدة التنفيذية في المكتب الرئيسي فريقًا لرصد الاستجابة لمتابعة مستجدات النزوح في المحافظات المتضررة، وأصدرت تقارير إلى المجموعات القطاعية للأمم المتحدة والمنظمات المحلية والدولية.
+  - title: 6. الأولويات والإجراءات العاجلة المقترحة
+    blocks:
+    - p: ينبغي أن يكون الهدف الفوري هو الحيلولة دون بقاء الأسر النازحة حديثًا دون الحد الأدنى من المساعدة المنقذة للحياة، مع الحفاظ في الوقت ذاته على دقة التسجيل والتحقق والتنسيق. وينبغي أن تسير الاستجابة العاجلة والتقييم القطاعي بالتوازي بدلاً من التسلسل حيثما تكون الاحتياجات الإنسانية الواضحة قائمة بالفعل.
+    - ol:
+      - إعطاء الأولوية لجميع الأسر النازحة التي لم تتلقَّ مساعدة إنسانية، مع إيلاء اهتمام فوري لأحدث الأسر نزوحًا وأكثرها ضعفًا.
+      - توفير المأوى الطارئ ومواد الإيواء، مع إعطاء الأولوية للأسر التي تعيش في العراء ولا تملك سكنًا مستقلًا وللأسر التي تعتمد حاليًا على أسر مضيفة.
+      - توسيع نطاق المساعدة الغذائية والمساعدة النقدية العاجلة للأسر التي لا تحصل على دعم غذائي أو دخل.
+      - توفير مياه شرب آمنة ومراحيض طارئة ومستلزمات نظافة وخدمات صرف صحي وإدارة نفايات في مواقع الاستقبال وتجمعات النزوح.
+      - تفعيل أو توسيع دعم آلية الاستجابة السريعة للأسر النازحة حديثًا المؤهلة، ومطابقة قوائم المستفيدين لمنع الازدواجية.
+      - إجراء تقييمات سريعة متعددة القطاعات مع تقديم المساعدة العاجلة في آنٍ واحد، ولا سيما في مناطق الاستقبال المنشأة حديثًا.
+      - حشد الشركاء الصحيين لتقديم الخدمات الصحية الأساسية والأدوية والإسعافات الأولية والإحالات.
+      - حشد شركاء الحماية لتحديد وإحالة الحالات التي تشمل الأطفال والنساء وكبار السن وذوي الإعاقة والمصابين بأمراض مزمنة وغيرهم من الفئات الأكثر عرضة للخطر.
+      - دعم المواد غير الغذائية والضروريات المنزلية الأساسية، وحيثما أمكن، الاحتياجات المرتبطة بسبل العيش للأسر التي فقدت دخلها وأصولها الإنتاجية.
+      - تعزيز التتبع اليومي/الأسبوعي للنزوح والاستجابة، مع التمييز بوضوح بين التدخلات المخطط لها والمنفَّذة، وتسجيل أعداد فريدة للأسر بعد إزالة الازدواجية.
+      - تعزيز التأهب لموجات نزوح إضافية محتملة من المناطق المتضررة من النزاع.
+  - title: 7. التوصيات والنداء الإنساني إلى المنظمات المحلية والدولية
+    blocks:
+    - p: تناشد الوحدة التنفيذية لإدارة مخيمات النازحين، وبصورة عاجلة، السلطات المحلية ووكالات الأمم المتحدة والمجموعات القطاعية الإنسانية والمنظمات الإنسانية الوطنية والدولية والجهات المانحة وشركاء التنفيذ لحشد الموارد والقدرات التشغيلية الفورية لصالح الأسر النازحة الموثقة في هذا التقرير.
+    - p: تضع حركة النزوح الحالية الأسر النازحة حديثًا في أوضاع شديدة الهشاشة. فقد أُجبرت الأسر على ترك منازلها وسبل عيشها بسبب النزاع والتصعيد العسكري، ووصلت في عدة مواقع دون مأوى أو غذاء أو مياه كافية أو إمكانية الحصول على الخدمات الأساسية. وسيؤدي تأخر المساعدة إلى زيادة التعرض لمخاطر الحماية، وتعميق الهشاشة الاقتصادية، وفرض ضغط إضافي على المجتمعات المضيفة.
+    - ol:
+      - التعامل مع حالات النزوح الموثقة باعتبارها أولوية عاجلة للاستجابة الإنسانية، وتفعيل آليات الطوارئ المتاحة دون تأخير غير ضروري.
+      - ضمان تحديد الأسر التي لم تُسجَّل لها أي مساعدة والتحقق منها وإحالتها فورًا إلى القطاع أو شريك الاستجابة المناسب.
+      - حشد الموارد للمأوى الطارئ والغذاء والمياه والصرف الصحي والصحة والحماية والمساعدة النقدية والمواد غير الغذائية وغيرها من الاحتياجات الأسرية الأساسية.
+      - دعم الاستجابة السريعة والتدخلات الطارئة مع إجراء التقييمات القطاعية المتخصصة بالتوازي.
+      - تعزيز التنسيق بين مكاتب الوحدة التنفيذية في المحافظات المشمولة بالتقرير والشركاء الإنسانيين لتتبع مسارات النزوح الأولي والثانوي ومنع الازدواجية أو الاستبعاد.
+      - توفير التمويل والدعم التشغيلي الكافيين لتوسيع نطاق تغطية الاستجابة ومعالجة الفجوات المتبقية.
+      - إعطاء الأولوية للأطفال والنساء وكبار السن وذوي الإعاقة والأسر التي تعاني من أمراض مزمنة وغيرها من الأسر التي تواجه مخاطر حمائية أو إنسانية متزايدة.
+      - ضمان ألا تبقى أي أسرة نازحة حديثًا دون الحد الأدنى من المساعدة الإنسانية بسبب تأخر التقييم أو نقص التمويل أو معوقات التنسيق.
+      - الحفاظ على التحديث المستمر للبيانات والإبلاغ الشفاف لتمكين الشركاء الإنسانيين من توجيه المساعدة إلى الأسر والمواقع ذات الاحتياجات الأكبر التي لم تُلبَّ بعد.
+  - title: 8. الخاتمة
+    blocks:
+    - p: تكشف الحصيلة المجمعة عن حجم نزوح كبير في المحافظات العشر، إذ بلغ العدد 50,001 أسرة نازحة تضم 338,748 فردًا. ويعكس هذا العدد اتساع نطاق السكان الذين ينبغي أن تشملهم عمليات التحقق وتقييم الاحتياجات وتخطيط الاستجابة، وما يرتبط بذلك من ضغط على المأوى والخدمات الأساسية وقدرات المجتمعات المضيفة.
+    - p: وتستضيف تعز ولحج العدد الأكبر من النازحين المسجلين، بواقع 274,169 فردًا، أي نحو 76.6 من الإجمالي. ويقتضي هذا التركز توسيع القدرة التشغيلية للشركاء في المحافظتين، مع توجيه التدخلات في بقية المحافظات بحسب شدة الاحتياج ومخاطر الحماية، وعدم الاكتفاء بحجم الأعداد معيارًا وحيدًا لتوزيع المساعدة.
+    - p: وعليه، تدعو الوحدة التنفيذية الجهات المعنية والشركاء الإنسانيين والمانحين إلى حشد تمويل عاجل وكافٍ لاستجابة منسقة تشمل المأوى والغذاء والمياه والصرف الصحي والصحة والحماية والمساعدات النقدية والمواد الأساسية. وينبغي أن يقترن ذلك بتحديث السجلات، وتتبع النزوح الثانوي، وإزالة الازدواجية، والتحقق من الفجوات الفعلية، بما يضمن وصول المساعدة إلى الأسر الأشد احتياجًا ويحفظ كرامة النازحين ويخفف الأعباء عن المجتمعات المضيفة.
+    - end: نهاية التقرير
+    - contact:
+      - "المكتب الرئيسي: عدن – المنصورة – ريمي"
+      - "للتواصل: 02356000"
+      - "Email: info@exuye.org"

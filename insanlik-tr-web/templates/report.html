@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% import '_m.html' as m %}
 {% macro toc(r, t, extra, deep) -%}
-{% if r.sections|length > 1 %}<nav class="toc{{ extra }}{% if deep %} deep{% endif %}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}{% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}<li{% if deep and hs %} class="has-sub"{% endif %}><a href="#{{ s.toc_target or ('s' ~ loop.index) }}">{{ s.toc or s.title }}</a>{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endfor %}</ol></nav>{% endif %}
+{% if r.sections|length > 1 %}<nav class="toc{{ extra }}{% if deep %} deep{% endif %}{% if r.toc_plain %} plain{% endif %}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}{% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}<li{% if deep and hs %} class="has-sub"{% endif %}><a href="#{{ s.toc_target or ('s' ~ loop.index) }}">{{ s.toc or s.title }}</a>{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endfor %}</ol></nav>{% endif %}
 {%- endmacro %}
 {% block title %}{{ r.title }}{% endblock %}
 {% block body_class %}{% if r.static_header %}hdr-static{% endif %}{% if r.compact %} rep-compact{% endif %}{% endblock %}
@@ -31,6 +31,21 @@
 <section class="sec">
   <div class="container detail">
     <article{% if r.head_sizes %} class="hsz" style="--hs1:{{ r.head_sizes[0] }}pt;--hs2:{{ r.head_sizes[1] }}pt;--hs3:{{ r.head_sizes[2] }}pt"{% endif %}>
+      {% if r.cover %}{% set cv = r.cover %}
+      {#- the first page of the report file: issuer with its logos, dates, title and subtitle -#}
+      <header class="rcover">
+        {% if r.logos %}<div class="rcover-head">
+          <img class="rcover-emblem" src="{{ r.logos[0] }}" alt="{{ cv.org[0] if cv.org else '' }}" width="380" height="197">
+          {% if cv.org %}<div class="rcover-org">{% for x in cv.org %}<span>{{ x }}</span>{% endfor %}</div>{% endif %}
+          {% if r.logos|length > 1 %}<img class="rcover-logo" src="{{ r.logos[1] }}" alt="Ex.U.IDPs" width="246" height="249">{% endif %}
+        </div>{% endif %}
+        <div class="rcover-body">
+          {% for x in cv.meta or [] %}<p class="rcover-meta">{{ x }}</p>{% endfor %}
+          {% if cv.title %}<p class="rcover-title">{{ cv.title }}{% if cv.title2 %}<span>{{ cv.title2 }}</span>{% endif %}</p>{% endif %}
+          {% for x in cv.sub or [] %}<p class="rcover-sub">{{ x }}</p>{% endfor %}
+        </div>
+      </header>
+      {% endif %}
       {{ toc(r, t, ' toc-mob', r.toc_deep) }}
       {% for s in r.sections %}
       <div class="situ" id="s{{ loop.index }}">
@@ -55,6 +70,16 @@
         {% elif b.ol %}<ol class="rlist text-lg">{% for li in b.ol %}<li>{{ li }}</li>{% endfor %}</ol>
         {% elif b.ul %}<ul class="rlist text-lg">{% for li in b.ul %}<li>{% if b.links and b.links[loop.index0] %}<a class="rjump" href="#{{ b.links[loop.index0] }}">{{ li }}</a>{% else %}{{ li }}{% endif %}</li>{% endfor %}</ul>
         {% elif b.lab %}<p class="rlab">{{ b.lab }}</p>
+        {% elif b.chart %}{% set ch = b.chart %}{% set nt = ch.ticks|length - 1 %}
+        <figure class="rbars" style="--n:{{ ch['items']|length }}">
+          <figcaption>{{ ch.title }}</figcaption>
+          <div class="rbars-plot">
+            <div class="rbars-axis" aria-hidden="true">{% for tk in ch.ticks %}<span style="--y:{{ (loop.index0 * 100 / nt)|round(3) }}%">{{ tk }}</span>{% endfor %}</div>
+            <ol class="rbars-list">{% for it in ch['items'] %}<li style="--p:{{ (it[1] * 100 / ch.max)|round(3) }}%" title="{{ it[0] }}: {{ it[2] }}"><span class="rbars-bar"><span class="rbars-fill"></span><span class="rbars-val">{{ it[2] }}</span></span><span class="rbars-lab">{{ it[0] }}</span></li>{% endfor %}</ol>
+          </div>
+        </figure>
+        {% elif b.end %}<p class="rend">{{ b.end }}</p>
+        {% elif b.contact %}<p class="rcontact">{% for x in b.contact %}<span>{{ x|urlize }}</span>{% endfor %}</p>
         {% elif b.img %}<figure class="rmap"><img src="{{ b.img }}" alt="{{ b.alt }}"{% if b.size %} width="{{ b.size[0] }}" height="{{ b.size[1] }}"{% endif %} loading="lazy"></figure>
         {% elif b.table %}{% set tb = b.table %}
         <figure class="rtbl">
