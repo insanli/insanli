@@ -30,7 +30,21 @@
 
 <section class="sec">
   <div class="container detail">
-    {% if r.fold_tables %}<script>document.documentElement.classList.add('js')</script>{% endif %}
+    {% if r.fold_tables %}
+    {#- folding tables work from this page itself (they do not wait for main.js): pressing the header row or its button
+        opens / closes the rows. Runs first and stops the click there, so the table is never toggled twice. -#}
+    <script>
+    document.documentElement.classList.add('js');
+    document.addEventListener('click', function (e) {
+      var h = e.target && e.target.closest ? e.target.closest('.rtbl.tfold thead') : null;
+      if (!h) return;
+      e.stopPropagation();
+      var f = h.closest('.rtbl'), open = !f.classList.contains('open'), b = f.querySelector('.tfold-btn');
+      f.classList.toggle('open', open);
+      if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }, true);
+    </script>
+    {% endif %}
     <article{% if r.head_sizes %} class="hsz" style="--hs1:{{ r.head_sizes[0] }}pt;--hs2:{{ r.head_sizes[1] }}pt;--hs3:{{ r.head_sizes[2] }}pt"{% endif %}>
       {% if r.cover %}{% set cv = r.cover %}
       {#- the first page of the report file: issuer with its logos, dates, title and subtitle -#}
