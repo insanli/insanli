@@ -1,34 +1,44 @@
 # Yemen — Consolidated report on forced displacement caused by war, as of 12 November 2026 (issued 16 November 2026).
 # Source: Executive Unit for IDPs Camp Management (Ex.U.IDPs), Prime Ministry, Republic of Yemen.
 # Turkish from "Savaş Nedeniyle Yerinden Edilenlere İlişkin Kapsamlı Rapor" (docx), English and Arabic from the two PDF files.
-# Replaces the older Yemen report (yemen-2026-09). Texts and numbers are written as in each file.
-# logos: the emblem of Yemen and the Ex.U.IDPs logo shown at the top of the report (taken from the files).
-# cover: issuer lines, dates, title and subtitle of the file. chart: households by governorate (as in the files).
+# Replaces the older Yemen report (yemen-2026-09). Texts and numbers of the Executive Unit are written as in each file.
+# Update 20 November 2026: arranged like the Sudan report (sections 1-9). The missing parts (humanitarian situation,
+# civilians, groups and sites, aid operations and funding, needs and costs, access, challenges, recommendations) are
+# added from: IOM DTM Flash Update #19 (18 Nov), IOM Mobility Report (19 Nov), WHO Situation Report #12 (17 Nov),
+# FEWS NET Alert (17 Nov), Yemen SLSC Situation Update (18 Nov) and UNHCR Yemen situation map (16 Nov).
+# Taiz + Lahj shares corrected to 76.3% of households and 80.9% of IDPs (23,007 + 15,160 of 50,001; 274,169 of 338,748).
+# No cover and no logos at the top of the report (as in the Sudan report).
+# toc_only: the sub-headings are listed only in the contents list; the section titles in the text do not open them.
+# fold_tables: the Executive Unit's tables show only their header row and total row (pressing the header opens them);
+#   tables with "fold: false" always show in full.
+# src: small source line under a table or a part.
 # toc_plain: the contents list uses the report's own numbering (1., 2.1 …) instead of counting the parts.
 category: country
 country: yemen
 period: 2026-11
-updated: '2026-11-16'
+updated: '2026-11-20'
 image: /img/countries/yemen.jpg
-pdf: ""
+pdf: ''
 sources: []
 order: 4
-logos:
-- /img/reports/yemen-emblem.jpg
-- /img/reports/yemen-exuidps.jpg
 tr:
   country_name: Yemen
   title: Yemen — Savaş Nedeniyle Yerinden Edilenlere İlişkin Kapsamlı Rapor
   period_label: 12 Kasım 2026 itibarıyla
   sources:
   - Yemen Başbakanlığı – Yürütme Birimi (EX.U.IDPs)
+  - IOM DTM
+  - DSÖ
+  - FEWS NET
+  - SLSC
+  - UNHCR
   summary: Bu rapor, 12 Kasım 2026 tarihi itibarıyla Yemen'in on ilinde kayıt altına alınan zorunlu yerinden edilme verilerini kapsamaktadır. Raporda ele alınan iller; El-Hudeyde, Taiz, Lahic, Aden, Ebyen, Şebve, Hadramut, El-Mehra, Marib ve Ed-Dali'dir.
   figures:
-  - value: "50.001"
+  - value: '50.001'
     label: Yerinden edilmiş aile
-  - value: "338.748"
+  - value: '338.748'
     label: Yerinden edilmiş kişi
-  - value: "10"
+  - value: '10'
     label: İl
   head_sizes:
   - 13
@@ -36,25 +46,16 @@ tr:
   - 11
   toc_deep: true
   toc_plain: true
+  toc_only: true
   static_header: true
   compact: true
-  cover:
-    org:
-    - Yemen Cumhuriyeti
-    - Başbakanlık
-    - Yerinden Edilmiş Kişilerin Kamplarının Yönetiminden Sorumlu Yürütme Birimi
-    - EX.U.IDPs
-    meta:
-    - "Verilerin güncellendiği tarih: 12 Kasım 2026"
-    - "Raporun yayımlandığı tarih: 16 Kasım 2026"
-    title: Savaş Nedeniyle Yerinden Edilenlere İlişkin Kapsamlı Rapor
-    sub:
-    - Yerinden Edilmenin Seyri, İnsani Durum, Yardım Çalışmaları ve Acil İhtiyaçlar
+  fold_tables: true
+  fold_label: Tablonun tamamını göster
   sections:
   - title: Proje Özeti
     blocks:
     - p: Bu rapor, 12 Kasım 2026 tarihi itibarıyla Yemen'in on ilinde kayıt altına alınan zorunlu yerinden edilme verilerini kapsamaktadır. Raporda ele alınan iller; El-Hudeyde, Taiz, Lahic, Aden, Ebyen, Şebve, Hadramut, El-Mehra, Marib ve Ed-Dali'dir.
-    - p: Söz konusu illerde toplam 50.001 yerinden edilmiş aile kayıt altına alınmış olup bu ailelerin toplam nüfusu 338.748 kişidir. Yerinden edilmenin en yoğun yaşandığı il, 23.007 aile ve 156.898 kişiyle Taiz'dir. Taiz'i, 15.160 aile ve 117.271 kişiyle Lahic takip etmektedir. Diğer illerde ise Ebyen'de 4.540 aile (22.030 kişi), Aden'de 3.741 aile (17.782 kişi) yerinden edilmiş durumdadır. Taiz ve Lahic illerindeki yerinden edilmiş aileler, toplam aile sayısının yaklaşık %70,4'ünü; yerinden edilmiş kişiler ise toplam nüfusun %75,9'unu oluşturmaktadır. Bu veriler, insani yardım kaynaklarının ihtiyaçların yoğunlaştığı bölgelere öncelik verilerek planlanmasının önemini ortaya koymaktadır. Bununla birlikte, diğer illerdeki ihtiyaçların da göz ardı edilmemesi ve yardım çalışmalarının ülke genelinde dengeli biçimde sürdürülmesi gerekmektedir.
+    - p: Söz konusu illerde toplam 50.001 yerinden edilmiş aile kayıt altına alınmış olup bu ailelerin toplam nüfusu 338.748 kişidir. Yerinden edilmenin en yoğun yaşandığı il, 23.007 aile ve 156.898 kişiyle Taiz'dir. Taiz'i, 15.160 aile ve 117.271 kişiyle Lahic takip etmektedir. Diğer illerde ise Ebyen'de 4.540 aile (22.030 kişi), Aden'de 3.741 aile (17.782 kişi) yerinden edilmiş durumdadır. Taiz ve Lahic illerindeki yerinden edilmiş aileler, toplam aile sayısının yaklaşık %76,3'ünü; yerinden edilmiş kişiler ise toplam nüfusun %80,9'unu oluşturmaktadır. Bu veriler, insani yardım kaynaklarının ihtiyaçların yoğunlaştığı bölgelere öncelik verilerek planlanmasının önemini ortaya koymaktadır. Bununla birlikte, diğer illerdeki ihtiyaçların da göz ardı edilmemesi ve yardım çalışmalarının ülke genelinde dengeli biçimde sürdürülmesi gerekmektedir.
     - p: Bu çerçevede Yürütme Birimi; yerel yönetimleri, Birleşmiş Milletler kuruluşlarını, insani yardım koordinasyon mekanizmalarını, ulusal ve uluslararası yardım kuruluşlarını, bağışçıları ve uygulama ortaklarını, yerinden edilmiş ailelerin ihtiyaçlarının karşılanması için gerekli mali kaynakları ve insani yardım kapasitesini harekete geçirmeye çağırmaktadır.
     - h: 12 Kasım 2026 İtibarıyla Yerinden Edilme Verileri
       level: 1
@@ -67,49 +68,49 @@ tr:
         - Yerinden Edilmiş Ailelerin Bulunduğu İlçe Sayısı
         rows:
         - - El-Hudeyde
-          - "1.471"
-          - "10.297"
-          - "2"
+          - '1.471'
+          - '10.297'
+          - '2'
         - - Taiz
-          - "23.007"
-          - "156.898"
-          - "16"
+          - '23.007'
+          - '156.898'
+          - '16'
         - - Lahic
-          - "15.160"
-          - "117.271"
-          - "10"
+          - '15.160'
+          - '117.271'
+          - '10'
         - - Ebyen
-          - "4.540"
-          - "22.030"
-          - "5"
+          - '4.540'
+          - '22.030'
+          - '5'
         - - Aden
-          - "3.741"
-          - "17.782"
-          - "8"
+          - '3.741'
+          - '17.782'
+          - '8'
         - - Şebve
-          - "173"
-          - "1.066"
-          - "6"
+          - '173'
+          - '1.066'
+          - '6'
         - - Hadramut
-          - "214"
-          - "1.498"
-          - "3"
+          - '214'
+          - '1.498'
+          - '3'
         - - El-Mehra
-          - "142"
-          - "994"
-          - "2"
+          - '142'
+          - '994'
+          - '2'
         - - Marib
-          - "882"
-          - "6.174"
-          - "3"
+          - '882'
+          - '6.174'
+          - '3'
         - - Ed-Dali
-          - "671"
-          - "4.738"
-          - "4"
+          - '671'
+          - '4.738'
+          - '4'
         foot:
         - TOPLAM
-        - "50.001"
-        - "338.748"
+        - '50.001'
+        - '338.748'
         - —
         num_cols:
         - 1
@@ -120,55 +121,175 @@ tr:
         title: 12 Kasım 2026 İtibarıyla İllere Göre Yerinden Edilmiş Aile Sayısı
         max: 25000
         ticks:
-        - "0"
-        - "5.000"
-        - "10.000"
-        - "15.000"
-        - "20.000"
-        - "25.000"
+        - '0'
+        - '5.000'
+        - '10.000'
+        - '15.000'
+        - '20.000'
+        - '25.000'
         items:
         - - El-Hudeyde
           - 1471
-          - "1.471"
+          - '1.471'
         - - Taiz
           - 23007
-          - "23.007"
+          - '23.007'
         - - Lahic
           - 15160
-          - "15.160"
+          - '15.160'
         - - Ebyen
           - 4540
-          - "4.540"
+          - '4.540'
         - - Aden
           - 3741
-          - "3.741"
+          - '3.741'
         - - Şebve
           - 173
-          - "173"
+          - '173'
         - - Hadramut
           - 214
-          - "214"
+          - '214'
         - - El-Mehra
           - 142
-          - "142"
+          - '142'
         - - Marib
           - 882
-          - "882"
+          - '882'
         - - Ed-Dali
           - 671
-          - "671"
-  - title: "1. Giriş: Savaş Nedeniyle Zorunlu Yerinden Edilme"
+          - '671'
+  - title: 1. Yemen'deki İnsani Durum ve Zorunlu Yerinden Edilme
     blocks:
     - p: Bu rapor, Yemen'de devam eden çatışmalar nedeniyle on ilde yaşanan zorunlu yerinden edilme hareketlerini ve bunun yol açtığı insani sorunları ele almaktadır. Çatışmalar nedeniyle çok sayıda aile, yaşadığı bölgeyi ve evini terk etmek zorunda kalmış; konutlarını, kişisel eşyalarını, geçim kaynaklarını, hayvanlarını ve düzenli gelirlerini kaybetmiştir. Bu kayıplar, ailelerin yaşam koşullarını daha da ağırlaştırmış ve temel ihtiyaçlarını kendi imkânlarıyla karşılamalarını güçleştirmiştir.
     - p: Yerinden edilmenin yol açtığı insani ihtiyaçlar yalnızca barınmayla sınırlı değildir. Yaşadıkları yerleri terk etmek zorunda kalan aileler, çoğu zaman yeterli gıdaya, temiz içme suyuna, temel sağlık hizmetlerine ve hijyen koşullarına erişememektedir. Bunun yanı sıra koruma hizmetlerine, temel ihtiyaç malzemelerine ve geçimlerini sürdürebilmeleri için nakdî desteğe de ihtiyaç duymaktadırlar.
     - p: Yürütme Birimi, bu koşullar altında yürütülecek insani yardım çalışmalarının hızlı, koordineli ve sahadaki gerçek ihtiyaçlara dayalı olması gerektiğini vurgulamaktadır. Bu çalışmaların temel amacı; can kayıplarını önlemek, insanların onurunu korumak, karşı karşıya oldukları riskleri azaltmak, ailelerin yaşam koşullarının daha fazla kötüleşmesini engellemek ve yerinden edilmiş nüfusa ev sahipliği yapan toplulukların üzerindeki yükü hafifletmektir.
-  - title: 2. Raporun Kapsamı ve Coğrafi Dağılımı
+    - h: 1.1. Çatışmaların Seyri ve İnsani Sonuçları
+      level: 1
+      id: s2-1
+    - p: FEWS NET'in 17 Kasım 2026 tarihli uyarısına göre Yemen'deki çatışmalar, Temmuz 2026'dan bu yana cephe hatlarının sık sık değiştiği ve birden fazla cephede süren yüksek yoğunluklu bir savaşa dönüşmüştür. Taiz ve Lahic illeri çatışmaların merkezi hâline gelmiştir. IOM'a göre Eylül 2026 başından itibaren özellikle Batı Kıyısı'nda, Taiz ve El-Hudeyde illerinde çatışmalar yoğunlaşmış; Makbine, Mevza, Muha ve çevresindeki cephe ilçelerinde şiddetli çatışmalar yaşanmıştır.
+    - p: DSÖ'nün 17 Kasım 2026 tarihli durum raporuna göre cephe hattı Lahic ili üzerinden hızla ilerleyerek Aden'e yaklaşmaktadır. Aden; ana sevk hastanelerine, Sağlık Acil Durum Operasyon Merkezi'ne (HEOC) ve sağlık müdahalesini besleyen depoya ev sahipliği yapmaktadır. Cephe hattındaki yeni hareketlerin yaralı akışını ve yerinden edilmeyi değiştirmesi, sevk ve ikmal güzergâhlarını kesintiye uğratması beklenmektedir.
+    - p: Çatışmaların insani sonuçları yalnızca yerinden edilmeyle sınırlı değildir. Taiz kenti Ekim ayından bu yana fiilî kuşatma altındadır ve kentte gıda, yakıt, yemek pişirme gazı ve su sıkıntısı derinleşmektedir. Hastaneler yakıt ve ilaç eksikliği nedeniyle hizmet vermekte zorlanmakta, kolera ve diğer salgın hastalık riskleri sürmektedir. Pek çok aile iki ila dört kez yerinden edilmiş, bir kısmı beş yılı aşkın süredir yaşadığı yerleşim alanlarını terk etmek zorunda kalmıştır. Bu durum, zaten kapasitesinin üzerinde yük taşıyan ev sahibi topluluklar ve yerleşim alanları üzerindeki baskıyı artırmaktadır.
+    - h: 1.2. Ülke Genelinde Yerinden Edilmenin Boyutu
+      level: 1
+      id: s2-2
+    - p: IOM Yemen Yerinden Edilme İzleme Matrisi'nin (DTM) 18 Kasım 2026 tarihli verilerine göre çatışmaların tırmandığı Haziran 2026'dan bu yana toplam 357.658 kişi (59.602 aile) yerinden edilmiştir. Bunların yaklaşık 356.602'si (59.426 aile) 1 Ağustos–17 Kasım 2026 döneminde yerinden edilmiştir. Yerinden edilme Haziran–Ağustos döneminde görece düşük seyretmiş, Eylül başında keskin biçimde artmış ve günlük en yüksek sayıya 9 Eylül'de 15.186 kişiyle ulaşmıştır. Haftalık yerinden edilme Kasım ortası itibarıyla yaklaşık 3.150 aile düzeyindedir. DTM, 1 Ocak 2026'dan bu yana toplam 369.012 kişinin yerinden edildiğini kaydetmiştir.
+    - p: Yürütme Birimi'nin bu raporda yer alan 338.748 kişilik (50.001 aile) verisi bir kayıt sayımıdır. DSÖ'nün de belirttiği gibi bu veri, yerinden edilme hareketlerini izleyen IOM DTM verileriyle doğrudan karşılaştırılamaz.
+    - lab: IOM DTM verilerine göre yerinden edilmiş kişilerin bulundukları illere göre dağılımı (Haziran–17 Kasım 2026)
+    - table:
+        head:
+        - İl
+        - Yerinden Edilmiş Kişi Sayısı
+        - Payı
+        rows:
+        - - Taiz
+          - '145.344'
+          - '%41'
+        - - Lahic
+          - '95.580'
+          - '%27'
+        - - Aden
+          - '71.706'
+          - '%20'
+        - - Ebyen
+          - '17.208'
+          - '%5'
+        - - El-Hudeyde
+          - '8.244'
+          - '%2'
+        - - Şebve
+          - '6.183'
+          - '%2'
+        - - Marib
+          - '4.104'
+          - '%1'
+        - - Hadramut
+          - '3.576'
+          - '%1'
+        - - El-Mehra
+          - '3.096'
+          - '%1''in altında'
+        - - Ed-Dali
+          - '2.617'
+          - '%1''in altında'
+        foot:
+        - TOPLAM
+        - '357.658'
+        - '%100'
+        num_cols:
+        - 1
+        - 2
+        fold: false
+    - src: 'Kaynak: IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026); DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026).'
+    - h: 1.3. Ülke Dışına Yönelik Hareketler
+      level: 1
+      id: s2-3
+    - p: IOM'a göre 18 Kasım 2026 itibarıyla 4.336 Yemen vatandaşı, büyük bölümü Obock üzerinden olmak üzere Cibuti'ye ulaşmıştır. Sahada toplanan bilgiler, bu kişilerin büyük kısmının özellikle Bab el-Mendeb, Zubab, Havha ve El-Hudeyde bölgelerindeki kötüleşen güvenlik koşulları nedeniyle ülkeden ayrıldığını göstermektedir. UNHCR ise 16 Kasım 2026 itibarıyla Cibuti ve Somali'ye Yemen'den 4.269 yeni kişinin ulaştığını kaydetmiştir.
+    - src: 'Kaynak: IOM, Orta Doğu ve Ötesinde Tırmanma – Hareketlilik Raporu (19 Kasım 2026); UNHCR, Yemen Durum Haritası (16 Kasım 2026).'
+  - title: 2. Sivillere Yönelik İhlaller ve Çatışmaların İnsani Sonuçları
+    blocks:
+    - p: Bu bölümdeki veriler Birleşmiş Milletler kuruluşlarının ve Yemen sağlık makamlarının raporlarından derlenmiştir. Raporlamanın eksik olduğu ve bazı bölgelere erişilemediği dikkate alındığında rakamların asgari düzeyi yansıttığı değerlendirilmektedir.
+    - h: 2.1. Çatışmalara Bağlı Yaralı ve Ölü Sayıları
+      level: 1
+      id: s3-1
+    - p: Yemen Halk Sağlığı ve Nüfus Bakanlığı'na bağlı Sağlık Acil Durum Operasyon Merkezi'nin (HEOC) verilerine göre 16 Kasım 2026 itibarıyla çatışmalar nedeniyle 12.779 kişi yaralanmış veya hayatını kaybetmiştir (10.519 yaralı, 2.260 ölü). Yalnızca 9–16 Kasım arasındaki sekiz günde bu sayıya 1.024 kişi (862 yaralı, 162 ölü) eklenmiş, günlük ortalama yaklaşık 128 kişi olmuştur. Günlük raporlama oranı %58 ile %92 arasında kaldığından bu rakamlar asgari düzeyi göstermektedir.
+    - lab: 11–15 Kasım 2026 döneminde illere göre yaralı ve ölü sayıları
+    - table:
+        head:
+        - İl
+        - Yaralı ve Ölü Sayısı
+        - Ölü Sayısı
+        - Toplam İçindeki Payı
+        rows:
+        - - Marib
+          - '266'
+          - '49'
+          - '%46,3'
+        - - Lahic
+          - '234'
+          - '22'
+          - '%40,7'
+        - - Taiz
+          - '70'
+          - '7'
+          - '%12,2'
+        - - Ed-Dali
+          - '5'
+          - '0'
+          - '%0,9'
+        foot:
+        - TOPLAM
+        - '575'
+        - '78'
+        - '%100'
+        num_cols:
+        - 1
+        - 2
+        - 3
+        fold: false
+    - src: 'Kaynak: DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026) (HEOC verileri). Sayılar, yaralanmanın gerçekleştiği yere göre değil bildirildiği yere göre verilmiştir.'
+    - h: 2.2. Sağlık Hizmetleri ve Temel Altyapı Üzerindeki Etkiler
+      level: 1
+      id: s3-2
+    - p: HEOC'un 10 Kasım 2026 itibarıyla bildirdiği verilere göre 28 sağlık tesisi ve 7 ambulans hasar görmüş, 13 sağlık çalışanı etkilenmiştir (7 ölü, 6 yaralı). Taiz'deki iki sağlık tesisinin (Hena Sağlık Birimi ve Balan Sağlık Merkezi) 5 Kasım'da hasar gördüğü bildirilmiş, ancak bu tesisler henüz resmî sayıma eklenmemiştir. DSÖ, erişim kısıtlamaları nedeniyle bu verilerin bağımsız olarak doğrulanmasının güç olduğunu belirtmektedir.
+    - p: Taiz kentindeki hastaneler yakıt, cerrahi malzeme, anestezi ve yoğun bakım ilaçları bakımından ciddi sıkıntı yaşamaktadır. Bu durum ameliyathanelerin çalışmasını ve yoğun bakım üniteleri için oksijen üretimini aksatmakta, ambulansların bakımı yapılamamaktadır. Kentte çöp toplama hizmetlerinin durması, biriken katı atıklar ve tıbbi atıklar salgın hastalık riskini artırmaktadır.
+    - h: 2.3. Kuşatma Altındaki Taiz Kenti
+      level: 1
+      id: s3-3
+    - p: FEWS NET'e göre Sana merkezli yetkililer 4 Ekim 2026'da Taiz kentini hükümet kontrolündeki bölgelere bağlayan son ana yolun kontrolünü ele geçirmiş ve kent fiilen kuşatma altına girmiştir. Çoğu daha önce başka bölgelerden kente sığınmış olan tahminen 600.000–750.000 kişi giderek ağırlaşan gıda, yakıt, yemek pişirme gazı ve su sıkıntısıyla karşı karşıyadır. Kente sınırlı miktarda gıda ve temel ürün ancak küçük dağ yollarından ulaşabilmektedir.
+    - p: FEWS NET, kuşatmanın aylarca sürmesi ve koşulların ağırlaşması durumunda Taiz kentinde Şubat–Mayıs 2027 döneminde kıtlık (IPC Aşama 5) yaşanması yönünde ciddi bir risk bulunduğunu değerlendirmektedir. Kuşatma öncesinde dahi hanelerin en az %20'sinin gıda tüketim puanı yetersiz düzeydeydi ve beş yaş altı çocuklarda akut yetersiz beslenme oranının kritik düzeyde (%15–29,9) olduğu tahmin edilmekteydi.
+    - h: 2.4. Kadınlar, Çocuklar ve Diğer Hassas Grupların Karşılaştığı Riskler
+      level: 1
+      id: s3-4
+    - p: IOM'un 15–17 Kasım 2026 tarihlerinde Marib Vadisi ve El-Cufeyne'de 12 yerinden edilmiş ailede (58 kişi) yaptığı hızlı koruma değerlendirmesine göre değerlendirilen kişilerin %55'i çocuk, %50'si kadın ve kız çocuğudur. Ailelerin %27'sinin reisi kadındır ve ailelerin %80'i koruma sorunları bildirmiştir. Öne çıkan riskler; zorla yerinden edilme, yetersiz barınma, dul kadınların mahremiyetine ilişkin endişeler, engellilikle bağlantılı ihtiyaçlar, gelir yokluğu ve kalabalık ailelerdeki bakım yüküdür. Örneklem küçük olduğundan bu bulgular genel eğilime ilişkin bir gösterge niteliğindedir.
+    - p: FEWS NET, Taiz kentinde beslenme durumundaki bozulmanın özellikle çocukları, hamile ve emziren kadınları ve yaşlıları etkileyeceğini öngörmektedir. DSÖ ise yanık vakalarının arttığını, buna karşın hastanelerin ilk müdahale ve pansumanın ötesinde tedavi sunmakta zorlandığını; ruh sağlığı ve psikososyal destek ile rehabilitasyon hizmetlerinin en zayıf halkalar olmaya devam ettiğini bildirmektedir.
+    - src: 'Kaynaklar: DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026); FEWS NET Yemen Uyarısı (17 Kasım 2026); IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026).'
+  - title: 3. İnsani Krizden Etkilenen Gruplar ve Coğrafi Dağılım
     blocks:
     - p: Bu rapor, Yemen'in on ilindeki yerinden edilme durumunu kapsamaktadır. Yerinden edilmiş ailelerin ve bu ailelerde yaşayan kişilerin illere ve ilçelere göre dağılımı incelenmektedir.
     - p: Aşağıdaki tabloda, rapor kapsamındaki iller, kayıtlı yerinden edilmiş aile ve kişi sayıları ile bu ailelerin bulunduğu ilçelerin sayısı gösterilmektedir.
-    - h: 2.1. İllere Göre Genel Durum
+    - h: 3.1. İllere Göre Genel Durum
       level: 1
-      id: s3-1
+      id: s4-1
     - table:
         head:
         - İl
@@ -177,53 +298,55 @@ tr:
         - Dağılımın Görüldüğü İlçeler
         rows:
         - - El-Hudeyde
-          - "1.471"
-          - "10.297"
+          - '1.471'
+          - '10.297'
           - Hays, Havha
         - - Taiz
-          - "23.007"
-          - "156.898"
+          - '23.007'
+          - '156.898'
           - Şemayetin, Muzaffer, Muafir, Cebel Habşi, Mesrah, Kahire, Salih, Mevasıt, Sılu, Meşraa ve Hıdnan, Sabir Mevâdim, Muha, Vaziye, Mevza, Makbine, Zubab
         - - Lahic
-          - "15.160"
-          - "117.271"
+          - '15.160'
+          - '117.271'
           - Müseymir, Tüben, Mudâribe ve Ras el-Ara, Huta, Tur el-Baha, Hubeylin, Hadd, Mukâtıra, Hâlimeyn, Kubeyta
         - - Ebyen
-          - "4.540"
-          - "22.030"
+          - '4.540'
+          - '22.030'
           - Hançer, Zencibar, Lûder, Mudiyye, Ahver
         - - Aden
-          - "3.741"
-          - "17.782"
+          - '3.741'
+          - '17.782'
           - Bureyka, Dar Saad, Mansura, Şeyh Osman, Hur Mekser, Sîre, Tevahi, Mualla
         - - Şebve
-          - "173"
-          - "1.066"
+          - '173'
+          - '1.066'
           - Beyhan, Atak, Ayn, Usaylan, Meyfaa, Merha es-Sufla
         - - Hadramut
-          - "214"
-          - "1.498"
+          - '214'
+          - '1.498'
           - Mukalla, Reyde ve Kusayir, Gayl Bâvezir
         - - El-Mehra
-          - "142"
-          - "994"
+          - '142'
+          - '994'
           - Gayda, Şahn
         - - Marib
-          - "882"
-          - "6.174"
+          - '882'
+          - '6.174'
           - Marib Şehri, Marib Vadisi, Harib
         - - Ed-Dali
-          - "671"
-          - "4.738"
+          - '671'
+          - '4.738'
           - Kataba, Husayn, Ed-Dali, Ezârik
         num_cols:
         - 1
         - 2
-  - title: 3. İllere ve İlçelere Göre Yerinden Edilme Verileri
-    blocks:
-    - h: 3.1. El-Hudeyde İli
+    - p: Rapordaki rakamlar 12 Kasım 2026 tarihli güncellemeye dayanmakla birlikte El-Hudeyde iline ait veriler 8 Eylül 2026, Aden iline ait veriler ise 28 Eylül 2026 tarihlidir. IOM'a göre El-Hudeyde 9 Eylül 2026'dan itibaren tamamen Ensarullah'ın kontrolüne geçmiş ve DTM ekibi bölgeye erişimini kaybetmiştir. Aden'de ise Yürütme Birimi, karşılaştığı erişim kısıtlamaları nedeniyle saha faaliyetlerini durdurmak zorunda kalmıştır (bkz. 3.2.3).
+    - h: 3.2. İllere ve İlçelere Göre Yerinden Edilme Verileri
       level: 1
-      id: s4-1
+      id: s4-2
+    - h: 3.2.1. El-Hudeyde İli
+      level: 2
+      id: s4-3
     - p: Hüdeyde ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 1.471 aileden oluşan 10.297 kişi, Hays ve Havha olmak üzere iki ilçede yaşamaktadır. Ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda gösterilmektedir. Bu veriler, Yürütme Birimi tarafından 8 Eylül 2026 tarihinde derlenmiştir.
     - table:
         head: &id001
@@ -232,199 +355,199 @@ tr:
         - Yerinden Edilmiş Kişi Sayısı
         rows:
         - - Hays
-          - "1.039"
-          - "7.273"
+          - '1.039'
+          - '7.273'
         - - Havha
-          - "432"
-          - "3.024"
+          - '432'
+          - '3.024'
         foot:
         - TOPLAM
-        - "1.471"
-        - "10.297"
+        - '1.471'
+        - '10.297'
         num_cols:
         - 1
         - 2
-    - h: 3.2. Taiz İli
-      level: 1
-      id: s4-2
+    - h: 3.2.2. Taiz İli
+      level: 2
+      id: s4-4
     - p: Taiz ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 23.007 aileden oluşan 156.898 kişi, 16 ilçeye dağılmış durumdadır. Bu ilçeler; Eş-Şemayetin, El-Muzaffer, El-Muafir, Cebel Habşi, El-Misrah, El-Kahire, Sale, El-Mevasıt, Es-Salu, Meşraa ve Hıdnan, Sabir Mevâdim, El-Muha, El-Vazi'iyye, Mevza, Makbine ve Zubab'dır.
     - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda sunulmaktadır. Taiz ilinde, daha önce Cebel Habşi, Mesrah, Muafir ve Makbine ilçelerinde bulunan çok sayıda yerinden edilmiş aile, Muzaffer ve Kahire ilçelerine göç etmiştir. Saha ekiplerimiz, bu ailelerin hareketliliğini takip etmekte ve sayılarını tespit etmeye yönelik çalışmalarını sürdürmektedir. Yürütme Birimi, söz konusu iki ilçedeki yerinden edilmiş aile sayısının 13.000'i aşacağını öngörmektedir.
     - table:
         head: *id001
         rows:
         - - Eş-Şemayetin
-          - "2.533"
-          - "17.736"
+          - '2.533'
+          - '17.736'
         - - El-Muzaffer
-          - "7.243"
-          - "48.780"
+          - '7.243'
+          - '48.780'
         - - El-Muafir
-          - "4.390"
-          - "30.746"
+          - '4.390'
+          - '30.746'
         - - Cebel Habşi
-          - "2.173"
-          - "15.213"
+          - '2.173'
+          - '15.213'
         - - El-Misrah
-          - "1.098"
-          - "7.687"
+          - '1.098'
+          - '7.687'
         - - El-Kahire
-          - "1.582"
-          - "10.257"
+          - '1.582'
+          - '10.257'
         - - Sale
-          - "510"
-          - "3.237"
+          - '510'
+          - '3.237'
         - - El-Mevasıt
-          - "211"
-          - "1.481"
+          - '211'
+          - '1.481'
         - - Es-Salu
-          - "2"
-          - "14"
+          - '2'
+          - '14'
         - - Meşraa ve Hıdnan
-          - "702"
-          - "4.283"
+          - '702'
+          - '4.283'
         - - Sabir Mevâdim
-          - "828"
-          - "5.319"
+          - '828'
+          - '5.319'
         - - El-Muha
-          - "446"
-          - "3.122"
+          - '446'
+          - '3.122'
         - - El-Vazi'iyye
-          - "668"
-          - "4.676"
+          - '668'
+          - '4.676'
         - - Mevza
-          - "357"
-          - "2.499"
+          - '357'
+          - '2.499'
         - - Makbine
-          - "230"
-          - "1.610"
+          - '230'
+          - '1.610'
         - - Zubab
-          - "34"
-          - "238"
+          - '34'
+          - '238'
         foot:
         - TOPLAM
-        - "23.007"
-        - "156.898"
+        - '23.007'
+        - '156.898'
         num_cols:
         - 1
         - 2
-    - h: 3.3. Aden İli
-      level: 1
-      id: s4-3
-    - p: "28 Eylül 2026 itibarıyla Aden ilinde 3.741 yerinden edilmiş aile kayıt altına alınmıştır. Bu ailelerin toplam nüfusu 17.782 kişidir. Aileler, Aden'in sekiz ilçesine dağılmış durumdadır: El-Bureyka, Dar Sa'ad, Şeyh Osman, El-Mansura, Hur Mekser, Krater, El-Mualla ve Et-Tevahi."
+    - h: 3.2.3. Aden İli
+      level: 2
+      id: s4-5
+    - p: '28 Eylül 2026 itibarıyla Aden ilinde 3.741 yerinden edilmiş aile kayıt altına alınmıştır. Bu ailelerin toplam nüfusu 17.782 kişidir. Aileler, Aden''in sekiz ilçesine dağılmış durumdadır: El-Bureyka, Dar Sa''ad, Şeyh Osman, El-Mansura, Hur Mekser, Krater, El-Mualla ve Et-Tevahi.'
     - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda gösterilmektedir.
     - table:
         head: *id001
         rows:
         - - El-Bureyka
-          - "1.697"
-          - "8.056"
+          - '1.697'
+          - '8.056'
         - - Dar Saad
-          - "1.027"
-          - "4.977"
+          - '1.027'
+          - '4.977'
         - - Şeyh Osman
-          - "476"
-          - "2.357"
+          - '476'
+          - '2.357'
         - - El-Mansura
-          - "312"
-          - "1.393"
+          - '312'
+          - '1.393'
         - - Krater
-          - "106"
-          - "430"
+          - '106'
+          - '430'
         - - Hur Mekser
-          - "80"
-          - "401"
+          - '80'
+          - '401'
         - - El-Mualla
-          - "35"
-          - "134"
+          - '35'
+          - '134'
         - - Et-Tevahi
-          - "8"
-          - "34"
+          - '8'
+          - '34'
         foot:
         - TOPLAM
-        - "3.741"
-        - "17.782"
+        - '3.741'
+        - '17.782'
         num_cols:
         - 1
         - 2
     - p: Aden ilinde saha ekibimiz, yerinden edilmiş ailelere ulaşma, bu ailelerin mevcut koşullarını takip etme ve yardım çalışmalarını koordine etme konusunda çeşitli engellerle karşılaşmıştır. Erişimi kısıtlayan bu koşullar nedeniyle Yürütme Birimi saha faaliyetlerini durdurmak zorunda kalmıştır. Ayrıca, daha önce tespit edilen çok sayıda aile, karşılaştıkları bu kısıtlamalar nedeniyle Lahic ve Ebyen illerine göç etmiştir.
-    - h: 3.4. Ebyen İli
-      level: 1
-      id: s4-4
+    - h: 3.2.4. Ebyen İli
+      level: 2
+      id: s4-6
     - p: Ebyen ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 4.540 aileden oluşan 22.030 kişi, Hanfer, Zencibar, Lüder, Mudiyye ve Ahver olmak üzere beş ilçede yaşamaktadır.
     - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda sunulmaktadır.
     - table:
         head: *id001
         rows:
         - - Hanfer
-          - "3.312"
-          - "16.150"
+          - '3.312'
+          - '16.150'
         - - Zencibar
-          - "1.103"
-          - "5.200"
+          - '1.103'
+          - '5.200'
         - - Lüder
-          - "56"
-          - "258"
+          - '56'
+          - '258'
         - - Mudiyye
-          - "43"
-          - "299"
+          - '43'
+          - '299'
         - - Ahver
-          - "26"
-          - "123"
+          - '26'
+          - '123'
         foot:
         - TOPLAM
-        - "4.540"
-        - "22.030"
+        - '4.540'
+        - '22.030'
         num_cols:
         - 1
         - 2
-    - h: 3.5. Lahic İli
-      level: 1
-      id: s4-5
+    - h: 3.2.5. Lahic İli
+      level: 2
+      id: s4-7
     - p: Lahic ilinde kayıt altına alınan yerinden edilme verilerine göre, toplam 15.160 aileden oluşan 117.271 kişi, on ilçeye dağılmış durumdadır. Bu ilçeler; El-Müseymir, Tüben, El-Mudâribe ve Ras el-Ara, Huta, Tur el-Baha, Hubeylin, El-Had, El-Mukâtıra, Hâlimeyn ve El-Kubeyta'dır.
     - p: Yerinden edilmiş ailelerin ve kişilerin ilçelere göre dağılımı aşağıdaki tabloda gösterilmektedir.
     - table:
         head: *id001
         rows:
         - - El-Müseymir
-          - "332"
-          - "2.324"
+          - '332'
+          - '2.324'
         - - Tüben
-          - "10.037"
-          - "70.259"
+          - '10.037'
+          - '70.259'
         - - El-Mudâribe ve Ras el-Ara
-          - "2.768"
-          - "30.527"
+          - '2.768'
+          - '30.527'
         - - Huta
-          - "443"
-          - "3.101"
+          - '443'
+          - '3.101'
         - - Tur el-Baha
-          - "751"
-          - "5.257"
+          - '751'
+          - '5.257'
         - - Hubeylin
-          - "78"
-          - "546"
+          - '78'
+          - '546'
         - - El-Had
-          - "510"
-          - "3.570"
+          - '510'
+          - '3.570'
         - - El-Mukâtıra
-          - "19"
-          - "133"
+          - '19'
+          - '133'
         - - Hâlimeyn
-          - "6"
-          - "42"
+          - '6'
+          - '42'
         - - El-Kubeyta
-          - "216"
-          - "1.512"
+          - '216'
+          - '1.512'
         foot:
         - TOPLAM
-        - "15.160"
-        - "117.271"
+        - '15.160'
+        - '117.271'
         num_cols:
         - 1
         - 2
-    - h: 3.6. Şebve İli
-      level: 1
-      id: s4-6
+    - h: 3.2.6. Şebve İli
+      level: 2
+      id: s4-8
     - p: Şebve ilinde toplam 173 yerinden edilmiş aile (1.066 kişi) kayıt altına alınmıştır. Bu aileler Beyhan, Atak, Ayn, Usaylan, Meyfaa ve Merha es-Sufla olmak üzere altı ilçede yaşamaktadır.
     - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda gösterilmektedir.
     - table:
@@ -434,154 +557,322 @@ tr:
         - Yerinden Edilmiş Kişi Sayısı
         rows:
         - - Beyhan
-          - "45"
-          - "315"
+          - '45'
+          - '315'
         - - Atak
-          - "35"
-          - "215"
+          - '35'
+          - '215'
         - - Ayn
-          - "59"
-          - "312"
+          - '59'
+          - '312'
         - - Usaylan
-          - "11"
-          - "75"
+          - '11'
+          - '75'
         - - Meyfaa
-          - "10"
-          - "62"
+          - '10'
+          - '62'
         - - Merha es-Sufla
-          - "13"
-          - "87"
+          - '13'
+          - '87'
         foot:
         - TOPLAM
-        - "173"
-        - "1.066"
+        - '173'
+        - '1.066'
         num_cols:
         - 1
         - 2
-    - h: 3.7. Hadramut İli
-      level: 1
-      id: s4-7
+    - h: 3.2.7. Hadramut İli
+      level: 2
+      id: s4-9
     - p: Hadramut ilinde toplam 214 yerinden edilmiş aile (1.498 kişi) kayıt altına alınmıştır. Mevcut verilere göre bu aileler Mukalla, Reyde ve Kusayir ile Gayl Bâvezir olmak üzere üç ilçede bulunmaktadır.
     - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda sunulmaktadır.
     - table:
         head: *id002
         rows:
         - - El-Mukalla
-          - "176"
-          - "1.232"
+          - '176'
+          - '1.232'
         - - Er-Reyde ve Kusayir
-          - "36"
-          - "252"
+          - '36'
+          - '252'
         - - Gayl Bâvezir
-          - "2"
-          - "14"
+          - '2'
+          - '14'
         foot:
         - TOPLAM
-        - "214"
-        - "1.498"
+        - '214'
+        - '1.498'
         num_cols:
         - 1
         - 2
-    - h: 3.8. El-Mehra İli
-      level: 1
-      id: s4-8
+    - h: 3.2.8. El-Mehra İli
+      level: 2
+      id: s4-10
     - p: El-Mehra ilinde toplam 142 yerinden edilmiş aile (994 kişi) kayıt altına alınmıştır. Aileler El-Gayda ve Şahn olmak üzere iki ilçede yaşamaktadır.
     - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda gösterilmektedir.
     - table:
         head: *id002
         rows:
         - - El-Gayda
-          - "134"
-          - "938"
+          - '134'
+          - '938'
         - - Şahn
-          - "8"
-          - "56"
+          - '8'
+          - '56'
         foot:
         - TOPLAM
-        - "142"
-        - "994"
+        - '142'
+        - '994'
         num_cols:
         - 1
         - 2
-    - h: 3.9. Marib İli
-      level: 1
-      id: s4-9
+    - h: 3.2.9. Marib İli
+      level: 2
+      id: s4-11
     - p: Marib ilinde toplam 882 yerinden edilmiş aile (6.174 kişi) kayıt altına alınmıştır. Mevcut verilere göre aileler Marib Şehri, El-Marib Vadisi ve Harib olmak üzere üç ilçede bulunmaktadır.
     - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda sunulmaktadır.
     - table:
         head: *id002
         rows:
         - - Marib Şehri
-          - "548"
-          - "3.836"
+          - '548'
+          - '3.836'
         - - El-Marib Vadisi
-          - "271"
-          - "1.897"
+          - '271'
+          - '1.897'
         - - Harib
-          - "63"
-          - "441"
+          - '63'
+          - '441'
         foot:
         - TOPLAM
-        - "882"
-        - "6.174"
+        - '882'
+        - '6.174'
         num_cols:
         - 1
         - 2
-    - h: 3.10. Ed-Dali İli
-      level: 1
-      id: s4-10
+    - h: 3.2.10. Ed-Dali İli
+      level: 2
+      id: s4-12
     - p: Ed-Dali ilinde toplam 671 yerinden edilmiş aile (4.738 kişi) kayıt altına alınmıştır. Bu aileler Kataba, Husayn, Ed-Dali ve Ezârik olmak üzere dört ilçede yaşamaktadır.
     - p: İlçelere göre yerinden edilmiş aile ve kişi sayıları aşağıdaki tabloda gösterilmektedir.
     - table:
         head: *id002
         rows:
         - - Ed-Dali
-          - "376"
-          - "2.587"
+          - '376'
+          - '2.587'
         - - Ezârik
-          - "252"
-          - "1.870"
+          - '252'
+          - '1.870'
         - - Kataba
-          - "35"
-          - "245"
+          - '35'
+          - '245'
         - - Husayn
-          - "8"
-          - "36"
+          - '8'
+          - '36'
         foot:
         - TOPLAM
-        - "671"
-        - "4.738"
+        - '671'
+        - '4.738'
         num_cols:
         - 1
         - 2
-  - title: 4. Yerinden Edilmiş Ailelerin İnsani Durumu
+    - h: 3.3. Yerinden Edilmenin Yönü ve Ev Sahibi İlçeler
+      level: 1
+      id: s4-13
+    - p: IOM DTM verilerine göre 1 Ağustos–17 Kasım 2026 döneminde yerinden edilen yaklaşık 356.602 kişinin %57'si (yaklaşık 203.262 kişi) kendi ili içinde, %43'ü (yaklaşık 153.340 kişi) ise başka bir ile yerinden edilmiştir. IOM'a göre kayıt altına alınan yerinden edilmenin %65'i (229.193 kişi) Taiz ilinden kaynaklanmaktadır. İller arası hareketlerin büyük payı, yerinden edilmenin coğrafi olarak genişlediğini göstermektedir.
+    - lab: En fazla yerinden edilmiş kişiye ev sahipliği yapan ilçeler (1 Ağustos–17 Kasım 2026)
+    - table:
+        head:
+        - İlçe
+        - İl
+        - Yerinden Edilmiş Kişi Sayısı
+        - Açıklama
+        rows:
+        - - Bureyka
+          - Aden
+          - '36.516'
+          - Diğer illerden gelenler (Lahic 17.952, Taiz 14.148, El-Hudeyde 4.242)
+        - - Cebel Habşi
+          - Taiz
+          - '34.236'
+          - Taiz ili içinden gelenler
+        - - Muafir
+          - Taiz
+          - '32.832'
+          - Taiz ili içinden gelenler
+        - - Dar Saad
+          - Aden
+          - '19.530'
+          - Diğer illerden gelenler (Lahic 7.914, Taiz 7.062, El-Hudeyde 4.452)
+        - - Tüben
+          - Lahic
+          - '19.152'
+          - Diğer illerden gelenler (Taiz 13.560, El-Hudeyde 5.568); ilçedeki toplam yerinden edilmiş kişi sayısı 37.848
+        num_cols:
+        - 2
+        fold: false
+    - src: 'Kaynak: IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026); IOM, Orta Doğu ve Ötesinde Tırmanma – Hareketlilik Raporu (19 Kasım 2026).'
+    - h: 3.4. Yerleşim Alanları ve Ev Sahibi Topluluklar
+      level: 1
+      id: s4-14
+    - p: SLSC koordinasyon ekibinin yerleşim alanı izleme verilerine göre son yerinden edilme dalgasıyla birlikte 29 yeni yerleşim alanı kurulmuş, 86 yerleşim alanı yeni gelen aileleri kabul etmiştir. Bu alanlarda yaklaşık 10.000 yeni yerinden edilmiş aile (yaklaşık 60.000 kişi) bulunmaktadır. Hızlı Müdahale Mekanizması (RRM) ise 1 Ağustos'tan bu yana 10 ildeki 65 ilçede 39.835 aileyi (206.864 kişi) doğrulamıştır.
+    - p: IOM'a göre yeni gelenler, zaten kapasite sorunu yaşayan ev sahibi topluluklarda ve yerleşim alanlarında hizmetlere ve kaynaklara olan talebi artırmaktadır. Mevcut yerleşim alanlarında su kıtlığı temel endişelerden biri olmaya devam etmektedir. Aden'de ise yerinden edilmiş ailelerin bir kısmı başka ailelerin yanında kalırken bir kısmı açık alanlarda yaşamaktadır (bkz. 5.1.1).
+    - src: 'Kaynak: Yemen SLSC Durum Güncellemesi (18 Kasım 2026); IOM, Orta Doğu ve Ötesinde Tırmanma – Hareketlilik Raporu (19 Kasım 2026).'
+  - title: 4. Yemen'de Ulusal ve Uluslararası İnsani Yardım Çalışmaları
     blocks:
-    - p: İllerden gelen saha bilgileri, yerinden edilmiş ailelerin ağır yaşam koşullarıyla karşı karşıya olduğunu ve farklı alanlarda acil ihtiyaçlarının bulunduğunu göstermektedir. Bu güncelleme, rapor kapsamındaki on ilde kayıt altına alınan yerinden edilmiş nüfusun ulaştığı boyutu ortaya koymaktadır.
-    - h: 4.1. Barınma İhtiyacı
+    - h: 4.1. Uluslararası İnsani Yardım Çalışmalarının Genel Durumu
       level: 1
       id: s5-1
-    - p: Barınma, insani yardım müdahalesinde öncelikli ihtiyaçların başında gelmektedir. Aden'de yerinden edilmiş bazı aileler başka ailelerin yanında barınırken, bazıları ise herhangi bir barınma imkânından yoksun şekilde açık alanlarda yaşamını sürdürmektedir. Raporun hazırlandığı tarih itibarıyla bu durum devam etmektedir.
-    - p: Yerinden edilmiş nüfusun ulaştığı büyüklük dikkate alındığında, ailelerin barınma koşullarının yerinde tespit edilmesi, en fazla desteğe ihtiyaç duyanların belirlenmesi ve kendilerine ev sahipliği yapan toplulukların desteklenmesi önem taşımaktadır.
-    - h: 4.2. Gıda ve Temel İhtiyaçlar
+    - p: Sağlık Kümesi'nin verilerine göre 17 Kasım 2026 itibarıyla 26 sağlık ortağı, 9 ildeki 44 ilçede 111.500'ü aşkın yerinden edilmiş kişiye ulaşmıştır. Hizmetler, doğrulanmış 49 gezici sağlık ekibi ve geçici sağlık noktası ile 73 sabit sağlık tesisine verilen destek aracılığıyla sunulmaktadır. DSÖ, 6 ilde 32 travma ve acil bakım ekibini desteklemekte; UNICEF destekli birinci basamak sağlık hizmetleri yerinden edilmiş ve ev sahibi topluluklardan 58.270 kişiye ulaşmıştır.
+    - p: Barınma ve temel ihtiyaç malzemeleri alanında Hızlı Müdahale Mekanizması (RRM) listelerindeki 39.835 aileden 31.324'ü (%79) kayıt altına alınarak yardım almış, 8.511 aile (%21) ise kayıtlı olduğu hâlde henüz yardım alamamıştır. IOM'un koruma değerlendirmesi yaptığı ailelerin tamamına kriz danışmanlığı ve psikolojik ilk yardım sağlanmış; ihtiyaç duyan aileler koruma vaka yönetimine, koruma amaçlı nakdî yardıma ve sağlık, su-sanitasyon ve barınma hizmetlerine yönlendirilmiştir. Müdahalelere Sınır Tanımayan Doktorlar (MSF), Uluslararası Kızılhaç Komitesi (ICRC), Islamic Relief Yemen, Field Medical Foundation, UNFPA ve INTERSOS gibi kuruluşlar da katkı sağlamaktadır.
+    - h: 4.2. İnsani Yardım Finansmanı ve Finansman Açığı
       level: 1
       id: s5-2
-    - p: İllerden gelen raporların tamamında gıda ve barınma, acil karşılanması gereken temel ihtiyaçlar arasında gösterilmektedir. Gıda yardımı ve temel ihtiyaç malzemelerinin temini, yerinden edilmiş ailelerin öncelikli ihtiyaçları arasındadır.
-    - h: 4.3. Su, Sanitasyon ve Hijyen
+    - p: Kaynak raporlar, yardım çalışmalarının önündeki temel kısıtın finansman olduğunu göstermektedir. 31 Aralık 2026'da sona erecek 90 günlük sağlık müdahale planı 10 Kasım itibarıyla yalnızca %35 oranında finanse edilmiştir. Barınma ve temel ihtiyaç malzemeleri açığını kapatmak için ise 22,2 milyon $ gerekmektedir.
+    - table:
+        head:
+        - Alan
+        - Finansman Durumu / Açık
+        - Kaynak
+        rows:
+        - - 90 günlük sağlık müdahale planı (31 Aralık 2026'ya kadar)
+          - '%35 finanse edildi'
+          - DSÖ
+        - - DSÖ destekli 32 travma ve acil bakım ekibi
+          - Yalnızca Ocak 2027'ye kadar finanse edildi
+          - DSÖ
+        - - Travma stabilizasyon noktaları
+          - Planlanan 35 noktadan yalnızca 4'ü finanse edildi
+          - DSÖ
+        - - DSÖ'nün üçüncü CERF başvurusu
+          - 2,4 milyon $ (UNICEF ve IOM bileşenleri dâhil)
+          - DSÖ
+        - - Acil barınma
+          - 15,6 milyon $ açık
+          - SLSC
+        - - Temel ihtiyaç malzemesi (NFI) kitleri
+          - 6,6 milyon $ açık
+          - SLSC
+        - - Yerleşim alanı yönetimi ve bakımı (6 ay)
+          - 3,6 milyon $ açık
+          - SLSC
+        fold: false
+    - h: 4.3. BM ve Ortaklarının Sektörel Yardımları
       level: 1
       id: s5-3
-    - p: Güvenli içme suyuna erişim, sanitasyon hizmetleri, hijyen malzemeleri, acil tuvalet imkânları ve atık yönetimi, özellikle yeni kurulan yerinden edilme alanlarında acil ihtiyaç olarak öne çıkmaktadır.
-    - h: 4.4. Sağlık ve Koruma
+    - table:
+        head:
+        - Sektör
+        - Ulaştırılan Yardım
+        - Kaynak
+        rows:
+        - - Acil barınma
+          - 7.026 aileye barınma yardımı (doğrulanan ailelerin %18'i)
+          - SLSC
+        - - Temel ihtiyaç malzemeleri
+          - 7.137 aileye tam NFI kiti; 4.200 aileye kısmi kit
+          - SLSC
+        - - Sağlık hizmetleri
+          - 111.500'ü aşkın yerinden edilmiş kişi; 49 gezici ekip ve geçici sağlık noktası; 73 sabit tesis
+          - Sağlık Kümesi
+        - - Travma ve acil bakım
+          - '6 ilde 32 ekip: 8 uzman bakım ekibi, 9 gezici sağlık ekibi, 7 ambulans, 4 sabit acil tıp ekibi (Tip 1), 4 travma stabilizasyon noktası'
+          - DSÖ
+        - - İlaç ve tıbbi malzeme
+          - Taiz'deki üç sağlık tesisine 19,6 ton; daha önce iki hastaneye yaklaşık 14 ton; 6 ton ek sağlık malzemesi
+          - DSÖ
+        - - Aşılama
+          - Kızamık–kızamıkçık kampanyasında 883.896 çocuk (%92,3); 741.713 çocuğa A vitamini; 5 kampta 6.007 yerinden edilmiş çocuk
+          - Sağlık Bakanlığı, DSÖ, UNICEF
+        - - Birinci basamak sağlık
+          - 58.270 kişi; 7.636 hamile kadına doğum öncesi bakım; 8.084 çocuğa rutin aşı
+          - UNICEF
+        - - Kolera müdahalesi
+          - Aden, Lahic, Ebyen, Ed-Dali ve Taiz'de 10 ishal tedavi merkezi
+          - DSÖ, MSF ve ortaklar
+        - - Koruma
+          - Kriz danışmanlığı, psikolojik ilk yardım ve vaka yönlendirmeleri
+          - IOM
+        fold: false
+    - lab: İllere göre doğrulanan aileler ve ulaştırılan barınma yardımları (1 Ağustos–18 Kasım 2026)
+    - table:
+        head:
+        - İl
+        - RRM Tarafından Doğrulanan Aile
+        - Payı
+        - Barınma Yardımı Alan Aile
+        - Tam NFI Kiti Alan Aile
+        rows:
+        - - Taiz
+          - '14.444'
+          - '%36'
+          - '1.184'
+          - '1.339'
+        - - Aden
+          - '9.571'
+          - '%24'
+          - '2.155'
+          - '597'
+        - - Lahic
+          - '9.267'
+          - '%23'
+          - '1.652'
+          - '2.596'
+        - - Ebyen
+          - '3.088'
+          - '%8'
+          - '1.700'
+          - '2.124'
+        - - Ed-Dali
+          - '1.501'
+          - '%4'
+          - –
+          - –
+        - - Marib
+          - '686'
+          - '%2'
+          - –
+          - –
+        - - El-Mehra
+          - '419'
+          - '%1'
+          - –
+          - –
+        - - Hadramut
+          - '392'
+          - '%1''in altında'
+          - '260'
+          - '400'
+        - - El-Hudeyde
+          - '303'
+          - '%1''in altında'
+          - '75'
+          - '81'
+        - - Şebve
+          - '164'
+          - '%1''in altında'
+          - –
+          - –
+        foot:
+        - TOPLAM
+        - '39.835'
+        - '%100'
+        - '7.026'
+        - '7.137'
+        num_cols:
+        - 1
+        - 2
+        - 3
+        - 4
+        fold: false
+    - src: 'Kaynaklar: Yemen SLSC Durum Güncellemesi (18 Kasım 2026); DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026); IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026). Yardım kayıtları RRM listeleriyle aile bazında eşleştirilmemiştir.'
+    - h: 4.4. Yemen'deki Ulusal ve Yerel İnsani Yardım Çalışmaları
       level: 1
       id: s5-4
-    - p: Yerinden edilmiş aileler, sağlık hizmetlerine ve koruma mekanizmalarına erişimde ciddi kısıtlamalarla karşılaşmaktadır. Özellikle çocukların, kadınların, yaşlıların, engelli bireylerin, kronik hastalığı bulunanların ve diğer kırılgan durumdaki ailelerin ihtiyaçlarına öncelik verilmelidir.
-    - p: İllerden gelen raporlarda; sağlık ve koruma ihtiyaçlarının tespit edilmesi, ihtiyaç sahiplerinin ilgili hizmetlere yönlendirilmesi, ilaç ve ilk yardım desteğinin sağlanması, gerekli durumlarda psikososyal destek sunulması ve koruma hizmetlerinin güçlendirilmesi gerektiği vurgulanmaktadır.
-    - h: 4.5. Geçim Kaynakları ve Ekonomik Kırılganlık
-      level: 1
+    - h: 4.4.1. Yürütme Birimi Tarafından Yürütülen Çalışmalar
+      level: 2
       id: s5-5
-    - p: Gelir kaynaklarının, kişisel mülklerin, hayvan varlıklarının ve geçim için kullanılan diğer imkânların kaybedilmesi veya zarar görmesi, yerinden edilmiş ailelerin ekonomik açıdan daha da zor durumda kalmasına neden olmuştur.
-    - p: Bu nedenle birçok ailenin öncelikle hayatlarını sürdürebilmeleri için acil insani yardıma, bunun yanı sıra yerinden edilmenin ekonomik sonuçlarını hafifletecek ve ağır koşullar altında yaşam mücadelesi veren ev sahibi topluluklara bağımlılığı azaltacak desteklere ihtiyacı bulunmaktadır.
-  - title: 5. Yürütme Birimi Tarafından Yürütülen Çalışmalar
-    blocks:
     - ul:
       - İl düzeyindeki şubelerde operasyon merkezleri, ilçelerde ise saha ekipleri oluşturularak yerinden edilme hareketlerindeki gelişmelerin düzenli takibi sağlanmıştır.
       - Yeni yerinden edilmiş aileler karşılanmış, bölgeye yeni gelenlerin ve yerinden edilme alanlarında bulunan ailelerin tespiti için saha ziyaretleri gerçekleştirilerek kayıt işlemleri yapılmıştır.
@@ -591,10 +882,151 @@ tr:
       - Yardım kapsamına alınan ve henüz destek ulaştırılamayan ailelerin durumları takip edilmiş, sahadaki müdahaleler izlenmiş ve karşılanmamış ihtiyaçlar düzenli olarak güncellenerek yardımların doğru kişilere ulaştırılması ve mükerrer yardımların önlenmesi hedeflenmiştir.
       - Özellikle Taiz ve El-Hudeyde illerinin bazı ilçelerinde son gelişmelerin ardından yaşanan yeni yerinden edilme hareketleri yakından takip edilmiş; saha çalışmaları ve raporlama faaliyetleri sürdürülerek ailelerin göç ettikleri bölgeler tespit edilmeye çalışılmıştır.
     - p: Bunlara ek olarak Yürütme Birimi, merkez ofisinde yerinden edilmeden etkilenen illerdeki gelişmeleri ve insani yardım müdahalelerini takip etmek üzere ayrı bir izleme ekibi oluşturmuştur. Bu ekip tarafından hazırlanan raporlar, Birleşmiş Milletler bünyesindeki insani yardım sektörel koordinasyon grupları ile yerel ve uluslararası yardım kuruluşlarına iletilmiştir.
-  - title: 6. Öncelikli İhtiyaçlar ve Acil Müdahale Adımları
+    - h: 4.4.2. Sağlık Bakanlığı ve Yerel Kurumların Çalışmaları
+      level: 2
+      id: s5-6
+    - p: Halk Sağlığı ve Nüfus Bakanlığı, DSÖ ve UNICEF ile birlikte 7–12 Kasım 2026 tarihlerinde 11 ildeki 100 ilçede ulusal kızamık–kızamıkçık aşı kampanyası düzenlemiştir. Bakanlığa bağlı Sağlık Acil Durum Operasyon Merkezi (HEOC) yaralı ve ölü sayılarını günlük olarak derlemektedir. Hadramut İl Sağlık Müdürlüğü ve Ulusal Sıtma ve Vektör Kontrol Programı, Şihr ilçesinde dang hummasına karşı kapsamlı bir mücadele kampanyası yürütmüştür. Yerinden edilmiş kişilere hizmet veren 50 tesis dâhil 500 sağlık tesisindeki yaklaşık 4.000 sağlık çalışanını kapsayan bir ödeme döngüsü sürmektedir. Yerel kuruluşlardan Selah Vakfı ise Hadramut Sağlık Müdürlüğü aracılığıyla kıyı Hadramut'taki yerinden edilme kamplarında gezici klinikleri desteklemektedir.
+    - src: 'Kaynak: DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026).'
+  - title: 5. İnsani İhtiyaçlar ve Yardım Öncelikleri
     blocks:
+    - p: İllerden gelen saha bilgileri, yerinden edilmiş ailelerin ağır yaşam koşullarıyla karşı karşıya olduğunu ve farklı alanlarda acil ihtiyaçlarının bulunduğunu göstermektedir. Bu güncelleme, rapor kapsamındaki on ilde kayıt altına alınan yerinden edilmiş nüfusun ulaştığı boyutu ortaya koymaktadır.
+    - h: 5.1. Sektörlere Göre İnsani Yardım İhtiyaçları
+      level: 1
+      id: s6-1
+    - p: 'IOM DTM''in 1 Ağustos–17 Kasım 2026 dönemine ilişkin verilerine göre yerinden edilen kişilerin en öncelikli ihtiyaçları barınma, gıda yardımı ve nakdî destektir:'
+    - chart:
+        title: Yerinden Edilmiş Kişilerin Bildirdiği Öncelikli İhtiyaçlar (%)
+        max: 40
+        ticks:
+        - '0'
+        - '10'
+        - '20'
+        - '30'
+        - '40'
+        items:
+        - - Barınma
+          - 38
+          - '%38'
+        - - Gıda yardımı
+          - 30
+          - '%30'
+        - - Nakdî destek
+          - 27
+          - '%27'
+        - - Koruma hizmetleri
+          - 3
+          - '%3'
+    - h: 5.1.1. Barınma İhtiyacı
+      level: 2
+      id: s6-2
+    - p: Barınma, insani yardım müdahalesinde öncelikli ihtiyaçların başında gelmektedir. Aden'de yerinden edilmiş bazı aileler başka ailelerin yanında barınırken, bazıları ise herhangi bir barınma imkânından yoksun şekilde açık alanlarda yaşamını sürdürmektedir. Raporun hazırlandığı tarih itibarıyla bu durum devam etmektedir.
+    - p: Yerinden edilmiş nüfusun ulaştığı büyüklük dikkate alındığında, ailelerin barınma koşullarının yerinde tespit edilmesi, en fazla desteğe ihtiyaç duyanların belirlenmesi ve kendilerine ev sahipliği yapan toplulukların desteklenmesi önem taşımaktadır.
+    - h: 5.1.2. Gıda ve Temel İhtiyaçlar
+      level: 2
+      id: s6-3
+    - p: İllerden gelen raporların tamamında gıda ve barınma, acil karşılanması gereken temel ihtiyaçlar arasında gösterilmektedir. Gıda yardımı ve temel ihtiyaç malzemelerinin temini, yerinden edilmiş ailelerin öncelikli ihtiyaçları arasındadır.
+    - h: 5.1.3. Su, Sanitasyon ve Hijyen
+      level: 2
+      id: s6-4
+    - p: Güvenli içme suyuna erişim, sanitasyon hizmetleri, hijyen malzemeleri, acil tuvalet imkânları ve atık yönetimi, özellikle yeni kurulan yerinden edilme alanlarında acil ihtiyaç olarak öne çıkmaktadır.
+    - h: 5.1.4. Sağlık ve Koruma
+      level: 2
+      id: s6-5
+    - p: Yerinden edilmiş aileler, sağlık hizmetlerine ve koruma mekanizmalarına erişimde ciddi kısıtlamalarla karşılaşmaktadır. Özellikle çocukların, kadınların, yaşlıların, engelli bireylerin, kronik hastalığı bulunanların ve diğer kırılgan durumdaki ailelerin ihtiyaçlarına öncelik verilmelidir.
+    - p: İllerden gelen raporlarda; sağlık ve koruma ihtiyaçlarının tespit edilmesi, ihtiyaç sahiplerinin ilgili hizmetlere yönlendirilmesi, ilaç ve ilk yardım desteğinin sağlanması, gerekli durumlarda psikososyal destek sunulması ve koruma hizmetlerinin güçlendirilmesi gerektiği vurgulanmaktadır.
+    - h: 5.1.5. Geçim Kaynakları ve Ekonomik Kırılganlık
+      level: 2
+      id: s6-6
+    - p: Gelir kaynaklarının, kişisel mülklerin, hayvan varlıklarının ve geçim için kullanılan diğer imkânların kaybedilmesi veya zarar görmesi, yerinden edilmiş ailelerin ekonomik açıdan daha da zor durumda kalmasına neden olmuştur.
+    - p: Bu nedenle birçok ailenin öncelikle hayatlarını sürdürebilmeleri için acil insani yardıma, bunun yanı sıra yerinden edilmenin ekonomik sonuçlarını hafifletecek ve ağır koşullar altında yaşam mücadelesi veren ev sahibi topluluklara bağımlılığı azaltacak desteklere ihtiyacı bulunmaktadır.
+    - h: 5.2. Acil Gıda ve Barınma İhtiyaçları
+      level: 1
+      id: s6-7
+    - p: 'Gıda: FEWS NET''e göre kuşatma altındaki Taiz kentinde en olası senaryoda Acil Durum (IPC Aşama 4) koşullarının sürmesi ve en ağır etkilenen hanelerin giderek artan bir bölümünün Felaket (IPC Aşama 5) düzeyine gerilemesi beklenmektedir. Yoksul haneler öğün sayısını ve miktarını azaltmakta, kalan varlıklarını satmaktadır; orta ve üst gelir grubundaki haneler bile akraba ve topluluk desteğine giderek daha fazla bağımlı hâle gelmektedir. FEWS NET''in yayımladığı uyarı, acil insani gıda yardımına ihtiyaç duyulduğuna işaret etmektedir.'
+      b: true
+    - p: 'Barınma: SLSC verilerine göre RRM tarafından doğrulanan 39.835 aileden 28.943''ü (%73) hâlâ acil barınma desteğine, 22.625''i (%57) ise temel ihtiyaç malzemesi (NFI) kitine ihtiyaç duymaktadır. Yeni kurulan ve yeni aileleri kabul eden yerleşim alanlarında yaklaşık 10.000 yeni yerinden edilmiş aile (yaklaşık 60.000 kişi) bulunmaktadır.'
+      b: true
+    - h: 5.3. Sektörel İhtiyaç Miktarları ve Tahmini Bütçe
+      level: 1
+      id: s6-8
+    - table:
+        head:
+        - İhtiyaç
+        - Miktar
+        - Tahmini Maliyet
+        - Kaynak
+        rows:
+        - - Acil barınma kiti
+          - 28.943 aile
+          - 15,6 milyon $ (kit başına 540 $)
+          - SLSC
+        - - Temel ihtiyaç malzemesi (NFI) kiti
+          - 22.625 aile
+          - 6,6 milyon $ (kit başına 290 $)
+          - SLSC
+        - - Yerleşim alanı yönetimi ve bakımı (6 ay)
+          - Yaklaşık 10.000 aile (60.000 kişi)
+          - 3,6 milyon $
+          - SLSC
+        - - Sağlık müdahalesi (DSÖ'nün üçüncü CERF başvurusu)
+          - Sağlık noktaları, gezici sağlık ekipleri ve malzemeler
+          - 2,4 milyon $
+          - DSÖ
+        - - Travma stabilizasyon noktaları
+          - Planlanan 35 noktadan 31'i
+          - Finansman bekliyor
+          - DSÖ
+        - - Kızamık–kızamıkçık takip aşılaması
+          - 73.300 çocuk
+          - —
+          - Sağlık Bakanlığı, DSÖ
+        - - Ağızdan kolera aşısı kampanyası
+          - 23 ilçe, 2,25 milyon kişi
+          - —
+          - DSÖ
+        fold: false
+    - lab: Operasyon bölgelerine göre barınma ve NFI açığı
+    - table:
+        head:
+        - Operasyon Bölgesi
+        - Doğrulanan Aile
+        - Barınma Açığı (Aile)
+        - NFI Açığı (Aile)
+        - Açığı Kapatma Maliyeti
+        rows:
+        - - Taiz operasyon merkezi
+          - '13.704'
+          - '11.155'
+          - '12.189'
+          - 9,6 milyon $
+        - - Batı Kıyısı
+          - '1.043'
+          - '0'
+          - '506'
+          - 0,1 milyon $
+        - - Aden operasyon merkezi
+          - '25.088'
+          - '17.788'
+          - '9.930'
+          - 12,5 milyon $
+        foot:
+        - TOPLAM
+        - '39.835'
+        - '28.943'
+        - '22.625'
+        - 22,2 milyon $
+        num_cols:
+        - 1
+        - 2
+        - 3
+        - 4
+        fold: false
+    - src: 'Kaynaklar: Yemen SLSC Durum Güncellemesi (18 Kasım 2026); DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026); FEWS NET Yemen Uyarısı (17 Kasım 2026); IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026).'
+    - h: 5.4. Öncelikli İhtiyaçlar ve Acil Müdahale Adımları
+      level: 1
+      id: s6-9
     - p: Öncelikli hedef, yeni yerinden edilmiş ailelerin temel yaşam ihtiyaçlarını karşılayacak acil insani yardımlara erişimini sağlamaktır. Bu süreçte kayıtların doğru tutulması, bilgilerin doğrulanması ve yardım kuruluşları arasındaki koordinasyonun sağlanması da büyük önem taşımaktadır.
-    - p: "Temel ihtiyaçların açıkça görüldüğü durumlarda, acil yardım çalışmaları ile ihtiyaç tespitleri birbirini beklemeden eş zamanlı yürütülmelidir. Bu doğrultuda aşağıdaki adımların öncelikle hayata geçirilmesi önerilmektedir:"
+    - p: 'Temel ihtiyaçların açıkça görüldüğü durumlarda, acil yardım çalışmaları ile ihtiyaç tespitleri birbirini beklemeden eş zamanlı yürütülmelidir. Bu doğrultuda aşağıdaki adımların öncelikle hayata geçirilmesi önerilmektedir:'
     - ol:
       - Henüz herhangi bir insani yardım almamış yerinden edilmiş ailelere öncelik verilmesi; özellikle yakın zamanda yerinden edilmiş ve yaşam koşulları en ağır olan ailelere acilen ulaşılması.
       - Acil barınma desteği ve barınma malzemelerinin sağlanması. Açık alanlarda yaşayan, kendilerine ait bir barınma imkânı bulunmayan veya başka ailelerin yanında kalmak zorunda olan ailelere öncelik verilmesi.
@@ -607,10 +1039,60 @@ tr:
       - Gelir kaynaklarını ve üretim araçlarını kaybeden ailelere ev eşyaları ve diğer temel ihtiyaç malzemelerinin sağlanması; imkânlar dâhilinde geçim kaynaklarını yeniden oluşturmalarına yönelik destek verilmesi.
       - Yerinden edilme hareketlerinin ve yardım çalışmalarının günlük veya haftalık olarak takip edilmesi. Planlanan yardımlar ile fiilen ulaştırılan yardımların ayrı ayrı kaydedilmesi, mükerrer kayıtların ayıklanması ve ulaşılan tekil aile sayısının belirlenmesi.
       - Çatışmalardan etkilenen bölgelerden yeni yerinden edilme dalgalarının yaşanması ihtimaline karşı gerekli hazırlıkların yapılması ve mevcut müdahale kapasitesinin güçlendirilmesi.
-  - title: 7. Yerel ve Uluslararası Kuruluşlara Çağrı ve Öneriler
+  - title: 6. İnsani Yardımların Ulaştırılması ve Erişim
     blocks:
+    - h: 6.1. Yardım Sevkiyatı ve Lojistik Merkezler
+      level: 1
+      id: s7-1
+    - p: Aden; ana sevk hastanelerine, Sağlık Acil Durum Operasyon Merkezi'ne ve sağlık müdahalesini besleyen depoya ev sahipliği yaptığından yardım sevkiyatında kilit bir merkezdir. DSÖ, Taiz'deki Halife Hastanesi, Neşme Hastanesi ve Muzaffer ishal tedavi merkezine 19,6 ton ilaç ve tıbbi malzeme ulaştırmıştır. Barınma alanında ortakların stoklarında 4.115 barınma kiti ve çadır ile 8.271 tam NFI kiti bulunmakta, ayrıca 5.250 kısmi NFI kiti dağıtılmayı beklemektedir. Cephe hattının Aden'e yaklaşması, sevk ve ikmal güzergâhlarını kesintiye uğratma riski taşımaktadır.
+    - h: 6.2. Erişimin Kısıtlı Olduğu Bölgeler
+      level: 1
+      id: s7-2
+    - table:
+        head:
+        - Bölge
+        - Erişim Durumu
+        - Kaynak
+        rows:
+        - - Taiz kenti
+          - Kenti hükümet kontrolündeki bölgelere bağlayan son ana yol 4 Ekim 2026'dan bu yana kapalı; sınırlı miktarda gıda ve temel ürün küçük dağ yollarından ve yüksek maliyetle ulaşıyor
+          - FEWS NET
+        - - El-Hudeyde
+          - 9 Eylül 2026'dan bu yana IOM DTM ekibinin erişimi yok; yerinden edilmiş kişi sayısı 8.244'te sabit
+          - IOM DTM
+        - - Aden
+          - Yürütme Birimi erişim kısıtlamaları nedeniyle saha faaliyetlerini durdurdu; cephe hattı Aden'e yaklaşıyor
+          - Yürütme Birimi, DSÖ
+        - - Fiilî yetkililerin kontrolündeki bölgeler
+          - Rutin sağlık verilerine erişim yok; hastanelerde tıbbi ve cerrahi malzeme eksikliği bildiriliyor
+          - DSÖ
+        - - Hacce'nin uzak bölgeleri
+          - İshal ve kolera tedavisine erişim güç
+          - DSÖ
+        fold: false
+    - p: DSÖ, cephe hattının her iki tarafındaki hastanelere ulaşabilmek için ortaklar aracılığıyla teslimat, cepheler arası geçişler ve insani yardım uçuşları gibi alternatif teslimat yollarının kullanılmasını ve tüm taraflarla erişim müzakerelerinin yürütülmesini önermektedir.
+    - src: 'Kaynaklar: DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026); FEWS NET Yemen Uyarısı (17 Kasım 2026); IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026); Yemen SLSC Durum Güncellemesi (18 Kasım 2026).'
+  - title: 7. İnsani Yardım Çalışmalarında Karşılaşılan Zorluklar
+    blocks:
+    - p: 'Kaynak raporlar ve Yürütme Birimi''nin saha gözlemleri, insani yardım çalışmalarının karşılaştığı başlıca zorlukları şöyle ortaya koymaktadır:'
+    - ol:
+      - 'Güvenlik koşulları: Cephe hatları hızla değişmekte ve Lahic üzerinden Aden''e yaklaşmaktadır. Bu durum yaralı sayısını ve yerinden edilmeyi artırma, sevk ve ikmal güzergâhlarını kesme riski taşımaktadır.'
+      - 'Saha erişimindeki kısıtlamalar: Taiz kenti fiilen kuşatma altındadır; El-Hudeyde''de IOM DTM''in erişimi kesilmiştir; Aden''de Yürütme Birimi saha faaliyetlerini durdurmak zorunda kalmıştır; fiilî yetkililerin kontrolündeki bölgelerden rutin veri alınamamaktadır.'
+      - 'Finansman yetersizliği: 90 günlük sağlık müdahale planı %35 oranında finanse edilmiştir; DSÖ destekli travma ekipleri yalnızca Ocak 2027''ye kadar finanse edilmiştir; barınma ve NFI açığı 22,2 milyon $''dır.'
+      - 'Lojistik ve malzeme sıkıntısı: Taiz''deki hastanelerde yakıt, cerrahi malzeme, anestezi ve yoğun bakım ilaçları kritik düzeyde azalmış, ambulansların bakımı yapılamamaktadır.'
+      - 'Ailelerin sürekli yer değiştirmesi: Pek çok aile iki ila dört kez yerinden edilmiştir. Aden''de daha önce kayda alınan çok sayıda aile Lahic ve Ebyen''e geçmiş, bu da ikincil yer değiştirmelerin izlenmesini güçleştirmiştir.'
+      - 'Güncel ve doğrulanmış veriye erişim: Günlük kayıp bildirimlerinin oranı %58 ile %92 arasında kalmaktadır. Yürütme Birimi''nin kayıt verileri ile IOM DTM''in hareket verileri doğrudan karşılaştırılamamakta, yardım kayıtları RRM listeleriyle aile bazında eşleştirilememektedir.'
+      - 'Yardıma erişemeyen aileler: RRM listelerindeki 8.511 aile (%21) kayıtlı olduğu hâlde henüz yardım alamamıştır; Taiz, Ebyen ve Şebve''de yerinden edilmiş kişilerin temel sağlık hizmetlerine erişimi sınırlıdır.'
+      - 'Sağlık hizmetlerindeki boşluklar: Yanık tedavisi, ruh sağlığı ve psikososyal destek ile rehabilitasyon hizmetleri yeterince finanse edilmemektedir; travma sevk sistemi için ayrılmış bir finansman bulunmamaktadır.'
+      - 'Salgın hastalık riski: Kolera vakaları en çok etkilenen beş ilde azalmakla birlikte Hadramut Vadisi''ndeki Terim''de gıda zehirlenmesi ile kolera bulaşının birlikte görüldüğü karmaşık bir salgın büyümekte, Hacce''de ishal vakaları artmaktadır.'
+    - src: 'Kaynaklar: DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026); FEWS NET Yemen Uyarısı (17 Kasım 2026); IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026); IOM, Orta Doğu ve Ötesinde Tırmanma – Hareketlilik Raporu (19 Kasım 2026); Yemen SLSC Durum Güncellemesi (18 Kasım 2026).'
+  - title: 8. Yemen'deki İnsani Durumun İyileştirilmesine Yönelik Öneriler
+    blocks:
+    - h: 8.1. Yerel ve Uluslararası Kuruluşlara Çağrı
+      level: 1
+      id: s9-1
     - p: Ülke İçinde Yerinden Edilmiş Kişilerin Kamplarının Yönetiminden Sorumlu Yürütme Birimi; yerel yönetimleri, Birleşmiş Milletler kuruluşlarını, insani yardım koordinasyon gruplarını, ulusal ve uluslararası yardım kuruluşlarını, bağışçıları ve uygulayıcı ortakları, bu raporda kayıt altına alınan yerinden edilmiş ailelerin ihtiyaçlarının karşılanması için gerekli kaynakları ve saha kapasitesini acilen harekete geçirmeye çağırmaktadır.
-    - p: "Son dönemde artan çatışmalar ve askerî operasyonlar nedeniyle çok sayıda aile evlerini ve geçim kaynaklarını terk etmek zorunda kalmıştır. Yeni yerleştikleri bölgelere ulaşan ailelerin bir kısmı barınma imkânından, yeterli gıdadan, temiz sudan ve temel hizmetlerden yoksun durumdadır. Yardımların gecikmesi, bu ailelerin karşı karşıya olduğu insani ve koruma risklerini artıracak, ekonomik koşullarını daha da ağırlaştıracak ve yerinden edilmiş ailelere ev sahipliği yapan toplulukların yükünü artıracaktır. Bu nedenle ilgili kurum ve kuruluşların aşağıdaki adımları öncelikli olarak ele alması gerekmektedir:"
+    - p: 'Son dönemde artan çatışmalar ve askerî operasyonlar nedeniyle çok sayıda aile evlerini ve geçim kaynaklarını terk etmek zorunda kalmıştır. Yeni yerleştikleri bölgelere ulaşan ailelerin bir kısmı barınma imkânından, yeterli gıdadan, temiz sudan ve temel hizmetlerden yoksun durumdadır. Yardımların gecikmesi, bu ailelerin karşı karşıya olduğu insani ve koruma risklerini artıracak, ekonomik koşullarını daha da ağırlaştıracak ve yerinden edilmiş ailelere ev sahipliği yapan toplulukların yükünü artıracaktır. Bu nedenle ilgili kurum ve kuruluşların aşağıdaki adımları öncelikli olarak ele alması gerekmektedir:'
     - ol:
       - Kayıt altına alınan yerinden edilme vakalarının acil insani yardım kapsamında değerlendirilmesi ve mevcut acil müdahale mekanizmalarının gecikmeden devreye sokulması.
       - Henüz herhangi bir yardım almamış ailelerin belirlenmesi, bilgilerinin doğrulanması ve ihtiyaçlarına uygun yardım kuruluşlarına veya ilgili yardım sektörlerine yönlendirilmesi.
@@ -621,7 +1103,21 @@ tr:
       - Çocuklara, kadınlara, yaşlılara, engelli bireylere, kronik hastalığı bulunanlara ve insani yardım ya da koruma açısından daha yüksek risk altında olan ailelere öncelik verilmesi.
       - Değerlendirme süreçlerinin uzaması, finansman yetersizliği veya koordinasyon sorunları nedeniyle yeni yerinden edilmiş hiçbir ailenin temel insani yardımlardan mahrum kalmamasının sağlanması.
       - Kayıtların düzenli olarak güncellenmesi ve bilgilerin şeffaf biçimde paylaşılması. Böylece insani yardım kuruluşlarının henüz karşılanmamış ihtiyaçları doğru belirlemesi ve yardımları en fazla ihtiyaç duyan ailelere ulaştırması.
-  - title: 8. Sonuç
+    - h: 8.2. İnsani Yardım Kuruluşlarının Raporlarında Öne Çıkan Öneriler
+      level: 1
+      id: s9-2
+    - ol:
+      - FEWS NET'in uyarısı doğrultusunda kuşatma altındaki Taiz kentinde yaşayan hanelere acil insani gıda yardımı sağlanması.
+      - Barınma ve NFI açığının kapatılması için gereken 22,2 milyon $ ile yerleşim alanlarının yönetimi ve bakımı için gereken 3,6 milyon $'ın sağlanması (SLSC).
+      - Cephe hattının Aden'e yaklaşması karşısında yaralı sayısındaki olası artışa yönelik acil durum planlarının, alternatif sevk ve ikmal güzergâhlarının ve operasyonların sürekliliğinin gözden geçirilmesi ve bunlar için kaynak ayrılması (DSÖ).
+      - Travma stabilizasyon noktaları, travma sevk sistemi, yanık tedavisi, ruh sağlığı ve psikososyal destek ile rehabilitasyon hizmetlerinin finanse edilmesi; Ocak 2027'den sonrası için de finansmanın güvence altına alınması (DSÖ).
+      - Cephe hattının her iki tarafındaki hastanelere ulaşmak için alternatif teslimat yollarının kullanılması ve tüm taraflarla erişim müzakerelerinin yürütülmesi (DSÖ).
+      - Kızamık–kızamıkçık kampanyasında ulaşılamayan 73.300 çocuğa, özellikle Şebve, Hadramut, El-Mehra ve Sokotra'da takip aşılamasıyla ulaşılması (DSÖ).
+      - Terim'deki salgına karşı gıda güvenliği, su-sanitasyon ve vaka yönetimi alanlarında ortak müdahale yürütülmesi (DSÖ).
+      - İller arası yer değiştirmelerin artması nedeniyle müdahalelerin iller arasında daha güçlü biçimde koordine edilmesi ve ailelerin yerleştiği bölgelerdeki değişen ihtiyaçlara daha fazla önem verilmesi (IOM).
+      - Mevcut müdahale planı sona ermeden Sağlık Bakanlığı liderliğinde bir ara değerlendirme (Intra-Action Review) yapılması (DSÖ).
+    - src: 'Kaynaklar: FEWS NET Yemen Uyarısı (17 Kasım 2026); Yemen SLSC Durum Güncellemesi (18 Kasım 2026); DSÖ Yemen, Çatışmaların Tırmanması Durum Raporu No. 12 (17 Kasım 2026); IOM Yemen DTM, Hızlı Güncelleme No. 19 (18 Kasım 2026).'
+  - title: 9. Sonuç
     blocks:
     - p: Rapor kapsamında derlenen veriler, Yemen'in on ilinde yaşanan yerinden edilmenin boyutunu ortaya koymaktadır. Kayıtlara göre toplam 50.001 aileden oluşan 338.748 kişi yerinden edilmiştir. Bu sayı, ihtiyaç tespiti, kayıtların doğrulanması ve yardım planlamasının geniş bir nüfusu kapsaması gerektiğini göstermektedir. Aynı zamanda barınma imkânları, temel hizmetler ve yerinden edilmiş ailelere ev sahipliği yapan topluluklar üzerindeki baskının boyutuna da işaret etmektedir.
     - p: Yerinden edilmiş kişilerin en büyük bölümü Taiz ve Lahic illerinde bulunmaktadır. Bu iki ilde toplam 274.169 kişi kayıt altına alınmıştır. Bu sayı, raporda belirtilen genel toplamın yaklaşık %80,9'una karşılık gelmektedir. Söz konusu yoğunlaşma, özellikle bu iki ilde insani yardım kuruluşlarının saha çalışmalarını ve müdahale kapasitesini artırmasını gerekli kılmaktadır. Bununla birlikte, diğer illerdeki ihtiyaçlar da göz ardı edilmemeli; yardımların dağıtımında yalnızca yerinden edilmiş kişi sayısı değil, ailelerin içinde bulunduğu koşullar ve ihtiyaçların aciliyeti de dikkate alınmalıdır.
@@ -629,22 +1125,27 @@ tr:
     - p: Yardımların ihtiyaç sahiplerine zamanında ve doğru biçimde ulaştırılabilmesi için kayıtların düzenli olarak güncellenmesi, ailelerin sonraki yer değiştirme hareketlerinin takip edilmesi, mükerrer kayıtların ayıklanması ve henüz karşılanmamış ihtiyaçların belirlenmesi gerekmektedir. Bu çalışmalar, yardımların en fazla ihtiyaç duyan ailelere ulaşmasına, yerinden edilmiş kişilerin onurunun korunmasına ve ev sahibi toplulukların üzerindeki yükün hafifletilmesine katkı sağlayacaktır.
     - end: RAPORUN SONU
     - contact:
-      - "Genel Merkez: Aden – Mansura, Rimi"
-      - "E-posta: info@exuye.org"
-      - "Telefon: 02356000"
+      - 'Genel Merkez: Aden – Mansura, Rimi'
+      - 'E-posta: info@exuye.org'
+      - 'Telefon: 02356000'
 en:
   country_name: Yemen
   title: Yemen — Consolidated Report on Forced Displacement Caused by War
   period_label: As of 12 November 2026
   sources:
   - Prime Ministry of Yemen – Executive Unit (Ex.U.IDPs)
+  - IOM DTM
+  - WHO
+  - FEWS NET
+  - SLSC
+  - UNHCR
   summary: This report presents the recorded displacement figures for ten governorates—Al Hodeidah, Taiz, Lahj, Aden, Abyan, Shabwah, Hadramawt, Al Mahrah, Marib and Ad Dali'—as of the update prepared on 12 November 2026.
   figures:
-  - value: "50,001"
+  - value: 50,001
     label: Displaced households
-  - value: "338,748"
+  - value: 338,748
     label: IDPs
-  - value: "10"
+  - value: '10'
     label: Governorates
   head_sizes:
   - 13
@@ -652,27 +1153,16 @@ en:
   - 11
   toc_deep: true
   toc_plain: true
+  toc_only: true
   static_header: true
   compact: true
-  cover:
-    org:
-    - Republic of Yemen
-    - Prime Ministry
-    - Executive Unit for IDPs Camp Management
-    - Ex.U.IDPs
-    meta:
-    - Report updated as of 12 November 2026
-    - Report issued on 16 November 2026
-    title: Consolidated Report on Forced Displacement Caused by War
-    title2: As of 12 November 2026
-    sub:
-    - Displacement Trends and the Humanitarian Situation
-    - Response and Urgent Needs
+  fold_tables: true
+  fold_label: Show the full table
   sections:
   - title: Executive Summary
     blocks:
     - p: This report presents the recorded displacement figures for ten governorates—Al Hodeidah, Taiz, Lahj, Aden, Abyan, Shabwah, Hadramawt, Al Mahrah, Marib and Ad Dali'—as of the update prepared on 12 November 2026.
-    - p: A total of 50,001 displaced households, comprising 338,748 IDPs, have been recorded across the ten governorates. Taiz has the highest number of registered households, with 23,007 households comprising 156,898 IDPs, followed by Lahj with 15,160 households comprising 117,271 IDPs, Abyan with 4,540 households comprising 22,030 IDPs, and Aden with 3,741 households comprising 17,782 IDPs,. Together, Taiz and Lahj account for approximately 70.4% of all households and 75.9% of all IDPs. This underscores the importance of allocating resources according to the scale of displacement and actual needs, while ensuring coverage of the other governorates.
+    - p: A total of 50,001 displaced households, comprising 338,748 IDPs, have been recorded across the ten governorates. Taiz has the highest number of registered households, with 23,007 households comprising 156,898 IDPs, followed by Lahj with 15,160 households comprising 117,271 IDPs, Abyan with 4,540 households comprising 22,030 IDPs, and Aden with 3,741 households comprising 17,782 IDPs,. Together, Taiz and Lahj account for approximately 76.3% of all households and 80.9% of all IDPs. This underscores the importance of allocating resources according to the scale of displacement and actual needs, while ensuring coverage of the other governorates.
     - p: Accordingly, the Executive Unit urgently appeals to local authorities, United Nations agencies, humanitarian clusters, national and international humanitarian organisations, donors and implementing partners to mobilise resources and capacities to support displaced households.
     - h: Key Consolidated Figures as of 12 November 2026
       level: 1
@@ -681,54 +1171,54 @@ en:
         head:
         - Governorate
         - Displaced households
-        - "# IDPs"
+        - '# IDPs'
         - Host districts
         rows:
         - - Al Hodeidah
-          - "1,471"
-          - "10,297"
+          - 1,471
+          - 10,297
           - 2 districts
         - - Taiz
-          - "23,007"
-          - "156,898"
+          - 23,007
+          - 156,898
           - 16 districts
         - - Lahj
-          - "15,160"
-          - "117,271"
+          - 15,160
+          - 117,271
           - 10 districts
         - - Abyan
-          - "4,540"
-          - "22,030"
+          - 4,540
+          - 22,030
           - 5 districts
         - - Aden
-          - "3,741"
-          - "17,782"
+          - 3,741
+          - 17,782
           - 8 districts
         - - Shabwah
-          - "173"
-          - "1,066"
+          - '173'
+          - 1,066
           - 6 districts
         - - Hadramawt
-          - "214"
-          - "1,498"
+          - '214'
+          - 1,498
           - 3 districts
         - - Al Mahrah
-          - "142"
-          - "994"
+          - '142'
+          - '994'
           - 2 districts
         - - Marib
-          - "882"
-          - "6,174"
+          - '882'
+          - 6,174
           - 3 districts
         - - Ad Dali'
-          - "671"
-          - "4,738"
+          - '671'
+          - 4,738
           - 4 districts
         foot:
         - Total
-        - "50,001"
-        - "338,748"
-        - ""
+        - 50,001
+        - 338,748
+        - ''
         num_cols:
         - 1
         - 2
@@ -736,53 +1226,173 @@ en:
         title: Displaced Households by Governorate as of 12 November 2026
         max: 25000
         ticks:
-        - "0"
-        - "5,000"
-        - "10,000"
-        - "15,000"
-        - "20,000"
-        - "25,000"
+        - '0'
+        - 5,000
+        - 10,000
+        - 15,000
+        - 20,000
+        - 25,000
         items:
         - - Al Hodeidah
           - 1471
-          - "1,471"
+          - 1,471
         - - Taiz
           - 23007
-          - "23,007"
+          - 23,007
         - - Lahj
           - 15160
-          - "15,160"
+          - 15,160
         - - Abyan
           - 4540
-          - "4,540"
+          - 4,540
         - - Aden
           - 3741
-          - "3,741"
+          - 3,741
         - - Shabwah
           - 173
-          - "173"
+          - '173'
         - - Hadramawt
           - 214
-          - "214"
+          - '214'
         - - Al Mahrah
           - 142
-          - "142"
+          - '142'
         - - Marib
           - 882
-          - "882"
+          - '882'
         - - Ad Dali'
           - 671
-          - "671"
-  - title: "1. Introduction: Forced Displacement Caused by War"
+          - '671'
+  - title: 1. Humanitarian Situation and Forced Displacement in Yemen
     blocks:
     - p: This report documents conflict-related forced displacement across ten governorates. The ongoing conflict has caused displacement, forcing households to abandon suddenly, or lose, their homes, property, livelihoods, livestock, sources of income and basic necessities. This has increased household vulnerability and reduced their ability to meet their basic needs without humanitarian assistance.
     - p: The humanitarian consequences extend beyond shelter alone. Displaced households may arrive without food, safe water, sanitation facilities, health services, protection support, non-food items or cash resources. The Executive Unit considers a rapid, coordinated and needs-based humanitarian response essential to protecting lives and dignity, reducing protection risks, and preventing further deterioration in household conditions and additional pressure on host communities.
-  - title: 2. Scope and Geographical Coverage
+    - h: 1.1 Course of the Conflict and Its Humanitarian Consequences
+      level: 1
+      id: s2-1
+    - p: According to the FEWS NET alert of 17 November 2026, the conflict in Yemen has escalated since July 2026 into a high-intensity, multi-front war marked by fluid battle lines, with Taiz and Lahj governorates emerging as the epicentre of the fighting. According to IOM, fighting intensified from early September 2026 along the West Coast, particularly in Taiz and Al Hodeidah governorates, with major confrontations in Maqbanah, Mawza, Al Mokha and surrounding frontline districts.
+    - p: According to WHO's situation report of 17 November 2026, front lines have moved rapidly through Lahj and are approaching Aden, which hosts the main referral hospitals, the Health Emergency Operations Centre (HEOC) and the warehouse supplying the health response. Further movement may change casualty flows and displacement and disrupt referral and supply routes.
+    - p: The humanitarian consequences go beyond displacement. Taiz City has been under a de facto siege since October, with worsening shortages of food, fuel, cooking gas and water. Hospitals are struggling with shortages of fuel and medicines, and the risk of cholera and other outbreaks persists. Many families have been displaced two to four times, and some have left sites where they had lived for more than five years, placing further strain on host communities and displacement sites that were already overstretched.
+    - h: 1.2 Scale of Displacement Nationwide
+      level: 1
+      id: s2-2
+    - p: According to IOM Yemen's Displacement Tracking Matrix (DTM), 357,658 people (59,602 households) have been displaced since the escalation began in June 2026, of whom approximately 356,602 (59,426 households) were displaced between 1 August and 17 November 2026. Displacement remained relatively low from June to August, rose sharply in early September and peaked at 15,186 people on a single day, 9 September. By mid-November, weekly displacement stood at about 3,150 households. Since 1 January 2026, DTM has recorded 369,012 people displaced.
+    - p: The Executive Unit's figure of 338,748 IDPs (50,001 households) presented in this report is a registration count. As WHO notes, it is not directly comparable with IOM DTM data, which track displacement movements.
+    - lab: IDPs by governorate of displacement according to IOM DTM (June – 17 November 2026)
+    - table:
+        head:
+        - Governorate
+        - IDPs
+        - Share
+        rows:
+        - - Taiz
+          - 145,344
+          - 41%
+        - - Lahj
+          - 95,580
+          - 27%
+        - - Aden
+          - 71,706
+          - 20%
+        - - Abyan
+          - 17,208
+          - 5%
+        - - Al Hodeidah
+          - 8,244
+          - 2%
+        - - Shabwah
+          - 6,183
+          - 2%
+        - - Marib
+          - 4,104
+          - 1%
+        - - Hadramawt
+          - 3,576
+          - 1%
+        - - Al Mahrah
+          - 3,096
+          - Less than 1%
+        - - Ad Dali'
+          - 2,617
+          - Less than 1%
+        foot:
+        - Total
+        - 357,658
+        - 100%
+        num_cols:
+        - 1
+        - 2
+        fold: false
+    - src: 'Source: IOM Yemen DTM, Flash Update #19 (18 November 2026); WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026).'
+    - h: 1.3 Cross-Border Movements
+      level: 1
+      id: s2-3
+    - p: According to IOM, as of 18 November 2026, 4,336 Yemeni nationals had arrived in Djibouti, mainly through Obock. Information collected in the field indicates that most fled the deteriorating security situation, particularly in the areas of Bab al-Mandab, Dhubab, Al Khawkhah and Al Hodeidah. UNHCR recorded 4,269 new arrivals from Yemen in Djibouti and Somalia as of 16 November 2026.
+    - src: 'Source: IOM, Escalation in the Middle East and Beyond – Mobility Report (19 November 2026); UNHCR, Yemen Situation map (16 November 2026).'
+  - title: 2. Violations against Civilians and the Humanitarian Consequences of the Conflict
     blocks:
-    - p: The report covers ten governorates and presents the distribution of households and IDPs by governorate and district. The table below shows the governorates, dsplaced HHs, IDPs, as well as the geographical distribution in each Governorate.
-    - h: 2.1 Governorate-Level Overview
+    - p: The figures in this section are drawn from reports by United Nations agencies and the Yemeni health authorities. Because reporting is incomplete and some areas cannot be reached, they should be read as a minimum.
+    - h: 2.1 Conflict Casualties
       level: 1
       id: s3-1
+    - p: According to the Health Emergency Operations Centre (HEOC) of the Ministry of Public Health and Population, 12,779 people had been injured or killed in the conflict by 16 November 2026 (10,519 injured and 2,260 deaths). In the eight days from 9 to 16 November alone, 1,024 casualties were added (862 injured and 162 deaths), an average of about 128 a day. Daily reporting completeness ranged from 58% to 92%, so these figures are a minimum.
+    - lab: Conflict casualties by governorate, 11–15 November 2026
+    - table:
+        head:
+        - Governorate
+        - Casualties
+        - Deaths
+        - Share of casualties
+        rows:
+        - - Marib
+          - '266'
+          - '49'
+          - 46.3%
+        - - Lahj
+          - '234'
+          - '22'
+          - 40.7%
+        - - Taiz
+          - '70'
+          - '7'
+          - 12.2%
+        - - Ad Dali'
+          - '5'
+          - '0'
+          - 0.9%
+        foot:
+        - Total
+        - '575'
+        - '78'
+        - 100%
+        num_cols:
+        - 1
+        - 2
+        - 3
+        fold: false
+    - src: 'Source: WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026) (HEOC data). Counts are by place of reporting, not place of injury.'
+    - h: 2.2 Impact on Health Services and Basic Infrastructure
+      level: 1
+      id: s3-2
+    - p: As of 10 November 2026, the HEOC reported damage to 28 health facilities and 7 ambulances, and 13 health workers affected (7 killed and 6 injured). Two facilities in Taiz (Hena Health Unit and Balan Health Centre) were reported damaged on 5 November but are not yet included in the count. WHO notes that independent verification remains difficult because of access constraints.
+    - p: Hospitals in Taiz City face severe shortages of fuel, surgical supplies and anaesthesia and ICU medicines. These shortages are disrupting operating theatres and oxygen generation for intensive care units, and ambulances lack maintenance. The lapse of waste collection services and the accumulation of solid and medical waste are increasing the risk of disease.
+    - h: 2.3 Taiz City under Siege
+      level: 1
+      id: s3-3
+    - p: According to FEWS NET, on 4 October 2026 the Sana'a-based authorities captured the last major road linking Taiz City to government-held areas, effectively placing the city under a de facto siege. An estimated 600,000–750,000 people, many already displaced to the city from elsewhere, face worsening shortages of food, fuel, cooking gas and water. Limited quantities of food and essentials reach the city only via small mountain roads.
+    - p: FEWS NET assesses a credible risk of Famine (IPC Phase 5) in Taiz City from February to May 2027 if the siege is prolonged and tightened. Even before the siege, at least 20% of households had a poor Food Consumption Score, and acute malnutrition among children under five was estimated to be at Critical levels (15–29.9%).
+    - h: 2.4 Risks Facing Women, Children and Other Vulnerable Groups
+      level: 1
+      id: s3-4
+    - p: An IOM Protection Rapid Assessment of 12 displaced households (58 people) in Marib Al Wadi and Al Jufainah on 15–17 November 2026 found that children made up 55% of those assessed and women and girls 50%. 27% of households were female-headed, and 80% reported protection concerns. Key risks included forced displacement, inadequate shelter, privacy concerns affecting widowed women, disability-related needs, lack of income and caregiving responsibilities in large households. As the sample is small, these findings are indicative.
+    - p: FEWS NET expects the deterioration in nutritional status in Taiz City to affect children, pregnant and lactating women and the elderly in particular. WHO reports that burn cases are rising while hospitals can offer little beyond initial stabilization and wound dressing, and that mental health and psychosocial support and rehabilitation remain the weakest links.
+    - src: 'Sources: WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026); FEWS NET, Yemen Alert (17 November 2026); IOM Yemen DTM, Flash Update #19 (18 November 2026).'
+  - title: 3. Groups Affected by the Humanitarian Crisis and Geographical Distribution
+    blocks:
+    - p: The report covers ten governorates and presents the distribution of households and IDPs by governorate and district. The table below shows the governorates, dsplaced HHs, IDPs, as well as the geographical distribution in each Governorate.
+    - h: 3.1 Governorate-Level Overview
+      level: 1
+      id: s4-1
     - table:
         head:
         - Governorate
@@ -791,141 +1401,143 @@ en:
         - Geographical distribution
         rows:
         - - Al Hodeidah
-          - "1,471"
-          - "10,297"
+          - 1,471
+          - 10,297
           - Hays, Al Khawkhah
         - - Taiz
-          - "23,007"
-          - "156,898"
+          - 23,007
+          - 156,898
           - Ash Shamayatayn, Al Mudhaffar, Al Ma'afer, Jabal Habashi, Al Misrakh, Al Qahirah, Salh, Al Mawasit, As Silw, Mashra'a Wa Hadnan, Sabir Al Mawadim, Al Makha, Al Wazi'iyah, Mawza, Maqbanah, Dhubab
         - - Lahj
-          - "15,160"
-          - "117,271"
+          - 15,160
+          - 117,271
           - Al Musaymir, Tuban, Al Madaribah Wa Ras Al Arah, Al Hawtah, Tur Al Bahah, Al Habilayn, Al Hadd, Al Maqatirah, Halimayn, Al Qabbaytah
         - - Abyan
-          - "4,540"
-          - "22,030"
+          - 4,540
+          - 22,030
           - Khanfir, Zinjibar, Lawdar, Mudiyah, Ahwar
         - - Aden
-          - "3,741"
-          - "17,782"
+          - 3,741
+          - 17,782
           - Al Burayqah, Dar Sa'd, Al Mansurah, Ash Shaykh Uthman, Khur Maksar, Sirah, At Tawahi, Al-Mualla
         - - Shabwah
-          - "173"
-          - "1,066"
+          - '173'
+          - 1,066
           - Bayhan, Ataq, Ayn, Usaylan, Mayfa'ah, Markhah As Sufla
         - - Hadramawt
-          - "214"
-          - "1,498"
+          - '214'
+          - 1,498
           - Al Mukalla, Ar Raydah Wa Qusayar, Ghayl Ba Wazir
         - - Al Mahrah
-          - "142"
-          - "994"
+          - '142'
+          - '994'
           - Al Ghaydah, Shahn
         - - Marib
-          - "882"
-          - "6,174"
+          - '882'
+          - 6,174
           - Marib City, Marib Al Wadi, Harib
         - - Ad Dali'
-          - "671"
-          - "4738"
+          - '671'
+          - '4738'
           - Qa'tabah, Al Husayn, Ad Dali', Al Azariq
         num_cols:
         - 1
         - 2
-  - title: 3. Displaced Persons by Governorate and District
-    blocks:
-    - h: 3.1 Al Hodeidah Governorate
-      level: 1
-      id: s4-1
-    - p: "Recorded displacement in Al Hodeidah Governorate totals 1,471 households comprising 10,297 IDPs, distributed across 2 districts: Hays and Al Khawkhah. The following table provides the detailed distribution of households and IDPs. These figures were obtained by the Executive Unit on 8 September 2026."
-    - table:
-        head:
-        - Host district
-        - Displaced households
-        - "# IDPs"
-        rows:
-        - - Hays
-          - "1,039"
-          - "7,273"
-        - - Al Khawkhah
-          - "432"
-          - "3,024"
-        foot:
-        - Total
-        - "1,471"
-        - "10,297"
-        num_cols:
-        - 1
-        - 2
-    - h: 3.2 Taiz Governorate
+    - p: While the figures in this report are based on the update of 12 November 2026, the data for Al Hodeidah Governorate date from 8 September 2026 and those for Aden Governorate from 28 September 2026. According to IOM, Al Hodeidah has been under the full control of Ansar Allah since 9 September 2026, and the DTM team has lost access to it. In Aden, the Executive Unit had to halt its field operations because of access constraints (see 3.2.3).
+    - h: 3.2 Displaced Persons by Governorate and District
       level: 1
       id: s4-2
-    - p: "Recorded displacement in Taiz Governorate totals 23,007 households comprising 156,898 IDPs, distributed across 16 districts: Ash Shamayatayn, Al Mudhaffar, Al Ma'afer, Jabal Habashi, Al Misrakh, Al Qahirah, Salh, Al Mawasit, As Silw, Mashra'a Wa Hadnan, Sabir Al Mawadim, Al Makha, Al Wazi'iyah, Mawza, Maqbanah and Dhubab. The following table provides the detailed distribution of displaced households and IDPs. In Taiz Governorate, many displaced persons previously located in Jabal Habashi, Al Misrakh, Al Ma'afer and Maqbanah districts have moved to Al Mudhaffar and Al Qahirah districts. Our field teams continue to track their movements and record their numbers. The Executive Unit expects the number of displaced households in these two districts to exceed 13,000."
+    - h: 3.2.1 Al Hodeidah Governorate
+      level: 2
+      id: s4-3
+    - p: 'Recorded displacement in Al Hodeidah Governorate totals 1,471 households comprising 10,297 IDPs, distributed across 2 districts: Hays and Al Khawkhah. The following table provides the detailed distribution of households and IDPs. These figures were obtained by the Executive Unit on 8 September 2026.'
     - table:
         head:
         - Host district
         - Displaced households
-        - "# IDPs"
+        - '# IDPs'
         rows:
-        - - Ash Shamayatayn
-          - "2,533"
-          - "17,736"
-        - - Al Mudhaffar
-          - "7,243"
-          - "48,780"
-        - - Al Ma'afer
-          - "4,390"
-          - "30,746"
-        - - Jabal Habashi
-          - "2,173"
-          - "15,213"
-        - - Al Misrakh
-          - "1,098"
-          - "7,687"
-        - - Al Qahirah
-          - "1,582"
-          - "10,257"
-        - - Salh
-          - "510"
-          - "3,237"
-        - - Al Mawasit
-          - "211"
-          - "1,481"
-        - - As Silw
-          - "2"
-          - "14"
-        - - Mashra'a Wa Hadnan
-          - "702"
-          - "4,283"
-        - - Sabir Al Mawadim
-          - "828"
-          - "5,319"
-        - - Al Makha
-          - "446"
-          - "3,122"
-        - - Al Wazi'iyah
-          - "668"
-          - "4,676"
-        - - Mawza
-          - "357"
-          - "2,499"
-        - - Maqbanah
-          - "230"
-          - "1,610"
-        - - Dhubab
-          - "34"
-          - "238"
+        - - Hays
+          - 1,039
+          - 7,273
+        - - Al Khawkhah
+          - '432'
+          - 3,024
         foot:
         - Total
-        - "23,007"
-        - "156,898"
+        - 1,471
+        - 10,297
         num_cols:
         - 1
         - 2
-    - h: 3.3 Aden Governorate
-      level: 1
-      id: s4-3
+    - h: 3.2.2 Taiz Governorate
+      level: 2
+      id: s4-4
+    - p: 'Recorded displacement in Taiz Governorate totals 23,007 households comprising 156,898 IDPs, distributed across 16 districts: Ash Shamayatayn, Al Mudhaffar, Al Ma''afer, Jabal Habashi, Al Misrakh, Al Qahirah, Salh, Al Mawasit, As Silw, Mashra''a Wa Hadnan, Sabir Al Mawadim, Al Makha, Al Wazi''iyah, Mawza, Maqbanah and Dhubab. The following table provides the detailed distribution of displaced households and IDPs. In Taiz Governorate, many displaced persons previously located in Jabal Habashi, Al Misrakh, Al Ma''afer and Maqbanah districts have moved to Al Mudhaffar and Al Qahirah districts. Our field teams continue to track their movements and record their numbers. The Executive Unit expects the number of displaced households in these two districts to exceed 13,000.'
+    - table:
+        head:
+        - Host district
+        - Displaced households
+        - '# IDPs'
+        rows:
+        - - Ash Shamayatayn
+          - 2,533
+          - 17,736
+        - - Al Mudhaffar
+          - 7,243
+          - 48,780
+        - - Al Ma'afer
+          - 4,390
+          - 30,746
+        - - Jabal Habashi
+          - 2,173
+          - 15,213
+        - - Al Misrakh
+          - 1,098
+          - 7,687
+        - - Al Qahirah
+          - 1,582
+          - 10,257
+        - - Salh
+          - '510'
+          - 3,237
+        - - Al Mawasit
+          - '211'
+          - 1,481
+        - - As Silw
+          - '2'
+          - '14'
+        - - Mashra'a Wa Hadnan
+          - '702'
+          - 4,283
+        - - Sabir Al Mawadim
+          - '828'
+          - 5,319
+        - - Al Makha
+          - '446'
+          - 3,122
+        - - Al Wazi'iyah
+          - '668'
+          - 4,676
+        - - Mawza
+          - '357'
+          - 2,499
+        - - Maqbanah
+          - '230'
+          - 1,610
+        - - Dhubab
+          - '34'
+          - '238'
+        foot:
+        - Total
+        - 23,007
+        - 156,898
+        num_cols:
+        - 1
+        - 2
+    - h: 3.2.3 Aden Governorate
+      level: 2
+      id: s4-5
     - p: As of 28 September 2026, the displacement report for Aden Governorate records 3,741 displaced households, comprising an estimated 17,782 individuals, distributed across the governorate’s eight districts (Al-Buraiqeh, Dar Saad, Sheikh Othman, Al-Mansoura, Khormaksar, Crater, Al-Mualla, and Al-Tawahi). The consolidated table below presents data on the host areas.
     - table:
         head:
@@ -934,41 +1546,41 @@ en:
         - Number of IDPs
         rows:
         - - Al-Buraiqeh
-          - "1,697"
-          - "8,056"
+          - 1,697
+          - 8,056
         - - Dar Saad
-          - "1,027"
-          - "4,977"
+          - 1,027
+          - 4,977
         - - Sheikh Othman
-          - "476"
-          - "2,357"
+          - '476'
+          - 2,357
         - - Al-Mansoura
-          - "312"
-          - "1,393"
+          - '312'
+          - 1,393
         - - Crater
-          - "106"
-          - "430"
+          - '106'
+          - '430'
         - - Khormaksar
-          - "80"
-          - "401"
+          - '80'
+          - '401'
         - - Al-Mualla
-          - "35"
-          - "134"
+          - '35'
+          - '134'
         - - Al-Tawahi
-          - "8"
-          - "34"
+          - '8'
+          - '34'
         foot:
         - Total
-        - "3,741"
-        - "17,782"
+        - 3,741
+        - 17,782
         num_cols:
         - 1
         - 2
     - p: In Aden Governorate, our field team encountered challenges and restrictions that impeded its access to displaced households and its ability to monitor their living conditions and coordinate the response. These constraints and obstacles forced the Executive Unit team to halt its operations. Furthermore, many displaced households previously recorded and monitored by the team had left Aden and relocated to the governorates of Lahj and Abyan as a result of these same constraints and obstacles.
-    - h: 3.4 Abyan Governorate
-      level: 1
-      id: s4-4
-    - p: "Recorded displacement in Abyan Governorate totals 4,540 households comprising 22,030 IDPs, distributed across 5 districts: Khanfir, Zinjibar, Lawdar, Mudiyah and Ahwar. The following table provides the detailed distribution of displaced households and IDPs."
+    - h: 3.2.4 Abyan Governorate
+      level: 2
+      id: s4-6
+    - p: 'Recorded displacement in Abyan Governorate totals 4,540 households comprising 22,030 IDPs, distributed across 5 districts: Khanfir, Zinjibar, Lawdar, Mudiyah and Ahwar. The following table provides the detailed distribution of displaced households and IDPs.'
     - table:
         head:
         - Host district
@@ -976,31 +1588,31 @@ en:
         - IDPs
         rows:
         - - Khanfir
-          - "3,312"
-          - "16,150"
+          - 3,312
+          - 16,150
         - - Zinjibar
-          - "1,103"
-          - "5,200"
+          - 1,103
+          - 5,200
         - - Lawdar
-          - "56"
-          - "258"
+          - '56'
+          - '258'
         - - Mudiyah
-          - "43"
-          - "299"
+          - '43'
+          - '299'
         - - Ahwar
-          - "26"
-          - "123"
+          - '26'
+          - '123'
         foot:
         - Total
-        - "4,540"
-        - "22,030"
+        - 4,540
+        - 22,030
         num_cols:
         - 1
         - 2
-    - h: 3.5 Lahj Governorate
-      level: 1
-      id: s4-5
-    - p: "Recorded displacement in Lahj Governorate totals 15,160 households comprising 117,271 IDPs, distributed across 10 districts: Al Musaymir, Tuban, Al Madaribah Wa Ras Al Arah, Al Hawtah, Tur Al Bahah, Al Habilayn, Al Hadd, Al Maqatirah, Halimayn and Al Qabbaytah. The following table provides the detailed distribution of households and IDPs."
+    - h: 3.2.5 Lahj Governorate
+      level: 2
+      id: s4-7
+    - p: 'Recorded displacement in Lahj Governorate totals 15,160 households comprising 117,271 IDPs, distributed across 10 districts: Al Musaymir, Tuban, Al Madaribah Wa Ras Al Arah, Al Hawtah, Tur Al Bahah, Al Habilayn, Al Hadd, Al Maqatirah, Halimayn and Al Qabbaytah. The following table provides the detailed distribution of households and IDPs.'
     - table:
         head:
         - Host district
@@ -1008,46 +1620,46 @@ en:
         - IDPs
         rows:
         - - Al Musaymir
-          - "332"
-          - "2,324"
+          - '332'
+          - 2,324
         - - Tuban
-          - "10,037"
-          - "70,259"
+          - 10,037
+          - 70,259
         - - Al Madaribah Wa Ras Al Arah
-          - "2,768"
-          - "30,527"
+          - 2,768
+          - 30,527
         - - Al Hawtah
-          - "443"
-          - "3,101"
+          - '443'
+          - 3,101
         - - Tur Al Bahah
-          - "751"
-          - "5,257"
+          - '751'
+          - 5,257
         - - Al Habilayn
-          - "78"
-          - "546"
+          - '78'
+          - '546'
         - - Al Hadd
-          - "510"
-          - "3,570"
+          - '510'
+          - 3,570
         - - Al Maqatirah
-          - "19"
-          - "133"
+          - '19'
+          - '133'
         - - Halimayn
-          - "6"
-          - "42"
+          - '6'
+          - '42'
         - - Al Qabbaytah
-          - "216"
-          - "1,512"
+          - '216'
+          - 1,512
         foot:
         - Total
-        - "15,160"
-        - "117,271"
+        - 15,160
+        - 117,271
         num_cols:
         - 1
         - 2
-    - h: 3.6 Shabwah Governorate
-      level: 1
-      id: s4-6
-    - p: "Recorded displacement in Shabwah Governorate totals 173 households comprising 1,066 IDPs, distributed across 6 districts: Bayhan, Ataq, Ayn, Usaylan, Mayfa'ah and Markhah As Sufla. The following table provides the detailed distribution of displaced households and IDPs."
+    - h: 3.2.6 Shabwah Governorate
+      level: 2
+      id: s4-8
+    - p: 'Recorded displacement in Shabwah Governorate totals 173 households comprising 1,066 IDPs, distributed across 6 districts: Bayhan, Ataq, Ayn, Usaylan, Mayfa''ah and Markhah As Sufla. The following table provides the detailed distribution of displaced households and IDPs.'
     - table:
         head:
         - Host district
@@ -1055,34 +1667,34 @@ en:
         - IDPs
         rows:
         - - Bayhan
-          - "45"
-          - "315"
+          - '45'
+          - '315'
         - - Ataq
-          - "35"
-          - "215"
+          - '35'
+          - '215'
         - - Ayn
-          - "59"
-          - "312"
+          - '59'
+          - '312'
         - - Usaylan
-          - "11"
-          - "75"
+          - '11'
+          - '75'
         - - Mayfa'ah
-          - "10"
-          - "62"
+          - '10'
+          - '62'
         - - Markhah As Sufla
-          - "13"
-          - "87"
+          - '13'
+          - '87'
         foot:
         - Total
-        - "173"
-        - "1,066"
+        - '173'
+        - 1,066
         num_cols:
         - 1
         - 2
-    - h: 3.7 Hadramawt Governorate
-      level: 1
-      id: s4-7
-    - p: "Recorded displacement in Hadramawt Governorate totals 214 households comprising 1,498 IDPs, distributed across 3 districts according to the available data: Al Mukalla, Ar Raydah Wa Qusayar and Ghayl Ba Wazir. The following table provides the detailed distribution of displaced households and IDPs."
+    - h: 3.2.7 Hadramawt Governorate
+      level: 2
+      id: s4-9
+    - p: 'Recorded displacement in Hadramawt Governorate totals 214 households comprising 1,498 IDPs, distributed across 3 districts according to the available data: Al Mukalla, Ar Raydah Wa Qusayar and Ghayl Ba Wazir. The following table provides the detailed distribution of displaced households and IDPs.'
     - table:
         head:
         - Host district
@@ -1090,25 +1702,25 @@ en:
         - IDPs
         rows:
         - - Al Mukalla
-          - "176"
-          - "1,232"
+          - '176'
+          - 1,232
         - - Ar Raydah Wa Qusayar
-          - "36"
-          - "252"
+          - '36'
+          - '252'
         - - Ghayl Ba Wazir
-          - "2"
-          - "14"
+          - '2'
+          - '14'
         foot:
         - Total
-        - "214"
-        - "1,498"
+        - '214'
+        - 1,498
         num_cols:
         - 1
         - 2
-    - h: 3.8 Al Mahrah Governorate
-      level: 1
-      id: s4-8
-    - p: "Recorded displacement in Al Mahrah Governorate totals 142 households comprising 994 IDPs, distributed across two districts: Al Ghaydah and Shahn. The following table provides the detailed distribution of displaced households and IDPs."
+    - h: 3.2.8 Al Mahrah Governorate
+      level: 2
+      id: s4-10
+    - p: 'Recorded displacement in Al Mahrah Governorate totals 142 households comprising 994 IDPs, distributed across two districts: Al Ghaydah and Shahn. The following table provides the detailed distribution of displaced households and IDPs.'
     - table:
         head:
         - Host district
@@ -1116,22 +1728,22 @@ en:
         - IDPs
         rows:
         - - Al Ghaydah
-          - "134"
-          - "938"
+          - '134'
+          - '938'
         - - Shahn
-          - "8"
-          - "56"
+          - '8'
+          - '56'
         foot:
         - Total
-        - "142"
-        - "994"
+        - '142'
+        - '994'
         num_cols:
         - 1
         - 2
-    - h: 3.9 Marib Governorate
-      level: 1
-      id: s4-9
-    - p: "Recorded displacement in Marib Governorate totals 882 households comprising 6,174 IDPs, distributed across 3 districts according to the available data: Marib City, Marib Al Wadi and Harib. The following table provides the detailed distribution of displaced households and IDPs."
+    - h: 3.2.9 Marib Governorate
+      level: 2
+      id: s4-11
+    - p: 'Recorded displacement in Marib Governorate totals 882 households comprising 6,174 IDPs, distributed across 3 districts according to the available data: Marib City, Marib Al Wadi and Harib. The following table provides the detailed distribution of displaced households and IDPs.'
     - table:
         head:
         - Host district
@@ -1139,25 +1751,25 @@ en:
         - IDPs
         rows:
         - - Marib City
-          - "548"
-          - "3,836"
+          - '548'
+          - 3,836
         - - Marib Al Wadi
-          - "271"
-          - "1,897"
+          - '271'
+          - 1,897
         - - Harib
-          - "63"
-          - "441"
+          - '63'
+          - '441'
         foot:
         - Total
-        - "882"
-        - "6,174"
+        - '882'
+        - 6,174
         num_cols:
         - 1
         - 2
-    - h: 3.10 Ad Dali' Governorate
-      level: 1
-      id: s4-10
-    - p: "Recorded displacement in Ad Dali' Governorate totals 671 households comprising 4,738 IDPs, distributed across 4 districts: Qa'tabah, Al Husayn, Ad Dali' and Al Azariq. The following table provides the detailed distribution of displaced households and IDPs."
+    - h: 3.2.10 Ad Dali' Governorate
+      level: 2
+      id: s4-12
+    - p: 'Recorded displacement in Ad Dali'' Governorate totals 671 households comprising 4,738 IDPs, distributed across 4 districts: Qa''tabah, Al Husayn, Ad Dali'' and Al Azariq. The following table provides the detailed distribution of displaced households and IDPs.'
     - table:
         head:
         - Host district
@@ -1165,49 +1777,220 @@ en:
         - IDPs
         rows:
         - - Ad Dali'
-          - "376"
-          - "2,587"
+          - '376'
+          - 2,587
         - - Al Azariq
-          - "252"
-          - "1,870"
+          - '252'
+          - 1,870
         - - Qa'tabah
-          - "35"
-          - "245"
+          - '35'
+          - '245'
         - - Al Husayn
-          - "8"
-          - "36"
+          - '8'
+          - '36'
         foot:
         - Total
-        - "671"
-        - "4,738"
+        - '671'
+        - 4,738
         num_cols:
         - 1
         - 2
-  - title: 4. Humanitarian Situation of Displaced Households
+    - h: 3.3 Direction of Displacement and Main Host Districts
+      level: 1
+      id: s4-13
+    - p: According to IOM DTM, of the approximately 356,602 people displaced between 1 August and 17 November 2026, 57% (about 203,262 people) were displaced within their own governorate and 43% (about 153,340 people) to a different governorate. According to IOM, 65% of all recorded displacement (229,193 people) originated from Taiz Governorate. The large share of movements between governorates shows that the geographic footprint of displacement is expanding.
+    - lab: Districts hosting the largest numbers of IDPs (1 August – 17 November 2026)
+    - table:
+        head:
+        - District
+        - Governorate
+        - IDPs
+        - Note
+        rows:
+        - - Al Burayqah
+          - Aden
+          - 36,516
+          - From other governorates (Lahj 17,952, Taiz 14,148, Al Hodeidah 4,242)
+        - - Jabal Habashi
+          - Taiz
+          - 34,236
+          - From within Taiz Governorate
+        - - Al Ma'afer
+          - Taiz
+          - 32,832
+          - From within Taiz Governorate
+        - - Dar Sa'd
+          - Aden
+          - 19,530
+          - From other governorates (Lahj 7,914, Taiz 7,062, Al Hodeidah 4,452)
+        - - Tuban
+          - Lahj
+          - 19,152
+          - From other governorates (Taiz 13,560, Al Hodeidah 5,568); 37,848 IDPs in the district in total
+        num_cols:
+        - 2
+        fold: false
+    - src: 'Source: IOM Yemen DTM, Flash Update #19 (18 November 2026); IOM, Escalation in the Middle East and Beyond – Mobility Report (19 November 2026).'
+    - h: 3.4 Displacement Sites and Host Communities
+      level: 1
+      id: s4-14
+    - p: According to site monitoring data shared by the SLSC coordination team, 29 new IDP hosting sites have been established and 86 sites have received newly displaced families during the latest wave of displacement. These sites host about 10,000 newly displaced households (around 60,000 people). The Rapid Response Mechanism (RRM) has verified 39,835 households (206,864 people) in 65 districts of 10 governorates since 1 August.
+    - p: According to IOM, new arrivals are increasing demand for services and resources in host communities and displacement sites that were already facing capacity constraints, and water scarcity remains a key concern in existing sites. In Aden, some displaced households are staying with other families while others remain in the open (see 5.1.1).
+    - src: 'Source: Yemen SLSC Situation Update (18 November 2026); IOM, Escalation in the Middle East and Beyond – Mobility Report (19 November 2026).'
+  - title: 4. National and International Humanitarian Aid Operations in Yemen
     blocks:
-    - p: Qualitative information received from the governorates indicates difficult displacement conditions and multisectoral needs. This update demonstrates the scale of the registered displaced population across the ten governorates.
-    - h: 4.1 Shelter and Accommodation
+    - h: 4.1 Overall Status of International Humanitarian Aid
       level: 1
       id: s5-1
-    - p: Shelter and accommodation are a core response priority. Some displaced households in Aden rely on accommodation provided by other families, while others remain in the open without shelter at the time of writing. The current scale of displacement requires verification of housing conditions, identification of the households most in need, and support for host communities.
-    - h: 4.2 Food and Basic Needs
+    - p: According to the Health Cluster, as of 17 November 2026, 26 health partners had reached more than 111,500 IDPs in 44 districts of 9 governorates, through 49 verified mobile medical teams and IDP temporary health points and support to 73 fixed health facilities. WHO supports 32 trauma and emergency care deployments in 6 governorates, and UNICEF-supported primary health care has reached 58,270 people in displaced and host communities.
+    - p: In shelter and non-food items, of the 39,835 households on the Rapid Response Mechanism (RRM) lists, 31,324 (79%) have been registered and assisted, while 8,511 (21%) are registered but have not yet received assistance. All households assessed by IOM's protection teams received crisis counselling and psychological first aid, and those in need were referred to protection case management, cash for protection and health, WASH and shelter services. Organisations including Médecins Sans Frontières (MSF), the International Committee of the Red Cross (ICRC), Islamic Relief Yemen, the Field Medical Foundation, UNFPA and INTERSOS also contribute to the response.
+    - h: 4.2 Humanitarian Funding and Funding Gaps
       level: 1
       id: s5-2
-    - p: All reports indicate that food and shelter are urgent needs, while food items and essential supplies are identified as priority needs for displaced households.
-    - h: 4.3 Water, Sanitation and Hygiene
+    - p: The source reports show that funding remains the main constraint on the response. The 90-day health response plan ending on 31 December 2026 was only 35% funded as of 10 November, and $22.2 million is needed to close the gaps in shelter and non-food items.
+    - table:
+        head:
+        - Area
+        - Funding status / gap
+        - Source
+        rows:
+        - - 90-day health response plan (to 31 December 2026)
+          - 35% funded
+          - WHO
+        - - 32 WHO-supported trauma and emergency care deployments
+          - Funded only until January 2027
+          - WHO
+        - - Trauma stabilization points
+          - Only 4 of 35 planned points funded
+          - WHO
+        - - WHO's third CERF request
+          - $2.4 million (including UNICEF and IOM components)
+          - WHO
+        - - Emergency shelter
+          - $15.6 million gap
+          - SLSC
+        - - Non-food item (NFI) kits
+          - $6.6 million gap
+          - SLSC
+        - - Site management and maintenance (6 months)
+          - $3.6 million gap
+          - SLSC
+        fold: false
+    - h: 4.3 Sectoral Assistance by the United Nations and Its Partners
       level: 1
       id: s5-3
-    - p: Safe drinking water, sanitation, hygiene supplies, emergency latrines and waste management are identified as urgent needs, particularly in newly established displacement sites and gatherings.
-    - h: 4.4 Health and Protection
+    - table:
+        head:
+        - Sector
+        - Assistance delivered
+        - Source
+        rows:
+        - - Emergency shelter
+          - Shelter assistance for 7,026 households (18% of verified households)
+          - SLSC
+        - - Non-food items
+          - Full NFI kits for 7,137 households; partial kits for 4,200 households
+          - SLSC
+        - - Health services
+          - More than 111,500 IDPs reached; 49 mobile teams and temporary health points; 73 fixed facilities
+          - Health Cluster
+        - - Trauma and emergency care
+          - '32 deployments in 6 governorates: 8 specialized care teams, 9 mobile medical teams, 7 ambulances, 4 fixed Type 1 emergency medical teams, 4 trauma stabilization points'
+          - WHO
+        - - Medicines and medical supplies
+          - 19.6 MT to three facilities in Taiz; about 14 MT to two hospitals earlier; 6 MT of additional health supplies
+          - WHO
+        - - Immunization
+          - 'Measles–rubella campaign: 883,896 children (92.3%); vitamin A for 741,713 children; 6,007 displaced children in 5 camps'
+          - MoPHP, WHO, UNICEF
+        - - Primary health care
+          - 58,270 people; antenatal care for 7,636 pregnant women; routine vaccination for 8,084 children
+          - UNICEF
+        - - Cholera response
+          - 10 diarrhoea treatment centres in Aden, Lahj, Abyan, Ad Dali' and Taiz
+          - WHO, MSF and partners
+        - - Protection
+          - Crisis counselling, psychological first aid and case referrals
+          - IOM
+        fold: false
+    - lab: Households verified and shelter assistance delivered by governorate (1 August – 18 November 2026)
+    - table:
+        head:
+        - Governorate
+        - Households verified by RRM
+        - Share
+        - Households assisted with shelter
+        - Households assisted with full NFI kits
+        rows:
+        - - Taiz
+          - 14,444
+          - 36%
+          - 1,184
+          - 1,339
+        - - Aden
+          - 9,571
+          - 24%
+          - 2,155
+          - '597'
+        - - Lahj
+          - 9,267
+          - 23%
+          - 1,652
+          - 2,596
+        - - Abyan
+          - 3,088
+          - 8%
+          - 1,700
+          - 2,124
+        - - Ad Dali'
+          - 1,501
+          - 4%
+          - –
+          - –
+        - - Marib
+          - '686'
+          - 2%
+          - –
+          - –
+        - - Al Mahrah
+          - '419'
+          - 1%
+          - –
+          - –
+        - - Hadramawt
+          - '392'
+          - Less than 1%
+          - '260'
+          - '400'
+        - - Al Hodeidah
+          - '303'
+          - Less than 1%
+          - '75'
+          - '81'
+        - - Shabwah
+          - '164'
+          - Less than 1%
+          - –
+          - –
+        foot:
+        - Total
+        - 39,835
+        - 100%
+        - 7,026
+        - 7,137
+        num_cols:
+        - 1
+        - 2
+        - 3
+        - 4
+        fold: false
+    - src: 'Sources: Yemen SLSC Situation Update (18 November 2026); WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026); IOM Yemen DTM, Flash Update #19 (18 November 2026). Response is not matched household by household to the RRM lists.'
+    - h: 4.4 National and Local Humanitarian Efforts in Yemen
       level: 1
       id: s5-4
-    - p: Displaced households face limited access to health and protection services. Priority attention is required for children, women, older persons, persons with disabilities, households with members living with chronic illnesses, and other highly vulnerable households. Reports received from the governorates call for health and protection assessments, referrals, the provision of medicines and first aid, psychosocial support where needed, and a stronger protection response.
-    - h: 4.5 Livelihoods and Economic Vulnerability
-      level: 1
+    - h: 4.4.1 Actions Taken by the Executive Unit
+      level: 2
       id: s5-5
-    - p: The loss of, or damage to, sources of income, property, livestock and other livelihood assets has increased the economic vulnerability of displaced households. Many households therefore require immediate life-saving assistance, together with support to reduce the adverse economic effects of displacement and reliance on host communities that are already under severe pressure.
-  - title: 5. Actions Taken by the Executive Unit
-    blocks:
     - ul:
       - Establishing an operations room in the governorate branch and field teams at district level to monitor displacement developments.
       - Receiving newly displaced persons and registering households through field visits to areas of arrival and displacement gatherings.
@@ -1217,8 +2000,146 @@ en:
       - Following up on response coverage and households not reached, monitoring interventions, and updating the remaining gaps to improve targeting and reduce duplication.
       - Continuing field monitoring and reporting, and following up on the circumstances of displaced persons and the areas to which they have moved following recent events in certain districts of Taiz and Al Hodeidah.
     - p: In addition, the Executive Unit established a response monitoring team at its head office to follow displacement developments in the affected governorates and issued reports to United Nations clusters and local and international organisations.
-  - title: 6. Proposed Priorities and Urgent Actions
+    - h: 4.4.2 Ministry of Public Health and Local Institutions
+      level: 2
+      id: s5-6
+    - p: The Ministry of Public Health and Population, with WHO and UNICEF, conducted a national measles–rubella vaccination campaign in 100 districts of 11 governorates from 7 to 12 November 2026. The Ministry's Health Emergency Operations Centre (HEOC) compiles casualty figures daily. The Hadramawt Governorate Health Office and the National Malaria and Vector Control Programme carried out an integrated dengue control campaign in Ash-Shihr district. A payment cycle covering about 4,000 health workers in 500 health facilities, including 50 facilities serving IDPs, is under way. Among local organisations, the Selah Foundation supports mobile clinics in IDP camps in coastal Hadramawt through the Hadramawt Health Office.
+    - src: 'Source: WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026).'
+  - title: 5. Humanitarian Needs and Response Priorities
     blocks:
+    - p: Qualitative information received from the governorates indicates difficult displacement conditions and multisectoral needs. This update demonstrates the scale of the registered displaced population across the ten governorates.
+    - h: 5.1 Humanitarian Needs by Sector
+      level: 1
+      id: s6-1
+    - p: 'According to IOM DTM data for 1 August – 17 November 2026, the top priority needs reported by displaced people are shelter, food assistance and financial support:'
+    - chart:
+        title: Priority Needs Reported by Displaced People (%)
+        max: 40
+        ticks:
+        - '0'
+        - '10'
+        - '20'
+        - '30'
+        - '40'
+        items:
+        - - Shelter
+          - 38
+          - 38%
+        - - Food assistance
+          - 30
+          - 30%
+        - - Financial support
+          - 27
+          - 27%
+        - - Protection services
+          - 3
+          - 3%
+    - h: 5.1.1 Shelter and Accommodation
+      level: 2
+      id: s6-2
+    - p: Shelter and accommodation are a core response priority. Some displaced households in Aden rely on accommodation provided by other families, while others remain in the open without shelter at the time of writing. The current scale of displacement requires verification of housing conditions, identification of the households most in need, and support for host communities.
+    - h: 5.1.2 Food and Basic Needs
+      level: 2
+      id: s6-3
+    - p: All reports indicate that food and shelter are urgent needs, while food items and essential supplies are identified as priority needs for displaced households.
+    - h: 5.1.3 Water, Sanitation and Hygiene
+      level: 2
+      id: s6-4
+    - p: Safe drinking water, sanitation, hygiene supplies, emergency latrines and waste management are identified as urgent needs, particularly in newly established displacement sites and gatherings.
+    - h: 5.1.4 Health and Protection
+      level: 2
+      id: s6-5
+    - p: Displaced households face limited access to health and protection services. Priority attention is required for children, women, older persons, persons with disabilities, households with members living with chronic illnesses, and other highly vulnerable households. Reports received from the governorates call for health and protection assessments, referrals, the provision of medicines and first aid, psychosocial support where needed, and a stronger protection response.
+    - h: 5.1.5 Livelihoods and Economic Vulnerability
+      level: 2
+      id: s6-6
+    - p: The loss of, or damage to, sources of income, property, livestock and other livelihood assets has increased the economic vulnerability of displaced households. Many households therefore require immediate life-saving assistance, together with support to reduce the adverse economic effects of displacement and reliance on host communities that are already under severe pressure.
+    - h: 5.2 Urgent Food and Shelter Needs
+      level: 1
+      id: s6-7
+    - p: 'Food: According to FEWS NET, under the most likely scenario Emergency (IPC Phase 4) outcomes are expected to persist in besieged Taiz City, with a rising share of the worst-affected households in Catastrophe (IPC Phase 5). Poor households are reducing meal size and frequency and selling their remaining assets, while even middle- and better-off households increasingly rely on support from relatives and community networks. FEWS NET issues such alerts when a humanitarian food assistance response is imminently needed.'
+      b: true
+    - p: 'Shelter: According to the SLSC, of the 39,835 households verified by the RRM, 28,943 (73%) still need emergency shelter and 22,625 (57%) still need non-food item (NFI) kits. Around 60,000 newly displaced people (about 10,000 households) are staying in newly established sites and sites that have received new arrivals.'
+      b: true
+    - h: 5.3 Sectoral Needs and Estimated Budget
+      level: 1
+      id: s6-8
+    - table:
+        head:
+        - Need
+        - Quantity
+        - Estimated cost
+        - Source
+        rows:
+        - - Emergency shelter kits
+          - 28,943 households
+          - $15.6 million ($540 per kit)
+          - SLSC
+        - - Non-food item (NFI) kits
+          - 22,625 households
+          - $6.6 million ($290 per kit)
+          - SLSC
+        - - Site management and maintenance (6 months)
+          - About 10,000 households (60,000 people)
+          - $3.6 million
+          - SLSC
+        - - Health response (WHO's third CERF request)
+          - Health sites, mobile medical teams and supplies
+          - $2.4 million
+          - WHO
+        - - Trauma stabilization points
+          - 31 of 35 planned points
+          - Awaiting funding
+          - WHO
+        - - Measles–rubella follow-up vaccination
+          - 73,300 children
+          - —
+          - MoPHP, WHO
+        - - Oral cholera vaccination campaign
+          - 23 districts, 2.25 million people
+          - —
+          - WHO
+        fold: false
+    - lab: Shelter and NFI gaps by operational area
+    - table:
+        head:
+        - Operational area
+        - Households verified
+        - Shelter gap (households)
+        - NFI gap (households)
+        - Cost to close the gaps
+        rows:
+        - - Taiz Hub
+          - 13,704
+          - 11,155
+          - 12,189
+          - $9.6 million
+        - - West Coast
+          - 1,043
+          - '0'
+          - '506'
+          - $0.1 million
+        - - Aden Hub
+          - 25,088
+          - 17,788
+          - 9,930
+          - $12.5 million
+        foot:
+        - Total
+        - 39,835
+        - 28,943
+        - 22,625
+        - $22.2 million
+        num_cols:
+        - 1
+        - 2
+        - 3
+        - 4
+        fold: false
+    - src: 'Sources: Yemen SLSC Situation Update (18 November 2026); WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026); FEWS NET, Yemen Alert (17 November 2026); IOM Yemen DTM, Flash Update #19 (18 November 2026).'
+    - h: 5.4 Proposed Priorities and Urgent Actions
+      level: 1
+      id: s6-9
     - p: The immediate objective should be to ensure that newly displaced households are not left without minimum life-saving assistance, while maintaining accurate registration, verification and coordination. Urgent response and sectoral assessments should proceed in parallel, rather than sequentially, wherever evident humanitarian needs already exist.
     - ol:
       - Prioritise all displaced households that have not received humanitarian assistance, with immediate attention to the most recently displaced and most vulnerable households.
@@ -1232,8 +2153,58 @@ en:
       - Support the provision of non-food items and basic household necessities and, where possible, livelihood-related needs for households that have lost their income and productive assets.
       - Strengthen daily/weekly tracking of displacement and response, clearly distinguishing between planned and implemented interventions, and recording unique household counts after removing duplicates.
       - Strengthen preparedness for potential additional waves of displacement from conflict-affected areas.
-  - title: 7. Recommendations and Humanitarian Appeal to Local and International Organisations
+  - title: 6. Delivery of Humanitarian Aid and Access
     blocks:
+    - h: 6.1 Aid Delivery and Logistics Hubs
+      level: 1
+      id: s7-1
+    - p: Aden is a key hub for aid delivery, as it hosts the main referral hospitals, the Health Emergency Operations Centre and the warehouse supplying the health response. WHO has delivered 19.6 MT of medicines and medical supplies to Khalifa Hospital, Al-Neshma Hospital and the Al-Mudhaffar diarrhoea treatment centre in Taiz. In the shelter sector, partners hold 4,115 shelter kits and tents and 8,271 full NFI kits in stock, and 5,250 partial NFI kits are awaiting distribution. The advance of the front line towards Aden puts referral and supply routes at risk.
+    - h: 6.2 Areas with Restricted Access
+      level: 1
+      id: s7-2
+    - table:
+        head:
+        - Area
+        - Access situation
+        - Source
+        rows:
+        - - Taiz City
+          - The last major road linking the city to government-held areas has been cut since 4 October 2026; limited food and essentials arrive via small mountain roads at high cost
+          - FEWS NET
+        - - Al Hodeidah
+          - IOM DTM has had no access since 9 September 2026; the IDP figure remains steady at 8,244
+          - IOM DTM
+        - - Aden
+          - The Executive Unit halted field operations because of access constraints; the front line is approaching Aden
+          - Executive Unit, WHO
+        - - Areas under the control of the de facto authorities
+          - No access to routine health data; hospitals reported to be short of medical and surgical supplies
+          - WHO
+        - - Remote areas of Hajjah
+          - Treatment for acute watery diarrhoea and cholera hard to reach
+          - WHO
+        fold: false
+    - p: To reach hospitals on both sides of the front line, WHO recommends alternative delivery routes, including delivery through partners, cross-line movements and humanitarian flights, together with access negotiations with all parties.
+    - src: 'Sources: WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026); FEWS NET, Yemen Alert (17 November 2026); IOM Yemen DTM, Flash Update #19 (18 November 2026); Yemen SLSC Situation Update (18 November 2026).'
+  - title: 7. Challenges Faced in Humanitarian Aid Operations
+    blocks:
+    - p: 'The source reports and the Executive Unit''s field observations point to the following main challenges facing the humanitarian response:'
+    - ol:
+      - 'Security: Front lines are shifting rapidly and approaching Aden through Lahj, which risks increasing casualties and displacement and cutting referral and supply routes.'
+      - 'Restricted field access: Taiz City is under a de facto siege; IOM DTM has lost access to Al Hodeidah; the Executive Unit had to halt field operations in Aden; and routine data cannot be obtained from areas under the control of the de facto authorities.'
+      - 'Insufficient funding: The 90-day health response plan is 35% funded; WHO-supported trauma deployments are funded only until January 2027; and the shelter and NFI gap stands at $22.2 million.'
+      - 'Logistics and supply shortages: Hospitals in Taiz face critical shortages of fuel, surgical supplies and anaesthesia and ICU medicines, and ambulances lack maintenance.'
+      - 'Repeated displacement: Many families have been displaced two to four times, and many households previously recorded in Aden have moved to Lahj and Abyan, making secondary displacement difficult to track.'
+      - 'Access to up-to-date, verified data: Daily casualty reporting completeness ranges from 58% to 92%; the Executive Unit''s registration data and IOM DTM''s movement data are not directly comparable; and assistance records are not matched household by household to the RRM lists.'
+      - 'Households not reached: 8,511 households (21%) on the RRM lists are registered but have not yet received assistance, and IDPs'' access to primary health care remains limited in Taiz, Abyan and Shabwah.'
+      - 'Gaps in health services: Burn care, mental health and psychosocial support and rehabilitation are not adequately funded, and trauma referral dispatch is not funded.'
+      - 'Outbreak risk: While cholera is declining in the five most-affected governorates, a complex outbreak combining food poisoning and cholera is growing in Tarim (Hadramawt Al-Wadi), and acute watery diarrhoea is rising in Hajjah.'
+    - src: 'Sources: WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026); FEWS NET, Yemen Alert (17 November 2026); IOM Yemen DTM, Flash Update #19 (18 November 2026); IOM, Escalation in the Middle East and Beyond – Mobility Report (19 November 2026); Yemen SLSC Situation Update (18 November 2026).'
+  - title: 8. Recommendations for Improving the Humanitarian Situation in Yemen
+    blocks:
+    - h: 8.1 Humanitarian Appeal to Local and International Organisations
+      level: 1
+      id: s9-1
     - p: The Executive Unit for IDPs Camp Management urgently appeals to local authorities, United Nations agencies, humanitarian clusters, national and international humanitarian organisations, donors and implementing partners to mobilise immediate resources and operational capacities for the displaced households documented in this report.
     - p: Current displacement is placing newly displaced households in highly vulnerable situations. Families have been forced to leave their homes and livelihoods because of conflict and military escalation and, in several locations, have arrived without shelter, food, sufficient water or access to basic services. Delays in assistance will increase exposure to protection risks, deepen economic vulnerability and place further pressure on host communities.
     - ol:
@@ -1246,29 +2217,48 @@ en:
       - Prioritise children, women, older persons, persons with disabilities, households with members living with chronic illnesses, and other households facing heightened protection or humanitarian risks.
       - Ensure that no newly displaced household remains without minimum humanitarian assistance because of delayed assessments, insufficient funding or coordination constraints.
       - Maintain continuous data updates and transparent reporting to enable humanitarian partners to direct assistance to households and locations with the greatest unmet needs.
-  - title: 8. Conclusion
+    - h: 8.2 Key Recommendations from Humanitarian Agencies' Reports
+      level: 1
+      id: s9-2
+    - ol:
+      - Provide urgent humanitarian food assistance to households in besieged Taiz City, in line with the FEWS NET alert.
+      - Mobilise the $22.2 million needed to close the shelter and NFI gaps and the $3.6 million needed for site management and maintenance (SLSC).
+      - As the front line approaches Aden, review and resource contingency plans for a casualty surge, alternative referral and supply routes and the continuity of operations (WHO).
+      - Fund trauma stabilization points, trauma referral dispatch, burn care, mental health and psychosocial support and rehabilitation, and secure funding beyond January 2027 (WHO).
+      - Use alternative delivery routes and pursue access negotiations with all parties to reach hospitals on both sides of the front line (WHO).
+      - Reach the 73,300 children missed by the measles–rubella campaign through follow-up vaccination, particularly in Shabwah, Hadramawt, Al Mahrah and Socotra (WHO).
+      - Carry out joint food-safety, WASH and case-management action against the outbreak in Tarim (WHO).
+      - Strengthen coordination of the response across governorates, given the growing share of inter-governorate movements, and pay greater attention to the evolving needs of displaced people in receiving areas (IOM).
+      - Conduct an Intra-Action Review under the leadership of the Ministry of Public Health and Population before the current response plan ends (WHO).
+    - src: 'Sources: FEWS NET, Yemen Alert (17 November 2026); Yemen SLSC Situation Update (18 November 2026); WHO Yemen, Conflict Escalation Situation Report #12 (17 November 2026); IOM Yemen DTM, Flash Update #19 (18 November 2026).'
+  - title: 9. Conclusion
     blocks:
     - p: The consolidated figures reveal substantial displacement across the ten governorates, totalling 50,001 displaced households comprising 338,748 IDPs. This figure reflects the scale of the population that should be covered by verification, needs assessments and response planning, and the associated pressure on shelter, basic services and the capacities of host communities.
-    - p: Taiz and Lahj host the largest number of registered displaced persons, with 274,169 IDPs, or approximately 75.9% of the total. This concentration requires partners to expand their operational capacity in both governorates, while directing interventions in the remaining governorates according to the severity of needs and protection risks, rather than using population figures as the sole criterion for allocating assistance.
+    - p: Taiz and Lahj host the largest number of registered displaced persons, with 274,169 IDPs, or approximately 80.9% of the total. This concentration requires partners to expand their operational capacity in both governorates, while directing interventions in the remaining governorates according to the severity of needs and protection risks, rather than using population figures as the sole criterion for allocating assistance.
     - p: Accordingly, the Executive Unit calls upon the relevant stakeholders, humanitarian partners and donors to mobilise urgent and sufficient funding for a coordinated response covering shelter, food, water, sanitation, health, protection, cash assistance and essential items. This should be accompanied by updated records, tracking of secondary displacement, removal of duplicates and verification of actual gaps, to ensure that assistance reaches the households most in need, preserves the dignity of displaced persons and eases the burden on host communities.
     - end: End of Report
     - contact:
-      - "Head Office: Aden – Al Mansurah – Remi"
-      - "Contact: 02356000"
-      - "Email: info@exuye.org"
+      - 'Head Office: Aden – Al Mansurah – Remi'
+      - 'Contact: 02356000'
+      - 'Email: info@exuye.org'
 ar:
   country_name: اليمن
   title: اليمن — التقرير الموحد حول النزوح القسري الناجم عن الحرب
   period_label: حتى 12 نوفمبر 2026
   sources:
   - رئاسة الوزراء اليمنية – الوحدة التنفيذية لإدارة مخيمات النازحين
+  - مصفوفة تتبع النزوح (IOM)
+  - منظمة الصحة العالمية
+  - FEWS NET
+  - SLSC
+  - مفوضية اللاجئين
   summary: يعرض هذا التقرير حصيلة النزوح المسجلة في عشر محافظات هي الحديدة وتعز ولحج وعدن وأبين وشبوة وحضرموت والمهرة ومأرب والضالع، حتى تاريخ إعداد التحديث في 12 نوفمبر 2026.
   figures:
-  - value: "50,001"
+  - value: 50,001
     label: أسرة نازحة
-  - value: "338,748"
+  - value: 338,748
     label: فردًا نازحًا
-  - value: "10"
+  - value: '10'
     label: محافظات
   head_sizes:
   - 13
@@ -1276,26 +2266,16 @@ ar:
   - 11
   toc_deep: true
   toc_plain: true
+  toc_only: true
   static_header: true
   compact: true
-  cover:
-    org:
-    - الجمهورية اليمنية
-    - رئاسة الوزراء
-    - الوحدة التنفيذية لإدارة مخيمات النازحين
-    meta:
-    - تقرير محدث حتى 12 نوفمبر 2026
-    - تاريخ إصدار التقرير 16 نوفمبر 2026
-    title: التقرير الموحد حول النزوح القسري الناجم عن الحرب
-    title2: حتى 12 نوفمبر 2026
-    sub:
-    - اتجاهات النزوح والوضع الإنساني
-    - والاستجابة والاحتياجات العاجلة
+  fold_tables: true
+  fold_label: عرض الجدول كاملًا
   sections:
   - title: الملخص التنفيذي
     blocks:
     - p: يعرض هذا التقرير حصيلة النزوح المسجلة في عشر محافظات هي الحديدة وتعز ولحج وعدن وأبين وشبوة وحضرموت والمهرة ومأرب والضالع، حتى تاريخ إعداد التحديث في 12 نوفمبر 2026.
-    - p: بلغ الإجمالي الأسرة النازحة 50,001 تضم 338,748 فردًا في المحافظات العشر. وتتصدر تعز أعداد الأسر المسجلة بواقع 23,007 أسر تضم 156,898 فردًا، تليها لحج بواقع 15,160 أسرة تضم 117,271 فردًا، ثم ابين بواقع 4,540 أسرة تضم 22,030 فردًا، وعدن بواقع 3,741 أسرة تضم 17,782 فردًا. وتمثل تعز ولحج معًا نحو 70.4% من إجمالي الأسر و75.9% من إجمالي الأفراد، بما يبرز أهمية توجيه الموارد وفق حجم النزوح والاحتياجات الفعلية، مع ضمان تغطية المحافظات الأخرى.
+    - p: بلغ الإجمالي الأسرة النازحة 50,001 تضم 338,748 فردًا في المحافظات العشر. وتتصدر تعز أعداد الأسر المسجلة بواقع 23,007 أسر تضم 156,898 فردًا، تليها لحج بواقع 15,160 أسرة تضم 117,271 فردًا، ثم ابين بواقع 4,540 أسرة تضم 22,030 فردًا، وعدن بواقع 3,741 أسرة تضم 17,782 فردًا. وتمثل تعز ولحج معًا نحو 76.3% من إجمالي الأسر و80.9% من إجمالي الأفراد، بما يبرز أهمية توجيه الموارد وفق حجم النزوح والاحتياجات الفعلية، مع ضمان تغطية المحافظات الأخرى.
     - p: وعليه، تناشد الوحدة التنفيذية بشكل عاجل السلطات المحلية ووكالات الأمم المتحدة والمجموعات القطاعية الإنسانية والمنظمات الإنسانية الوطنية والدولية والجهات المانحة وشركاء التنفيذ لحشد الموارد والقدرات لدعم الاسر النازحة.
     - h: الأرقام الموحدة الرئيسية حتى 12 نوفمبر 2026
       level: 1
@@ -1308,50 +2288,50 @@ ar:
         - المديريات المستضيفة
         rows:
         - - الحديدة
-          - "1,471"
-          - "10,297"
+          - 1,471
+          - 10,297
           - 2 مديريات
         - - تعز
-          - "23,007"
-          - "156,898"
+          - 23,007
+          - 156,898
           - 16 مديريات
         - - لحج
-          - "15,160"
-          - "117,271"
+          - 15,160
+          - 117,271
           - 10 مديريات
         - - أبين
-          - "4,540"
-          - "22,030"
+          - 4,540
+          - 22,030
           - 5 مديريات
         - - عدن
-          - "3,741"
-          - "17,782"
+          - 3,741
+          - 17,782
           - 8 مديريات
         - - شبوة
-          - "173"
-          - "1,066"
+          - '173'
+          - 1,066
           - 6 مديريات
         - - حضرموت
-          - "214"
-          - "1,498"
+          - '214'
+          - 1,498
           - 3 مديريات
         - - المهرة
-          - "142"
-          - "994"
+          - '142'
+          - '994'
           - 2 مديريات
         - - مأرب
-          - "882"
-          - "6,174"
+          - '882'
+          - 6,174
           - 3 مديريات
         - - الضالع
-          - "671"
-          - "4,738"
+          - '671'
+          - 4,738
           - 4 مديريات
         foot:
         - المجموع
-        - "50,001"
-        - "338,748"
-        - ""
+        - 50,001
+        - 338,748
+        - ''
         num_cols:
         - 1
         - 2
@@ -1359,53 +2339,173 @@ ar:
         title: عدد الأسر النازحة حسب المحافظة حتى 12 نوفمبر 2026
         max: 25000
         ticks:
-        - "0"
-        - "5,000"
-        - "10,000"
-        - "15,000"
-        - "20,000"
-        - "25,000"
+        - '0'
+        - 5,000
+        - 10,000
+        - 15,000
+        - 20,000
+        - 25,000
         items:
         - - الحديدة
           - 1471
-          - "1,471"
+          - 1,471
         - - تعز
           - 23007
-          - "23,007"
+          - 23,007
         - - لحج
           - 15160
-          - "15,160"
+          - 15,160
         - - أبين
           - 4540
-          - "4,540"
+          - 4,540
         - - عدن
           - 3741
-          - "3,741"
+          - 3,741
         - - شبوة
           - 173
-          - "173"
+          - '173'
         - - حضرموت
           - 214
-          - "214"
+          - '214'
         - - المهرة
           - 142
-          - "142"
+          - '142'
         - - مأرب
           - 882
-          - "882"
+          - '882'
         - - الضالع
           - 671
-          - "671"
-  - title: "1. مقدمة: النزوح القسري الناجم عن الحرب"
+          - '671'
+  - title: 1. الوضع الإنساني والنزوح القسري في اليمن
     blocks:
     - p: يرصد هذا التقرير النزوح القسري المرتبط بالنزاع في عشر محافظات فلقد تسبب النزاع القائم بالنزوح وهو ما دفع الاسر الى الترك المفاجئ أو فقدان المنازل والممتلكات وسبل العيش والثروة الحيوانية ومصادر الدخل والضروريات الأساسية. وقد أدى ذلك إلى زيادة هشاشة الأسر وتقليص قدرتها على تلبية احتياجاتها الأساسية دون مساعدة إنسانية.
     - p: وتتجاوز الآثار الإنسانية مسألة المأوى وحدها؛ فقد تصل الأسر النازحة دون غذاء أو مياه آمنة أو خدمات صرف صحي أو خدمات صحية أو دعم حماية أو مواد غير غذائية أو موارد نقدية. وترى الوحدة التنفيذية أن التدخل الإنساني السريع والمنسّق والقائم على الاحتياجات أمر أساسي لحماية الأرواح والكرامة، والحد من مخاطر الحماية، ومنع المزيد من تدهور أوضاع الأسر والضغط على المجتمعات المضيفة.
-  - title: 2. النطاق والتغطية الجغرافية
+    - h: 1.1 مسار النزاع وعواقبه الإنسانية
+      level: 1
+      id: s2-1
+    - p: وفقًا لتنبيه شبكة نظم الإنذار المبكر بالمجاعة (FEWS NET) الصادر في 17 نوفمبر 2026، تحوّل النزاع في اليمن منذ يوليو 2026 إلى حرب عالية الشدة متعددة الجبهات تتسم بخطوط مواجهة متحركة، وأصبحت محافظتا تعز ولحج مركز القتال. وبحسب المنظمة الدولية للهجرة، اشتد القتال منذ مطلع سبتمبر 2026 على امتداد الساحل الغربي، ولا سيما في محافظتي تعز والحديدة، مع مواجهات عنيفة في مقبنة وموزع والمخا والمديريات المحاذية لخطوط المواجهة.
+    - p: وبحسب التقرير الموقفي لمنظمة الصحة العالمية الصادر في 17 نوفمبر 2026، تقدمت خطوط المواجهة بسرعة عبر محافظة لحج وباتت تقترب من عدن التي تضم مستشفيات الإحالة الرئيسية ومركز عمليات الطوارئ الصحية والمستودع الذي يزوّد الاستجابة الصحية بالإمدادات. وقد يؤدي أي تقدم إضافي إلى تغيير تدفقات المصابين وحركة النزوح وتعطيل طرق الإحالة والإمداد.
+    - p: ولا تقتصر العواقب الإنسانية للنزاع على النزوح؛ إذ تخضع مدينة تعز منذ أكتوبر لحصار فعلي يتفاقم معه نقص الغذاء والوقود وغاز الطهي والمياه، وتواجه المستشفيات صعوبة في تقديم خدماتها بسبب نقص الوقود والأدوية، فيما تستمر مخاطر الكوليرا والأوبئة الأخرى. كما نزحت أسر كثيرة مرتين إلى أربع مرات، واضطر بعضها إلى مغادرة مواقع عاشت فيها أكثر من خمس سنوات، ما يزيد الضغط على المجتمعات المضيفة ومواقع النزوح المثقلة أصلًا.
+    - h: 1.2 حجم النزوح على مستوى البلاد
+      level: 1
+      id: s2-2
+    - p: وفقًا لمصفوفة تتبع النزوح التابعة للمنظمة الدولية للهجرة في اليمن، نزح 357,658 فردًا (59,602 أسرة) منذ بدء التصعيد في يونيو 2026، منهم نحو 356,602 فرد (59,426 أسرة) نزحوا خلال الفترة من 1 أغسطس إلى 17 نوفمبر 2026. وظل النزوح منخفضًا نسبيًا من يونيو إلى أغسطس، ثم ارتفع بشكل حاد في مطلع سبتمبر وبلغ ذروته اليومية في 9 سبتمبر بنزوح 15,186 فردًا. وبحلول منتصف نوفمبر استقر النزوح الأسبوعي عند نحو 3,150 أسرة. وسجلت المصفوفة نزوح 369,012 فردًا منذ 1 يناير 2026.
+    - p: ويمثل رقم الوحدة التنفيذية الوارد في هذا التقرير (338,748 فردًا يشكّلون 50,001 أسرة) حصيلة تسجيل، ولا يمكن مقارنته مباشرة ببيانات مصفوفة تتبع النزوح التي ترصد حركة النزوح، كما تشير منظمة الصحة العالمية.
+    - lab: توزيع النازحين حسب محافظة النزوح وفقًا لمصفوفة تتبع النزوح (يونيو – 17 نوفمبر 2026)
+    - table:
+        head:
+        - المحافظة
+        - عدد النازحين
+        - النسبة
+        rows:
+        - - تعز
+          - 145,344
+          - 41%
+        - - لحج
+          - 95,580
+          - 27%
+        - - عدن
+          - 71,706
+          - 20%
+        - - أبين
+          - 17,208
+          - 5%
+        - - الحديدة
+          - 8,244
+          - 2%
+        - - شبوة
+          - 6,183
+          - 2%
+        - - مأرب
+          - 4,104
+          - 1%
+        - - حضرموت
+          - 3,576
+          - 1%
+        - - المهرة
+          - 3,096
+          - أقل من 1%
+        - - الضالع
+          - 2,617
+          - أقل من 1%
+        foot:
+        - الإجمالي
+        - 357,658
+        - 100%
+        num_cols:
+        - 1
+        - 2
+        fold: false
+    - src: 'المصدر: المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026)؛ منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026).'
+    - h: 1.3 حركات العبور إلى خارج البلاد
+      level: 1
+      id: s2-3
+    - p: وفقًا للمنظمة الدولية للهجرة، وصل 4,336 مواطنًا يمنيًا إلى جيبوتي حتى 18 نوفمبر 2026، معظمهم عبر أوبوك. وتشير المعلومات الميدانية إلى أن أغلبهم فرّوا من تدهور الأوضاع الأمنية، ولا سيما في مناطق باب المندب وذباب والخوخة والحديدة. كما سجلت المفوضية السامية للأمم المتحدة لشؤون اللاجئين وصول 4,269 قادمًا جديدًا من اليمن إلى جيبوتي والصومال حتى 16 نوفمبر 2026.
+    - src: 'المصدر: المنظمة الدولية للهجرة، تقرير التنقل: التصعيد في الشرق الأوسط وما بعده (19 نوفمبر 2026)؛ المفوضية السامية للأمم المتحدة لشؤون اللاجئين، خريطة الوضع في اليمن (16 نوفمبر 2026).'
+  - title: 2. الانتهاكات ضد المدنيين والعواقب الإنسانية للنزاع
     blocks:
-    - p: يغطي التقرير عشر محافظات، ويعرض توزيع الأسر والأفراد على المحافظات والمديريات. يوضح الجدول أدناه المحافظات، وأعداد الأسر النازحة والنازحين داخليًا، وتوزيعهم الجغرافي داخل كل محافظة.
-    - h: 2.1 نظرة عامة على مستوى المحافظة
+    - p: جُمعت البيانات الواردة في هذا القسم من تقارير وكالات الأمم المتحدة والسلطات الصحية اليمنية. ونظرًا إلى عدم اكتمال الإبلاغ وتعذر الوصول إلى بعض المناطق، ينبغي اعتبار هذه الأرقام حدًا أدنى.
+    - h: 2.1 ضحايا النزاع
       level: 1
       id: s3-1
+    - p: وفقًا لمركز عمليات الطوارئ الصحية التابع لوزارة الصحة العامة والسكان، بلغ عدد الضحايا جراء النزاع 12,779 شخصًا حتى 16 نوفمبر 2026 (10,519 مصابًا و2,260 وفاة). وخلال ثمانية أيام فقط من 9 إلى 16 نوفمبر أُضيف 1,024 ضحية (862 مصابًا و162 وفاة)، بمعدل يومي يقارب 128 ضحية. ونظرًا إلى أن نسبة اكتمال الإبلاغ اليومي تراوحت بين 58% و92%، فإن هذه الأرقام تمثل حدًا أدنى.
+    - lab: ضحايا النزاع حسب المحافظة خلال الفترة 11–15 نوفمبر 2026
+    - table:
+        head:
+        - المحافظة
+        - عدد الضحايا
+        - عدد الوفيات
+        - النسبة من إجمالي الضحايا
+        rows:
+        - - مأرب
+          - '266'
+          - '49'
+          - 46.3%
+        - - لحج
+          - '234'
+          - '22'
+          - 40.7%
+        - - تعز
+          - '70'
+          - '7'
+          - 12.2%
+        - - الضالع
+          - '5'
+          - '0'
+          - 0.9%
+        foot:
+        - الإجمالي
+        - '575'
+        - '78'
+        - 100%
+        num_cols:
+        - 1
+        - 2
+        - 3
+        fold: false
+    - src: 'المصدر: منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026) (بيانات مركز عمليات الطوارئ الصحية). تُحتسب الأعداد حسب مكان الإبلاغ لا مكان الإصابة.'
+    - h: 2.2 الآثار على الخدمات الصحية والبنية التحتية الأساسية
+      level: 1
+      id: s3-2
+    - p: أفاد مركز عمليات الطوارئ الصحية حتى 10 نوفمبر 2026 بتضرر 28 منشأة صحية و7 سيارات إسعاف، وتأثر 13 عاملًا صحيًا (7 قتلى و6 مصابين). كما أُبلغ في 5 نوفمبر عن تضرر منشأتين صحيتين أخريين في تعز لم تُدرجا بعد في الحصيلة. وتشير منظمة الصحة العالمية إلى صعوبة التحقق المستقل من هذه البيانات بسبب قيود الوصول.
+    - p: وتعاني مستشفيات مدينة تعز نقصًا حادًا في الوقود والمستلزمات الجراحية وأدوية التخدير والعناية المركزة، ما يعطل عمل غرف العمليات وتوليد الأكسجين لوحدات العناية المركزة، فضلًا عن غياب صيانة سيارات الإسعاف. كما يزيد توقف خدمات جمع النفايات وتراكم النفايات الصلبة والطبية من مخاطر انتشار الأمراض.
+    - h: 2.3 مدينة تعز تحت الحصار
+      level: 1
+      id: s3-3
+    - p: وفقًا لشبكة FEWS NET، سيطرت السلطات القائمة في صنعاء في 4 أكتوبر 2026 على آخر طريق رئيسي يربط مدينة تعز بالمناطق الخاضعة لسيطرة الحكومة، ما وضع المدينة فعليًا تحت الحصار. ويواجه ما يقدّر بنحو 600,000 إلى 750,000 شخص، كثير منهم نزحوا إلى المدينة من مناطق أخرى، نقصًا متفاقمًا في الغذاء والوقود وغاز الطهي والمياه. ولا تصل إلى المدينة سوى كميات محدودة من الغذاء والسلع الأساسية عبر طرق جبلية صغيرة.
+    - p: وتقدّر الشبكة وجود خطر حقيقي لحدوث مجاعة (المرحلة الخامسة من التصنيف المرحلي المتكامل للأمن الغذائي) في مدينة تعز خلال الفترة من فبراير إلى مايو 2027 إذا طال الحصار واشتدت قيوده. وحتى قبل الحصار، كانت 20% على الأقل من الأسر تسجل درجة استهلاك غذائي ضعيفة، وكان معدل سوء التغذية الحاد لدى الأطفال دون الخامسة يُقدَّر عند مستويات حرجة (15–29.9%).
+    - h: 2.4 المخاطر التي تواجه النساء والأطفال والفئات الأكثر ضعفًا
+      level: 1
+      id: s3-4
+    - p: 'أظهر تقييم الحماية السريع الذي أجرته المنظمة الدولية للهجرة خلال الفترة 15–17 نوفمبر 2026 على 12 أسرة نازحة (58 فردًا) في مأرب الوادي والجفينة أن الأطفال شكّلوا 55% من المشمولين بالتقييم والنساء والفتيات 50%، وأن 27% من الأسر تعيلها نساء، وأن 80% من الأسر أبلغت عن مخاوف تتعلق بالحماية. ومن أبرز المخاطر: التهجير القسري، وعدم ملاءمة المأوى، ومخاوف الخصوصية لدى الأرامل، والاحتياجات المرتبطة بالإعاقة، وانعدام الدخل، وأعباء الرعاية في الأسر الكبيرة. ونظرًا إلى صغر حجم العينة، تُعد هذه النتائج مؤشرًا عامًا.'
+    - p: وتتوقع شبكة FEWS NET أن يطال تدهور الحالة التغذوية في مدينة تعز الأطفال والنساء الحوامل والمرضعات وكبار السن بصورة خاصة. وتفيد منظمة الصحة العالمية بارتفاع حالات الحروق في حين لا تستطيع المستشفيات تقديم أكثر من التثبيت الأولي وتضميد الجروح، وبأن الصحة النفسية والدعم النفسي الاجتماعي وإعادة التأهيل لا تزال الحلقات الأضعف.
+    - src: 'المصادر: منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026)؛ شبكة نظم الإنذار المبكر بالمجاعة (FEWS NET)، تنبيه بشأن اليمن (17 نوفمبر 2026)؛ المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026).'
+  - title: 3. الفئات المتأثرة بالأزمة الإنسانية والتوزيع الجغرافي
+    blocks:
+    - p: يغطي التقرير عشر محافظات، ويعرض توزيع الأسر والأفراد على المحافظات والمديريات. يوضح الجدول أدناه المحافظات، وأعداد الأسر النازحة والنازحين داخليًا، وتوزيعهم الجغرافي داخل كل محافظة.
+    - h: 3.1 نظرة عامة على مستوى المحافظة
+      level: 1
+      id: s4-1
     - table:
         head:
         - المحافظة
@@ -1414,53 +2514,55 @@ ar:
         - نطاق التوزيع
         rows:
         - - الحديدة
-          - "1,471"
-          - "10,297"
+          - 1,471
+          - 10,297
           - حيس، الخوخة
         - - تعز
-          - "23,007"
-          - "156,898"
+          - 23,007
+          - 156,898
           - الشمايتين، المظفر، المعافر، جبل حبشي، المسراخ، القاهرة، صالة، المواسط، الصلو، مشرعة وحدنان، صبر الموادم، المخا، الوازعية، موزع، مقبنة، ذباب
         - - لحج
-          - "15,160"
-          - "117,271"
+          - 15,160
+          - 117,271
           - المسيمير، تبن، المضاربة ورأس العارة، الحوطة، طور الباحة، الحبيلين، الحد، المقاطرة، حالمين، القبيطة
         - - أبين
-          - "4,540"
-          - "22,030"
+          - 4,540
+          - 22,030
           - خنفر، زنجبار، لودر، مودية، أحور
         - - عدن
-          - "3,741"
-          - "17,782"
+          - 3,741
+          - 17,782
           - البريقة، دار سعد، المنصورة، الشيخ عثمان، خور مكسر، صيرة، التواهي والمعلا
         - - شبوة
-          - "173"
-          - "1,066"
+          - '173'
+          - 1,066
           - بيحان، عتق، عين، عسيلان، ميفعة، مرخة السفلى
         - - حضرموت
-          - "214"
-          - "1,498"
+          - '214'
+          - 1,498
           - المكلا، الريدة وقصيعر، غيل باوزير
         - - المهرة
-          - "142"
-          - "994"
+          - '142'
+          - '994'
           - الغيضة، شحن
         - - مأرب
-          - "882"
-          - "6,174"
+          - '882'
+          - 6,174
           - مدينة مأرب، مأرب الوادي، حريب
         - - الضالع
-          - "671"
-          - "4738"
+          - '671'
+          - '4738'
           - قعطبة، الحصين، الضالع، الأزارق
         num_cols:
         - 1
         - 2
-  - title: 3. النازحون حسب المحافظة والمديرية
-    blocks:
-    - h: 3.1 محافظة الحديدة
+    - p: تستند أرقام هذا التقرير إلى تحديث 12 نوفمبر 2026، غير أن بيانات محافظة الحديدة تعود إلى 8 سبتمبر 2026 وبيانات محافظة عدن إلى 28 سبتمبر 2026. ووفقًا للمنظمة الدولية للهجرة، تخضع الحديدة منذ 9 سبتمبر 2026 للسيطرة الكاملة لأنصار الله، وفقد فريق مصفوفة تتبع النزوح إمكانية الوصول إليها. أما في عدن فقد اضطرت الوحدة التنفيذية إلى إيقاف عملها الميداني بسبب قيود الوصول (انظر 3.2.3).
+    - h: 3.2 النازحون حسب المحافظة والمديرية
       level: 1
-      id: s4-1
+      id: s4-2
+    - h: 3.2.1 محافظة الحديدة
+      level: 2
+      id: s4-3
     - p: تبلغ حصيلة النزوح المسجلة في محافظة الحديدة 1,471 أسرة تضم 10,297 فردًا، موزعة على 2 مديريات وهي حيس، الخوخة. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد. وهذه الأرقام التي حصلت عليها الوحدة التنفيذية في 8 سبتمبر 2026.
     - table:
         head: &id003
@@ -1469,83 +2571,83 @@ ar:
         - عدد الأفراد
         rows:
         - - حيس
-          - "1,039"
-          - "7,273"
+          - 1,039
+          - 7,273
         - - الخوخة
-          - "432"
-          - "3,024"
+          - '432'
+          - 3,024
         foot:
         - الإجمالي
-        - "1,471"
-        - "10,297"
+        - 1,471
+        - 10,297
         num_cols:
         - 1
         - 2
-    - h: 3.2 محافظة تعز
-      level: 1
-      id: s4-2
+    - h: 3.2.2 محافظة تعز
+      level: 2
+      id: s4-4
     - p: تبلغ حصيلة النزوح المسجلة في محافظة تعز 23,007 أسرة تضم 156,898 فردًا، موزعة على 16 مديرية وهي الشمايتين، المظفر، المعافر، جبل حبشي، المسراخ، القاهرة، صالة، المواسط، الصلو ومشرعة وحدنان، صبر الموادم، المخا، الوازعية، موزع، مقبنة، ذباب. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين. في محافظة تعز انتقل الكثير من النازحين الذين كانوا في مديريات جبل حبشي والمسراخ والمعافر ومقبنه الى مديريتي المظفر والقاهرة ومازالت فرقنا الميدانية تتبع حركة هؤلاء النازحين ورصد اعدادهم. وتتوقع الوحدة التنفيذية ان يصل اعداد الاسر النازحة في هاتان المديريتان الى اكثر من 13000 اسرة.
     - table:
         head: *id003
         rows:
         - - الشمايتين
-          - "2,533"
-          - "17,736"
+          - 2,533
+          - 17,736
         - - المظفر
-          - "7,243"
-          - "48,780"
+          - 7,243
+          - 48,780
         - - المعافر
-          - "4,390"
-          - "30,746"
+          - 4,390
+          - 30,746
         - - جبل حبشي
-          - "2,173"
-          - "15,213"
+          - 2,173
+          - 15,213
         - - المسراخ
-          - "1,098"
-          - "7,687"
+          - 1,098
+          - 7,687
         - - القاهرة
-          - "1,582"
-          - "10,257"
+          - 1,582
+          - 10,257
         - - صالة
-          - "510"
-          - "3,237"
+          - '510'
+          - 3,237
         - - المواسط
-          - "211"
-          - "1,481"
+          - '211'
+          - 1,481
         - - الصلو
-          - "2"
-          - "14"
+          - '2'
+          - '14'
         - - مشرعة وحدنان
-          - "702"
-          - "4,283"
+          - '702'
+          - 4,283
         - - صبر الموادم
-          - "828"
-          - "5,319"
+          - '828'
+          - 5,319
         - - المخا
-          - "446"
-          - "3,122"
+          - '446'
+          - 3,122
         - - الوازعية
-          - "668"
-          - "4,676"
+          - '668'
+          - 4,676
         - - موزع
-          - "357"
-          - "2,499"
+          - '357'
+          - 2,499
         - - مقبنة
-          - "230"
-          - "1,610"
+          - '230'
+          - 1,610
         - - ذباب
-          - "34"
-          - "238"
+          - '34'
+          - '238'
         foot:
         - الإجمالي
-        - "23,007"
-        - "156,898"
+        - 23,007
+        - 156,898
         num_cols:
         - 1
         - 2
-    - h: 3.3 محافظة عدن
-      level: 1
-      id: s4-3
+    - h: 3.2.3 محافظة عدن
+      level: 2
+      id: s4-5
     - p: حتى 28 سبتمبر 2026 يسجل تقرير النزوح في محافظة عدن استضافة 3741 أسرة نازحة، يُقدّر عدد أفرادها بنحو 17782 فردًا، موزعة على مديريات المحافظة الثماني (البريقة، دار سعد، الشيخ عثمان، المنصورة، خور مكسر، كريتر، المعلا، التواهي). ويعرض الجدول الموحد أدناه بيانات المناطق المستضيفة.
     - table:
         head:
@@ -1554,211 +2656,211 @@ ar:
         - عدد النازحين
         rows:
         - - البريقة
-          - "1697"
-          - "8056"
+          - '1697'
+          - '8056'
         - - دار سعد
-          - "1027"
-          - "4977"
+          - '1027'
+          - '4977'
         - - الشيخ عثمان
-          - "476"
-          - "2357"
+          - '476'
+          - '2357'
         - - المنصورة
-          - "312"
-          - "1393"
+          - '312'
+          - '1393'
         - - كريتر
-          - "106"
-          - "430"
+          - '106'
+          - '430'
         - - خور مكسر
-          - "80"
-          - "401"
+          - '80'
+          - '401'
         - - المعلا
-          - "35"
-          - "134"
+          - '35'
+          - '134'
         - - التواهي
-          - "8"
-          - "34"
+          - '8'
+          - '34'
         foot:
         - الإجمالي
-        - "3741"
-        - "17782"
+        - '3741'
+        - '17782'
         num_cols:
         - 1
         - 2
     - p: في محافظة عدن، واجه فريقنا الميداني تحديات وقيودًا تعيق وصوله إلى الأسر النازحة، فضلًا عن عدم قدرته على رصد أوضاعها وتنسيق الاستجابة. وبسبب هذه القيود والعوائق اضطر فريق الوحدة التنفيذية الى التوقف عن العمل كما انه وبسبب هذه العوائق والقيود فقد غادرت كثير من الأسر التي تم رصدها في السابق الى محافظتي لحج وأبين.
-    - h: 3.4 محافظة أبين
-      level: 1
-      id: s4-4
+    - h: 3.2.4 محافظة أبين
+      level: 2
+      id: s4-6
     - p: تبلغ حصيلة النزوح المسجلة في محافظة أبين 4,540 أسرة تضم 22,030 فردًا، موزعة على 5 مديريات، وهي خنفر، زنجبار، لودر، مودية، أحور. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
     - table:
         head: *id003
         rows:
         - - خنفر
-          - "3,312"
-          - "16,150"
+          - 3,312
+          - 16,150
         - - زنجبار
-          - "1,103"
-          - "5,200"
+          - 1,103
+          - 5,200
         - - لودر
-          - "56"
-          - "258"
+          - '56'
+          - '258'
         - - مودية
-          - "43"
-          - "299"
+          - '43'
+          - '299'
         - - أحور
-          - "26"
-          - "123"
+          - '26'
+          - '123'
         foot:
         - الإجمالي
-        - "4,540"
-        - "22,030"
+        - 4,540
+        - 22,030
         num_cols:
         - 1
         - 2
-    - h: 3.5 محافظة لحج
-      level: 1
-      id: s4-5
+    - h: 3.2.5 محافظة لحج
+      level: 2
+      id: s4-7
     - p: تبلغ حصيلة النزوح المسجلة في محافظة لحج 15,160 أسرة تضم 117,271 فردًا، موزعة على 10 مديريات وهي المسيمير، تبن، المضاربة ورأس العارة، الحوطة، طور الباحة، الحبيلين، الحد، المقاطرة، حالمين، القبيطة. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد.
     - table:
         head: *id003
         rows:
         - - المسيمير
-          - "332"
-          - "2,324"
+          - '332'
+          - 2,324
         - - تبن
-          - "10,037"
-          - "70,259"
+          - 10,037
+          - 70,259
         - - المضاربة ورأس العارة
-          - "2,768"
-          - "30,527"
+          - 2,768
+          - 30,527
         - - الحوطة
-          - "443"
-          - "3,101"
+          - '443'
+          - 3,101
         - - طور الباحة
-          - "751"
-          - "5,257"
+          - '751'
+          - 5,257
         - - الحبيلين
-          - "78"
-          - "546"
+          - '78'
+          - '546'
         - - الحد
-          - "510"
-          - "3,570"
+          - '510'
+          - 3,570
         - - المقاطرة
-          - "19"
-          - "133"
+          - '19'
+          - '133'
         - - حالمين
-          - "6"
-          - "42"
+          - '6'
+          - '42'
         - - القبيطة
-          - "216"
-          - "1,512"
+          - '216'
+          - 1,512
         foot:
         - الإجمالي
-        - "15,160"
-        - "117,271"
+        - 15,160
+        - 117,271
         num_cols:
         - 1
         - 2
-    - h: 3.6 محافظة شبوة
-      level: 1
-      id: s4-6
+    - h: 3.2.6 محافظة شبوة
+      level: 2
+      id: s4-8
     - p: تبلغ حصيلة النزوح المسجلة في محافظة شبوة 173 أسرة تضم 1,066 فردًا، موزعة على 6 مديريات، وهي بيحان، عتق، عين، عسيلان، ميفعة، مرخة السفلى. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
     - table:
         head: *id003
         rows:
         - - بيحان
-          - "45"
-          - "315"
+          - '45'
+          - '315'
         - - عتق
-          - "35"
-          - "215"
+          - '35'
+          - '215'
         - - عين
-          - "59"
-          - "312"
+          - '59'
+          - '312'
         - - عسيلان
-          - "11"
-          - "75"
+          - '11'
+          - '75'
         - - ميفعة
-          - "10"
-          - "62"
+          - '10'
+          - '62'
         - - مرخة السفلى
-          - "13"
-          - "87"
+          - '13'
+          - '87'
         foot:
         - الإجمالي
-        - "173"
-        - "1,066"
+        - '173'
+        - 1,066
         num_cols:
         - 1
         - 2
-    - h: 3.7 محافظة حضرموت
-      level: 1
-      id: s4-7
+    - h: 3.2.7 محافظة حضرموت
+      level: 2
+      id: s4-9
     - p: تبلغ حصيلة النزوح المسجلة في محافظة حضرموت 214 أسرة تضم 1,498 فردًا، موزعة على 3 مديريات وفق البيانات المتاحة، وهي المكلا، الريدة وقصيعر، غيل باوزير. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحون.
     - table:
         head: *id003
         rows:
         - - المكلا
-          - "176"
-          - "1,232"
+          - '176'
+          - 1,232
         - - الريدة وقصيعر
-          - "36"
-          - "252"
+          - '36'
+          - '252'
         - - غيل باوزير
-          - "2"
-          - "14"
+          - '2'
+          - '14'
         foot:
         - الإجمالي
-        - "214"
-        - "1,498"
+        - '214'
+        - 1,498
         num_cols:
         - 1
         - 2
-    - h: 3.8 محافظة المهرة
-      level: 1
-      id: s4-8
+    - h: 3.2.8 محافظة المهرة
+      level: 2
+      id: s4-10
     - p: تبلغ حصيلة النزوح المسجلة في محافظة المهرة 142 أسرة تضم 994 فردًا، موزعة على مديريتين وهي الغيضة، شحن. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
     - table:
         head: *id003
         rows:
         - - الغيضة
-          - "134"
-          - "938"
+          - '134'
+          - '938'
         - - شحن
-          - "8"
-          - "56"
+          - '8'
+          - '56'
         foot:
         - الإجمالي
-        - "142"
-        - "994"
+        - '142'
+        - '994'
         num_cols:
         - 1
         - 2
-    - h: 3.9 محافظة مأرب
-      level: 1
-      id: s4-9
+    - h: 3.2.9 محافظة مأرب
+      level: 2
+      id: s4-11
     - p: تبلغ حصيلة النزوح المسجلة في محافظة مأرب 882 أسرة تضم 6,174 فردًا، موزعة على 3 مديريات وفق البيانات المتاحة، وهي مدينة مأرب، مأرب الوادي، حريب. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
     - table:
         head: *id003
         rows:
         - - مدينة مأرب
-          - "548"
-          - "3,836"
+          - '548'
+          - 3,836
         - - مأرب الوادي
-          - "271"
-          - "1,897"
+          - '271'
+          - 1,897
         - - حريب
-          - "63"
-          - "441"
+          - '63'
+          - '441'
         foot:
         - الإجمالي
-        - "882"
-        - "6,174"
+        - '882'
+        - 6,174
         num_cols:
         - 1
         - 2
-    - h: 3.10 محافظة الضالع
-      level: 1
-      id: s4-10
+    - h: 3.2.10 محافظة الضالع
+      level: 2
+      id: s4-12
     - p: تبلغ حصيلة النزوح المسجلة في محافظة الضالع 671 أسرة تضم 4,738 فردًا، موزعة على 4 مديريات وهي قعطبة، الحصين، الضالع، الأزارق. ويبين الجدول التالي التوزيع التفصيلي للأسر والأفراد النازحين.
     - table:
         head:
@@ -1767,49 +2869,220 @@ ar:
         - أفراد
         rows:
         - - الضالع
-          - "376"
-          - "2,587"
+          - '376'
+          - 2,587
         - - الأزارق
-          - "252"
-          - "1,870"
+          - '252'
+          - 1,870
         - - قعطبة
-          - "35"
-          - "245"
+          - '35'
+          - '245'
         - - الحصين
-          - "8"
-          - "36"
+          - '8'
+          - '36'
         foot:
         - الإجمالي
-        - "671"
-        - "4,738"
+        - '671'
+        - 4,738
         num_cols:
         - 1
         - 2
-  - title: 4. الوضع الإنساني للأسر النازحة
+    - h: 3.3 اتجاهات النزوح وأبرز المديريات المضيفة
+      level: 1
+      id: s4-13
+    - p: وفقًا لمصفوفة تتبع النزوح، نزح 57% (نحو 203,262 فردًا) من أصل نحو 356,602 فرد نزحوا خلال الفترة من 1 أغسطس إلى 17 نوفمبر 2026 داخل محافظاتهم، فيما نزح 43% (نحو 153,340 فردًا) إلى محافظة أخرى. وبحسب المنظمة الدولية للهجرة، تنحدر 65% من حالات النزوح المسجلة (229,193 فردًا) من محافظة تعز. ويدل ارتفاع نسبة التنقل بين المحافظات على اتساع النطاق الجغرافي للنزوح.
+    - lab: المديريات الأكثر استضافة للنازحين (1 أغسطس – 17 نوفمبر 2026)
+    - table:
+        head:
+        - المديرية
+        - المحافظة
+        - عدد النازحين
+        - ملاحظات
+        rows:
+        - - البريقة
+          - عدن
+          - 36,516
+          - من محافظات أخرى (لحج 17,952، تعز 14,148، الحديدة 4,242)
+        - - جبل حبشي
+          - تعز
+          - 34,236
+          - من داخل محافظة تعز
+        - - المعافر
+          - تعز
+          - 32,832
+          - من داخل محافظة تعز
+        - - دار سعد
+          - عدن
+          - 19,530
+          - من محافظات أخرى (لحج 7,914، تعز 7,062، الحديدة 4,452)
+        - - تبن
+          - لحج
+          - 19,152
+          - من محافظات أخرى (تعز 13,560، الحديدة 5,568)؛ إجمالي النازحين في المديرية 37,848
+        num_cols:
+        - 2
+        fold: false
+    - src: 'المصدر: المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026)؛ المنظمة الدولية للهجرة، تقرير التنقل: التصعيد في الشرق الأوسط وما بعده (19 نوفمبر 2026).'
+    - h: 3.4 مواقع النزوح والمجتمعات المضيفة
+      level: 1
+      id: s4-14
+    - p: وفقًا لبيانات رصد المواقع التي يتشاركها فريق تنسيق SLSC، أُنشئ 29 موقعًا جديدًا لاستضافة النازحين، واستقبل 86 موقعًا أسرًا نازحة جديدة خلال موجة النزوح الأخيرة، وتضم هذه المواقع نحو 10,000 أسرة نازحة حديثًا (قرابة 60,000 فرد). كما تحققت آلية الاستجابة السريعة منذ 1 أغسطس من 39,835 أسرة (206,864 فردًا) في 65 مديرية ضمن 10 محافظات.
+    - p: وبحسب المنظمة الدولية للهجرة، يزيد الوافدون الجدد الطلب على الخدمات والموارد في المجتمعات المضيفة ومواقع النزوح التي كانت تعاني أصلًا من قيود في القدرة الاستيعابية، ولا تزال ندرة المياه مصدر قلق رئيسي في المواقع القائمة. وفي عدن تقيم بعض الأسر النازحة لدى أسر أخرى بينما تبقى أسر أخرى في العراء (انظر 5.1.1).
+    - src: 'المصدر: تحديث الوضع الصادر عن فريق تنسيق SLSC في اليمن (18 نوفمبر 2026)؛ المنظمة الدولية للهجرة، تقرير التنقل: التصعيد في الشرق الأوسط وما بعده (19 نوفمبر 2026).'
+  - title: 4. عمليات المساعدات الإنسانية الوطنية والدولية في اليمن
     blocks:
-    - p: تشير المعلومات النوعية الواردة من المحافظات إلى ظروف نزوح صعبة واحتياجات متعددة القطاعات ويبين هذا التحديث اتساع حجم النازحين المسجلين في العشر المحافظات.
-    - h: 4.1 المأوى والإيواء
+    - h: 4.1 الوضع العام للمساعدات الإنسانية الدولية
       level: 1
       id: s5-1
-    - p: يمثل المأوى والإيواء أولوية أساسية في الاستجابة. وتعتمد أسر نازحة في عدن على استضافة أسر أخرى بينما هناك اسر في العراء ولا يوجد لها مأوى حتى كتابة هذا التقرير؛ ويستدعي الحجم الهائل للنازحين حاليًا التحقق من أوضاع السكن وتحديد الأسر الأكثر احتياجًا ودعم المجتمعات المضيفة.
-    - h: 4.2 الغذاء والاحتياجات الأساسية
+    - p: وفقًا لمجموعة الصحة، وصل 26 شريكًا صحيًا حتى 17 نوفمبر 2026 إلى أكثر من 111,500 نازح في 44 مديرية ضمن 9 محافظات، عبر 49 فريقًا طبيًا متنقلًا ونقطة صحية مؤقتة جرى التحقق منها، ودعم 73 منشأة صحية ثابتة. وتدعم منظمة الصحة العالمية 32 فريقًا للإصابات والرعاية الطارئة في 6 محافظات، فيما وصلت خدمات الرعاية الصحية الأولية المدعومة من اليونيسف إلى 58,270 شخصًا من النازحين والمجتمعات المضيفة.
+    - p: وفي قطاع المأوى والمواد غير الغذائية، سُجلت 31,324 أسرة (79%) من أصل 39,835 أسرة مدرجة في قوائم آلية الاستجابة السريعة وتلقت المساعدة، بينما لا تزال 8,511 أسرة (21%) مسجلة دون أن تتلقى أي مساعدة. وتلقت جميع الأسر التي شملها تقييم الحماية لدى المنظمة الدولية للهجرة الإرشاد في حالات الأزمات والإسعافات النفسية الأولية، وأُحيلت الأسر المحتاجة إلى إدارة حالات الحماية والنقد مقابل الحماية وخدمات الصحة والمياه والإصحاح والمأوى. كما تسهم في الاستجابة منظمات منها أطباء بلا حدود واللجنة الدولية للصليب الأحمر والإغاثة الإسلامية – اليمن ومؤسسة Field Medical Foundation وصندوق الأمم المتحدة للسكان وإنترسوس.
+    - h: 4.2 تمويل العمل الإنساني وفجوات التمويل
       level: 1
       id: s5-2
-    - p: تُشير جميع التقارير إلى أن الغذاء والمأوى يمثلان احتياجات عاجلة، في حين تُصنَّف المواد الغذائية والإمدادات الأساسية ضمن الاحتياجات ذات الأولوية للأسر النازحة.
-    - h: 4.3 المياه والصرف الصحي والنظافة
+    - p: تُظهر التقارير المصدرية أن التمويل لا يزال القيد الرئيسي أمام الاستجابة؛ إذ لم يُموَّل من خطة الاستجابة الصحية لمدة 90 يومًا، التي تنتهي في 31 ديسمبر 2026، سوى 35% حتى 10 نوفمبر، كما يلزم توفير 22.2 مليون دولار لسد فجوتي المأوى والمواد غير الغذائية.
+    - table:
+        head:
+        - المجال
+        - حالة التمويل / الفجوة
+        - المصدر
+        rows:
+        - - خطة الاستجابة الصحية لمدة 90 يومًا (حتى 31 ديسمبر 2026)
+          - ممولة بنسبة 35%
+          - منظمة الصحة العالمية
+        - - 32 فريقًا للإصابات والرعاية الطارئة تدعمها منظمة الصحة العالمية
+          - ممولة حتى يناير 2027 فقط
+          - منظمة الصحة العالمية
+        - - نقاط تثبيت الإصابات
+          - 4 نقاط ممولة فقط من أصل 35 نقطة مخططة
+          - منظمة الصحة العالمية
+        - - الطلب الثالث لمنظمة الصحة العالمية من الصندوق المركزي لمواجهة الطوارئ
+          - 2.4 مليون دولار (يشمل مكونات اليونيسف والمنظمة الدولية للهجرة)
+          - منظمة الصحة العالمية
+        - - المأوى الطارئ
+          - فجوة قدرها 15.6 مليون دولار
+          - SLSC
+        - - حقائب المواد غير الغذائية
+          - فجوة قدرها 6.6 مليون دولار
+          - SLSC
+        - - إدارة المواقع وصيانتها (6 أشهر)
+          - فجوة قدرها 3.6 مليون دولار
+          - SLSC
+        fold: false
+    - h: 4.3 المساعدات القطاعية المقدمة من الأمم المتحدة وشركائها
       level: 1
       id: s5-3
-    - p: تُحدَّد مياه الشرب الآمنة والصرف الصحي ومستلزمات النظافة والمراحيض الطارئة وإدارة النفايات باعتبارها احتياجات عاجلة، ولا سيما في مواقع وتجمعات النزوح المنشأة حديثًا.
-    - h: 4.4 الصحة والحماية
+    - table:
+        head:
+        - القطاع
+        - المساعدات المقدمة
+        - المصدر
+        rows:
+        - - المأوى الطارئ
+          - مساعدات مأوى لـ 7,026 أسرة (18% من الأسر التي جرى التحقق منها)
+          - SLSC
+        - - المواد غير الغذائية
+          - حقائب كاملة لـ 7,137 أسرة؛ حقائب جزئية لـ 4,200 أسرة
+          - SLSC
+        - - الخدمات الصحية
+          - أكثر من 111,500 نازح؛ 49 فريقًا متنقلًا ونقطة صحية مؤقتة؛ 73 منشأة ثابتة
+          - مجموعة الصحة
+        - - الإصابات والرعاية الطارئة
+          - '32 فريقًا في 6 محافظات: 8 فرق رعاية متخصصة، 9 فرق طبية متنقلة، 7 سيارات إسعاف، 4 فرق طبية طارئة ثابتة (من النوع الأول)، 4 نقاط لتثبيت الإصابات'
+          - منظمة الصحة العالمية
+        - - الأدوية والمستلزمات الطبية
+          - 19.6 طن متري لثلاث منشآت في تعز؛ نحو 14 طنًا متريًا لمستشفيين سابقًا؛ 6 أطنان مترية من المستلزمات الصحية الإضافية
+          - منظمة الصحة العالمية
+        - - التحصين
+          - 'حملة الحصبة والحصبة الألمانية: 883,896 طفلًا (92.3%)؛ فيتامين (أ) لـ 741,713 طفلًا؛ 6,007 أطفال نازحين في 5 مخيمات'
+          - وزارة الصحة العامة والسكان، منظمة الصحة العالمية، اليونيسف
+        - - الرعاية الصحية الأولية
+          - 58,270 شخصًا؛ رعاية ما قبل الولادة لـ 7,636 امرأة حاملًا؛ تحصين روتيني لـ 8,084 طفلًا
+          - اليونيسف
+        - - الاستجابة للكوليرا
+          - 10 مراكز لعلاج الإسهالات في عدن ولحج وأبين والضالع وتعز
+          - منظمة الصحة العالمية، أطباء بلا حدود والشركاء
+        - - الحماية
+          - الإرشاد في حالات الأزمات والإسعافات النفسية الأولية وإحالة الحالات
+          - المنظمة الدولية للهجرة
+        fold: false
+    - lab: الأسر التي جرى التحقق منها ومساعدات المأوى المقدمة حسب المحافظة (1 أغسطس – 18 نوفمبر 2026)
+    - table:
+        head:
+        - المحافظة
+        - الأسر التي تحققت منها آلية الاستجابة السريعة
+        - النسبة
+        - الأسر التي تلقت مساعدات المأوى
+        - الأسر التي تلقت حقائب المواد غير الغذائية الكاملة
+        rows:
+        - - تعز
+          - 14,444
+          - 36%
+          - 1,184
+          - 1,339
+        - - عدن
+          - 9,571
+          - 24%
+          - 2,155
+          - '597'
+        - - لحج
+          - 9,267
+          - 23%
+          - 1,652
+          - 2,596
+        - - أبين
+          - 3,088
+          - 8%
+          - 1,700
+          - 2,124
+        - - الضالع
+          - 1,501
+          - 4%
+          - –
+          - –
+        - - مأرب
+          - '686'
+          - 2%
+          - –
+          - –
+        - - المهرة
+          - '419'
+          - 1%
+          - –
+          - –
+        - - حضرموت
+          - '392'
+          - أقل من 1%
+          - '260'
+          - '400'
+        - - الحديدة
+          - '303'
+          - أقل من 1%
+          - '75'
+          - '81'
+        - - شبوة
+          - '164'
+          - أقل من 1%
+          - –
+          - –
+        foot:
+        - الإجمالي
+        - 39,835
+        - 100%
+        - 7,026
+        - 7,137
+        num_cols:
+        - 1
+        - 2
+        - 3
+        - 4
+        fold: false
+    - src: 'المصادر: تحديث الوضع الصادر عن فريق تنسيق SLSC في اليمن (18 نوفمبر 2026)؛ منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026)؛ المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026). لا تُطابَق سجلات المساعدات مع قوائم آلية الاستجابة السريعة على مستوى الأسرة.'
+    - h: 4.4 الجهود الإنسانية الوطنية والمحلية في اليمن
       level: 1
       id: s5-4
-    - p: تواجه الأسر النازحة محدودية في الوصول إلى الخدمات الصحية وخدمات الحماية. ويلزم إيلاء اهتمام ذي أولوية للأطفال والنساء وكبار السن وذوي الإعاقة والأسر المصابة بأمراض مزمنة وغيرها من الأسر شديدة الضعف. وتدعو التقارير المستلمة من المحافظات إلى إجراء تقييمات صحية وحمائية، والإحالة، وتوفير الأدوية والإسعافات الأولية، والدعم النفسي الاجتماعي عند الحاجة، وتعزيز الاستجابة الحمائية.
-    - h: 4.5 سبل العيش والهشاشة الاقتصادية
-      level: 1
+    - h: 4.4.1 الإجراءات التي اتخذتها الوحدة التنفيذية
+      level: 2
       id: s5-5
-    - p: أدى فقدان أو تضرر مصادر الدخل والممتلكات والثروة الحيوانية وغيرها من أصول سبل العيش إلى زيادة الهشاشة الاقتصادية للأسر النازحة. لذا تحتاج العديد من الأسر إلى مساعدة فورية منقذة للحياة، إضافة إلى دعم يمكن أن يحد من الآثار الاقتصادية السلبية للنزوح ومن الاعتماد على مجتمعات مضيفة تعاني أصلًا من ضغوط شديدة.
-  - title: 5. الإجراءات التي اتخذتها الوحدة التنفيذية
-    blocks:
     - ul:
       - إنشاء غرفة عمليات في فرع المحافظة وفرق ميدانية على مستوى المديريات لمتابعة مستجدات النزوح.
       - استقبال النازحين الجدد وتسجيل الأسر من خلال زيارات ميدانية لمناطق الوصول وتجمعات النزوح.
@@ -1819,8 +3092,146 @@ ar:
       - متابعة حالة الاستجابة والحالات غير المشمولة، ورصد التدخلات، وتحديث الفجوات المتبقية لتحسين الاستهداف والحد من الازدواجية.
       - مواصلة المتابعة الميدانية ورفع التقارير ومتابعة أوضاع النازحين والى اي مناطق نزحوا بعد الاحداث الأخيرة في بعض مديريات تعز والحديدة.
     - p: علاوة على ذلك، أنشأت الوحدة التنفيذية في المكتب الرئيسي فريقًا لرصد الاستجابة لمتابعة مستجدات النزوح في المحافظات المتضررة، وأصدرت تقارير إلى المجموعات القطاعية للأمم المتحدة والمنظمات المحلية والدولية.
-  - title: 6. الأولويات والإجراءات العاجلة المقترحة
+    - h: 4.4.2 جهود وزارة الصحة العامة والسكان والمؤسسات المحلية
+      level: 2
+      id: s5-6
+    - p: نفذت وزارة الصحة العامة والسكان، بالتعاون مع منظمة الصحة العالمية واليونيسف، حملة وطنية للتحصين ضد الحصبة والحصبة الألمانية في 100 مديرية ضمن 11 محافظة خلال الفترة من 7 إلى 12 نوفمبر 2026. ويجمع مركز عمليات الطوارئ الصحية التابع للوزارة أعداد الضحايا يوميًا. كما نفذ مكتب الصحة في محافظة حضرموت والبرنامج الوطني لمكافحة الملاريا ونواقل الأمراض حملة متكاملة لمكافحة حمى الضنك في مديرية الشحر. وتجري حاليًا دورة صرف تشمل نحو 4,000 عامل صحي في 500 منشأة صحية، منها 50 منشأة تخدم النازحين. ومن المؤسسات المحلية، تدعم مؤسسة Selah العيادات المتنقلة في مخيمات النازحين بساحل حضرموت عبر مكتب الصحة في المحافظة.
+    - src: 'المصدر: منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026).'
+  - title: 5. الاحتياجات الإنسانية وأولويات الاستجابة
     blocks:
+    - p: تشير المعلومات النوعية الواردة من المحافظات إلى ظروف نزوح صعبة واحتياجات متعددة القطاعات ويبين هذا التحديث اتساع حجم النازحين المسجلين في العشر المحافظات.
+    - h: 5.1 الاحتياجات الإنسانية حسب القطاع
+      level: 1
+      id: s6-1
+    - p: 'وفقًا لبيانات مصفوفة تتبع النزوح للفترة من 1 أغسطس إلى 17 نوفمبر 2026، تتمثل أبرز الاحتياجات ذات الأولوية التي أفاد بها النازحون في المأوى والمساعدات الغذائية والدعم المالي:'
+    - chart:
+        title: الاحتياجات ذات الأولوية التي أفاد بها النازحون (%)
+        max: 40
+        ticks:
+        - '0'
+        - '10'
+        - '20'
+        - '30'
+        - '40'
+        items:
+        - - المأوى
+          - 38
+          - 38%
+        - - المساعدات الغذائية
+          - 30
+          - 30%
+        - - الدعم المالي
+          - 27
+          - 27%
+        - - خدمات الحماية
+          - 3
+          - 3%
+    - h: 5.1.1 المأوى والإيواء
+      level: 2
+      id: s6-2
+    - p: يمثل المأوى والإيواء أولوية أساسية في الاستجابة. وتعتمد أسر نازحة في عدن على استضافة أسر أخرى بينما هناك اسر في العراء ولا يوجد لها مأوى حتى كتابة هذا التقرير؛ ويستدعي الحجم الهائل للنازحين حاليًا التحقق من أوضاع السكن وتحديد الأسر الأكثر احتياجًا ودعم المجتمعات المضيفة.
+    - h: 5.1.2 الغذاء والاحتياجات الأساسية
+      level: 2
+      id: s6-3
+    - p: تُشير جميع التقارير إلى أن الغذاء والمأوى يمثلان احتياجات عاجلة، في حين تُصنَّف المواد الغذائية والإمدادات الأساسية ضمن الاحتياجات ذات الأولوية للأسر النازحة.
+    - h: 5.1.3 المياه والصرف الصحي والنظافة
+      level: 2
+      id: s6-4
+    - p: تُحدَّد مياه الشرب الآمنة والصرف الصحي ومستلزمات النظافة والمراحيض الطارئة وإدارة النفايات باعتبارها احتياجات عاجلة، ولا سيما في مواقع وتجمعات النزوح المنشأة حديثًا.
+    - h: 5.1.4 الصحة والحماية
+      level: 2
+      id: s6-5
+    - p: تواجه الأسر النازحة محدودية في الوصول إلى الخدمات الصحية وخدمات الحماية. ويلزم إيلاء اهتمام ذي أولوية للأطفال والنساء وكبار السن وذوي الإعاقة والأسر المصابة بأمراض مزمنة وغيرها من الأسر شديدة الضعف. وتدعو التقارير المستلمة من المحافظات إلى إجراء تقييمات صحية وحمائية، والإحالة، وتوفير الأدوية والإسعافات الأولية، والدعم النفسي الاجتماعي عند الحاجة، وتعزيز الاستجابة الحمائية.
+    - h: 5.1.5 سبل العيش والهشاشة الاقتصادية
+      level: 2
+      id: s6-6
+    - p: أدى فقدان أو تضرر مصادر الدخل والممتلكات والثروة الحيوانية وغيرها من أصول سبل العيش إلى زيادة الهشاشة الاقتصادية للأسر النازحة. لذا تحتاج العديد من الأسر إلى مساعدة فورية منقذة للحياة، إضافة إلى دعم يمكن أن يحد من الآثار الاقتصادية السلبية للنزوح ومن الاعتماد على مجتمعات مضيفة تعاني أصلًا من ضغوط شديدة.
+    - h: 5.2 الاحتياجات العاجلة من الغذاء والمأوى
+      level: 1
+      id: s6-7
+    - p: 'الغذاء: وفقًا لشبكة FEWS NET، يُتوقع في السيناريو الأرجح استمرار أوضاع الطوارئ (المرحلة الرابعة من التصنيف المرحلي المتكامل) في مدينة تعز المحاصرة، مع تزايد نسبة الأسر الأشد تضررًا التي تبلغ مرحلة الكارثة (المرحلة الخامسة). وتلجأ الأسر الفقيرة إلى تقليص حجم الوجبات وعددها وبيع ما تبقى من أصولها، بل إن الأسر المتوسطة والميسورة باتت تعتمد بصورة متزايدة على دعم الأقارب وشبكات المجتمع. وتصدر الشبكة مثل هذه التنبيهات عندما تكون هناك حاجة وشيكة إلى استجابة إنسانية بالمساعدات الغذائية.'
+      b: true
+    - p: 'المأوى: وفقًا لفريق SLSC، لا تزال 28,943 أسرة (73%) من أصل 39,835 أسرة تحققت منها آلية الاستجابة السريعة بحاجة إلى المأوى الطارئ، و22,625 أسرة (57%) بحاجة إلى حقائب المواد غير الغذائية. ويقيم نحو 60,000 نازح جديد (قرابة 10,000 أسرة) في المواقع المنشأة حديثًا والمواقع التي استقبلت وافدين جددًا.'
+      b: true
+    - h: 5.3 الاحتياجات القطاعية والميزانية التقديرية
+      level: 1
+      id: s6-8
+    - table:
+        head:
+        - الاحتياج
+        - الكمية
+        - التكلفة التقديرية
+        - المصدر
+        rows:
+        - - حقائب المأوى الطارئ
+          - 28,943 أسرة
+          - 15.6 مليون دولار (540 دولارًا للحقيبة)
+          - SLSC
+        - - حقائب المواد غير الغذائية
+          - 22,625 أسرة
+          - 6.6 مليون دولار (290 دولارًا للحقيبة)
+          - SLSC
+        - - إدارة المواقع وصيانتها (6 أشهر)
+          - نحو 10,000 أسرة (60,000 فرد)
+          - 3.6 مليون دولار
+          - SLSC
+        - - الاستجابة الصحية (الطلب الثالث لمنظمة الصحة العالمية من الصندوق المركزي لمواجهة الطوارئ)
+          - مواقع صحية وفرق طبية متنقلة وإمدادات
+          - 2.4 مليون دولار
+          - منظمة الصحة العالمية
+        - - نقاط تثبيت الإصابات
+          - 31 نقطة من أصل 35 نقطة مخططة
+          - بانتظار التمويل
+          - منظمة الصحة العالمية
+        - - التحصين الاستدراكي ضد الحصبة والحصبة الألمانية
+          - 73,300 طفل
+          - —
+          - وزارة الصحة العامة والسكان، منظمة الصحة العالمية
+        - - حملة لقاح الكوليرا الفموي
+          - 23 مديرية، 2.25 مليون شخص
+          - —
+          - منظمة الصحة العالمية
+        fold: false
+    - lab: فجوات المأوى والمواد غير الغذائية حسب منطقة العمليات
+    - table:
+        head:
+        - منطقة العمليات
+        - الأسر التي جرى التحقق منها
+        - فجوة المأوى (أسر)
+        - فجوة المواد غير الغذائية (أسر)
+        - تكلفة سد الفجوات
+        rows:
+        - - مركز عمليات تعز
+          - 13,704
+          - 11,155
+          - 12,189
+          - 9.6 مليون دولار
+        - - الساحل الغربي
+          - 1,043
+          - '0'
+          - '506'
+          - 0.1 مليون دولار
+        - - مركز عمليات عدن
+          - 25,088
+          - 17,788
+          - 9,930
+          - 12.5 مليون دولار
+        foot:
+        - الإجمالي
+        - 39,835
+        - 28,943
+        - 22,625
+        - 22.2 مليون دولار
+        num_cols:
+        - 1
+        - 2
+        - 3
+        - 4
+        fold: false
+    - src: 'المصادر: تحديث الوضع الصادر عن فريق تنسيق SLSC في اليمن (18 نوفمبر 2026)؛ منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026)؛ شبكة نظم الإنذار المبكر بالمجاعة (FEWS NET)، تنبيه بشأن اليمن (17 نوفمبر 2026)؛ المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026).'
+    - h: 5.4 الأولويات والإجراءات العاجلة المقترحة
+      level: 1
+      id: s6-9
     - p: ينبغي أن يكون الهدف الفوري هو الحيلولة دون بقاء الأسر النازحة حديثًا دون الحد الأدنى من المساعدة المنقذة للحياة، مع الحفاظ في الوقت ذاته على دقة التسجيل والتحقق والتنسيق. وينبغي أن تسير الاستجابة العاجلة والتقييم القطاعي بالتوازي بدلاً من التسلسل حيثما تكون الاحتياجات الإنسانية الواضحة قائمة بالفعل.
     - ol:
       - إعطاء الأولوية لجميع الأسر النازحة التي لم تتلقَّ مساعدة إنسانية، مع إيلاء اهتمام فوري لأحدث الأسر نزوحًا وأكثرها ضعفًا.
@@ -1834,8 +3245,58 @@ ar:
       - دعم المواد غير الغذائية والضروريات المنزلية الأساسية، وحيثما أمكن، الاحتياجات المرتبطة بسبل العيش للأسر التي فقدت دخلها وأصولها الإنتاجية.
       - تعزيز التتبع اليومي/الأسبوعي للنزوح والاستجابة، مع التمييز بوضوح بين التدخلات المخطط لها والمنفَّذة، وتسجيل أعداد فريدة للأسر بعد إزالة الازدواجية.
       - تعزيز التأهب لموجات نزوح إضافية محتملة من المناطق المتضررة من النزاع.
-  - title: 7. التوصيات والنداء الإنساني إلى المنظمات المحلية والدولية
+  - title: 6. إيصال المساعدات الإنسانية والوصول
     blocks:
+    - h: 6.1 إيصال المساعدات ومراكز الإمداد
+      level: 1
+      id: s7-1
+    - p: تُعد عدن مركزًا رئيسيًا لإيصال المساعدات، إذ تضم مستشفيات الإحالة الرئيسية ومركز عمليات الطوارئ الصحية والمستودع الذي يزوّد الاستجابة الصحية بالإمدادات. وقد أوصلت منظمة الصحة العالمية 19.6 طنًا متريًا من الأدوية والمستلزمات الطبية إلى مستشفى خليفة ومستشفى النشمة ومركز علاج الإسهالات في المظفر بتعز. وفي قطاع المأوى، يتوفر لدى الشركاء مخزون من 4,115 حقيبة مأوى وخيمة و8,271 حقيبة كاملة من المواد غير الغذائية، إضافة إلى 5,250 حقيبة جزئية بانتظار التوزيع. ويهدد اقتراب خط المواجهة من عدن طرق الإحالة والإمداد.
+    - h: 6.2 المناطق ذات الوصول المقيّد
+      level: 1
+      id: s7-2
+    - table:
+        head:
+        - المنطقة
+        - وضع الوصول
+        - المصدر
+        rows:
+        - - مدينة تعز
+          - آخر طريق رئيسي يربط المدينة بالمناطق الخاضعة لسيطرة الحكومة مقطوع منذ 4 أكتوبر 2026؛ تصل كميات محدودة من الغذاء والسلع الأساسية عبر طرق جبلية صغيرة وبتكلفة مرتفعة
+          - FEWS NET
+        - - الحديدة
+          - لا وصول لفريق مصفوفة تتبع النزوح منذ 9 سبتمبر 2026؛ يبقى عدد النازحين ثابتًا عند 8,244
+          - المنظمة الدولية للهجرة
+        - - عدن
+          - أوقفت الوحدة التنفيذية عملها الميداني بسبب قيود الوصول؛ خط المواجهة يقترب من عدن
+          - الوحدة التنفيذية، منظمة الصحة العالمية
+        - - المناطق الخاضعة لسيطرة سلطات الأمر الواقع
+          - لا وصول إلى البيانات الصحية الروتينية؛ تُفيد التقارير بنقص المستلزمات الطبية والجراحية في المستشفيات
+          - منظمة الصحة العالمية
+        - - المناطق النائية في حجة
+          - صعوبة الوصول إلى علاج الإسهال المائي الحاد والكوليرا
+          - منظمة الصحة العالمية
+        fold: false
+    - p: وللوصول إلى المستشفيات على جانبي خط المواجهة، توصي منظمة الصحة العالمية باستخدام طرق إيصال بديلة، منها الإيصال عبر الشركاء والتحركات عبر خطوط التماس والرحلات الجوية الإنسانية، إلى جانب التفاوض مع جميع الأطراف بشأن الوصول.
+    - src: 'المصادر: منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026)؛ شبكة نظم الإنذار المبكر بالمجاعة (FEWS NET)، تنبيه بشأن اليمن (17 نوفمبر 2026)؛ المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026)؛ تحديث الوضع الصادر عن فريق تنسيق SLSC في اليمن (18 نوفمبر 2026).'
+  - title: 7. التحديات التي تواجه عمليات المساعدات الإنسانية
+    blocks:
+    - p: 'تُبرز التقارير المصدرية والملاحظات الميدانية للوحدة التنفيذية التحديات الرئيسية التالية أمام الاستجابة الإنسانية:'
+    - ol:
+      - 'الأوضاع الأمنية: تتغير خطوط المواجهة بسرعة وتقترب من عدن عبر لحج، ما يهدد بزيادة أعداد الضحايا والنازحين وقطع طرق الإحالة والإمداد.'
+      - 'القيود على الوصول الميداني: تخضع مدينة تعز لحصار فعلي، وفقدت مصفوفة تتبع النزوح إمكانية الوصول إلى الحديدة، واضطرت الوحدة التنفيذية إلى إيقاف عملها الميداني في عدن، ولا يمكن الحصول على البيانات الروتينية من المناطق الخاضعة لسيطرة سلطات الأمر الواقع.'
+      - 'نقص التمويل: لم تُموَّل خطة الاستجابة الصحية لمدة 90 يومًا إلا بنسبة 35%، ولا تتوفر لفرق الإصابات المدعومة من منظمة الصحة العالمية تمويلات إلا حتى يناير 2027، وتبلغ فجوة المأوى والمواد غير الغذائية 22.2 مليون دولار.'
+      - 'نقص الإمدادات والتحديات اللوجستية: تعاني مستشفيات تعز نقصًا حرجًا في الوقود والمستلزمات الجراحية وأدوية التخدير والعناية المركزة، مع غياب صيانة سيارات الإسعاف.'
+      - 'تكرار النزوح: نزحت أسر كثيرة مرتين إلى أربع مرات، وانتقلت أسر عديدة سبق تسجيلها في عدن إلى لحج وأبين، ما يصعّب تتبع النزوح الثانوي.'
+      - 'الحصول على بيانات محدثة وموثوقة: تتراوح نسبة اكتمال الإبلاغ اليومي عن الضحايا بين 58% و92%، ولا يمكن مقارنة بيانات التسجيل لدى الوحدة التنفيذية مباشرة ببيانات الحركة لدى مصفوفة تتبع النزوح، كما لا تُطابَق سجلات المساعدات مع قوائم آلية الاستجابة السريعة على مستوى الأسرة.'
+      - 'الأسر التي لم تصلها المساعدات: لا تزال 8,511 أسرة (21%) مسجلة في قوائم آلية الاستجابة السريعة دون مساعدة، ويبقى وصول النازحين إلى الرعاية الصحية الأولية محدودًا في تعز وأبين وشبوة.'
+      - 'فجوات الخدمات الصحية: لا تحظى رعاية الحروق والصحة النفسية والدعم النفسي الاجتماعي وإعادة التأهيل بتمويل كافٍ، ولا يتوفر تمويل لنقل حالات الإصابات المحالة.'
+      - 'مخاطر تفشي الأمراض: رغم تراجع الكوليرا في المحافظات الخمس الأكثر تضررًا، تتوسع في تريم (وادي حضرموت) فاشية مركبة تجمع بين التسمم الغذائي والكوليرا، وترتفع حالات الإسهال المائي الحاد في حجة.'
+    - src: 'المصادر: منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026)؛ شبكة نظم الإنذار المبكر بالمجاعة (FEWS NET)، تنبيه بشأن اليمن (17 نوفمبر 2026)؛ المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026)؛ المنظمة الدولية للهجرة، تقرير التنقل: التصعيد في الشرق الأوسط وما بعده (19 نوفمبر 2026)؛ تحديث الوضع الصادر عن فريق تنسيق SLSC في اليمن (18 نوفمبر 2026).'
+  - title: 8. توصيات لتحسين الوضع الإنساني في اليمن
+    blocks:
+    - h: 8.1 النداء الإنساني إلى المنظمات المحلية والدولية
+      level: 1
+      id: s9-1
     - p: تناشد الوحدة التنفيذية لإدارة مخيمات النازحين، وبصورة عاجلة، السلطات المحلية ووكالات الأمم المتحدة والمجموعات القطاعية الإنسانية والمنظمات الإنسانية الوطنية والدولية والجهات المانحة وشركاء التنفيذ لحشد الموارد والقدرات التشغيلية الفورية لصالح الأسر النازحة الموثقة في هذا التقرير.
     - p: تضع حركة النزوح الحالية الأسر النازحة حديثًا في أوضاع شديدة الهشاشة. فقد أُجبرت الأسر على ترك منازلها وسبل عيشها بسبب النزاع والتصعيد العسكري، ووصلت في عدة مواقع دون مأوى أو غذاء أو مياه كافية أو إمكانية الحصول على الخدمات الأساسية. وسيؤدي تأخر المساعدة إلى زيادة التعرض لمخاطر الحماية، وتعميق الهشاشة الاقتصادية، وفرض ضغط إضافي على المجتمعات المضيفة.
     - ol:
@@ -1848,13 +3309,27 @@ ar:
       - إعطاء الأولوية للأطفال والنساء وكبار السن وذوي الإعاقة والأسر التي تعاني من أمراض مزمنة وغيرها من الأسر التي تواجه مخاطر حمائية أو إنسانية متزايدة.
       - ضمان ألا تبقى أي أسرة نازحة حديثًا دون الحد الأدنى من المساعدة الإنسانية بسبب تأخر التقييم أو نقص التمويل أو معوقات التنسيق.
       - الحفاظ على التحديث المستمر للبيانات والإبلاغ الشفاف لتمكين الشركاء الإنسانيين من توجيه المساعدة إلى الأسر والمواقع ذات الاحتياجات الأكبر التي لم تُلبَّ بعد.
-  - title: 8. الخاتمة
+    - h: 8.2 أبرز التوصيات الواردة في تقارير المنظمات الإنسانية
+      level: 1
+      id: s9-2
+    - ol:
+      - تقديم مساعدات غذائية إنسانية عاجلة للأسر في مدينة تعز المحاصرة، وفقًا لتنبيه شبكة FEWS NET.
+      - حشد 22.2 مليون دولار لسد فجوتي المأوى والمواد غير الغذائية، و3.6 مليون دولار لإدارة المواقع وصيانتها (SLSC).
+      - مراجعة خطط الطوارئ لمواجهة الزيادة المحتملة في أعداد المصابين مع اقتراب خط المواجهة من عدن، وتأمين طرق بديلة للإحالة والإمداد واستمرارية العمليات، وتخصيص الموارد اللازمة لذلك (منظمة الصحة العالمية).
+      - تمويل نقاط تثبيت الإصابات ونقل الحالات المحالة ورعاية الحروق والصحة النفسية والدعم النفسي الاجتماعي وإعادة التأهيل، وضمان التمويل لما بعد يناير 2027 (منظمة الصحة العالمية).
+      - استخدام طرق إيصال بديلة والتفاوض مع جميع الأطراف بشأن الوصول إلى المستشفيات على جانبي خط المواجهة (منظمة الصحة العالمية).
+      - الوصول إلى 73,300 طفل لم تشملهم حملة الحصبة والحصبة الألمانية عبر التحصين الاستدراكي، ولا سيما في شبوة وحضرموت والمهرة وسقطرى (منظمة الصحة العالمية).
+      - تنفيذ استجابة مشتركة في مجالات سلامة الغذاء والمياه والإصحاح وإدارة الحالات لمواجهة الفاشية في تريم (منظمة الصحة العالمية).
+      - تعزيز تنسيق الاستجابة بين المحافظات في ظل تزايد التنقل بينها، وإيلاء اهتمام أكبر للاحتياجات المتغيرة للنازحين في مناطق الاستقبال (المنظمة الدولية للهجرة).
+      - إجراء مراجعة أثناء التنفيذ بقيادة وزارة الصحة العامة والسكان قبل انتهاء خطة الاستجابة الحالية (منظمة الصحة العالمية).
+    - src: 'المصادر: شبكة نظم الإنذار المبكر بالمجاعة (FEWS NET)، تنبيه بشأن اليمن (17 نوفمبر 2026)؛ تحديث الوضع الصادر عن فريق تنسيق SLSC في اليمن (18 نوفمبر 2026)؛ منظمة الصحة العالمية – اليمن، التقرير الموقفي رقم 12 بشأن تصاعد النزاع (17 نوفمبر 2026)؛ المنظمة الدولية للهجرة – مصفوفة تتبع النزوح في اليمن، التحديث العاجل رقم 19 (18 نوفمبر 2026).'
+  - title: 9. الخاتمة
     blocks:
     - p: تكشف الحصيلة المجمعة عن حجم نزوح كبير في المحافظات العشر، إذ بلغ العدد 50,001 أسرة نازحة تضم 338,748 فردًا. ويعكس هذا العدد اتساع نطاق السكان الذين ينبغي أن تشملهم عمليات التحقق وتقييم الاحتياجات وتخطيط الاستجابة، وما يرتبط بذلك من ضغط على المأوى والخدمات الأساسية وقدرات المجتمعات المضيفة.
-    - p: وتستضيف تعز ولحج العدد الأكبر من النازحين المسجلين، بواقع 274,169 فردًا، أي نحو 76.6 من الإجمالي. ويقتضي هذا التركز توسيع القدرة التشغيلية للشركاء في المحافظتين، مع توجيه التدخلات في بقية المحافظات بحسب شدة الاحتياج ومخاطر الحماية، وعدم الاكتفاء بحجم الأعداد معيارًا وحيدًا لتوزيع المساعدة.
+    - p: وتستضيف تعز ولحج العدد الأكبر من النازحين المسجلين، بواقع 274,169 فردًا، أي نحو 80.9% من الإجمالي. ويقتضي هذا التركز توسيع القدرة التشغيلية للشركاء في المحافظتين، مع توجيه التدخلات في بقية المحافظات بحسب شدة الاحتياج ومخاطر الحماية، وعدم الاكتفاء بحجم الأعداد معيارًا وحيدًا لتوزيع المساعدة.
     - p: وعليه، تدعو الوحدة التنفيذية الجهات المعنية والشركاء الإنسانيين والمانحين إلى حشد تمويل عاجل وكافٍ لاستجابة منسقة تشمل المأوى والغذاء والمياه والصرف الصحي والصحة والحماية والمساعدات النقدية والمواد الأساسية. وينبغي أن يقترن ذلك بتحديث السجلات، وتتبع النزوح الثانوي، وإزالة الازدواجية، والتحقق من الفجوات الفعلية، بما يضمن وصول المساعدة إلى الأسر الأشد احتياجًا ويحفظ كرامة النازحين ويخفف الأعباء عن المجتمعات المضيفة.
     - end: نهاية التقرير
     - contact:
-      - "المكتب الرئيسي: عدن – المنصورة – ريمي"
-      - "للتواصل: 02356000"
-      - "Email: info@exuye.org"
+      - 'المكتب الرئيسي: عدن – المنصورة – ريمي'
+      - 'للتواصل: 02356000'
+      - 'Email: info@exuye.org'

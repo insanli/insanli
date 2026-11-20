@@ -30,6 +30,7 @@
 
 <section class="sec">
   <div class="container detail">
+    {% if r.fold_tables %}<script>document.documentElement.classList.add('js')</script>{% endif %}
     <article{% if r.head_sizes %} class="hsz" style="--hs1:{{ r.head_sizes[0] }}pt;--hs2:{{ r.head_sizes[1] }}pt;--hs3:{{ r.head_sizes[2] }}pt"{% endif %}>
       {% if r.cover %}{% set cv = r.cover %}
       {#- the first page of the report file: issuer with its logos, dates, title and subtitle -#}
@@ -52,7 +53,10 @@
         {% if s.kicker %}<span class="kicker">{{ s.kicker }}</span>{% endif %}
         {% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}
         {% set si = loop.index %}
-        {% if r.toc_deep and hs and s.nav_after %}
+        {#- toc_only: the sub-headings stay only in the contents list; the section title in the text opens nothing -#}
+        {% if r.toc_only %}
+        <h2 class="bar-title h3">{{ s.title }}</h2>
+        {% elif r.toc_deep and hs and s.nav_after %}
         {#- the title opens the box with the sub-headings, which stands after the first blocks of the section -#}
         <details class="sec-dd sec-dd-split" data-nav="secnav-s{{ si }}"><summary><h2 class="bar-title h3">{{ s.title }}</h2><span class="sec-dd-ico" aria-hidden="true"></span></summary></details>
         {% elif r.toc_deep and hs %}
@@ -70,6 +74,7 @@
         {% elif b.ol %}<ol class="rlist text-lg">{% for li in b.ol %}<li>{{ li }}</li>{% endfor %}</ol>
         {% elif b.ul %}<ul class="rlist text-lg">{% for li in b.ul %}<li>{% if b.links and b.links[loop.index0] %}<a class="rjump" href="#{{ b.links[loop.index0] }}">{{ li }}</a>{% else %}{{ li }}{% endif %}</li>{% endfor %}</ul>
         {% elif b.lab %}<p class="rlab">{{ b.lab }}</p>
+        {% elif b.src %}<p class="rsrc">{{ b.src }}</p>
         {% elif b.chart %}{% set ch = b.chart %}{% set nt = ch.ticks|length - 1 %}
         <figure class="rbars" style="--n:{{ ch['items']|length }}">
           <figcaption>{{ ch.title }}</figcaption>
@@ -81,16 +86,18 @@
         {% elif b.end %}<p class="rend">{{ b.end }}</p>
         {% elif b.contact %}<p class="rcontact">{% for x in b.contact %}<span>{{ x|urlize }}</span>{% endfor %}</p>
         {% elif b.img %}<figure class="rmap"><img src="{{ b.img }}" alt="{{ b.alt }}"{% if b.size %} width="{{ b.size[0] }}" height="{{ b.size[1] }}"{% endif %} loading="lazy"></figure>
-        {% elif b.table %}{% set tb = b.table %}
-        <figure class="rtbl">
+        {% elif b.table %}{% set tb = b.table %}{% set fold = r.fold_tables and tb.fold is not sameas false %}
+        {#- fold_tables: only the header row and the total row show; pressing the header row opens the other rows.
+            A table with "fold: false" always shows in full. -#}
+        <figure class="rtbl{% if fold %} tfold{% endif %}">
           <div class="tbl-wrap"><table class="tbl">
-            <thead><tr>{% for hcell in tb.head %}<th>{{ hcell }}</th>{% endfor %}</tr></thead>
+            <thead><tr>{% for hcell in tb.head %}<th>{{ hcell }}{% if fold and loop.last %}<button type="button" class="tfold-btn" aria-expanded="false" aria-label="{{ r.fold_label }}" title="{{ r.fold_label }}"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>{% endif %}</th>{% endfor %}</tr></thead>
             <tbody>{% for row in tb.rows %}<tr>{% for c in row %}{% if c is string %}<td data-label="{{ tb.head[loop.index0] }}"{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% else %}<td data-label="{{ tb.head[loop.index0] }}" colspan="{{ c[1] }}">{{ c[0] }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
             {% if tb.foot %}<tfoot><tr>{% for c in tb.foot %}<td data-label="{{ tb.head[loop.index0] }}"{% if loop.index0 in tb.num_cols %} class="n"{% endif %}>{{ c }}</td>{% endfor %}</tr></tfoot>{% endif %}
           </table></div>
         </figure>
         {% endif %}
-        {% if s.nav_after and r.toc_deep and hs and loop.index == s.nav_after %}<nav class="sec-nav sec-nav-split" id="secnav-s{{ si }}" aria-label="{{ s.title }}"><ol>{% for h in hs %}<li class="l{{ h.level }}"><a href="#{{ h.id }}">{{ h.toc or h.h }}</a></li>{% endfor %}</ol></nav>{% endif %}
+        {% if s.nav_after and r.toc_deep and hs and loop.index == s.nav_after and not r.toc_only %}<nav class="sec-nav sec-nav-split" id="secnav-s{{ si }}" aria-label="{{ s.title }}"><ol>{% for h in hs %}<li class="l{{ h.level }}"><a href="#{{ h.id }}">{{ h.toc or h.h }}</a></li>{% endfor %}</ol></nav>{% endif %}
         {% endfor %}
         {% if s.image %}<figure class="rmap"><img src="{{ s.image }}" alt="{{ s.image_alt }}"{% if s.image_size %} width="{{ s.image_size[0] }}" height="{{ s.image_size[1] }}"{% endif %} loading="lazy"></figure>{% endif %}
         {% for tb in s.tables or [] %}

@@ -1037,3 +1037,32 @@ html:not(.plist-on) #ptiles ~ #plist { display: none; }
 .rend { margin: 34px 0 0; text-align: center; font-weight: 800; color: var(--ink); letter-spacing: .04em; }
 .rcontact { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 22px; margin: 12px 0 0; padding-top: 12px; border-top: 2px solid var(--brand); font-size: .9rem; color: var(--muted); }
 .rcontact a { color: var(--brand); }
+/* report tables that fold (Yemen report): only the header row and the total row show; pressing the header row opens
+   the other rows. Without the script every row shows. */
+html.js .rtbl.tfold:not(.open) tbody { display: none; }
+.rtbl.tfold thead { cursor: pointer; user-select: none; }
+.rtbl.tfold thead th { transition: background .15s; }
+.rtbl.tfold thead:hover th { background: var(--brand); }
+.rtbl.tfold thead th:last-child { position: relative; padding-inline-end: 40px; }
+.tfold-btn { position: absolute; inset-inline-end: 8px; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; background: transparent; color: #fff; cursor: pointer; }
+.tfold-btn svg { transition: transform .2s; }
+.rtbl.tfold.open .tfold-btn svg { transform: rotate(180deg); }
+.tfold-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 760px) {
+  /* phones: the header row stays visible as one bar (the column names), the rows open as cards under it */
+  .rtbl.tfold .tbl thead { display: block; margin-bottom: 10px; }
+  .rtbl.tfold .tbl thead tr { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; position: relative; padding: 9px 46px 9px 10px; background: var(--dark); border: 0; margin: 0; }
+  [dir="rtl"] .rtbl.tfold .tbl thead tr { padding: 9px 10px 9px 46px; }
+  .rtbl.tfold .tbl thead th { display: inline; position: static; padding: 0; background: none; font-size: .72rem; white-space: normal; }
+  .rtbl.tfold .tbl thead th:last-child { position: static; padding: 0; }
+  .rtbl.tfold .tbl thead th + th::before { content: '·'; margin-inline-end: 12px; opacity: .6; }
+  .rtbl.tfold .tbl thead:hover tr { background: var(--brand); }
+  .rtbl.tfold .tfold-btn { inset-inline-end: 10px; }
+  .rtbl.tfold .tbl tfoot tr { margin-bottom: 0; }
+}
+
+/* report: small source line under a table or a part (src: in the report file) */
+.situ .rsrc { margin: 6px 0 14px; font-size: .78rem; line-height: 1.5; color: var(--muted); font-style: italic; text-align: start; }
+[dir="rtl"] .situ .rsrc { font-style: normal; font-size: .82rem; }
+.situ .rtbl + .rsrc, .situ .rbars + .rsrc { margin-top: 8px; }
+.rep-compact .detail article .situ .rsrc { margin-bottom: 12px; }
