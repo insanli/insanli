@@ -9,7 +9,7 @@
 # Taiz + Lahj shares corrected to 76.3% of households and 80.9% of IDPs (23,007 + 15,160 of 50,001; 274,169 of 338,748).
 # No cover and no logos at the top of the report (as in the Sudan report).
 # in_toc: false — the section (Conclusion) stays in the text but is not listed in the contents list.
-# Font sizes as in the Sudan report (no head_sizes); no "End of Report" line at the end.
+# Font sizes as in the Sudan report (no head_sizes); no "End of Report" line and no contact line at the end.
 # toc_only: the sub-headings are listed only in the contents list; the section titles in the text do not open them.
 # fold_tables: the Executive Unit's tables show only their header row and total row (pressing the header opens them);
 #   tables with "fold: false" always show in full.
@@ -1122,10 +1122,6 @@ tr:
     - p: Yerinden edilmiş kişilerin en büyük bölümü Taiz ve Lahic illerinde bulunmaktadır. Bu iki ilde toplam 274.169 kişi kayıt altına alınmıştır. Bu sayı, raporda belirtilen genel toplamın yaklaşık %80,9'una karşılık gelmektedir. Söz konusu yoğunlaşma, özellikle bu iki ilde insani yardım kuruluşlarının saha çalışmalarını ve müdahale kapasitesini artırmasını gerekli kılmaktadır. Bununla birlikte, diğer illerdeki ihtiyaçlar da göz ardı edilmemeli; yardımların dağıtımında yalnızca yerinden edilmiş kişi sayısı değil, ailelerin içinde bulunduğu koşullar ve ihtiyaçların aciliyeti de dikkate alınmalıdır.
     - p: Bu çerçevede Yürütme Birimi; ilgili kurumları, insani yardım kuruluşlarını ve bağışçıları, barınma, gıda, su, sanitasyon, sağlık, koruma, nakdî yardım ve temel ihtiyaç malzemelerini kapsayan koordineli bir yardım çalışması için acil ve yeterli kaynak sağlamaya çağırmaktadır.
     - p: Yardımların ihtiyaç sahiplerine zamanında ve doğru biçimde ulaştırılabilmesi için kayıtların düzenli olarak güncellenmesi, ailelerin sonraki yer değiştirme hareketlerinin takip edilmesi, mükerrer kayıtların ayıklanması ve henüz karşılanmamış ihtiyaçların belirlenmesi gerekmektedir. Bu çalışmalar, yardımların en fazla ihtiyaç duyan ailelere ulaşmasına, yerinden edilmiş kişilerin onurunun korunmasına ve ev sahibi toplulukların üzerindeki yükün hafifletilmesine katkı sağlayacaktır.
-    - contact:
-      - 'Genel Merkez: Aden – Mansura, Rimi'
-      - 'E-posta: info@exuye.org'
-      - 'Telefon: 02356000'
 en:
   country_name: Yemen
   title: Yemen — Consolidated Report on Forced Displacement Caused by War
@@ -2231,10 +2227,6 @@ en:
     - p: The consolidated figures reveal substantial displacement across the ten governorates, totalling 50,001 displaced households comprising 338,748 IDPs. This figure reflects the scale of the population that should be covered by verification, needs assessments and response planning, and the associated pressure on shelter, basic services and the capacities of host communities.
     - p: Taiz and Lahj host the largest number of registered displaced persons, with 274,169 IDPs, or approximately 80.9% of the total. This concentration requires partners to expand their operational capacity in both governorates, while directing interventions in the remaining governorates according to the severity of needs and protection risks, rather than using population figures as the sole criterion for allocating assistance.
     - p: Accordingly, the Executive Unit calls upon the relevant stakeholders, humanitarian partners and donors to mobilise urgent and sufficient funding for a coordinated response covering shelter, food, water, sanitation, health, protection, cash assistance and essential items. This should be accompanied by updated records, tracking of secondary displacement, removal of duplicates and verification of actual gaps, to ensure that assistance reaches the households most in need, preserves the dignity of displaced persons and eases the burden on host communities.
-    - contact:
-      - 'Head Office: Aden – Al Mansurah – Remi'
-      - 'Contact: 02356000'
-      - 'Email: info@exuye.org'
 ar:
   country_name: اليمن
   title: اليمن — التقرير الموحد حول النزوح القسري الناجم عن الحرب
@@ -3319,7 +3311,3 @@ ar:
     - p: تكشف الحصيلة المجمعة عن حجم نزوح كبير في المحافظات العشر، إذ بلغ العدد 50,001 أسرة نازحة تضم 338,748 فردًا. ويعكس هذا العدد اتساع نطاق السكان الذين ينبغي أن تشملهم عمليات التحقق وتقييم الاحتياجات وتخطيط الاستجابة، وما يرتبط بذلك من ضغط على المأوى والخدمات الأساسية وقدرات المجتمعات المضيفة.
     - p: وتستضيف تعز ولحج العدد الأكبر من النازحين المسجلين، بواقع 274,169 فردًا، أي نحو 80.9% من الإجمالي. ويقتضي هذا التركز توسيع القدرة التشغيلية للشركاء في المحافظتين، مع توجيه التدخلات في بقية المحافظات بحسب شدة الاحتياج ومخاطر الحماية، وعدم الاكتفاء بحجم الأعداد معيارًا وحيدًا لتوزيع المساعدة.
     - p: وعليه، تدعو الوحدة التنفيذية الجهات المعنية والشركاء الإنسانيين والمانحين إلى حشد تمويل عاجل وكافٍ لاستجابة منسقة تشمل المأوى والغذاء والمياه والصرف الصحي والصحة والحماية والمساعدات النقدية والمواد الأساسية. وينبغي أن يقترن ذلك بتحديث السجلات، وتتبع النزوح الثانوي، وإزالة الازدواجية، والتحقق من الفجوات الفعلية، بما يضمن وصول المساعدة إلى الأسر الأشد احتياجًا ويحفظ كرامة النازحين ويخفف الأعباء عن المجتمعات المضيفة.
-    - contact:
-      - 'المكتب الرئيسي: عدن – المنصورة – ريمي'
-      - 'للتواصل: 02356000'
-      - 'Email: info@exuye.org'
