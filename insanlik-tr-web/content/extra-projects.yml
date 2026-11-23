@@ -4,6 +4,7 @@
 #   icon_from: a project of the same sector; its card icon is used
 #   cost:     Starting Cost (written $32,466 here; the site shows it as 32.466 $)
 # The country's "Projects" tile counts the new project too.
+# rename: new names for projects that are already in the portfolio (page, heading and cards; build.py rename_projects)
 # Page texts: from "Misir_Cerrahi_Destek_Proje_Teklifi.docx" (sections 1-8; section 9, the patient list,
 # and the sections after it are not on the site).
 projects:
@@ -164,3 +165,9 @@ projects:
         - [عدد المرضى الذين دُعمت تدخلاتهم الجراحية, 14 مريضًا كحد أقصى، رهنًا بالموافقة الطبية والإمكانات المالية]
         - [سجلات علاج الحالات المنفذة, ملف مستقل لكل تدخل]
         - [التقرير النهائي للأنشطة والنتائج المالية, تقرير نهائي واحد]
+
+rename:
+- code: EGY-P008
+  tr: Acil Cerrahi Uzman Tıbbi Müdahale
+  en: Emergency Surgical and Specialized Medical Intervention
+  ar: التدخل الطبي الجراحي الطارئ والمتخصص

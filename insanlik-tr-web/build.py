@@ -557,6 +557,38 @@ def extra_projects(EP, langs, out=None):
     return made
 
 
+def rename_projects(EP, langs, out=None):
+    """New names for projects of the portfolio (content/extra-projects.yml, rename:): the page (title, heading,
+    WhatsApp text) and every card of the project get the new name. Returns the number of pages renamed."""
+    from html import escape
+    from urllib.parse import quote
+    out = out or OUT
+    esc = lambda v: escape(str(v), quote=True).replace('&#x27;', '&#39;')
+    done = 0
+    for r in EP.get('rename') or []:
+        code = r['code']
+        for l in langs:
+            new = r.get(l)
+            page_f = os.path.join(out, l, 'projects', code, 'index.html')
+            if not new or not os.path.exists(page_f):
+                continue
+            page = open(page_f, encoding='utf-8').read()
+            old = re.search(r'<h1>(.*?)</h1>', page, re.S).group(1)
+            if old == esc(new):
+                continue
+            for f in glob.glob(os.path.join(out, l, '**', '*.html'), recursive=True):
+                html = open(f, encoding='utf-8').read()
+                if old not in html and f != page_f:
+                    continue
+                html = html.replace(old, esc(new))
+                if f == page_f:
+                    html = re.sub(r'(https://wa\.me/\d+\?text=)[^"]*', lambda m: m.group(1) + quote(f'{code} – {new}', safe=''), html)
+                with open(f, 'w', encoding='utf-8') as fh:
+                    fh.write(html)
+            done += 1
+    return done
+
+
 HDR_MARK = '<!--projects-top-bar-->'
 
 
@@ -664,6 +696,7 @@ def main():
     if has_projects:
         if EP:
             print(f'EXTRA PROJECTS: {extra_projects(EP, langs)} pages made (content/extra-projects.yml)')
+            print(f'RENAMED PROJECTS: {rename_projects(EP, langs)} pages (content/extra-projects.yml)')
         if YQ:
             print(f'YEMEN: {yemen_kits(YQ, langs)} "View contents" pages made')
         hdr_tpl = env.get_template('proj_header.html')
