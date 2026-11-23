@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% import '_m.html' as m %}
+{#- a section with "in_toc: false" stays in the text but is not listed in the contents list -#}
 {% macro toc(r, t, extra, deep) -%}
-{% if r.sections|length > 1 %}<nav class="toc{{ extra }}{% if deep %} deep{% endif %}{% if r.toc_plain %} plain{% endif %}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}{% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}<li{% if deep and hs %} class="has-sub"{% endif %}><a href="#{{ s.toc_target or ('s' ~ loop.index) }}">{{ s.toc or s.title }}</a>{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endfor %}</ol></nav>{% endif %}
+{% if r.sections|length > 1 %}<nav class="toc{{ extra }}{% if deep %} deep{% endif %}{% if r.toc_plain %} plain{% endif %}" aria-label="{{ t.toc }}"><p class="toc-title">{{ t.toc }}</p><ol>{% for s in r.sections %}{% if s.in_toc is not sameas false %}{% set hall = (s.blocks or [])|selectattr('h')|list %}{% set hn = hall|selectattr('nav')|list %}{% set hs = hn if hn else hall %}<li{% if deep and hs %} class="has-sub"{% endif %}><a href="#{{ s.toc_target or ('s' ~ loop.index) }}">{{ s.toc or s.title }}</a>{% if deep and hs %}<ol class="toc-sub">{% for b in hs %}<li class="l{{ b.level }}"><a href="#{{ b.id }}">{{ b.toc or b.h }}</a></li>{% endfor %}</ol>{% endif %}</li>{% endif %}{% endfor %}</ol></nav>{% endif %}
 {%- endmacro %}
 {% block title %}{{ r.title }}{% endblock %}
 {% block body_class %}{% if r.static_header %}hdr-static{% endif %}{% if r.compact %} rep-compact{% endif %}{% endblock %}
