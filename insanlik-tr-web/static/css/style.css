@@ -1070,13 +1070,22 @@ html.js .rtbl.tfold:not(.open) tbody { display: none; }
    small, on the right of the section buttons, just above the tables */
 .qtop { display: flex; align-items: flex-end; gap: 12px 10px; margin-bottom: 30px; }
 .qtop .jump { flex: 0 1 auto; min-width: 0; margin-bottom: 0; }
-.qvalid { display: inline-flex; flex-direction: column; gap: 1px; padding: 5px 10px; background: #fff7e6; border: 1px solid #f1d49a;
-  border-inline-start: 3px solid var(--gold-2); color: #8f5400; font-size: .74rem; line-height: 1.4; font-weight: 600; }
+.qvalid { display: inline-grid; grid-template-columns: auto auto; gap: 1px 6px; align-items: baseline; padding: 5px 10px; background: #fff7e6;
+  border: 1px solid #f1d49a; border-inline-start: 3px solid var(--gold-2); color: #8f5400; font-size: .85rem; line-height: 1.4; font-weight: 600; }
 .qtop .qvalid { flex: none; margin-inline-start: auto; }
-.qvalid-item { white-space: nowrap; }
+.qvalid-item { display: contents; white-space: nowrap; }   /* label | date: the two dates start at the same place */
+.qvalid-item > * { white-space: nowrap; }
 .qvalid strong { font-family: var(--num); font-weight: 800; color: #b34700; letter-spacing: .01em; }
 .qvalid.center { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 4px 20px; width: fit-content; max-width: 100%; margin: 14px auto 26px; }
+.qvalid.center .qvalid-item { display: inline; }
 @media (max-width: 700px) {
   .qtop { flex-direction: column; align-items: stretch; gap: 14px; }
   .qtop .qvalid { margin-inline-start: 0; align-self: flex-start; }
+}
+/* start page, computers and tablets (two big boxes side by side): PROJELER and RAPORLAR on the same line in all three
+   languages, at the height of PROJELER. The white text under the title takes the room of one line; a second line goes
+   into the free room above the corner button, so a longer text no longer pushes its title up. The boxes keep their size. */
+@media (min-width: 761px) {
+  .bigbtn-text { line-height: 1.6; height: 1.6em; overflow: visible; }
+  .bigbtn.with-go { padding-top: calc(104 * var(--u) + 1.6 * max(var(--f2), calc(16.8 * var(--u)))); }
 }
