@@ -589,6 +589,117 @@ def rename_projects(EP, langs, out=None):
     return done
 
 
+# Password screen for the whole site (content/settings.yml: password, password_tries, password_wait_minutes).
+# Every page asks for the password once; after the right password the browser remembers it (localStorage) and the other
+# pages open straight away. After too many wrong tries the form is closed for some minutes (in that browser).
+# Only the SHA-256 of the password is written into the pages. It keeps visitors out; it is not strong security.
+LOCK_TEXT = {
+    'tr': {'title': 'Bu site şifre ile korunmaktadır', 'sub': 'Devam etmek için şifreyi girin.', 'ph': 'Şifre', 'btn': 'Giriş',
+           'err': 'Şifre yanlış. Kalan deneme hakkı: {n}',
+           'wait': '{k} kez yanlış şifre girildi. {m} dakika sonra tekrar deneyebilirsiniz. Kalan süre: {t}',
+           'nojs': 'Bu siteyi görmek için tarayıcınızda JavaScript açık olmalıdır.'},
+    'en': {'title': 'This website is password protected', 'sub': 'Please enter the password to continue.', 'ph': 'Password', 'btn': 'Enter',
+           'err': 'Wrong password. Attempts left: {n}',
+           'wait': 'The wrong password was entered {k} times. You can try again in {m} {mu}. Time left: {t}',
+           'nojs': 'Please turn on JavaScript in your browser to view this website.'},
+    'ar': {'title': 'هذا الموقع محمي بكلمة مرور', 'sub': 'يرجى إدخال كلمة المرور للمتابعة.', 'ph': 'كلمة المرور', 'btn': 'دخول',
+           'err': 'كلمة المرور غير صحيحة. المحاولات المتبقية: {n}',
+           'wait': 'تم إدخال كلمة مرور خاطئة {k} مرات. يمكنك المحاولة مرة أخرى بعد {m} {mu}. الوقت المتبقي: {t}',
+           'nojs': 'يرجى تفعيل JavaScript في المتصفح لعرض هذا الموقع.'},
+}
+LOCK_SALT = 'insanlik-site:'
+LOCK_KEY = 'insanlik-site-lock'
+LOCK_MARK = '<!--site-lock-->'
+
+LOCK_CSS = (
+    '<style>html.site-locked body>*:not(#site-lock){display:none!important}html.site-locked body{overflow:hidden}'
+    '#site-lock{display:none}html.site-locked #site-lock{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;'
+    'background:linear-gradient(135deg,#2d5f97,#2a66ab 55%,#3a78c0);font-family:Outfit,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}'
+    '#site-lock form{background:#fff;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.25);padding:34px 30px;width:100%;max-width:400px;text-align:center}'
+    '#site-lock .sl-name{color:#2a66ab;font-weight:800;letter-spacing:.02em;font-size:18px;margin:0 0 14px}'
+    '#site-lock .sl-bar{display:block;width:48px;height:4px;border-radius:2px;background:#e8bc69;margin:0 auto 18px}'
+    '#site-lock h1{font-size:21px;line-height:1.3;color:#23262d;margin:0 0 8px;text-transform:none;letter-spacing:normal}'
+    '#site-lock p{color:#687080;font-size:15px;margin:0 0 20px}'
+    '#site-lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:12px 14px;border:1px solid #cfd5de;border-radius:8px;margin:0 0 12px;text-align:center}'
+    '#site-lock input:focus{outline:2px solid #2a66ab;border-color:#2a66ab}'
+    '#site-lock button{width:100%;font:inherit;font-weight:700;font-size:16px;padding:12px;border:0;border-radius:8px;background:#2a66ab;color:#fff;cursor:pointer}'
+    '#site-lock button:hover{background:#2d5f97}'
+    '#site-lock input:disabled,#site-lock button:disabled{opacity:.5;cursor:not-allowed}'
+    '#site-lock .sl-err{color:#c0392b;font-size:14px;line-height:1.5;margin:12px 0 0;min-height:1em}'
+    '</style>')
+
+# __CFG__ is replaced by the settings of the page (hash, texts, tries, minutes)
+LOCK_JS = r'''<script>(function(){var R=document.documentElement,box=document.getElementById("site-lock");
+if(!/\bsite-locked\b/.test(R.className)){if(box)box.parentNode.removeChild(box);return}
+var C=__CFG__,mem={},timer=null;
+function sha(s){s=unescape(encodeURIComponent(s));var K=[],H=[],i,j,p=2,c=0;function f(x){return(x-(x|0))*4294967296|0}
+for(;c<64;p++){for(j=2;j*j<=p;j++)if(p%j==0)break;if(j*j>p){if(c<8)H[c]=f(Math.pow(p,1/2));K[c++]=f(Math.pow(p,1/3))}}
+var w=[],l=s.length*8;s+="\x80";while(s.length%64-56)s+="\x00";
+for(i=0;i<s.length;i++)w[i>>2]|=s.charCodeAt(i)<<(24-(i%4)*8);w[w.length]=(l/4294967296)|0;w[w.length]=l|0;
+function r(x,n){return x>>>n|x<<(32-n)}
+for(j=0;j<w.length;j+=16){var a=H.slice(0),W=w.slice(j,j+16);for(i=0;i<64;i++){
+if(i>15){var x=W[i-15],y=W[i-2];W[i]=(W[i-16]+(r(x,7)^r(x,18)^x>>>3)+W[i-7]+(r(y,17)^r(y,19)^y>>>10))|0}
+var e=a[4],t1=a[7]+(r(e,6)^r(e,11)^r(e,25))+(e&a[5]^~e&a[6])+K[i]+(W[i]|0),A=a[0],t2=(r(A,2)^r(A,13)^r(A,22))+(A&a[1]^A&a[2]^a[1]&a[2]);
+a=[(t1+t2)|0].concat(a);a[4]=(a[4]+t1)|0;a.pop()}for(i=0;i<8;i++)H[i]=(H[i]+a[i])|0}
+var o="";for(i=0;i<8;i++)o+=("00000000"+(H[i]>>>0).toString(16)).slice(-8);return o}
+function get(k){try{var v=localStorage.getItem(k);if(v!==null)return v}catch(e){}return mem[k]||null}
+function put(k,v){mem[k]=v;try{localStorage.setItem(k,v)}catch(e){}}
+function del(k){delete mem[k];try{localStorage.removeItem(k)}catch(e){}}
+var fm=box.querySelector("form"),inp=fm.pw,btn=fm.querySelector("button"),er=fm.querySelector(".sl-err"),
+FK=C.key+"-fails",UK=C.key+"-until",MAX=C.wait*60000;
+function left(){var u=+get(UK)||0;return Math.min(MAX,Math.max(0,u-Date.now()))}
+function fmt(ms){var s=Math.ceil(ms/1000),m=Math.floor(s/60);s%=60;return m+":"+(s<10?"0":"")+s}
+function tick(){var ms=left();
+if(ms>0){inp.disabled=btn.disabled=true;er.textContent=C.t.wait.replace("{t}",fmt(ms));if(!timer)timer=setInterval(tick,1000)}
+else{if(timer){clearInterval(timer);timer=null}if(get(UK))del(UK);if(inp.disabled){inp.disabled=btn.disabled=false;er.textContent="";inp.focus()}}}
+box.hidden=false;tick();if(!inp.disabled)inp.focus();
+fm.addEventListener("submit",function(ev){ev.preventDefault();if(left()>0){tick();return}
+var v=inp.value;if(v.normalize)v=v.normalize("NFC");inp.value="";
+if(sha(C.salt+v)===C.h){put(C.key,C.h);del(FK);del(UK);if(timer)clearInterval(timer);R.className=R.className.replace(/\s*site-locked/g,"");box.parentNode.removeChild(box);return}
+var n=(+get(FK)||0)+1;
+if(n>=C.tries){del(FK);put(UK,String(Date.now()+MAX));tick()}
+else{put(FK,String(n));er.textContent=C.t.err.replace("{n}",C.tries-n);inp.focus()}})})()</script>'''
+
+
+def site_lock(html, lang, password, site_name='İnsanlık Eli', tries=5, wait_minutes=5):
+    """Put the password screen into one page (once). Returns the page."""
+    import hashlib
+    import json
+    import unicodedata
+    if LOCK_MARK in html or '<head' not in html or '</body>' not in html:
+        return html
+    m = re.search(r'<html[^>]*\blang="(\w\w)"', html)
+    lg = m.group(1) if m and m.group(1) in LOCK_TEXT else (lang if lang in LOCK_TEXT else 'tr')
+    T = LOCK_TEXT[lg]
+    h = hashlib.sha256((LOCK_SALT + unicodedata.normalize('NFC', str(password))).encode('utf-8')).hexdigest()
+    head = (LOCK_MARK + '<meta name="robots" content="noindex, nofollow">'
+            f'<script>(function(){{try{{if(localStorage.getItem("{LOCK_KEY}")==="{h}")return}}catch(e){{}}'
+            'document.documentElement.className+=" site-locked"})()</script>' + LOCK_CSS +
+            '<noscript><style>body>*{display:none!important}body:before{content:' + json.dumps(T['nojs']) +
+            ';display:block;padding:40px;text-align:center;font-family:sans-serif}</style></noscript>')
+    form = ('<div id="site-lock" role="dialog" aria-modal="true" aria-labelledby="sl-title" hidden><form autocomplete="off">'
+            f'<p class="sl-name">{escape_html(site_name)}</p><span class="sl-bar"></span>'
+            f'<h1 id="sl-title">{escape_html(T["title"])}</h1><p>{escape_html(T["sub"])}</p>'
+            f'<input type="password" name="pw" placeholder="{escape_html(T["ph"])}" aria-label="{escape_html(T["ph"])}" '
+            'autocapitalize="off" autocorrect="off" spellcheck="false" required>'
+            f'<button type="submit">{escape_html(T["btn"])}</button><p class="sl-err" aria-live="polite"></p></form></div>')
+    tries, wait_minutes = max(1, int(tries)), max(0.1, float(wait_minutes))
+    mins = int(wait_minutes) if wait_minutes == int(wait_minutes) else wait_minutes
+    unit = {'en': 'minute' if mins == 1 else 'minutes', 'ar': 'دقائق' if 3 <= mins <= 10 else 'دقيقة'}.get(lg, '')
+    wait = T['wait'].replace('{k}', str(tries)).replace('{m}', str(mins)).replace('{mu}', unit)
+    cfg = {'h': h, 'key': LOCK_KEY, 'salt': LOCK_SALT, 'tries': tries, 'wait': wait_minutes, 't': {'err': T['err'], 'wait': wait}}
+    js = LOCK_JS.replace('__CFG__', json.dumps(cfg, ensure_ascii=False).replace('</', '<\\/'))
+    html = re.sub(r'(<head[^>]*>)', lambda mm: mm.group(1) + head, html, count=1)
+    html = re.sub(r'(<body[^>]*>)', lambda mm: mm.group(1) + form, html, count=1)
+    html = html.replace('</body>', js + '</body>', 1)
+    return html
+
+
+def escape_html(v):
+    from html import escape
+    return escape(str(v), quote=True)
+
+
 HDR_MARK = '<!--projects-top-bar-->'
 
 
@@ -844,6 +955,9 @@ def main():
         if not (mm and GQ):   # Gaza pages keep the commas of the file
             html = price.sub(lambda m2: m2.group(0).replace(',', '.'), html)
         html = dollar_right(html, rel.split('/')[0] if rel.split('/')[0] in langs else 'en')
+        if S.get('password'):   # password screen on every page (content/settings.yml)
+            html = site_lock(html, rel.split('/')[0] if rel.split('/')[0] in langs else S.get('default_lang', 'tr'), S['password'],
+                             S.get('site_name', 'İnsanlık Eli'), S.get('password_tries', 5), S.get('password_wait_minutes', 5))
         new = re.sub(r'(["\'(])(' + '|'.join(re.escape(u) for u in ver) + r')(?=["\')])', lambda mm: mm.group(1) + mm.group(2) + '?v=' + ver[mm.group(2)], html)
         with open(f, 'w', encoding='utf-8') as fh:
             fh.write(new)

@@ -9,6 +9,13 @@ languages:
 - en
 - ar
 default_lang: tr
+# Password of the website: every page asks for it once (the browser then remembers it).
+# Change it here; delete these lines (or leave the password empty) to open the website to everyone again.
+password: "insanlıkeli.42"
+# after this many wrong passwords the password form is closed ...
+password_tries: 5
+# ... for this many minutes
+password_wait_minutes: 5
 landing_image: /img/hero.jpg
 reports_image: /img/countries/sudan.jpg
 projects_image: /img/countries/gaza.jpg
