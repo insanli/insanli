@@ -274,6 +274,30 @@ def gaza_kit(html, lang, kit, head=None):
     return html, True
 
 
+# Acil Müdahaleler (Quick Funding): "Güncelleme Tarihi" and "Geçerlilik Tarihi" of the prices, shown once on the overview
+# page and on every country page with prices, next to the section buttons (content/quick-funding-dates.yml)
+
+
+def qf_validity(html, lang, D):
+    """Put the two dates next to the section buttons (country page) or under the intro (overview page), once. Returns (html, ok)."""
+    from html import escape
+    if 'class="qvalid' in html:
+        return html, False
+    i = LANG_INDEX[lang]
+    L = D.get('labels') or {}
+    items = ''.join(f'<span class="qvalid-item"><span>{escape(L[k][i])}:</span> <strong>{escape(str(D[k]))}</strong></span>'
+                    for k in ('updated', 'valid_until') if D.get(k))
+    if not items:
+        return html, False
+    m = re.search(r'<nav class="jump">.*?</nav>', html, re.S)
+    if m:   # country page: on the right of the section buttons, just above the tables
+        return html[:m.start()] + f'<div class="qtop">{m.group(0)}<div class="qvalid" role="note">{items}</div></div>' + html[m.end():], True
+    m = re.search(r'<p class="center text-lg">.*?</p>', html, re.S)   # overview page: under "choose a country"
+    if m and '<div class="tiles">' in html:
+        return html[:m.end()] + f'\n    <div class="qvalid center" role="note">{items}</div>' + html[m.end():], True
+    return html, False
+
+
 # Yemen Quick Funding page: extra rows and "View contents" pages from content/yemen-quick-funding.yml
 def yemen_amount(v, whole=False):
     """Written like the existing Yemen rows: unit cost $6600.00, funding from $6,600 (thousands get dots later)."""
@@ -803,6 +827,7 @@ def main():
         has_projects = False
     YQ = read(os.path.join(CONTENT, 'yemen-quick-funding.yml')) if os.path.exists(os.path.join(CONTENT, 'yemen-quick-funding.yml')) else {}
     GQ = read(os.path.join(CONTENT, 'gaza-quick-funding.yml')) if os.path.exists(os.path.join(CONTENT, 'gaza-quick-funding.yml')) else {}
+    QD = read(os.path.join(CONTENT, 'quick-funding-dates.yml')) if os.path.exists(os.path.join(CONTENT, 'quick-funding-dates.yml')) else {}
     EP = read(os.path.join(CONTENT, 'extra-projects.yml')) if os.path.exists(os.path.join(CONTENT, 'extra-projects.yml')) else {}
     if has_projects:
         if EP:
@@ -952,6 +977,10 @@ def main():
                 html, k = re.subn(r'(href="/%s/quick-funding/yemen/"[^>]*>\s*<span class="tile-name">[^<]*</span>\s*<span class="tile-text">)\d+' % ym.group(1),
                                   lambda mm: mm.group(1) + str(n), html, count=1)
                 print(f'YEMEN {rel}: tile count ' + (f'set to {n}' if k else 'NOT FOUND'))
+        qd = re.match(r'(tr|en|ar)/quick-funding/(?:[^/]+/)?index\.html$', rel)
+        if qd and QD:   # Acil Müdahaleler: update date + validity date of the prices
+            html, k = qf_validity(html, qd.group(1), QD)
+            print(f'DATES {rel}: ' + ('added' if k else 'no prices on this page'))
         if not (mm and GQ):   # Gaza pages keep the commas of the file
             html = price.sub(lambda m2: m2.group(0).replace(',', '.'), html)
         html = dollar_right(html, rel.split('/')[0] if rel.split('/')[0] in langs else 'en')

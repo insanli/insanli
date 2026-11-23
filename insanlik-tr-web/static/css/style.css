@@ -1066,3 +1066,17 @@ html.js .rtbl.tfold:not(.open) tbody { display: none; }
 [dir="rtl"] .situ .rsrc { font-style: normal; font-size: .82rem; }
 .situ .rtbl + .rsrc, .situ .rbars + .rsrc { margin-top: 8px; }
 .rep-compact .detail article .situ .rsrc { margin-bottom: 12px; }
+/* quick-funding pages: update date and validity date of the prices (warm gold, like the site's gold accent),
+   small, on the right of the section buttons, just above the tables */
+.qtop { display: flex; align-items: flex-end; gap: 12px 10px; margin-bottom: 30px; }
+.qtop .jump { flex: 0 1 auto; min-width: 0; margin-bottom: 0; }
+.qvalid { display: inline-flex; flex-direction: column; gap: 1px; padding: 5px 10px; background: #fff7e6; border: 1px solid #f1d49a;
+  border-inline-start: 3px solid var(--gold-2); color: #8f5400; font-size: .74rem; line-height: 1.4; font-weight: 600; }
+.qtop .qvalid { flex: none; margin-inline-start: auto; }
+.qvalid-item { white-space: nowrap; }
+.qvalid strong { font-family: var(--num); font-weight: 800; color: #b34700; letter-spacing: .01em; }
+.qvalid.center { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 4px 20px; width: fit-content; max-width: 100%; margin: 14px auto 26px; }
+@media (max-width: 700px) {
+  .qtop { flex-direction: column; align-items: stretch; gap: 14px; }
+  .qtop .qvalid { margin-inline-start: 0; align-self: flex-start; }
+}

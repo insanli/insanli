@@ -5,6 +5,7 @@
 # min = recommended minimum (kept from the previous file); funding = unit cost × minimum (for the packages: the package price).
 # All rows: unit cost and funding are written exactly as requested on 16 Nov 2026 – no thousands separator, no ".00"
 # (5, 2500, 39600), cents as typed in the request (47,67 · 35,74 · 16,50 · 13,5 and 13.5 · 5.50); GAZ-I006 funding 4767.
+# GAZ-I027 changed on 23 Nov 2026: $840 per tent, funding $840 (so the minimum is 1 tent).
 # The build puts the $ sign on the right. Texts are ["Turkish", "English", "Arabic"] (null = keep the site text).
 #   per = the unit ("Öğün" -> "Öğün başına", "per Meal", "لكل وجبة")   note = technical detail under the name
 
@@ -33,7 +34,7 @@ rows:
 - {code: "GAZ-I023", price: "500", min: "10", funding: "5000", title: ["Cerrahi Müdahale Desteği", "Surgical Procedure Support", "دعم إجراء جراحي"], per: ["Vaka", "Case", "حالة"]}
 - {code: "GAZ-I024", price: "350", min: "20", funding: "7000", title: ["Hasta Tedavi Desteği", "Patient Treatment Support", "دعم علاج المرضى"], per: ["Vaka", "Case", "حالة"]}
 - {code: "GAZ-I026", price: "200", min: "20", funding: "4000", title: ["Katar Çadır", "Qatari Tent", "خيمة قطرية"], per: ["Çadır", "Tent", "خيمة"], note: ["4 × 6 m; Katar menşeli", "4 × 6 m; made in Qatar", "4 × 6 م؛ قطرية المنشأ"]}
-- {code: "GAZ-I027", price: "770", min: "5", funding: "3850", title: ["Kubbe Tipi Barınma Çadırı", "Dome Shelter Tent", "خيمة إيواء قبة الشكل"], per: ["Çadır", "Tent", "خيمة"], note: ["Marka: Blue", "Brand: Blue", "العلامة التجارية: Blue"]}
+- {code: "GAZ-I027", price: "840", min: "1", funding: "840", title: ["Kubbe Tipi Barınma Çadırı", "Dome Shelter Tent", "خيمة إيواء قبة الشكل"], per: ["Çadır", "Tent", "خيمة"], note: ["Marka: Blue", "Brand: Blue", "العلامة التجارية: Blue"]}
 - {code: "GAZ-I028", price: "52", min: "50", funding: "2600", title: ["Plastik Branda", "Plastic Tarpaulin", "شادر بلاستيكي"], per: ["Branda", "Tarpaulin", "شادر"], note: ["4 × 6 m", "4 × 6 m", "4 × 6 م"]}
 - {code: "GAZ-I029", price: "19", min: "150", funding: "2850", title: ["Yatak Şiltesi", "Sleeping Mattress", "فرشة نوم"], per: ["Şilte", "Mattress", "فرشة"], note: ["1,8 × 0,7 m", "1.8 × 0.7 m", "1.8 × 0.7 م"]}
 - {code: "GAZ-I030", price: "22", min: "150", funding: "3300", title: ["Kışlık Battaniye (2 kg)", "Winter Blanket (2 kg)", "حرام شتوي (2 كغ)"], per: ["Battaniye", "Blanket", "حرام"], note: ["2,2 × 1,8 m", "2.2 × 1.8 m", "2.2 × 1.8 م"]}

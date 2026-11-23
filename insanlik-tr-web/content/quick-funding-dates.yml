@@ -1,0 +1,8 @@
+# Acil Müdahaleler (Quick Funding) pages: the update date and the validity date of the prices.
+# They are shown once at the top of the overview page and of every country page with prices (above the tables).
+# Change the two dates here. Texts are ["Turkish", "English", "Arabic"]. Delete this file to remove them.
+updated: "23.11.2026"
+valid_until: "30.11.2026"
+labels:
+  updated: ["Güncelleme Tarihi", "Last Updated", "تاريخ التحديث"]
+  valid_until: ["Geçerlilik Tarihi", "Valid Until", "تاريخ الصلاحية"]
