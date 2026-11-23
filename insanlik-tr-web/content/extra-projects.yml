@@ -1,0 +1,166 @@
+# Projects that are not in the Zoho portfolio yet. build.py (extra_projects) makes their pages and cards:
+#   copy_of:  the project page whose design is copied (same country); its texts are replaced by the ones below
+#   after:    the new card is put right after this project's card on the Projects page
+#   icon_from: a project of the same sector; its card icon is used
+#   cost:     Starting Cost (written $32,466 here; the site shows it as 32.466 $)
+# The country's "Projects" tile counts the new project too.
+# Page texts: from "Misir_Cerrahi_Destek_Proje_Teklifi.docx" (sections 1-8; section 9, the patient list,
+# and the sections after it are not on the site).
+projects:
+- code: EGY-P009
+  copy_of: EGY-P008
+  after: EGY-P008
+  icon_from: EGY-P001
+  country: egypt
+  sector: protection
+  cost: $32,466
+  tr:
+    sector: Koruma
+    title: Mısır'da Koruma ve Psikososyal Destek
+    place: Mısır
+    lead: Gerekli cerrahi müdahalelerin zamanında yapılmasına destek olmak, önlenebilir sağlık sorunlarının önüne geçmek ve savaş nedeniyle yerinden edilen ailelerin tedavi masraflarını hafifletmek.
+    beneficiaries: '14'
+    blocks:
+    - h: Mısır'daki Gazzeli Hastalara Cerrahi Tedavi Desteği Projesi
+    - table:
+        head: [Proje Bilgisi, Açıklama]
+        rows:
+        - [Uygulayıcı kuruluş, İnsanlık Eli Yardımlaşma ve Dayanışma Derneği]
+        - [Uygulama yeri, Mısır]
+        - [Hedef grup, Gazze'den Mısır'a gelen ve cerrahi tedaviye ihtiyaç duyan Filistinli hastalar]
+        - [Planlanan vaka sayısı, 14 hasta]
+        - [Tahmini toplam bütçe, '32.466,32 USD']
+    - h: 1. Proje Özeti
+    - p: Bu proje, Gazze Şeridi'nde yaşanan savaşın ardından Mısır'a sığınan ve ihtiyaç duydukları cerrahi tedavileri karşılamakta güçlük çeken 14 Filistinli hastaya destek olmayı amaçlamaktadır. Proje kapsamında savaş yaralanmalarına bağlı ortopedik ve rekonstrüktif ameliyatlar, sinir ve tendon onarımları ile uzmanlık gerektiren diğer cerrahi işlemlerin gerçekleştirilmesi planlanmaktadır.
+    - p: Projenin tahmini toplam bütçesi 32.466,32 USD'dir. Her hasta için gerekli müdahale; güncel tıbbi değerlendirme, tedavi planının uygunluğunun teyidi ve nihai maliyetin onaylanmasının ardından gerçekleştirilecektir. İnsanlık Eli, yetkili sağlık kuruluşlarıyla koordinasyonun sağlanması, hastaların tedavi süreçlerinin takibi ve mali ve faaliyet raporlamasının yürütülmesinden sorumlu olacaktır.
+    - h: 2. Projenin Arka Planı ve İhtiyaç Analizi
+    - p: Gazze'de yaşanan savaş, çok sayıda sivilin yaralanmasına, sağlık hizmetlerinin ciddi ölçüde aksamasına ve birçok hastanın tedavisinin yarım kalmasına neden olmuştur. Mısır'a ulaşan Filistinli hastaların bir kısmı, ihtiyaç duydukları cerrahi tedavileri karşılamakta maddi güçlük yaşamaktadır. Özellikle kemik, sinir ve tendon yaralanmaları ile rekonstrüktif cerrahi gerektiren vakalarda tedavinin gecikmesi; ağrıların uzamasına, kalıcı işlev kayıplarına ve önlenebilir sağlık sorunlarına yol açabilmektedir.
+    - p: Bu proje, hastaların maddi imkânsızlıklar nedeniyle gerekli cerrahi tedavilerden mahrum kalmasını önlemeyi ve tıbben gerekli müdahalelerin uygun zamanda yapılmasını desteklemeyi hedeflemektedir. Özellikle acil müdahale gerektiren vakalarda zamanında tedavi, hastaların sağlıklarının korunması ve kalıcı hasarların önlenmesi açısından büyük önem taşımaktadır.
+    - h: 3. Projenin Yaklaşımı ve Uygulama Modeli
+    - p: Proje kapsamında belirlenen 14 hastanın cerrahi ihtiyaçları yeniden değerlendirilecek, gerekli ameliyatların kapsamı ve maliyetleri netleştirilecek ve tedavi süreçleri Mısır'daki ruhsatlı sağlık kuruluşları aracılığıyla yürütülecektir. Hastaların ameliyat öncesi ve sonrası takipleri, tedaviyi yürüten sağlık ekibinin önerileri doğrultusunda gerçekleştirilecektir.
+    - p: Maddi destek, yalnızca tıbben gerekli olduğu belirlenen ve onaylanan bütçe kapsamında yer alan tedavi ve sağlık hizmetleri için sağlanacaktır. Bu yaklaşımla, mevcut kaynakların öncelikli ihtiyaçlara yönlendirilmesi ve proje faaliyetlerinin şeffaf, izlenebilir ve hesap verebilir bir şekilde yürütülmesi amaçlanmaktadır.
+    - h: 4. Genel Amaç
+    - p: Mısır'da bulunan ve cerrahi tedaviye ihtiyaç duyan Gazzeli Filistinli hastaların sağlıklarının korunmasına ve yaşam kalitelerinin iyileştirilmesine katkı sağlamak; gerekli cerrahi müdahalelere zamanında ulaşmalarını destekleyerek tedavinin gecikmesinden kaynaklanabilecek sağlık sorunlarını ve ailelerin üzerindeki maddi yükü azaltmak.
+    - h: 5. Özel Hedefler
+    - ul:
+      - Tıbbi değerlendirmeler sonucunda cerrahi müdahaleye ihtiyaç duyduğu belirlenen 14 hastanın gerekli tedavilere erişimini desteklemek.
+      - Acil müdahale gerektiren ve tedavinin gecikmesi hâlinde ciddi sağlık sorunları yaşama riski bulunan hastalara öncelik vermek.
+      - Cerrahi tedavi masraflarının hastalar ve aileleri üzerindeki maddi yükünü hafifletmek.
+      - Hasta sevki, cerrahi müdahale, tedavi sonrası takip ve raporlama süreçlerini düzenli ve koordineli şekilde yürütmek.
+    - h: 6. Hedef Kitle ve Önceliklendirme
+    - p: Projenin hedef kitlesini, Gazze Şeridi'nden Mısır'a gelen ve cerrahi tedaviye ihtiyaç duyduğu belirlenen 14 Filistinli hasta oluşturmaktadır. Hastaların öncelik sıralaması belirlenirken tıbbi aciliyet, tedavinin gecikmesi hâlinde ortaya çıkabilecek sağlık sorunları, hastaların ve ailelerinin maddi imkânları ile mevcut sağlık durumları dikkate alınacaktır. Her hasta için destek kararı verilmeden önce tıbbi gereklilikler ve başvuru koşulları ayrı ayrı değerlendirilecektir.
+    - h: 7. Temel Faaliyetler
+    - ul:
+      - Hastalara ait dosyaların, mevcut sağlık raporlarının ve tedavi ihtiyaçlarının güncellenmesi.
+      - Uzman hekim değerlendirmelerinin yapılması ve yetkili sağlık kuruluşlarından ameliyat ve tedavi maliyetlerine ilişkin fiyat tekliflerinin alınması.
+      - Tıbbi öncelikler ve mevcut bütçe imkânları doğrultusunda hasta bazında destek kararlarının verilmesi.
+      - Ameliyat tarihlerinin sağlık kuruluşlarıyla koordineli şekilde planlanması ve yapılan harcamaların belgelendirilmesi.
+      - Ameliyat sonrası hasta takibinin yapılması, tedavi sonuçlarının izlenmesi ve proje sonunda faaliyet ve mali sonuç raporunun hazırlanması.
+    - h: 8. Beklenen Sonuçlar ve İzleme Göstergeleri
+    - table:
+        head: [Gösterge, Hedef]
+        rows:
+        - [Tıbbi değerlendirmesi tamamlanan hasta sayısı, '14']
+        - [Cerrahi müdahalesi desteklenen hasta sayısı, Tıbbi onay ve bütçe imkânlarına bağlı olarak en fazla 14]
+        - [Uygulanan vakalara ait tedavi kayıtları, Her müdahale için ayrı dosya]
+        - [Nihai faaliyet ve mali rapor, 1 nihai rapor]
+  en:
+    sector: Protection
+    title: Protection and Psychosocial Support in Egypt
+    place: Egypt
+    lead: To support the timely performance of necessary surgical interventions, prevent avoidable health problems and ease the treatment costs of families displaced by the war.
+    beneficiaries: '14'
+    blocks:
+    - h: Surgical Treatment Support Project for Gazan Patients in Egypt
+    - table:
+        head: [Project Information, Description]
+        rows:
+        - [Implementing organisation, İnsanlık Eli Yardımlaşma ve Dayanışma Derneği]
+        - [Location, Egypt]
+        - [Target group, Palestinian patients who have come to Egypt from Gaza and need surgical treatment]
+        - [Planned number of cases, 14 patients]
+        - [Estimated total budget, '32,466.32 USD']
+    - h: 1. Project Summary
+    - p: This project aims to support 14 Palestinian patients who sought refuge in Egypt after the war in the Gaza Strip and are struggling to cover the surgical treatment they need. It plans orthopaedic and reconstructive operations for war injuries, nerve and tendon repairs and other specialised surgical procedures.
+    - p: The estimated total budget of the project is 32,466.32 USD. The intervention needed for each patient will be carried out after an up-to-date medical assessment, confirmation that the treatment plan is appropriate and approval of the final cost. İnsanlık Eli will be responsible for coordination with the authorised health facilities, follow-up of the patients' treatment, and financial and activity reporting.
+    - h: 2. Project Background and Needs Analysis
+    - p: The war in Gaza has injured large numbers of civilians, severely disrupted health services and left the treatment of many patients unfinished. Some of the Palestinian patients who have reached Egypt face financial difficulty in covering the surgical treatment they need. Particularly in cases of bone, nerve and tendon injuries and in those requiring reconstructive surgery, delayed treatment can prolong pain and lead to permanent loss of function and preventable health problems.
+    - p: The project aims to prevent patients from going without necessary surgical treatment because of financial hardship and to support medically necessary interventions being carried out in good time. Timely treatment is especially important in urgent cases to protect patients' health and prevent permanent damage.
+    - h: 3. Project Approach and Implementation Model
+    - p: The surgical needs of the 14 patients identified under the project will be reassessed, the scope and costs of the required operations will be clarified, and treatment will be carried out through licensed health facilities in Egypt. Patients' pre- and post-operative follow-up will be carried out in line with the recommendations of the treating medical team.
+    - p: Financial support will be provided only for treatment and health services that are confirmed as medically necessary and fall within the approved budget. This approach aims to direct the available resources to priority needs and to run the project activities in a transparent, traceable and accountable way.
+    - h: 4. Overall Objective
+    - p: To contribute to protecting the health and improving the quality of life of Palestinian patients from Gaza in Egypt who need surgical treatment, and, by supporting their timely access to the necessary surgical interventions, to reduce the health problems that delayed treatment can cause and the financial burden on their families.
+    - h: 5. Specific Objectives
+    - ul:
+      - Support access to the necessary treatment for the 14 patients identified through medical assessment as needing surgical intervention.
+      - Give priority to patients who need urgent intervention and are at risk of serious health problems if treatment is delayed.
+      - Ease the financial burden of surgical treatment costs on patients and their families.
+      - Carry out patient referral, surgical intervention, post-treatment follow-up and reporting in an orderly and coordinated way.
+    - h: 6. Target Group and Prioritisation
+    - p: The project's target group is 14 Palestinian patients who have come to Egypt from the Gaza Strip and have been identified as needing surgical treatment. Patients will be prioritised according to medical urgency, the health problems that could arise if treatment is delayed, the financial means of patients and their families, and their current state of health. Medical necessity and eligibility will be assessed separately for each patient before a decision on support is made.
+    - h: 7. Key Activities
+    - ul:
+      - Updating patient files, existing medical reports and treatment needs.
+      - Carrying out specialist physician assessments and obtaining price quotations for surgery and treatment costs from authorised health facilities.
+      - Making support decisions for each patient in line with medical priorities and the available budget.
+      - Scheduling operation dates in coordination with health facilities and documenting expenditure.
+      - Following up patients after surgery, monitoring treatment outcomes and preparing a final activity and financial report at the end of the project.
+    - h: 8. Expected Results and Monitoring Indicators
+    - table:
+        head: [Indicator, Target]
+        rows:
+        - [Number of patients whose medical assessment is completed, '14']
+        - [Number of patients supported with surgical intervention, 'Up to 14, subject to medical approval and the available budget']
+        - [Treatment records for cases carried out, A separate file for each intervention]
+        - [Final activity and financial report, 1 final report]
+  ar:
+    sector: الحماية
+    title: الحماية والدعم النفسي الاجتماعي في مصر
+    place: مصر
+    lead: دعم إجراء التدخلات الجراحية اللازمة في الوقت المناسب، والوقاية من المشكلات الصحية التي يمكن تجنبها، وتخفيف تكاليف العلاج عن الأسر التي نزحت بسبب الحرب.
+    beneficiaries: '14'
+    blocks:
+    - h: مشروع دعم العلاج الجراحي للمرضى الغزيين في مصر
+    - table:
+        head: [معلومات المشروع, الوصف]
+        rows:
+        - [الجهة المنفذة, جمعية يد الإنسانية للمساعدات والتضامن]
+        - [مكان التنفيذ, مصر]
+        - [الفئة المستهدفة, المرضى الفلسطينيون القادمون من غزة إلى مصر والمحتاجون إلى علاج جراحي]
+        - [عدد الحالات المخطط لها, 14 مريضًا]
+        - [الميزانية الإجمالية التقديرية, '32,466.32 دولارًا أمريكيًا']
+    - h: 1. ملخص المشروع
+    - p: يهدف هذا المشروع إلى دعم 14 مريضًا فلسطينيًا لجؤوا إلى مصر بعد الحرب في قطاع غزة ويواجهون صعوبة في تغطية تكاليف العلاج الجراحي الذي يحتاجون إليه. ويتضمن المشروع إجراء عمليات جراحية عظمية وترميمية لإصابات الحرب، وإصلاح الأعصاب والأوتار، وغيرها من العمليات الجراحية التخصصية.
+    - p: تبلغ الميزانية الإجمالية التقديرية للمشروع 32,466.32 دولارًا أمريكيًا. وسيُنفَّذ التدخل اللازم لكل مريض بعد إجراء تقييم طبي محدَّث، والتأكد من ملاءمة خطة العلاج، واعتماد التكلفة النهائية. وتتولى يد الإنسانية التنسيق مع المؤسسات الصحية المرخصة، ومتابعة علاج المرضى، وإعداد التقارير المالية وتقارير الأنشطة.
+    - h: 2. خلفية المشروع وتحليل الاحتياجات
+    - p: أدت الحرب في غزة إلى إصابة أعداد كبيرة من المدنيين، وإلى اضطراب شديد في الخدمات الصحية، وإلى توقف علاج كثير من المرضى قبل اكتماله. ويواجه بعض المرضى الفلسطينيين الذين وصلوا إلى مصر صعوبات مالية في تغطية تكاليف العلاج الجراحي الذي يحتاجون إليه. وفي حالات إصابات العظام والأعصاب والأوتار والحالات التي تتطلب جراحة ترميمية خاصة، قد يؤدي تأخر العلاج إلى استمرار الألم وفقدان دائم للوظائف ومشكلات صحية كان يمكن تجنبها.
+    - p: ويهدف المشروع إلى منع حرمان المرضى من العلاج الجراحي اللازم بسبب ضيق الإمكانات المالية، وإلى دعم إجراء التدخلات الضرورية طبيًا في الوقت المناسب. ويكتسب العلاج في الوقت المناسب أهمية كبيرة، ولا سيما في الحالات العاجلة، لحماية صحة المرضى ومنع حدوث أضرار دائمة.
+    - h: 3. نهج المشروع ونموذج التنفيذ
+    - p: سيُعاد تقييم الاحتياجات الجراحية للمرضى الأربعة عشر المحددين في إطار المشروع، وتحديد نطاق العمليات اللازمة وتكاليفها، وتنفيذ العلاج عبر مؤسسات صحية مرخصة في مصر. وستُجرى متابعة المرضى قبل العمليات وبعدها وفق توصيات الفريق الطبي المعالج.
+    - p: ولن يُقدَّم الدعم المالي إلا للعلاج والخدمات الصحية التي يثبت أنها ضرورية طبيًا وتندرج ضمن الميزانية المعتمدة. ويهدف هذا النهج إلى توجيه الموارد المتاحة نحو الاحتياجات ذات الأولوية، وتنفيذ أنشطة المشروع بطريقة شفافة وقابلة للتتبع والمساءلة.
+    - h: 4. الهدف العام
+    - p: الإسهام في حماية صحة المرضى الفلسطينيين القادمين من غزة والموجودين في مصر والمحتاجين إلى علاج جراحي وتحسين جودة حياتهم، ودعم وصولهم إلى التدخلات الجراحية اللازمة في الوقت المناسب، بما يحد من المشكلات الصحية الناجمة عن تأخر العلاج ويخفف العبء المالي عن أسرهم.
+    - h: 5. الأهداف المحددة
+    - ul:
+      - دعم وصول 14 مريضًا ثبتت حاجتهم إلى تدخل جراحي بعد التقييم الطبي إلى العلاج اللازم.
+      - إعطاء الأولوية للمرضى الذين يحتاجون إلى تدخل عاجل ويواجهون خطر مشكلات صحية خطيرة في حال تأخر العلاج.
+      - تخفيف العبء المالي لتكاليف العلاج الجراحي عن المرضى وأسرهم.
+      - تنفيذ إحالة المرضى والتدخل الجراحي والمتابعة بعد العلاج وإعداد التقارير بصورة منظمة ومنسقة.
+    - h: 6. الفئة المستهدفة وتحديد الأولويات
+    - p: تتكون الفئة المستهدفة للمشروع من 14 مريضًا فلسطينيًا قدموا إلى مصر من قطاع غزة وثبتت حاجتهم إلى علاج جراحي. وعند تحديد أولويات المرضى ستُراعى درجة الإلحاح الطبي، والمشكلات الصحية التي قد تنشأ في حال تأخر العلاج، والإمكانات المالية للمرضى وأسرهم، وحالتهم الصحية الراهنة. وسيُقيَّم استيفاء المتطلبات الطبية وشروط الطلب لكل مريض على حدة قبل اتخاذ قرار الدعم.
+    - h: 7. الأنشطة الرئيسية
+    - ul:
+      - تحديث ملفات المرضى والتقارير الطبية الحالية واحتياجات العلاج.
+      - إجراء تقييمات الأطباء المختصين والحصول على عروض أسعار لتكاليف العمليات والعلاج من المؤسسات الصحية المرخصة.
+      - اتخاذ قرارات الدعم لكل مريض وفق الأولويات الطبية والميزانية المتاحة.
+      - تحديد مواعيد العمليات بالتنسيق مع المؤسسات الصحية وتوثيق النفقات.
+      - متابعة المرضى بعد العمليات ورصد نتائج العلاج وإعداد تقرير نهائي عن الأنشطة والنتائج المالية في نهاية المشروع.
+    - h: 8. النتائج المتوقعة ومؤشرات المتابعة
+    - table:
+        head: [المؤشر, الهدف]
+        rows:
+        - [عدد المرضى الذين اكتمل تقييمهم الطبي, '14']
+        - [عدد المرضى الذين دُعمت تدخلاتهم الجراحية, 14 مريضًا كحد أقصى، رهنًا بالموافقة الطبية والإمكانات المالية]
+        - [سجلات علاج الحالات المنفذة, ملف مستقل لكل تدخل]
+        - [التقرير النهائي للأنشطة والنتائج المالية, تقرير نهائي واحد]

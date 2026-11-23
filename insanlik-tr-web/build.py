@@ -456,6 +456,107 @@ def project_country_tiles(html, lang, out):
     return html[:grid.start()] + block + html[grid.start():], len(rows)
 
 
+# New projects that are not in the Zoho portfolio yet (content/extra-projects.yml). Each page is a copy of a project page
+# of the same country (same design) with the texts of the file; its card is put next to that project's card on the
+# Projects page and the country's "Projects" tile counts it. Links may be written /tr/projects/X/ or X/index.html.
+def extra_projects(EP, langs, out=None):
+    """Make the pages and cards of content/extra-projects.yml. Returns the number of pages made."""
+    from html import escape
+    from urllib.parse import quote
+    out = out or OUT
+    esc = lambda v: escape(str(v), quote=True).replace('&#x27;', '&#39;')
+    made = 0
+    for p in EP.get('projects') or []:
+        code, src_code = p['code'], p['copy_of']
+        for l in langs:
+            d = p.get(l) or {}
+            src = os.path.join(out, l, 'projects', src_code, 'index.html')
+            dst = os.path.join(out, l, 'projects', code, 'index.html')
+            if not d or not os.path.exists(src) or os.path.exists(dst):
+                continue
+            html = open(src, encoding='utf-8').read()
+            old_title = re.search(r'<h1>(.*?)</h1>', html, re.S).group(1)
+            old_lead = re.search(r'<p class="lead">(.*?)</p>', html, re.S).group(1)
+            check = re.search(r'<ul class="checks"><li>(<svg.*?</svg>)', html, re.S)
+            check = check.group(1) if check else ''
+            html = html.replace(src_code, code).replace(old_title, esc(d['title'])).replace(old_lead, esc(d['lead']))
+            html = re.sub(r'(<div class="tags"><span class="tag">)[^<]*', lambda m: m.group(1) + esc(d['sector']), html, count=1)
+            html = re.sub(r'(<p class="loc">.*?</svg>)[^<]*(</p>)', lambda m: m.group(1) + ' ' + esc(d['place']) + m.group(2), html, count=1, flags=re.S)
+            # figures strip: the labels of the copied page, the values of the file (no Duration when the file gives none)
+            labels = re.findall(r'<div class="st"><span class="small-label">(.*?)</span>', html)
+            sts = re.findall(r'<div class="st">.*?</div>', re.search(r'<section class="stats-strip">.*?</section>', html, re.S).group(0), re.S)
+            new_sts = []
+            for k, st in enumerate(sts):
+                if k == 0:
+                    new_sts.append(re.sub(r'<strong>.*?</strong>', '<strong>' + esc(p['cost']) + '</strong>', st, count=1))
+                elif k == 1 and d.get('beneficiaries'):
+                    new_sts.append(re.sub(r'<strong>.*?</strong>', '<strong>' + esc(d['beneficiaries']) + '</strong>', st, count=1))
+                elif k == 2 and d.get('duration'):
+                    new_sts.append(re.sub(r'<strong>.*?</strong>', '<strong>' + esc(d['duration']) + '</strong>', st, count=1))
+            html = re.sub(r'(<section class="stats-strip">\s*<div class="container stats-grid">).*?(\s*</div>\s*</section>)',
+                          lambda m: m.group(1) + '\n    ' + '\n    '.join(new_sts) + m.group(2), html, count=1, flags=re.S)
+            # page texts
+            body = []
+            for b in d.get('blocks') or []:
+                if 'h' in b:
+                    body.append(f'<h2 class="bar-title h3">{esc(b["h"])}</h2>')
+                elif 'p' in b:
+                    body.append(f'<p class="text-lg">{esc(b["p"])}</p>')
+                elif 'ul' in b:
+                    body.append('<ul class="checks">' + ''.join(f'<li>{check}<span>{esc(x)}</span></li>' for x in b['ul']) + '</ul>')
+                elif 'table' in b:
+                    t = b['table']
+                    rows = ''.join('<tr>' + ''.join(f'<td data-label="{esc(h)}">{esc(c)}</td>' for h, c in zip(t['head'], r)) + '</tr>' for r in t['rows'])
+                    body.append('<figure class="rtbl"><div class="tbl-wrap"><table class="tbl"><thead><tr>'
+                                + ''.join(f'<th>{esc(h)}</th>' for h in t['head']) + f'</tr></thead><tbody>{rows}</tbody></table></div></figure>')
+            html = re.sub(r'(<article>).*?(</article>)', lambda m: m.group(1) + '\n      ' + '\n      '.join(body) + '\n    ' + m.group(2), html, count=1, flags=re.S)
+            html = re.sub(r'(https://wa\.me/\d+\?text=)[^"]*', lambda m: m.group(1) + quote(f'{code} – {d["title"]}', safe=''), html)
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            with open(dst, 'w', encoding='utf-8') as fh:
+                fh.write(html)
+            made += 1
+            # card on the Projects page, right after the card of p['after']
+            idx = os.path.join(out, l, 'projects', 'index.html')
+            if os.path.exists(idx):
+                page = open(idx, encoding='utf-8').read()
+                card_re = r'<a class="pcard"[^>]*href="[^"]*%s/[^"]*"[^>]*>.*?</a>'
+                tpl = re.search(card_re % re.escape(p.get('after') or src_code), page, re.S)
+                if tpl and not re.search(card_re % re.escape(code), page, re.S):
+                    card = re.sub(r'\sdata-groups="[^"]*"', '', tpl.group(0)).replace(p.get('after') or src_code, code)
+                    card = re.sub(r'data-sector="[^"]*"', f'data-sector="{p["sector"]}"', card, count=1)
+                    card = re.sub(r'(<span class="pcard-tag">)[^<]*', lambda m: m.group(1) + esc(d['sector']), card, count=1)
+                    icon = re.search(card_re % re.escape(p.get('icon_from') or ''), page, re.S) if p.get('icon_from') else None
+                    icon = re.search(r'<span class="pcard-icon">.*?</span>', icon.group(0), re.S) if icon else None
+                    if icon:
+                        card = re.sub(r'<span class="pcard-icon">.*?</span>', lambda m: icon.group(0), card, count=1, flags=re.S)
+                    card = re.sub(r'(<h3 class="bar-title">).*?(</h3>)', lambda m: m.group(1) + esc(d['title']) + m.group(2), card, count=1, flags=re.S)
+                    card = re.sub(r'(<p class="meta">.*?</svg>)[^<]*(</p>)', lambda m: m.group(1) + ' ' + esc(d['place']) + m.group(2), card, count=1, flags=re.S)
+                    card = re.sub(r'(<p class="pcard-text">).*?(</p>)', lambda m: m.group(1) + esc(d['lead']) + m.group(2), card, count=1, flags=re.S)
+                    if '<div class="pcard-facts">' in card:   # page already built: the card shows the figures of the new page
+                        lab = lambda kind: next((v for v in labels if v in FACT_LABELS[kind]), FACT_LABELS[kind][LANG_INDEX[l]])
+                        rows = [('beneficiaries', lab('beneficiaries'), d['beneficiaries'], '')] if d.get('beneficiaries') else []
+                        if d.get('duration'):
+                            rows.append(('duration', lab('duration'), d['duration'], ''))
+                        card = re.sub(r'<div class="pcard-facts">.*?</div></div></div>(?=\s*<div class="pcard-foot">)', lambda m: facts_html(rows), card, count=1, flags=re.S)
+                    card = re.sub(r'(<div class="pcard-foot">\s*<div><span class="small-label">[^<]*</span><strong>).*?(</strong>)',
+                                  lambda m: m.group(1) + esc(p['cost']) + m.group(2), card, count=1, flags=re.S)
+                    page = page[:tpl.end()] + card + page[tpl.end():]
+                    # Projects tile of the country on the Projects page (when the country rows are already there)
+                    page = re.sub(r'(<div class="country-row" data-country="%s">.*?<strong>)(\d+)(</strong>)' % re.escape(p['country']),
+                                  lambda m: m.group(1) + str(int(m.group(2)) + 1) + m.group(3), page, count=1, flags=re.S)
+                    with open(idx, 'w', encoding='utf-8') as fh:
+                        fh.write(page)
+            # Projects tile on the country page
+            area = os.path.join(out, l, 'areas', p['country'], 'index.html')
+            if os.path.exists(area):
+                page = open(area, encoding='utf-8').read()
+                page = re.sub(r'(<a class="opp" href="[^"]*projects[^"]*country=%s"[^>]*>.*?<strong>)(\d+)(</strong>)' % re.escape(p['country']),
+                              lambda m: m.group(1) + str(int(m.group(2)) + 1) + m.group(3), page, count=1, flags=re.S)
+                with open(area, 'w', encoding='utf-8') as fh:
+                    fh.write(page)
+    return made
+
+
 HDR_MARK = '<!--projects-top-bar-->'
 
 
@@ -559,7 +660,10 @@ def main():
         has_projects = False
     YQ = read(os.path.join(CONTENT, 'yemen-quick-funding.yml')) if os.path.exists(os.path.join(CONTENT, 'yemen-quick-funding.yml')) else {}
     GQ = read(os.path.join(CONTENT, 'gaza-quick-funding.yml')) if os.path.exists(os.path.join(CONTENT, 'gaza-quick-funding.yml')) else {}
+    EP = read(os.path.join(CONTENT, 'extra-projects.yml')) if os.path.exists(os.path.join(CONTENT, 'extra-projects.yml')) else {}
     if has_projects:
+        if EP:
+            print(f'EXTRA PROJECTS: {extra_projects(EP, langs)} pages made (content/extra-projects.yml)')
         if YQ:
             print(f'YEMEN: {yemen_kits(YQ, langs)} "View contents" pages made')
         hdr_tpl = env.get_template('proj_header.html')
